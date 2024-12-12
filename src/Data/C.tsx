@@ -1,0 +1,21 @@
+export const dataLibC = [{
+  word: "chat",
+  partOfSpeach: "N",
+  definition: "cat",
+  egSentence: "",
+  synonym: "",
+  antonym: "",
+  crossReference: "",
+  etymology: "[< Fr. chat]",
+},
+{
+  word: "chèz",
+  partOfSpeach: "N",
+  definition: "chair",
+  egSentence: "",
+  synonym: "",
+  antonym: "",
+  crossReference: "",
+  etymology: "[< Fr. chaise]",
+},
+]

@@ -1,12 +1,8 @@
-interface ListItemProps {
-  word: string;
-  definition: string;
-}
-
-export const ListItem = ({ word, definition }: ListItemProps) => {
+import { IListItemProps } from "./ListItem.d";
+export const ListItem = ({ word, definition, etymology, partOfSpeech }: IListItemProps) => {
   return <li>
-    <div>Kwéyòl: {word}</div>
+    <div>Kwéyòl: {word} <span>{partOfSpeech && partOfSpeech}</span></div>
     <div>English: {definition}</div>
-    <div></div>
+    {etymology ? <div>Etymology: {etymology}</div> : <div>Etymology: n/a</div>}
   </li>;
 };
