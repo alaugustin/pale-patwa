@@ -7,6 +7,7 @@ export const dataLibC = [{
   antonym: "",
   crossReference: "",
   etymology: "[< Fr. chat]",
+  dialect: "🇱🇨",
 },
 {
   word: "chèz",
@@ -17,5 +18,6 @@ export const dataLibC = [{
   antonym: "",
   crossReference: "",
   etymology: "[< Fr. chaise]",
+  dialect: "🇱🇨",
 },
 ]
