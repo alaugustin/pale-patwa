@@ -1,6 +1,6 @@
 import "./styles.css";
 import { dataLib } from "./Data/data";
-import { List } from "./Components/List/List";
+import { Typography } from "./Components/Typography/Typography";
 import { useState, useEffect } from "react";
 
 const sortedData = [...dataLib].sort(
@@ -24,20 +24,21 @@ export default function App() {
 
   return (
     <main className="flex items-center justify-center h-screen flex-col">
-      <h1 className="text-5xl">{pageH1}</h1>
-      <h2 className="text-8xl">{randomItem.word}</h2>
+      <Typography variant="h1" text={pageH1} className={"text-5xl"} />
+
+      <Typography variant="h2" text={randomItem.word} className={"text-8xl"} />
+
       <p className="text-xl">
-        <span className={(randomItem.etymology || randomItem.partOfSpeach) ? wordAttrClasses : ''}>{randomItem.dialect}</span>
+        <Typography variant="span" text={randomItem.dialect} className={(randomItem.etymology || randomItem.partOfSpeach) ? wordAttrClasses : ''} />
 
         {randomItem.partOfSpeach && (
-          <span className={(randomItem.etymology || randomItem.partOfSpeach) ? wordAttrClasses : ''}>{randomItem.partOfSpeach ?? ''}</span>
+          <Typography variant="span" text={randomItem.partOfSpeach ?? ''} className={(randomItem.etymology || randomItem.partOfSpeach) ? wordAttrClasses : ''} />
         )}
 
-        {randomItem.etymology ?
-          <span className=''>{randomItem.etymology ?? ''}</span> : ''
-        }
+        {randomItem.etymology ? <Typography variant="span" text={randomItem.etymology ?? ''} /> : ''}
       </p>
-      <p className="text-3xl">{randomItem.definition}</p>
+
+      <Typography variant="p" text={randomItem.definition} className="text-3xl" />
     </main>
   );
 }
