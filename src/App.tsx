@@ -8,6 +8,8 @@ const sortedData = [...dataLib].sort(
 );
 
 export default function App() {
+  const pageH1 = "Palé Kwéyòl";
+  const wordAttrClasses = "pr-2 mr-2 border border-black border-t-0 border-b-0 border-l-0"
   const [randomItem, setRandomItem] = useState(sortedData[0]);
 
   const getRandomItem = () => {
@@ -21,14 +23,21 @@ export default function App() {
   }, []);
 
   return (
-    <main>
-      <List
-        word={randomItem.word}
-        definition={randomItem.definition}
-        etymology={randomItem.etymology ?? ''}
-        dialect={randomItem.dialect}
-        partOfSpeech={randomItem.partOfSpeach ?? ''}
-      />
+    <main className="flex items-center justify-center h-screen flex-col">
+      <h1 className="text-5xl">{pageH1}</h1>
+      <h2 className="text-8xl">{randomItem.word}</h2>
+      <p className="text-xl">
+        <span className={(randomItem.etymology || randomItem.partOfSpeach) ? wordAttrClasses : ''}>{randomItem.dialect}</span>
+
+        {randomItem.partOfSpeach && (
+          <span className={(randomItem.etymology || randomItem.partOfSpeach) ? wordAttrClasses : ''}>{randomItem.partOfSpeach ?? ''}</span>
+        )}
+
+        {randomItem.etymology ?
+          <span className=''>{randomItem.etymology ?? ''}</span> : ''
+        }
+      </p>
+      <p className="text-3xl">{randomItem.definition}</p>
     </main>
   );
 }
