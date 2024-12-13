@@ -29,16 +29,35 @@ export default function App() {
       <Typography variant="h2" text={randomItem.word} className={"text-8xl"} />
 
       <p className="text-xl">
-        <Typography variant="span" text={randomItem.dialect} className={(randomItem.etymology || randomItem.partOfSpeach) ? wordAttrClasses : ''} />
+        <Typography
+          variant="span"
+          text={randomItem.dialect}
+          className={
+            (randomItem.etymology || randomItem.partOfSpeach) ? 'pr-2 mr-2 border border-black border-t-0 border-b-0 border-l-0' : ''
+        } />
 
         {randomItem.partOfSpeach && (
-          <Typography variant="span" text={randomItem.partOfSpeach ?? ''} className={(randomItem.etymology || randomItem.partOfSpeach) ? wordAttrClasses : ''} />
+          <Typography
+            variant="span"
+            text={randomItem.partOfSpeach ?? ''}
+            className={
+              (randomItem.etymology || randomItem.partOfSpeach) ? `${randomItem.etymology ? 'border border-black border-t-0 border-b-0 border-l-0 pr-2 mr-2' : ''}` : ''
+          } />
         )}
 
-        {randomItem.etymology ? <Typography variant="span" text={randomItem.etymology ?? ''} /> : ''}
+        {randomItem.etymology ?
+          <Typography
+            variant="span"
+            text={randomItem.etymology ?? ''}
+          /> : ''
+        }
       </p>
 
-      <Typography variant="p" text={randomItem.definition} className="text-3xl" />
+      <Typography
+        variant="p"
+        text={randomItem.definition}
+        className="text-3xl"
+      />
     </main>
   );
 }
