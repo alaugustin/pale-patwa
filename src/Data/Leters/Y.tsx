@@ -1,6 +1,6 @@
 export const dataLibY = [{
   word: "yanm",
-  partOfSpeach: "",
+  partOfSpeach: null,
   definition: "yam",
   egSentence: null,
   synonym: null,

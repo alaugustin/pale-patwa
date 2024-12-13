@@ -1,6 +1,6 @@
 export const dataLibZ = [{
   word: "zong",
-  partOfSpeach: "",
+  partOfSpeach: null,
   definition: "finger",
   egSentence: null,
   synonym: null,
@@ -10,7 +10,7 @@ export const dataLibZ = [{
   dialect: "🇱🇨",
 }, {
   word: "zé",
-  partOfSpeach: "",
+  partOfSpeach: null,
   definition: "egg",
   egSentence: null,
   synonym: null,

@@ -1,6 +1,6 @@
 export const dataLibR = [{
   word: "radyo",
-  partOfSpeach: "",
+  partOfSpeach: null,
   definition: "radio",
   egSentence: null,
   synonym: null,

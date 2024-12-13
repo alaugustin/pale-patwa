@@ -1,6 +1,6 @@
 export const dataLibT = [{
   word: "tifi",
-  partOfSpeach: "",
+  partOfSpeach: null,
   definition: "girl",
   egSentence: null,
   synonym: null,
@@ -10,7 +10,7 @@ export const dataLibT = [{
   dialect: "🇱🇨",
 }, {
   word: "tab",
-  partOfSpeach: "",
+  partOfSpeach: null,
   definition: "table",
   egSentence: null,
   synonym: null,
@@ -20,7 +20,7 @@ export const dataLibT = [{
   dialect: "🇱🇨",
 }, {
   word: "tjè",
-  partOfSpeach: "",
+  partOfSpeach: null,
   definition: "heart",
   egSentence: null,
   synonym: null,

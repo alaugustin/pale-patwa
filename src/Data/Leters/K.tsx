@@ -1,6 +1,6 @@
 export const dataLibK = [{
   word: "koko",
-  partOfSpeach: "",
+  partOfSpeach: null,
   definition: "chocholate",
   egSentence: null,
   synonym: null,

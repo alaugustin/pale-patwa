@@ -1,6 +1,6 @@
 export const dataLibF = [{
   word: "fèt",
-  partOfSpeach: "",
+  partOfSpeach: null,
   definition: "party",
   egSentence: null,
   synonym: null,

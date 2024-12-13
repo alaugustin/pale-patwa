@@ -1,6 +1,6 @@
 export const dataLibP = [{
   word: "pen",
-  partOfSpeach: "",
+  partOfSpeach: null,
   definition: "bread",
   egSentence: null,
   synonym: null,
@@ -10,7 +10,7 @@ export const dataLibP = [{
   dialect: "🇱🇨",
 }, {
   word: "pòpòt",
-  partOfSpeach: "",
+  partOfSpeach: null,
   definition: "doll",
   egSentence: null,
   synonym: null,
@@ -20,7 +20,7 @@ export const dataLibP = [{
   dialect: "🇱🇨",
 }, {
   word: "pòt",
-  partOfSpeach: "",
+  partOfSpeach: null,
   definition: "pot",
   egSentence: null,
   synonym: null,
