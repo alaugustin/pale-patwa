@@ -1,6 +1,6 @@
 import "./styles.css";
 import { dataLib } from "./Data/data";
-import { ListItem } from "./ListItem/ListItem";
+import { List } from "./Components/List/List";
 import { useState, useEffect } from "react";
 
 const sortedData = [...dataLib].sort(
@@ -21,8 +21,8 @@ export default function App() {
   }, []);
 
   return (
-    <ul>
-      <ListItem word={randomItem.word} definition={randomItem.definition} etymology={randomItem.etymology} dialect={randomItem.dialect} partOfSpeech={randomItem.partOfSpeach} />
-    </ul>
+    <main>
+      <List word={randomItem.word} definition={String(randomItem.definition)} etymology={randomItem.etymology} dialect={randomItem.dialect} partOfSpeech={randomItem.partOfSpeach} />
+    </main>
   );
 }

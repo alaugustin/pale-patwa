@@ -1,4 +1,5 @@
 import { IListItemProps } from "./ListItem.d";
+
 export const ListItem = ({ word, definition, etymology, partOfSpeech, dialect }: IListItemProps) => {
   return (
     <li>
