@@ -3,5 +3,6 @@ export interface IListItemProps {
   definition: string;
   etymology?: string;
   partOfSpeech?: string;
+  dialect?: string;
 }
 

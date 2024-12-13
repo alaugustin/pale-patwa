@@ -10,17 +10,6 @@ export const dataLibD = [{
   dialect: "🇱🇨",
 },
 {
-  word: "dé",
-  partOfSpeach: "",
-  definition: "two",
-  egSentence: "",
-  synonym: "",
-  antonym: "",
-  crossReference: "",
-  etymology: "[< Fr. deux]",
-  dialect: "🇱🇨",
-},
-{
   word: "djól",
   partOfSpeach: "N",
   definition: "mouth or snout of an animal",

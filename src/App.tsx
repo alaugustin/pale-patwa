@@ -22,7 +22,7 @@ export default function App() {
 
   return (
     <ul>
-      <ListItem word={randomItem.word} definition={randomItem.definition} etymology={randomItem.etymology} dialect={randomItem.dialect} />
+      <ListItem word={randomItem.word} definition={randomItem.definition} etymology={randomItem.etymology} dialect={randomItem.dialect} partOfSpeech={randomItem.partOfSpeach} />
     </ul>
   );
 }

@@ -20,13 +20,13 @@ export const dataLibB = [{
   dialect: "🇱🇨",
 }, {
   word: "bonbon",
-  partOfSpeach: "",
+  partOfSpeach: "N",
   definition: "cake",
   egSentence: "",
   synonym: "",
   antonym: "",
   crossReference: "",
-  etymology: "",
+  etymology: "[< Fr. bonbon]",
   dialect: "🇱🇨",
 },
 ]
