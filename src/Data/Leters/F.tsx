@@ -8,15 +8,5 @@ export const dataLibF = [{
   crossReference: "",
   etymology: "",
   dialect: "🇱🇨",
-}, {
-  word: "fèt",
-  partOfSpeach: "",
-  definition: "seven",
-  egSentence: "",
-  synonym: "",
-  antonym: "",
-  crossReference: "",
-  etymology: "",
-  dialect: "🇱🇨",
 },
 ]
