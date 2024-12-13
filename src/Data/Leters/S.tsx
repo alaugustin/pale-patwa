@@ -1,12 +1,12 @@
 export const dataLibS = [{
   word: "souwi",
-  partOfSpeach: null,
+  partOfSpeach: "N",
   definition: "mouse",
   egSentence: null,
   synonym: null,
   antonym: null,
   crossReference: null,
-  etymology: null,
+  etymology: "[< Fr. souris]",
   dialect: "🇱🇨",
 },
 ]

@@ -1,12 +1,12 @@
-export const dataLibK = [{
+ export const dataLibK = [{
   word: "koko",
-  partOfSpeach: null,
-  definition: "chocholate",
+  partOfSpeach: "N",
+  definition: "coconut",
   egSentence: null,
   synonym: null,
   antonym: null,
   crossReference: null,
-  etymology: null,
+  etymology: "[< Fr. coco]",
   dialect: "🇱🇨",
 },
 ]

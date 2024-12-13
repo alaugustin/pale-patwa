@@ -1,12 +1,12 @@
 export const dataLibJ = [{
   word: "jako",
-  partOfSpeach: null,
-  definition: "bird",
+  partOfSpeach: "N",
+  definition: "St. Lucian parrot",
   egSentence: null,
   synonym: null,
   antonym: null,
   crossReference: null,
-  etymology: null,
+  etymology: "[< Fr. jacquot]",
   dialect: "🇱🇨",
 },
 ]

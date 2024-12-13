@@ -1,12 +1,12 @@
 export const dataLibF = [{
   word: "fèt",
-  partOfSpeach: null,
-  definition: "party",
+  partOfSpeach: "N",
+  definition: "party, celebration, feast",
   egSentence: null,
   synonym: null,
   antonym: null,
   crossReference: null,
-  etymology: null,
+  etymology: "[Fr. fête]",
   dialect: "🇱🇨",
 },
 ]

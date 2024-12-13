@@ -1,12 +1,12 @@
 export const dataLibG = [{
   word: "gason",
-  partOfSpeach: null,
-  definition: "boy",
+  partOfSpeach: "N",
+  definition: "son, boy",
   egSentence: null,
   synonym: null,
   antonym: null,
   crossReference: null,
-  etymology: null,
+  etymology: "[< Fr. garçon]",
   dialect: "🇱🇨",
 },
 ]

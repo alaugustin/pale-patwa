@@ -1,12 +1,12 @@
 export const dataLibL = [{
   word: "liv",
-  partOfSpeach: null,
+  partOfSpeach: "N",
   definition: "book",
   egSentence: null,
   synonym: null,
   antonym: null,
   crossReference: null,
-  etymology: null,
+  etymology: "[< Fr. livre]",
   dialect: "🇱🇨",
 },
 ]

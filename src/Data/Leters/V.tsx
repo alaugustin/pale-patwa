@@ -1,12 +1,12 @@
 export const dataLibV = [{
   word: "vè",
-  partOfSpeach: null,
+  partOfSpeach: "N",
   definition: "worm",
   egSentence: null,
   synonym: null,
   antonym: null,
   crossReference: null,
-  etymology: null,
+  etymology: "[< Fr. ver]",
   dialect: "🇱🇨",
 },
 ]
