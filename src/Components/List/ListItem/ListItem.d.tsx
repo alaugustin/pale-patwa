@@ -1,8 +1,8 @@
 export interface IListItemProps {
-  word: string;
+  word: string | null;
   definition: string | number;
-  etymology?: string;
-  partOfSpeech?: string;
-  dialect?: string;
+  etymology: string | null;
+  dialect: string | null;
+  partOfSpeech: string | null;
 }
 
