@@ -22,7 +22,13 @@ export default function App() {
 
   return (
     <main>
-      <List word={randomItem.word} definition={String(randomItem.definition)} etymology={randomItem.etymology ?? ''} dialect={randomItem.dialect} partOfSpeech={randomItem.partOfSpeach ?? ''} />
+      <List
+        word={randomItem.word}
+        definition={randomItem.definition}
+        etymology={randomItem.etymology ?? ''}
+        dialect={randomItem.dialect}
+        partOfSpeech={randomItem.partOfSpeach ?? ''}
+      />
     </main>
   );
 }
