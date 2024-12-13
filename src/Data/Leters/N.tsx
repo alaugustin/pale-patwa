@@ -1,0 +1,22 @@
+export const dataLibN = [{
+  word: "né",
+  partOfSpeach: "",
+  definition: "nose",
+  egSentence: "",
+  synonym: "",
+  antonym: "",
+  crossReference: "",
+  etymology: "[< Fr. nez]",
+  dialect: "🇱🇨",
+}, {
+  word: "nich",
+  partOfSpeach: "",
+  definition: "nest",
+  egSentence: "",
+  synonym: "",
+  antonym: "",
+  crossReference: "",
+  etymology: "",
+  dialect: "🇱🇨",
+},
+]
