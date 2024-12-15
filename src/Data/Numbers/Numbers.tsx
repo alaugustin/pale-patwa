@@ -99,4 +99,4 @@ export const dataLibNum = [{
   etymology: null,
   dialect: '🇱🇨',
 },
-]
+];

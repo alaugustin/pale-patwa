@@ -1,5 +1,6 @@
-import { ListItem } from "./ListItem/ListItem";
-import { IListProps } from "./List.d";
+import React from 'react';
+import { ListItem } from './ListItem/ListItem';
+import { IListProps } from './List.d';
 
 export const List = (props: IListProps) => {
   return (
@@ -12,5 +13,5 @@ export const List = (props: IListProps) => {
         partOfSpeech={props.partOfSpeech}
       />
     </ul>
-  )
+  );
 };

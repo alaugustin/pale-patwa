@@ -1,9 +1,9 @@
-import './styles.css';
+import React from 'react';
 import { dataLib } from './Data/data';
 import { AppContentData, GlobalPageContent } from './Data/AppContent';
 import { Typography } from './Components/Typography/Typography';
 import { useState, useEffect } from 'react';
-import React from 'react';
+import './styles.css';
 
 const { headingH1 } = GlobalPageContent;
 const { titleH2 } = AppContentData.WordOfTheDayContent;
@@ -13,7 +13,7 @@ const sortedData = [...dataLib].sort(
 );
 
 export default function App() {
-  const borderClasses = 'pr-2 mr-2 border border-black border-t-0 border-b-0 border-l-0'
+  const borderClasses = 'pr-2 mr-2 border border-black border-t-0 border-b-0 border-l-0';
   const [randomItem, setRandomItem] = useState(sortedData[0]);
 
   const getRandomItem = () => {

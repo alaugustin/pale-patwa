@@ -1,12 +1,13 @@
-import { IListItemProps } from "./ListItem.d";
+import React from 'react';
+import { IListItemProps } from './ListItem.d';
 
 export const ListItem = ({ word, definition, etymology, partOfSpeech, dialect }: IListItemProps) => {
   let etymologyHandler;
 
   if (Number(definition)) {
-    etymologyHandler = null
+    etymologyHandler = null;
   } else if (String(definition)) {
-    etymologyHandler = etymology ? <div>Etymology: {etymology}</div> : <div>Etymology: n/a</div>
+    etymologyHandler = etymology ? <div>Etymology: {etymology}</div> : <div>Etymology: n/a</div>;
   }
 
   return (
@@ -16,5 +17,5 @@ export const ListItem = ({ word, definition, etymology, partOfSpeech, dialect }:
       {(dialect && dialect.length > 0) ? <div>Dialect: {dialect}</div> : ''}
       {etymologyHandler}
     </li>
-  )
+  );
 };

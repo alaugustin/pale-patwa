@@ -1,4 +1,4 @@
- export const dataLibK = [{
+export const dataLibK = [{
   word: 'koko',
   partOfSpeach: 'N',
   definition: 'coconut',
