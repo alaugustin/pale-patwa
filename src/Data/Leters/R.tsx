@@ -1,12 +1,12 @@
 export const dataLibR = [{
-  word: "radyo",
-  partOfSpeach: "N",
-  definition: "radio",
+  word: 'radyo',
+  partOfSpeach: 'N',
+  definition: 'radio',
   egSentence: null,
   synonym: null,
   antonym: null,
   crossReference: null,
-  etymology: "[< Eng. radio]",
-  dialect: "🇱🇨",
+  etymology: '[< Eng. radio]',
+  dialect: '🇱🇨',
 },
-]
+];

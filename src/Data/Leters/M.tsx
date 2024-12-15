@@ -1,12 +1,12 @@
 export const dataLibM = [{
-  word: "mouton",
-  partOfSpeach: "N",
-  definition: "sheep",
+  word: 'mouton',
+  partOfSpeach: 'N',
+  definition: 'sheep',
   egSentence: null,
   synonym: null,
   antonym: null,
   crossReference: null,
-  etymology: "[< Fr. mouton]",
-  dialect: "🇱🇨",
+  etymology: '[< Fr. mouton]',
+  dialect: '🇱🇨',
 },
-]
+];

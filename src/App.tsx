@@ -1,8 +1,9 @@
-import "./styles.css";
-import { dataLib } from "./Data/data";
-import { AppContentData, GlobalPageContent } from "./Data/AppContent";
-import { Typography } from "./Components/Typography/Typography";
-import { useState, useEffect } from "react";
+import './styles.css';
+import { dataLib } from './Data/data';
+import { AppContentData, GlobalPageContent } from './Data/AppContent';
+import { Typography } from './Components/Typography/Typography';
+import { useState, useEffect } from 'react';
+import React from 'react';
 
 const { headingH1 } = GlobalPageContent;
 const { titleH2 } = AppContentData.WordOfTheDayContent;
@@ -12,7 +13,7 @@ const sortedData = [...dataLib].sort(
 );
 
 export default function App() {
-  const borderClasses = "pr-2 mr-2 border border-black border-t-0 border-b-0 border-l-0"
+  const borderClasses = 'pr-2 mr-2 border border-black border-t-0 border-b-0 border-l-0'
   const [randomItem, setRandomItem] = useState(sortedData[0]);
 
   const getRandomItem = () => {
@@ -30,19 +31,19 @@ export default function App() {
       <Typography
         variant="h1"
         text={headingH1}
-        className={"text-5xl mb-20"}
+        className={'text-5xl mb-20'}
       />
 
       <Typography
         variant="h2"
         text={titleH2}
-        className={"text-3xl mb-4"}
+        className={'text-3xl mb-4'}
       />
 
       <Typography
         variant="h3"
         text={randomItem.word}
-        className={"text-8xl font-serif"}
+        className={'text-8xl font-serif'}
       />
 
       <section className="text-xl mb-4">
