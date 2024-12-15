@@ -1,12 +1,12 @@
 export const dataLibH = [{
-  word: "hach",
-  partOfSpeach: "",
-  definition: "axe",
-  egSentence: "",
-  synonym: "",
-  antonym: "",
-  crossReference: "",
-  etymology: "",
-  dialect: "🇱🇨",
+  word: 'hach',
+  partOfSpeach: 'N',
+  definition: 'axe',
+  egSentence: null,
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. hache]',
+  dialect: '🇱🇨',
 },
-]
+];

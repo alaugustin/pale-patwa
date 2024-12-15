@@ -1,12 +1,12 @@
 export const dataLibY = [{
-  word: "yanm",
-  partOfSpeach: "",
-  definition: "yam",
-  egSentence: "",
-  synonym: "",
-  antonym: "",
-  crossReference: "",
-  etymology: "",
-  dialect: "🇱🇨",
+  word: 'yanm',
+  partOfSpeach: 'N',
+  definition: 'yam',
+  egSentence: null,
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: null,
+  dialect: '🇱🇨',
 },
-]
+];

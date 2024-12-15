@@ -1,12 +1,12 @@
 export const dataLibV = [{
-  word: "vè",
-  partOfSpeach: "",
-  definition: "worm",
-  egSentence: "",
-  synonym: "",
-  antonym: "",
-  crossReference: "",
-  etymology: "",
-  dialect: "🇱🇨",
+  word: 'vè',
+  partOfSpeach: 'N',
+  definition: 'worm',
+  egSentence: null,
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. ver]',
+  dialect: '🇱🇨',
 },
-]
+];
