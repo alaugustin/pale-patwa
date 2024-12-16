@@ -1,6 +1,7 @@
 import React from 'react';
 import { dataLib } from './Data/data';
 import { AppContentData, GlobalPageContent } from './Data/AppContent';
+import WordOfTheDay from './Components/WordOfTheDay/WordOfTheDay';
 import { Typography } from './Components/Typography/Typography';
 import { useState, useEffect } from 'react';
 import './styles.css';
@@ -13,7 +14,6 @@ const sortedData = [...dataLib].sort(
 );
 
 export default function App() {
-  const borderClasses = 'pr-2 mr-2 border border-black border-t-0 border-b-0 border-l-0';
   const [randomItem, setRandomItem] = useState(sortedData[0]);
 
   const getRandomItem = () => {
@@ -30,53 +30,21 @@ export default function App() {
 
   return (
     <main className="flex items-center justify-center h-screen flex-col">
-      <Typography
-        variant="h1"
-        text={headingH1}
-        className={'text-5xl mb-20'}
-      />
-
-      <Typography
-        variant="h2"
-        text={titleH2}
-        className={'text-3xl mb-4'}
-      />
-
-      <Typography
-        variant="h3"
-        text={word}
-        className={'text-8xl font-serif mb-36'}
-      />
-
-      <section className="text-sm mb-5">
+      <header>
         <Typography
-          variant="span"
-          text={dialect}
-          className={
-            (etymology || partOfSpeach) ? `${borderClasses}` : ''
-          } />
+          variant="h1"
+          text={headingH1}
+          className={'text-5xl mb-20'}
+        />
+      </header>
 
-        {partOfSpeach && (
-          <Typography
-            variant="span"
-            text={partOfSpeach ?? ''}
-            className={
-              (etymology || partOfSpeach) ? `${etymology ? `${borderClasses}` : ''}` : ''
-            } />
-        )}
-
-        {randomItem.etymology ?
-          <Typography
-            variant="span"
-            text={etymology ?? ''}
-          /> : ''
-        }
-      </section>
-
-      <Typography
-        variant="p"
-        text={definition}
-        className="text-6xl font-thin"
+      <WordOfTheDay
+        headingH2={titleH2}
+        kweyoleWord={word}
+        dialect={dialect}
+        partOfSpeach={partOfSpeach}
+        etymology={etymology}
+        definition={definition}
       />
     </main>
   );
