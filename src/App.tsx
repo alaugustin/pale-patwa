@@ -21,6 +21,8 @@ export default function App() {
     setRandomItem(sortedData[randomIndex]);
   };
 
+  const { word, dialect, definition, partOfSpeach, etymology } = randomItem;
+
   useEffect(() => {
     const interval = setInterval(getRandomItem, 5000);
     return () => clearInterval(interval);
@@ -42,38 +44,38 @@ export default function App() {
 
       <Typography
         variant="h3"
-        text={randomItem.word}
-        className={'text-8xl font-serif'}
+        text={word}
+        className={'text-8xl font-serif mb-36'}
       />
 
-      <section className="text-xl mb-4">
+      <section className="text-sm mb-5">
         <Typography
           variant="span"
-          text={randomItem.dialect}
+          text={dialect}
           className={
-            (randomItem.etymology || randomItem.partOfSpeach) ? `${borderClasses}` : ''
+            (etymology || partOfSpeach) ? `${borderClasses}` : ''
           } />
 
-        {randomItem.partOfSpeach && (
+        {partOfSpeach && (
           <Typography
             variant="span"
-            text={randomItem.partOfSpeach ?? ''}
+            text={partOfSpeach ?? ''}
             className={
-              (randomItem.etymology || randomItem.partOfSpeach) ? `${randomItem.etymology ? `${borderClasses}` : ''}` : ''
+              (etymology || partOfSpeach) ? `${etymology ? `${borderClasses}` : ''}` : ''
             } />
         )}
 
         {randomItem.etymology ?
           <Typography
             variant="span"
-            text={randomItem.etymology ?? ''}
+            text={etymology ?? ''}
           /> : ''
         }
       </section>
 
       <Typography
         variant="p"
-        text={randomItem.definition}
+        text={definition}
         className="text-6xl font-thin"
       />
     </main>
