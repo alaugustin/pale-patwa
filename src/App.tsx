@@ -23,7 +23,7 @@ export default function App() {
     setRandomItem(sortedData[randomIndex]);
   };
 
-  const { word, dialect, definition, partOfSpeach, etymology } = randomItem;
+  const { word, dialect, definition, partOfSpeech, etymology } = randomItem;
 
   useEffect(() => {
     const interval = setInterval(getRandomItem, 5000);
@@ -41,7 +41,7 @@ export default function App() {
             dialect={dialect}
             etymology={etymology}
             kweyoleWord={word}
-            partOfSpeach={partOfSpeach}
+            partOfSpeech={partOfSpeech}
           />
 
           <section>

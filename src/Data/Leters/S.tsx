@@ -1,6 +1,6 @@
 export const dataLibS = [{
   word: 'souwi',
-  partOfSpeach: 'N',
+  partOfSpeech: 'N',
   definition: 'mouse',
   egSentence: null,
   synonym: null,

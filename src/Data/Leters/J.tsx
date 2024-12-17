@@ -1,6 +1,6 @@
 export const dataLibJ = [{
   word: 'jako',
-  partOfSpeach: 'N',
+  partOfSpeech: 'N',
   definition: 'St. Lucian parrot',
   egSentence: null,
   synonym: null,

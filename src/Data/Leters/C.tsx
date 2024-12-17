@@ -1,6 +1,6 @@
 export const dataLibC = [{
   word: 'chat',
-  partOfSpeach: 'N',
+  partOfSpeech: 'N',
   definition: 'cat',
   egSentence: null,
   synonym: null,
@@ -11,7 +11,7 @@ export const dataLibC = [{
 },
 {
   word: 'chèz',
-  partOfSpeach: 'N',
+  partOfSpeech: 'N',
   definition: 'chair',
   egSentence: null,
   synonym: null,

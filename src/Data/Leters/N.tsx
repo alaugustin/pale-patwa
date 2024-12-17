@@ -1,6 +1,6 @@
 export const dataLibN = [{
   word: 'né',
-  partOfSpeach: 'N',
+  partOfSpeech: 'N',
   definition: 'nose',
   egSentence: null,
   synonym: null,
@@ -10,7 +10,7 @@ export const dataLibN = [{
   dialect: '🇱🇨',
 }, {
   word: 'nich',
-  partOfSpeach: 'N',
+  partOfSpeech: 'N',
   definition: 'nest',
   egSentence: null,
   synonym: null,
