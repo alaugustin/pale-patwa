@@ -1,5 +1,6 @@
 import React from 'react';
 import { dataLib } from './Data/data';
+import { AppContentData } from './Data/AppContent';
 import Header from './Components/Header/Header';
 import WordOfTheDay from './Components/WordOfTheDay/WordOfTheDay';
 import { ListItem } from './Components/List/ListItem/ListItem';
@@ -7,9 +8,7 @@ import Footer from './Components/Footer/Footer';
 import { useState, useEffect } from 'react';
 import './styles.css';
 
-const { headingH1 } = GlobalPageContent;
-const { titleH2 } = AppContentData.WordOfTheDayContent;
-
+const { headingH1 } = AppContentData.globalPageContent;
 const sortedData = [...dataLib].sort(
   (a, b) => a.word.localeCompare(b.word)
 );
@@ -38,7 +37,6 @@ export default function App() {
 
         <main className="bg-yellow-400 pt-6 p-2 flex-1 flex items-center justify-center flex-col">
           <WordOfTheDay
-            headingH2={titleH2}
             definition={definition}
             dialect={dialect}
             etymology={etymology}
