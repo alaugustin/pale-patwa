@@ -3,6 +3,7 @@ import { dataLib } from './Data/data';
 import { AppContentData, GlobalPageContent } from './Data/AppContent';
 import WordOfTheDay from './Components/WordOfTheDay/WordOfTheDay';
 import { Typography } from './Components/Typography/Typography';
+import { ListItem } from './Components/List/ListItem/ListItem';
 import { useState, useEffect } from 'react';
 import './styles.css';
 
@@ -29,23 +30,45 @@ export default function App() {
   }, []);
 
   return (
-    <main className="flex items-center justify-center h-screen flex-col">
-      <header>
-        <Typography
-          variant="h1"
-          text={headingH1}
-          className={'text-5xl mb-20'}
-        />
-      </header>
+    <>
+      <div id="allHolder" className="flex flex-col h-screen max-w-6xl mx-auto">
+        <header className="bg-red-400 pt-6 p-2 basis-14 flex items-center">
+          <Typography
+            variant="h1"
+            text={headingH1}
+            className={'text-5xl mr-2'}
+          />
+          <span className='ml-2'>DAY_OF_WEEK, MONTH DAY_OF_MONTH, YEAR</span>
+        </header>
 
-      <WordOfTheDay
-        headingH2={titleH2}
-        kweyoleWord={word}
-        dialect={dialect}
-        partOfSpeach={partOfSpeach}
-        etymology={etymology}
-        definition={definition}
-      />
-    </main>
+        <main className="bg-yellow-400 pt-6 p-2 flex-1 flex items-center justify-center flex-col">
+          <WordOfTheDay
+            headingH2={titleH2}
+            definition={definition}
+            dialect={dialect}
+            etymology={etymology}
+            kweyoleWord={word}
+            partOfSpeach={partOfSpeach}
+          />
+
+          <section>
+            <ul className='flex max-w-4xl flex-wrap'>
+              {dataLib.map((element, index) => (
+                <ListItem
+                  key={index}
+                  word={element.word}
+                  hasLink={true}
+                  listItemClass='mr-2 mb-2'
+                />
+              ))}
+            </ul>
+          </section>
+        </main>
+
+        <footer className="bg-green-400 pt-6 p-2 basis-14 flex items-center">
+          <div id="copyRight">&copy; 202X Footer</div>
+        </footer>
+      </div>
+    </>
   );
 }

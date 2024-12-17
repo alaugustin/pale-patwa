@@ -13,8 +13,7 @@ export default function WordOfTheDay(props: any) {
   } = props;
 
   return (
-    <section className="flex items-center justify-center flex-col">
-
+    <section className="flex items-center justify-center flex-col mb-10">
       <Typography
         variant="h2"
         text={headingH2}
