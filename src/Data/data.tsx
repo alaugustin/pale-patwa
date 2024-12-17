@@ -18,6 +18,8 @@ import { dataLibW } from './Leters/W';
 import { dataLibY } from './Leters/Y';
 import { dataLibZ } from './Leters/Z';
 import { dataLibNum } from './Numbers/Numbers';
+import { dataDays } from './Days';
+import { dataMonths } from './Months';
 
 export const dataLib = [
   ...dataLibB,
@@ -40,5 +42,10 @@ export const dataLib = [
   ...dataLibY,
   ...dataLibZ,
   ...dataLibNum,
+  ...dataDays,
+  ...dataMonths,
 ];
-console.log(dataLib);
+
+export const SortedNumbers = dataLibNum.sort((a, b) => Number(a.definition) - Number(b.definition));
+
+export const SortedDictionary = dataLib.sort((a, b) => a.word.localeCompare(b.word));

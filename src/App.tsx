@@ -41,7 +41,7 @@ export default function App() {
           />
 
           <section>
-            <ul className='flex max-w-4xl flex-wrap'>
+            <ul className='flex max-w-4xl flex-wrap justify-center items-center'>
               {dataLib.map((element, index) => (
                 <ListItem
                   key={index}
