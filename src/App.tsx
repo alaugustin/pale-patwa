@@ -1,26 +1,22 @@
-import React from 'react';
-import { dataLib } from './Data/data';
+import React, { useState, useEffect } from 'react';
+import { dataLib, SortedDictionary } from './Data/data';
 import { AppContentData } from './Data/AppContent';
 import Header from './Components/Header/Header';
 import WordOfTheDay from './Components/WordOfTheDay/WordOfTheDay';
 import { ListItem } from './Components/List/ListItem/ListItem';
 import Footer from './Components/Footer/Footer';
-import { useState, useEffect } from 'react';
 import './styles.css';
 
 const { headingH1 } = AppContentData.globalPageContent;
-const sortedData = [...dataLib].sort(
-  (a, b) => a.word.localeCompare(b.word)
-);
 
 document.title = headingH1;
 
 export default function App() {
-  const [randomItem, setRandomItem] = useState(sortedData[0]);
+  const [randomItem, setRandomItem] = useState(SortedDictionary[0]);
 
   const getRandomItem = () => {
-    const randomIndex = Math.floor(Math.random() * sortedData.length);
-    setRandomItem(sortedData[randomIndex]);
+    const randomIndex = Math.floor(Math.random() * SortedDictionary.length);
+    setRandomItem(SortedDictionary[randomIndex]);
   };
 
   const { word, dialect, definition, partOfSpeech, etymology } = randomItem;
