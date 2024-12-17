@@ -14,6 +14,8 @@ const sortedData = [...dataLib].sort(
   (a, b) => a.word.localeCompare(b.word)
 );
 
+document.title = headingH1;
+
 export default function App() {
   const [randomItem, setRandomItem] = useState(sortedData[0]);
 
