@@ -1,9 +1,9 @@
 import React from 'react';
 import { dataLib } from './Data/data';
-import { AppContentData, GlobalPageContent } from './Data/AppContent';
+import Header from './Components/Header/Header';
 import WordOfTheDay from './Components/WordOfTheDay/WordOfTheDay';
-import { Typography } from './Components/Typography/Typography';
 import { ListItem } from './Components/List/ListItem/ListItem';
+import Footer from './Components/Footer/Footer';
 import { useState, useEffect } from 'react';
 import './styles.css';
 
@@ -34,14 +34,7 @@ export default function App() {
   return (
     <>
       <div id="allHolder" className="flex flex-col h-screen max-w-6xl mx-auto">
-        <header className="bg-red-400 pt-6 p-2 basis-14 flex items-center">
-          <Typography
-            variant="h1"
-            text={headingH1}
-            className={'text-5xl mr-2'}
-          />
-          <span className='ml-2'>DAY_OF_WEEK, MONTH DAY_OF_MONTH, YEAR</span>
-        </header>
+        <Header />
 
         <main className="bg-yellow-400 pt-6 p-2 flex-1 flex items-center justify-center flex-col">
           <WordOfTheDay
@@ -67,9 +60,7 @@ export default function App() {
           </section>
         </main>
 
-        <footer className="bg-green-400 pt-6 p-2 basis-14 flex items-center">
-          <div id="copyRight">&copy; 202X Footer</div>
-        </footer>
+        <Footer />
       </div>
     </>
   );
