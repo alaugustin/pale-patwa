@@ -26,7 +26,7 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
       <Typography
         variant="h3"
         text={kweyoleWord}
-        className={'text-8xl font-serif mb-2'}
+        className={'text-8xl font-serif mb-2 font-bold'}
       />
 
       <section className="text-sm mb-8">

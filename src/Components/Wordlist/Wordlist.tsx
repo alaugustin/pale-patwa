@@ -1,15 +1,26 @@
 import React from 'react';
 import List from '../List/List';
 import { Typography } from '../Typography/Typography';
-import { IListWordDataProps } from './Wordlist.d';
+import { AppContentData } from '../../Data/AppContent';
+import { IWordlistProps } from './Wordlist.d';
 
-export default function WordList({ data }: { data: IListWordDataProps[] }) {
+const { libraryTitleH2 } = AppContentData.libraryContent;
+
+export default function WordList({ data }: IWordlistProps) {
 
   return (
     <section className='flex flex-col justify-center items-center'>
-      <Typography variant='h2' className='text-3xl mb-4' text={'Library'} />
+      <Typography
+        variant='h2'
+        className='text-3xl mb-4'
+        text={libraryTitleH2}
+      />
 
-      <List data={data} />
+      <List
+        data={data}
+        linkClass='flex max-w-4xl flex-wrap justify-center items-center'
+        hasLink={true}
+      />
     </section>
   );
 }

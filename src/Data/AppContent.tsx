@@ -7,4 +7,8 @@ const wordOfTheDayContent = {
   wodTitleH2: 'Word of the Day',
 };
 
-export const AppContentData = { globalPageContent, wordOfTheDayContent };
+const libraryContent = {
+  libraryTitleH2: 'Library',
+};
+
+export const AppContentData = { globalPageContent, wordOfTheDayContent, libraryContent };
