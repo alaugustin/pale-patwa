@@ -3,7 +3,7 @@ import { dataLib, SortedDictionary } from './Data/data';
 import { AppContentData } from './Data/AppContent';
 import Header from './Components/Header/Header';
 import WordOfTheDay from './Components/WordOfTheDay/WordOfTheDay';
-import WordList from './Wordlist';
+import WordList from './Components/Wordlist/Wordlist';
 import Footer from './Components/Footer/Footer';
 import './styles.css';
 
