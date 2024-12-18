@@ -1,10 +1,11 @@
 import React from 'react';
 import { Typography } from '../Typography/Typography';
 import { AppContentData } from '../../Data/AppContent';
+import { IWordOfTheDayProps } from './WordOfTheDay.d';
 
 const { wodTitleH2 } = AppContentData.wordOfTheDayContent;
 
-export default function WordOfTheDay(props: any) {
+export default function WordOfTheDay(props: IWordOfTheDayProps) {
   const borderClasses = 'pr-2 mr-2 border border-black border-t-0 border-b-0 border-l-0';
   const {
     kweyoleWord,

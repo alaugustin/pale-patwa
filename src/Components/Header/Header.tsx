@@ -46,7 +46,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="bg-red-400 pt-6 p-2 basis-14 flex items-center">
+    <header className="bg-red-400 pt-6 p-2 basis-14 flex items-center justify-between">
       <Typography
         variant="h1"
         text={mainHeading}
