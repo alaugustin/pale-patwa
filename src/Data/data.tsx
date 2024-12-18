@@ -19,8 +19,8 @@ import { dataLibW } from './Leters/W';
 import { dataLibY } from './Leters/Y';
 import { dataLibZ } from './Leters/Z';
 import { dataLibNum } from './Numbers/Numbers';
-import { dataDays } from './Days';
-import { dataMonths } from './Months';
+import { dataDays } from './Calendar/Days';
+import { dataMonths } from './Calendar/Months';
 
 export const dataLib = [
   ...dataLibB,

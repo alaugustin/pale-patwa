@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { AppContentData } from '../../Data/AppContent';
 import { Typography } from '../Typography/Typography';
-import { dataDays } from '../../Data/Days';
-import { dataMonths } from '../../Data/Months';
+import { dataDays } from '../../Data/Calendar/Days';
+import { dataMonths } from '../../Data/Calendar/Months';
 
 const { mainHeading, date } = AppContentData.globalPageContent;
 
