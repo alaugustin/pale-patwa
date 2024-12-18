@@ -7,9 +7,9 @@ import { ListItem } from './Components/List/ListItem/ListItem';
 import Footer from './Components/Footer/Footer';
 import './styles.css';
 
-const { headingH1 } = AppContentData.globalPageContent;
+const { mainHeading } = AppContentData.globalPageContent;
 
-document.title = headingH1;
+document.title = mainHeading;
 
 export default function App() {
   const [randomItem, setRandomItem] = useState(SortedDictionary[0]);

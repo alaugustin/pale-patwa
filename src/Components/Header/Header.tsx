@@ -2,16 +2,16 @@ import React, { useEffect, useState } from 'react';
 import { AppContentData } from '../../Data/AppContent';
 import { Typography } from '../Typography/Typography';
 
-const { headingH1 } = AppContentData.globalPageContent;
+const { mainHeading, date } = AppContentData.globalPageContent;
 
 const kweyolDays = {
   'Sunday': 'Dimanch',
   'Monday': 'Lendi',
   'Tuesday': 'Madi',
-  'Wednesday': 'Mèkredi',
-  'Thursday': 'Jedi',
-  'Friday': 'Vandredi',
-  'Saturday': 'Samdi'
+  'Wednesday': 'Mèkwédi',
+  'Thursday': 'Jédi',
+  'Friday': 'Vandwédi',
+  'Saturday': 'Sanmdi'
 };
 
 const kweyolMonths = {
@@ -35,7 +35,6 @@ export default function Header() {
   const [currentDate, setCurrentDate] = useState('');
 
   useEffect(() => {
-    const date = new Date();
     const dayName = date.toLocaleDateString('en-US', { weekday: 'long' });
     const month = date.toLocaleDateString('en-US', { month: 'long' });
     const dayOfMonth = date.getDate();
@@ -50,7 +49,7 @@ export default function Header() {
     <header className="bg-red-400 pt-6 p-2 basis-14 flex items-center">
       <Typography
         variant="h1"
-        text={headingH1}
+        text={mainHeading}
         className={'text-5xl mr-2'}
       />
       <span className='ml-2'>{currentDay}, {currentMonth} {currentDate}</span>

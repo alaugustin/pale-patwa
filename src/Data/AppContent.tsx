@@ -1,5 +1,6 @@
 const globalPageContent = {
-  headingH1: 'Palé Kwéyòl',
+  mainHeading: 'Palé Kwéyòl',
+  date: new Date()
 };
 
 const wordOfTheDayContent = {
