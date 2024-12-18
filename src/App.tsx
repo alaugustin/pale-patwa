@@ -3,7 +3,7 @@ import { dataLib, SortedDictionary } from './Data/data';
 import { AppContentData } from './Data/AppContent';
 import Header from './Components/Header/Header';
 import WordOfTheDay from './Components/WordOfTheDay/WordOfTheDay';
-import { ListItem } from './Components/List/ListItem/ListItem';
+import WordList from './Wordlist';
 import Footer from './Components/Footer/Footer';
 import './styles.css';
 
@@ -40,18 +40,7 @@ export default function App() {
             partOfSpeech={partOfSpeech}
           />
 
-          <section>
-            <ul className='flex max-w-4xl flex-wrap justify-center items-center'>
-              {dataLib.map((element, index) => (
-                <ListItem
-                  key={index}
-                  word={element.word}
-                  hasLink={true}
-                  listItemClass='mr-2 mb-2'
-                />
-              ))}
-            </ul>
-          </section>
+          <WordList data={dataLib} />
         </main>
 
         <Footer />
