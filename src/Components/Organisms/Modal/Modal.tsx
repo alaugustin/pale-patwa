@@ -1,6 +1,7 @@
 import React from 'react';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Typography } from '../../Typography/Typography';
+import WordAttributes from '../WordAttributes/WordAttributes';
 import { IModalProps } from './Modal.d';
 
 export default function Modal({
@@ -13,7 +14,17 @@ export default function Modal({
       <BlockElement className='bg-white p-6 rounded-lg shadow-xl max-w-md'>
         <Typography variant='h2' className="text-xl font-bold mb-4">{modalTitle}</Typography>
         <BlockElement className='mb-4'>
-          <p>Word details go here</p>
+          <Typography variant='p' className='mb-4'>
+            {'N Monday Mwen hayi alé twavay lé Lendi-a'}
+          </Typography>
+
+          <WordAttributes
+            wordEtymology={'[< Fr. lundi]'}
+            wordPartOfSpeech={'N'}
+            wordDialect={'🇱🇨'}
+            borderClasses={'borderClasses'}
+            containerClasses='text-sm mb-8'
+          />
         </BlockElement>
         <button
           onClick={clickHandler}
