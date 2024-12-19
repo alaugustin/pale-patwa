@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { dataLib, SortedDictionary } from './Data/data';
 import { AppContentData } from './Data/AppContent';
 import Header from './Components/Header/Header';
-import WordOfTheDay from './Components/WordOfTheDay/WordOfTheDay';
-import WordList from './Components/Wordlist/Wordlist';
+import { Main } from './Components/Main/Main';
 import Footer from './Components/Footer/Footer';
 import './styles.css';
 
@@ -19,8 +18,6 @@ export default function App() {
     setRandomItem(SortedDictionary[randomIndex]);
   };
 
-  const { word, dialect, definition, partOfSpeech, etymology } = randomItem;
-
   useEffect(() => {
     const interval = setInterval(getRandomItem, 5000);
     return () => clearInterval(interval);
@@ -31,17 +28,11 @@ export default function App() {
       <div id="allHolder" className="flex flex-col h-screen max-w-6xl mx-auto">
         <Header />
 
-        <main className="bg-yellow-400 pt-6 p-2 flex-1 flex items-center justify-center flex-col">
-          <WordOfTheDay
-            definition={definition}
-            dialect={dialect}
-            etymology={etymology}
-            kweyoleWord={word}
-            partOfSpeech={partOfSpeech}
-          />
-
-          <WordList data={dataLib} />
-        </main>
+        <Main
+          mainContainerClass='bg-yellow-400 pt-6 p-2 flex-1 flex items-center justify-center flex-col'
+          wordOfTheDayData={randomItem}
+          wordListData={dataLib}
+        />
 
         <Footer />
       </div>

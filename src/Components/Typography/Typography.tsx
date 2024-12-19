@@ -3,6 +3,7 @@ import { ITypographyProps } from './Typography.d';
 
 export const Typography = (props: ITypographyProps) => {
   let tbdvarname;
+
   switch (props.variant) {
   case 'h1':
     tbdvarname = <h1 className={props.className}>{props.text}</h1>;
