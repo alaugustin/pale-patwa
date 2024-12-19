@@ -1,4 +1,3 @@
-import React from 'react';
 import { dataLibB } from './Leters/B';
 import { dataLibC } from './Leters/C';
 import { dataLibD } from './Leters/D';
