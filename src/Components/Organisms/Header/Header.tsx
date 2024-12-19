@@ -3,7 +3,7 @@ import { AppContentData } from '../../../Data/AppContent';
 import { Typography } from '../../Typography/Typography';
 import { dataDays } from '../../../Data/Calendar/Days';
 import { dataMonths } from '../../../Data/Calendar/Months';
-import { BlockElement } from '../BlockLevel/BlockElement';
+import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { IHeaderProps } from './Header.d';
 
 const { mainHeading, date } = AppContentData.globalPageContent;

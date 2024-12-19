@@ -1,7 +1,11 @@
 import React from 'react';
 import { ITypographyProps } from './Typography.d';
 
-export const Typography: React.FC<ITypographyProps> = ({ variant, className, children }) => {
+export const Typography = ({
+  variant,
+  className,
+  children
+}: ITypographyProps) => {
   const elements = {
     h1: 'h1',
     h2: 'h2',

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { dataLib, SortedDictionary } from './Data/data';
 import { AppContentData } from './Data/AppContent';
-import Header from './Components/UI/Header/Header';
-import { Main } from './Components/UI/Main/Main';
-import Footer from './Components/UI/Footer/Footer';
+import Header from './Components/Organisms/Header/Header';
+import { Main } from './Components/Organisms/Main/Main';
+import Footer from './Components/Organisms/Footer/Footer';
 import { BlockElement } from './Components/UI/BlockLevel/BlockElement';
 import './styles.css';
 

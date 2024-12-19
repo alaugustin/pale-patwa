@@ -1,5 +1,5 @@
 import React from 'react';
-import { BlockElement } from '../BlockLevel/BlockElement';
+import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { IFooterProps } from './Footer.d';
 
 export default function Footer({

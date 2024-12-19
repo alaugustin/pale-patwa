@@ -1,7 +1,12 @@
 import React from 'react';
 import { IBlockElementProps } from './BlockElement.d';
 
-export const BlockElement: React.FC<IBlockElementProps> = ({ variant, className, children, id }) => {
+export const BlockElement = ({
+  variant,
+  className,
+  children,
+  id }: IBlockElementProps
+) => {
   const elements = {
     footer: 'footer',
     section: 'section',
