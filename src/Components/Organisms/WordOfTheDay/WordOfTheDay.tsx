@@ -1,8 +1,8 @@
 import React from 'react';
-import { Typography } from '../Typography/Typography';
-import { AppContentData } from '../../Data/AppContent';
+import { Typography } from '../../Typography/Typography';
+import { AppContentData } from '../../../Data/AppContent';
+import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { IWordOfTheDayProps } from './WordOfTheDay.d';
-import { BlockElement } from '../UI/BlockLevel/BlockElement';
 
 const { wodTitleH2 } = AppContentData.wordOfTheDayContent;
 

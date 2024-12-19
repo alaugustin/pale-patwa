@@ -1,4 +1,4 @@
-import { IListWordDataProps } from '../../Wordlist/Wordlist.d';
+import { IListWordDataProps } from '../../Organisms/Wordlist/Wordlist.d';
 
 export interface IMainProps {
   mainContainerClass: string;

@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import List from '../UI/List/List';
-import { Typography } from '../Typography/Typography';
-import { AppContentData } from '../../Data/AppContent';
+import List from '../../UI/List/List';
+import { Typography } from '../../Typography/Typography';
+import { AppContentData } from '../../../Data/AppContent';
+import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { IWordlistProps } from './Wordlist.d';
-import { BlockElement } from '../UI/BlockLevel/BlockElement';
 
 const { libraryTitleH2 } = AppContentData.libraryContent;
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import WordOfTheDay from '../../WordOfTheDay/WordOfTheDay';
-import WordList from '../../Wordlist/Wordlist';
+import WordOfTheDay from '../../Organisms/WordOfTheDay/WordOfTheDay';
+import WordList from '../../Organisms/Wordlist/Wordlist';
 import { IMainProps } from './Main.d';
 import { BlockElement } from '../BlockLevel/BlockElement';
 
