@@ -1,6 +1,6 @@
 export const dataLibD = [{
   word: 'dan',
-  partOfSpeach: 'N',
+  partOfSpeech: 'N',
   definition: 'tooth',
   egSentence: null,
   synonym: null,
@@ -11,7 +11,7 @@ export const dataLibD = [{
 },
 {
   word: 'djól',
-  partOfSpeach: 'N',
+  partOfSpeech: 'N',
   definition: 'mouth or snout of an animal',
   egSentence: null,
   synonym: null,

@@ -1,6 +1,6 @@
 export const dataLibV = [{
   word: 'vè',
-  partOfSpeach: 'N',
+  partOfSpeech: 'N',
   definition: 'worm',
   egSentence: null,
   synonym: null,

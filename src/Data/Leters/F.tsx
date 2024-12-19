@@ -1,6 +1,6 @@
 export const dataLibF = [{
   word: 'fèt',
-  partOfSpeach: 'N',
+  partOfSpeech: 'N',
   definition: 'party, celebration, feast',
   egSentence: null,
   synonym: null,

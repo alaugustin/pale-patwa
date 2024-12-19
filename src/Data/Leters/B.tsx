@@ -1,6 +1,6 @@
 export const dataLibB = [{
   word: 'bak',
-  partOfSpeach: 'N',
+  partOfSpeech: 'N',
   definition: 'river crab',
   egSentence: null,
   synonym: null,
@@ -10,7 +10,7 @@ export const dataLibB = [{
   dialect: '🇱🇨',
 }, {
   word: 'bèf',
-  partOfSpeach: 'N',
+  partOfSpeech: 'N',
   definition: 'cow, cattle',
   egSentence: null,
   synonym: null,
@@ -20,7 +20,7 @@ export const dataLibB = [{
   dialect: '🇱🇨',
 }, {
   word: 'bonbon',
-  partOfSpeach: 'N',
+  partOfSpeech: 'N',
   definition: 'cake',
   egSentence: null,
   synonym: null,

@@ -1,6 +1,6 @@
 export const dataLibM = [{
   word: 'mouton',
-  partOfSpeach: 'N',
+  partOfSpeech: 'N',
   definition: 'sheep',
   egSentence: null,
   synonym: null,

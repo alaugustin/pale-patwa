@@ -1,3 +1,4 @@
+import React from 'react';
 import { dataLibB } from './Leters/B';
 import { dataLibC } from './Leters/C';
 import { dataLibD } from './Leters/D';
@@ -18,6 +19,8 @@ import { dataLibW } from './Leters/W';
 import { dataLibY } from './Leters/Y';
 import { dataLibZ } from './Leters/Z';
 import { dataLibNum } from './Numbers/Numbers';
+import { dataDays } from './Calendar/Days';
+import { dataMonths } from './Calendar/Months';
 
 export const dataLib = [
   ...dataLibB,
@@ -40,5 +43,11 @@ export const dataLib = [
   ...dataLibY,
   ...dataLibZ,
   ...dataLibNum,
+  ...dataDays,
+  ...dataMonths,
 ];
-console.log(dataLib);
+
+export const SortedNumbers = dataLibNum.sort((a, b) => Number(a.definition) - Number(b.definition)); // implement sorting helper function
+
+export const SortedDictionary = dataLib.sort((a, b) => a.word.localeCompare(b.word)); // implement sorting helper function
+

@@ -1,24 +1,21 @@
-import React from 'react';
-import { dataLib } from './Data/data';
-import { AppContentData, GlobalPageContent } from './Data/AppContent';
-import { Typography } from './Components/Typography/Typography';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import { dataLib, SortedDictionary } from './Data/data';
+import { AppContentData } from './Data/AppContent';
+import Header from './Components/UI/Header/Header';
+import { Main } from './Components/UI/Main/Main';
+import Footer from './Components/UI/Footer/Footer';
 import './styles.css';
 
-const { headingH1 } = GlobalPageContent;
-const { titleH2 } = AppContentData.WordOfTheDayContent;
+const { mainHeading, date } = AppContentData.globalPageContent;
 
-const sortedData = [...dataLib].sort(
-  (a, b) => a.word.localeCompare(b.word)
-);
+document.title = mainHeading;
 
 export default function App() {
-  const borderClasses = 'pr-2 mr-2 border border-black border-t-0 border-b-0 border-l-0';
-  const [randomItem, setRandomItem] = useState(sortedData[0]);
+  const [randomItem, setRandomItem] = useState(SortedDictionary[0]);
 
   const getRandomItem = () => {
-    const randomIndex = Math.floor(Math.random() * sortedData.length);
-    setRandomItem(sortedData[randomIndex]);
+    const randomIndex = Math.floor(Math.random() * SortedDictionary.length);
+    setRandomItem(SortedDictionary[randomIndex]);
   };
 
   useEffect(() => {
@@ -26,56 +23,29 @@ export default function App() {
     return () => clearInterval(interval);
   }, []);
 
+  const [year, setYear] = useState(date.getFullYear());
+
+  useEffect(() => {
+    setYear(date.getFullYear());
+  }, []);
+
   return (
-    <main className="flex items-center justify-center h-screen flex-col">
-      <Typography
-        variant="h1"
-        text={headingH1}
-        className={'text-5xl mb-20'}
-      />
+    <>
+      <div id="allHolder" className="flex flex-col h-screen max-w-6xl mx-auto">
+        <Header headerContainerClass='bg-red-400 pt-6 p-2 basis-14 flex items-center justify-between' />
 
-      <Typography
-        variant="h2"
-        text={titleH2}
-        className={'text-3xl mb-4'}
-      />
+        <Main
+          mainContainerClass='bg-yellow-400 pt-6 p-2 flex-1 flex items-center justify-center flex-col'
+          wordOfTheDayData={randomItem}
+          wordListData={dataLib}
+        />
 
-      <Typography
-        variant="h3"
-        text={randomItem.word}
-        className={'text-8xl font-serif'}
-      />
-
-      <section className="text-xl mb-4">
-        <Typography
-          variant="span"
-          text={randomItem.dialect}
-          className={
-            (randomItem.etymology || randomItem.partOfSpeach) ? `${borderClasses}` : ''
-          } />
-
-        {randomItem.partOfSpeach && (
-          <Typography
-            variant="span"
-            text={randomItem.partOfSpeach ?? ''}
-            className={
-              (randomItem.etymology || randomItem.partOfSpeach) ? `${randomItem.etymology ? `${borderClasses}` : ''}` : ''
-            } />
-        )}
-
-        {randomItem.etymology ?
-          <Typography
-            variant="span"
-            text={randomItem.etymology ?? ''}
-          /> : ''
-        }
-      </section>
-
-      <Typography
-        variant="p"
-        text={randomItem.definition}
-        className="text-6xl font-thin"
-      />
-    </main>
+        <Footer
+          footerContainerClass='bg-green-400 pt-6 p-2 basis-14 flex items-center'
+          currentYear={year}
+          siteName={mainHeading}
+        />
+      </div>
+    </>
   );
 }

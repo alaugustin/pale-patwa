@@ -1,6 +1,6 @@
 export const dataLibH = [{
   word: 'hach',
-  partOfSpeach: 'N',
+  partOfSpeech: 'N',
   definition: 'axe',
   egSentence: null,
   synonym: null,

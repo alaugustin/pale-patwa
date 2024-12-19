@@ -1,6 +1,6 @@
 export const dataLibG = [{
   word: 'gason',
-  partOfSpeach: 'N',
+  partOfSpeech: 'N',
   definition: 'son, boy',
   egSentence: null,
   synonym: null,

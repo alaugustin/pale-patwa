@@ -1,9 +1,14 @@
-export const GlobalPageContent = {
-  headingH1: 'Palé Kwéyòl',
+const globalPageContent = {
+  mainHeading: 'Palé Kwéyòl',
+  date: new Date()
 };
 
-export const WordOfTheDayContent = {
-  titleH2: 'Word of the Day',
+const wordOfTheDayContent = {
+  wodTitleH2: 'Word of the Day',
 };
 
-export const AppContentData = { GlobalPageContent, WordOfTheDayContent };
+const libraryContent = {
+  libraryTitleH2: 'Library',
+};
+
+export const AppContentData = { globalPageContent, wordOfTheDayContent, libraryContent };
