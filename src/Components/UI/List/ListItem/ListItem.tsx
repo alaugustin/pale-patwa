@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Modal from '../../../Organisms/Wordlist/Modal/Modal';
+import Modal from '../../../Organisms/Modal/Modal';
 import { IListItemProps } from './ListItem.d';
 
 export const ListItem = ({

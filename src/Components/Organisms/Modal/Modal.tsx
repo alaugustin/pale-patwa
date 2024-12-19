@@ -1,6 +1,6 @@
 import React from 'react';
-import { BlockElement } from '../../../UI/BlockLevel/BlockElement';
-import { Typography } from '../../../Typography/Typography';
+import { BlockElement } from '../../UI/BlockLevel/BlockElement';
+import { Typography } from '../../Typography/Typography';
 import { IModalProps } from './Modal.d';
 
 export default function Modal({
