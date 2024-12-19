@@ -1,9 +1,13 @@
 import React from 'react';
-import WordOfTheDay from '../WordOfTheDay/WordOfTheDay';
-import WordList from '../Wordlist/Wordlist';
+import WordOfTheDay from '../../WordOfTheDay/WordOfTheDay';
+import WordList from '../../Wordlist/Wordlist';
 import { IMainProps } from './Main.d';
 
-export const Main = ({ mainContainerClass, wordOfTheDayData, wordListData }: IMainProps) => {
+export const Main = ({
+  mainContainerClass,
+  wordOfTheDayData,
+  wordListData
+}: IMainProps) => {
   const {
     definition,
     dialect,

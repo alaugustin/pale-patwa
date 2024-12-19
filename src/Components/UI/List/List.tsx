@@ -1,5 +1,5 @@
 import React from 'react';
-import { ListItem } from '../../Components/List/ListItem/ListItem';
+import { ListItem } from './ListItem/ListItem';
 import { IListProps } from './List.d';
 
 export default function List({
@@ -7,6 +7,7 @@ export default function List({
   linkClass,
   hasLink
 }: IListProps) {
+
   return (
     <ul className={linkClass}>
       {data?.map((element, index) => (

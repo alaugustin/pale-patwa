@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { AppContentData } from '../../Data/AppContent';
-import { Typography } from '../Typography/Typography';
-import { dataDays } from '../../Data/Calendar/Days';
-import { dataMonths } from '../../Data/Calendar/Months';
+import { AppContentData } from '../../../Data/AppContent';
+import { Typography } from '../../Typography/Typography';
+import { dataDays } from '../../../Data/Calendar/Days';
+import { dataMonths } from '../../../Data/Calendar/Months';
+import { IHeaderProps } from './Header.d';
 
 const { mainHeading, date } = AppContentData.globalPageContent;
 
@@ -31,7 +32,7 @@ const kweyolMonths = {
   'December': dataMonths[11].word
 };
 
-export default function Header() {
+export default function Header({ headerContainerClass }: IHeaderProps) {
   const [currentDay, setCurrentDay] = useState('');
   const [currentMonth, setCurrentMonth] = useState('');
   const [currentYear, setCurrentYear] = useState('');
@@ -50,7 +51,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="bg-red-400 pt-6 p-2 basis-14 flex items-center justify-between">
+    <header className={headerContainerClass}>
       <Typography
         variant="h1"
         text={mainHeading}

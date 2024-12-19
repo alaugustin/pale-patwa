@@ -1,5 +1,5 @@
 import React from 'react';
-import List from '../List/List';
+import List from '../UI/List/List';
 import { Typography } from '../Typography/Typography';
 import { AppContentData } from '../../Data/AppContent';
 import { IWordlistProps } from './Wordlist.d';
