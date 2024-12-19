@@ -4,6 +4,7 @@ import { Typography } from '../../Typography/Typography';
 import { dataDays } from '../../../Data/Calendar/Days';
 import { dataMonths } from '../../../Data/Calendar/Months';
 import { IHeaderProps } from './Header.d';
+import { BlockElement } from '../BlockLevel/BlockElement';
 
 const { mainHeading, date } = AppContentData.globalPageContent;
 
@@ -50,14 +51,16 @@ export default function Header({ headerContainerClass }: IHeaderProps) {
     setCurrentDayOfMonth(`${dayOfMonth}`);
   }, []);
 
+  const headerDate = `${currentDay}, ${currentDayOfMonth} ${currentMonth}, ${currentYear}`;
+
   return (
-    <header className={headerContainerClass}>
+    <BlockElement variant='header' className={headerContainerClass}>
       <Typography
         variant="h1"
-        text={mainHeading}
         className={'text-5xl mr-2'}
-      />
-      <span className='ml-2'>{currentDay}, {currentDayOfMonth} {currentMonth}, {currentYear}</span>
-    </header>
+      >{mainHeading}</Typography>
+
+      <Typography variant='span' className='ml-2'>{headerDate}</Typography>
+    </BlockElement>
   );
 }

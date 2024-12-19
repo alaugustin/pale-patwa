@@ -3,6 +3,7 @@ import List from '../UI/List/List';
 import { Typography } from '../Typography/Typography';
 import { AppContentData } from '../../Data/AppContent';
 import { IWordlistProps } from './Wordlist.d';
+import { BlockElement } from '../UI/BlockLevel/BlockElement';
 
 const { libraryTitleH2 } = AppContentData.libraryContent;
 
@@ -16,12 +17,11 @@ export default function WordList({ data }: IWordlistProps) {
   );
 
   return (
-    <section className='flex flex-col justify-center items-center'>
+    <BlockElement variant='section' className='flex flex-col justify-center items-center'>
       <Typography
         variant='h2'
         className='text-3xl mb-4'
-        text={libraryTitleH2}
-      />
+      >{libraryTitleH2}</Typography>
 
       <input
         type="text"
@@ -36,6 +36,6 @@ export default function WordList({ data }: IWordlistProps) {
         linkClass='flex max-w-4xl flex-wrap justify-center items-center'
         hasLink={true}
       />
-    </section>
+    </BlockElement>
   );
 }

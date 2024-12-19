@@ -1,6 +1,6 @@
 import React from 'react';
-import { IFooterProps } from './Footer.d';
 import { BlockElement } from '../BlockLevel/BlockElement';
+import { IFooterProps } from './Footer.d';
 
 export default function Footer({
   footerContainerClass,

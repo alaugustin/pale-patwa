@@ -2,6 +2,7 @@ import React from 'react';
 import { Typography } from '../Typography/Typography';
 import { AppContentData } from '../../Data/AppContent';
 import { IWordOfTheDayProps } from './WordOfTheDay.d';
+import { BlockElement } from '../UI/BlockLevel/BlockElement';
 
 const { wodTitleH2 } = AppContentData.wordOfTheDayContent;
 
@@ -16,49 +17,43 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
   } = props;
 
   return (
-    <section className="flex items-center justify-center flex-col mb-10">
+    <BlockElement variant='section' className='flex items-center justify-center flex-col mb-10'>
       <Typography
         variant="h2"
-        text={wodTitleH2}
         className={'text-3xl mb-4'}
-      />
+      >{wodTitleH2}</Typography>
 
       <Typography
         variant="h3"
-        text={kweyoleWord}
         className={'text-8xl font-serif mb-2 font-bold'}
-      />
+      >{kweyoleWord}</Typography>
 
-      <section className="text-sm mb-8">
+      <BlockElement variant='section' className='text-sm mb-8'>
         <Typography
           variant="span"
-          text={dialect}
           className={
             (etymology || partOfSpeech) ? `${borderClasses}` : ''
-          } />
+          } >{dialect}</Typography>
 
         {partOfSpeech && (
           <Typography
             variant="span"
-            text={partOfSpeech ?? ''}
             className={
               (etymology || partOfSpeech) ? `${etymology ? `${borderClasses}` : ''}` : ''
-            } />
+            } >{partOfSpeech ?? ''}</Typography>
         )}
 
         {etymology ?
           <Typography
             variant="span"
-            text={etymology ?? ''}
-          /> : ''
+          >{etymology ?? ''}</Typography> : ''
         }
-      </section>
+      </BlockElement>
 
       <Typography
         variant="p"
-        text={definition}
         className="text-6xl font-thin"
-      />
-    </section>
+      >{definition}</Typography>
+    </BlockElement>
   );
 }

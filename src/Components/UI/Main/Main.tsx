@@ -2,6 +2,7 @@ import React from 'react';
 import WordOfTheDay from '../../WordOfTheDay/WordOfTheDay';
 import WordList from '../../Wordlist/Wordlist';
 import { IMainProps } from './Main.d';
+import { BlockElement } from '../BlockLevel/BlockElement';
 
 export const Main = ({
   mainContainerClass,
@@ -17,7 +18,7 @@ export const Main = ({
   } = wordOfTheDayData;
 
   return (
-    <main className={mainContainerClass}>
+    <BlockElement variant='main' className={mainContainerClass}>
       <WordOfTheDay
         definition={definition}
         dialect={dialect}
@@ -27,6 +28,6 @@ export const Main = ({
       />
 
       <WordList data={wordListData} />
-    </main>
+    </BlockElement>
   );
 };
