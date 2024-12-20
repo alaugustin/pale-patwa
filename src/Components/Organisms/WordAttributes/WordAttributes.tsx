@@ -25,7 +25,7 @@ export default function WordAttributes({
           variant="span"
           className={
             (wordEtymology || wordPartOfSpeech)
-              ? `${wordEtymology ? `${borderClasses}` : ''}`
+              ? `${wordEtymology ? `${borderClasses} font-mono` : ''}`
               : ''
           } >{wordPartOfSpeech ?? ''}</Typography>
       )}

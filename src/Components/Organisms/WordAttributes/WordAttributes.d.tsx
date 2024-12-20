@@ -1,7 +1,7 @@
 export interface IWordAttributesProps {
-  wordEtymology: string | null;
-  wordPartOfSpeech: string | null;
-  borderClasses?: string | null;
-  wordDialect: string | null;
+  wordEtymology: string | null | undefined;
+  wordPartOfSpeech: string | null | undefined;
+  borderClasses?: string | null | undefined;
+  wordDialect: string | null | undefined;
   containerClasses?: string | undefined;
 }

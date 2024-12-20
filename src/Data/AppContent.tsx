@@ -9,6 +9,7 @@ const wordOfTheDayContent = {
 
 const libraryContent = {
   libraryTitleH2: 'Library',
+  inputPlaceholder: 'Search words…'
 };
 
 export const AppContentData = { globalPageContent, wordOfTheDayContent, libraryContent };

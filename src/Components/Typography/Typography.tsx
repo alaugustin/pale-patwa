@@ -11,7 +11,8 @@ export const Typography = ({
     h2: 'h2',
     h3: 'h3',
     span: 'span',
-    p: 'p'
+    p: 'p',
+    strong: 'strong',
   } as const;
 
   const Element = variant && variant in elements ?

@@ -32,7 +32,7 @@ export const dataMonths = [{
   word: 'Avwi',
   partOfSpeech: 'N',
   definition: 'April',
-  egSentence: null,
+  egSentence: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
   synonym: null,
   antonym: null,
   crossReference: null,
