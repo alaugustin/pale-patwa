@@ -9,6 +9,10 @@ A dynamic React application that displays random dictionary entries with a clean
 - Responsive three-panel layout with header, main content, and footer
 - Built with React and TypeScript
 - Styled with Tailwind CSS
+- Modal system for detailed word viewing
+- Search functionality in dictionary list
+- Dynamic word attributes display
+- Etymology and part of speech indicators
 
 ## Component Structure
 
@@ -24,6 +28,8 @@ The app uses a three-part layout:
 - Auto-updating year in footer
 - Dynamic page title setting
 - Library word filter
+- **Modal**: Displays detailed word information with etymology and examples
+- **WordAttributes**: Shows linguistic metadata for each word entry
 
 ## Styling
 
@@ -40,6 +46,12 @@ Uses Tailwind CSS classes for:
 - Utilizes `SortedDictionary` for random word selection
 - Implements `dataLib` for complete dictionary access
 - Global content management through `AppContentData`
+- Modal integration with dictionary data
+- Search term normalization for improved word filtering
+- Centralized content management through AppContentData
+
+## Typography System
+- Supports h1, h2, h3, p, span, and strong variants
 
 ## Setup
 
