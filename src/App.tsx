@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { dataLib, SortedDictionary } from './Data/data';
 import { AppContentData } from './Data/AppContent';
-import Header from './Components/UI/Header/Header';
-import { Main } from './Components/UI/Main/Main';
-import Footer from './Components/UI/Footer/Footer';
+import Header from './Components/Organisms/Header/Header';
+import { Main } from './Components/Organisms/Main/Main';
+import Footer from './Components/Organisms/Footer/Footer';
+import { BlockElement } from './Components/UI/BlockLevel/BlockElement';
 import './styles.css';
 
 const { mainHeading, date } = AppContentData.globalPageContent;
@@ -31,7 +32,7 @@ export default function App() {
 
   return (
     <>
-      <div id="allHolder" className="flex flex-col h-screen max-w-6xl mx-auto">
+      <BlockElement id='allHolder' className='flex flex-col h-screen max-w-6xl mx-auto'>
         <Header headerContainerClass='bg-red-400 pt-6 p-2 basis-14 flex items-center justify-between' />
 
         <Main
@@ -45,7 +46,7 @@ export default function App() {
           currentYear={year}
           siteName={mainHeading}
         />
-      </div>
+      </BlockElement>
     </>
   );
 }

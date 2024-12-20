@@ -1,5 +1,5 @@
 export interface IBlockElementProps {
-  variant?: 'footer' | 'section' | 'article' | 'ol' | 'div' | 'main' | 'header' | 'ul';
+  variant?: 'footer' | 'section' | 'article' | 'ol' | 'div' | 'main' | 'header' | 'ul' | undefined;
   className?: string;
   children?: React.ReactNode;
   id?: string;

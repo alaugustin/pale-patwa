@@ -1,11 +1,12 @@
-import React, {useState} from 'react';
-import List from '../UI/List/List';
-import { Typography } from '../Typography/Typography';
-import { AppContentData } from '../../Data/AppContent';
+import React, { useState } from 'react';
+import List from '../../UI/List/List';
+import { Typography } from '../../Typography/Typography';
+import { AppContentData } from '../../../Data/AppContent';
+import { BlockElement } from '../../UI/BlockLevel/BlockElement';
+import { Input } from '../../UI/Form/Input/Input';
 import { IWordlistProps } from './Wordlist.d';
-import { BlockElement } from '../UI/BlockLevel/BlockElement';
 
-const { libraryTitleH2 } = AppContentData.libraryContent;
+const { libraryTitleH2, inputPlaceholder } = AppContentData.libraryContent;
 
 export default function WordList({ data }: IWordlistProps) {
   const [searchTerm, setSearchTerm] = useState('');
@@ -23,11 +24,11 @@ export default function WordList({ data }: IWordlistProps) {
         className='text-3xl mb-4'
       >{libraryTitleH2}</Typography>
 
-      <input
+      <Input
         type="text"
-        placeholder="Search words..."
+        placeholder={inputPlaceholder}
         value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchTerm(e.target.value)}
         className="p-2 mb-4 border rounded-md w-64"
       />
 

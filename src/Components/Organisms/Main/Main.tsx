@@ -1,8 +1,8 @@
 import React from 'react';
-import WordOfTheDay from '../../WordOfTheDay/WordOfTheDay';
-import WordList from '../../Wordlist/Wordlist';
+import WordOfTheDay from '../WordOfTheDay/WordOfTheDay';
+import WordList from '../Wordlist/Wordlist';
+import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { IMainProps } from './Main.d';
-import { BlockElement } from '../BlockLevel/BlockElement';
 
 export const Main = ({
   mainContainerClass,
