@@ -17,7 +17,7 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
   } = props;
 
   return (
-    <BlockElement variant='section' className='flex items-center justify-center flex-col pb-7'>
+    <BlockElement variant='section' className='flex items-center justify-center flex-col pb-7 flex-3'>
       <Typography
         variant="h2"
         className={'text-3xl mb-4'}

@@ -15,7 +15,7 @@ export default function List({
           key={index}
           word={element.word}
           hasLink={hasLink}
-          listItemClass='mr-2 mb-2'
+          listItemClass='p-4 border-2 border-grey-200 rounded'
         />
       ))}
     </ul>

@@ -20,7 +20,7 @@ export default function WordList({ data }: IWordlistProps) {
   const placeHolderText = 'Search words…';
 
   return (
-    <BlockElement variant='section' className='flex flex-col justify-center items-center pb-7'>
+    <BlockElement variant='section' className='flex flex-col justify-center items-center pb-7 flex-1'>
       <Typography
         variant='h2'
         className='text-3xl mb-4'
@@ -36,7 +36,7 @@ export default function WordList({ data }: IWordlistProps) {
 
       <List
         data={filteredData}
-        linkClass='flex max-w-4xl flex-wrap justify-center items-center'
+        linkClass='text-xl flex max-w-4xl flex-wrap justify-center items-center gap-4'
         hasLink={true}
       />
     </BlockElement>
