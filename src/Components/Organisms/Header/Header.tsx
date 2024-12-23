@@ -57,10 +57,10 @@ export default function Header({ headerContainerClass }: IHeaderProps) {
     <BlockElement variant='header' className={headerContainerClass}>
       <Typography
         variant="h1"
-        className={'text-5xl mr-2'}
+        className={'text-2xl sm:text-2xl md:text-3xl lg:text-4xl mr-2'}
       >{mainHeading}</Typography>
 
-      <Typography variant='span' className='ml-2'>{headerDate}</Typography>
+      <Typography variant='span' className='ml-2 text-xs md:text-sm lg:text-lg'>{headerDate}</Typography>
     </BlockElement>
   );
 }
