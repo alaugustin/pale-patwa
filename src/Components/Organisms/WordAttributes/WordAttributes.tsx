@@ -13,21 +13,16 @@ export default function WordAttributes({
 }: IWordAttributesProps) {
 
   return (
-    <BlockElement variant='section' className={containerClasses}>
+    <BlockElement variant='div' className={containerClasses}>
       <Typography
         variant="span"
-        className={
-          (wordEtymology || wordPartOfSpeech) ? `${borderClasses}` : ''
-        } >{wordDialect}</Typography>
+        className={`${wordPartOfSpeech && borderClasses}`} >{wordDialect}</Typography>
 
       {wordPartOfSpeech && (
         <Typography
           variant="span"
-          className={
-            (wordEtymology || wordPartOfSpeech)
-              ? `${wordEtymology ? `${borderClasses}` : ''}`
-              : ''
-          } >{wordPartOfSpeech ?? ''}</Typography>
+          className={`font-mono text-xs ${wordEtymology && borderClasses}`}
+        >{wordPartOfSpeech ?? ''}</Typography>
       )}
 
       {wordEtymology ?

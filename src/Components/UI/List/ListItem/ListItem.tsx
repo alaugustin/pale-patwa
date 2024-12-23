@@ -22,13 +22,13 @@ export const ListItem = ({
         ) : (
           <span>{word}</span>
         )}
-      </li>
 
-      {isPopupOpen && (
-        <>
-          <Modal modalTitle={word} clickHandler={() => setIsPopupOpen(false)} />
-        </>
-      )}
+        {isPopupOpen && (
+          <>
+            <Modal modalTitle={word} clickHandler={() => setIsPopupOpen(false)} />
+          </>
+        )}
+      </li>
     </>
   );
 };

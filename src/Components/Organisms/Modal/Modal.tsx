@@ -14,15 +14,21 @@ export default function Modal({
   return (
     <BlockElement variant='article' className='fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50'>
       <BlockElement className='bg-white p-6 rounded-lg shadow-xl max-w-md'>
-        <Typography variant='h2' className="text-xl font-bold mb-4">{modalTitle}</Typography>
+        <Typography variant='h2' className="text-2xl font-bold mb-2 font-serif">{modalTitle}</Typography>
         <BlockElement className='mb-4'>
-          <Typography variant='p' className='mb-4'>
-            <Typography variant='p'>{
-              selectedWord?.definition}&nbsp;
-            {<><strong>***Kw: Lorem ipsum dolor sit amet, consectetur adipiscing elit***</strong></>}&nbsp;
-            {<>En: ***Lorem ipsum dolor sit amet, consectetur adipiscing elit***</>}
-            </Typography>
-          </Typography>
+          <BlockElement variant='div' className='mb-4'>
+            <Typography variant='p'>{selectedWord?.definition}</Typography>
+
+            {selectedWord?.egSentenceKw && (
+              <Typography variant='p'>
+                <Typography variant='strong'>{selectedWord?.egSentenceKw}</Typography>
+              </Typography>
+            )}
+
+            {selectedWord?.egSentenceEn && (
+              <Typography variant='p'>{selectedWord?.egSentenceEn}</Typography>
+            )}
+          </BlockElement>
 
           <WordAttributes
             wordEtymology={selectedWord?.etymology ?? null}
