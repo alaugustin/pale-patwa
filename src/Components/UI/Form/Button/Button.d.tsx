@@ -1,5 +1,5 @@
 export interface IButtonProps {
-  buttonLabel: string;
+  buttonLabel: string | JSX.Element;
   buttonClass?: string;
   onClickFunc?: () => void;
 }

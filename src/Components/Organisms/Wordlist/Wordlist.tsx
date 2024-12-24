@@ -19,7 +19,7 @@ export default function WordList({ data }: IWordlistProps) {
   );
 
   return (
-    <BlockElement variant='section' className={`${flexItemsCenter} ${blockElementPadding} flex-col flex-1 border-t border-gray-100`}>
+    <BlockElement variant='section' className={`${flexItemsCenter} ${blockElementPadding} flex-col flex-1 border-t border-gray-100 w-full`}>
       <Typography
         variant='h2'
         className='text-3xl mb-6'

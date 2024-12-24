@@ -18,7 +18,7 @@ export default function Modal({
 
   return (
     <BlockElement variant='article' className={`${flexItemsCenter} fixed inset-0 bg-black bg-opacity-50 z-50`}>
-      <BlockElement className='bg-white p-6 rounded-lg shadow-xl max-w-md'>
+      <BlockElement className='bg-white p-6 rounded-lg shadow-xl max-w-md mx-4'>
         <Typography variant='h2' className="text-2xl font-bold mb-2 font-serif">{modalTitle}</Typography>
         <BlockElement className='mb-4'>
           <BlockElement variant='div' className='mb-4'>

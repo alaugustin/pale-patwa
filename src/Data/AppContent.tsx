@@ -1,6 +1,7 @@
 const globalPageContent = {
   mainHeading: 'Palé Kwéyòl',
-  date: new Date()
+  date: new Date(),
+  backToTopLabel: 'To Top',
 };
 
 const wordOfTheDayContent = {
@@ -21,6 +22,8 @@ const uiClasses = {
   listButtonClass: 'p-4 bg-gray-100 hover:bg-gray-200',
   wordAttributeBorder: 'pr-2 mr-2 border border-black border-t-0 border-b-0 border-l-0',
   blockElementPadding: 'pt-6 p-2 pb-7',
+  backToTopButton: 'fixed bottom-8 right-8 rounded-full shadow-lg text-white flex flex-row gap-x-2 p-4 bg-gray-400 hover:bg-gray-500',
+  backToTopButtonIcon: 'h-6 w-6 fill-gray-700',
 };
 
 export const AppContentData = { globalPageContent, wordOfTheDayContent, libraryContent, uiClasses };
