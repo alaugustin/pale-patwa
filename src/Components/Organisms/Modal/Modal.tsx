@@ -1,9 +1,13 @@
 import React from 'react';
 import { SortedDictionary } from '../../../Data/data';
+import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Typography } from '../../Typography/Typography';
 import WordAttributes from '../WordAttributes/WordAttributes';
+import Button from '../../UI/Form/Button/Button';
 import { IModalProps } from './Modal.d';
+
+const { flexItemsCenter, primaryButton } = AppContentData.uiClasses;
 
 export default function Modal({
   modalTitle,
@@ -12,7 +16,7 @@ export default function Modal({
   const selectedWord = SortedDictionary.find(word => word.word === modalTitle);
 
   return (
-    <BlockElement variant='article' className='fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50'>
+    <BlockElement variant='article' className={`${flexItemsCenter} fixed inset-0 bg-black bg-opacity-50 z-50`}>
       <BlockElement className='bg-white p-6 rounded-lg shadow-xl max-w-md'>
         <Typography variant='h2' className="text-2xl font-bold mb-2 font-serif">{modalTitle}</Typography>
         <BlockElement className='mb-4'>
@@ -38,12 +42,11 @@ export default function Modal({
           />
         </BlockElement>
 
-        <button
-          onClick={clickHandler}
-          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-        >
-          Close
-        </button>
+        <Button
+          buttonClass={primaryButton}
+          buttonLabel='Close'
+          onClickFunc={clickHandler}
+        />
       </BlockElement>
     </BlockElement>
   );

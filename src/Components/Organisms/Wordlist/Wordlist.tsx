@@ -6,7 +6,8 @@ import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Input } from '../../UI/Form/Input/Input';
 import { IWordlistProps } from './Wordlist.d';
 
-const { libraryTitleH2 } = AppContentData.libraryContent;
+const { libraryTitleH2, wordlistFilterPlaceholder } = AppContentData.libraryContent;
+const { flexItemsCenter } = AppContentData.uiClasses;
 
 export default function WordList({ data }: IWordlistProps) {
   const [searchTerm, setSearchTerm] = useState('');
@@ -17,10 +18,8 @@ export default function WordList({ data }: IWordlistProps) {
     normalizeString(item.word.toLowerCase()).includes(normalizeString(searchTerm.toLowerCase()))
   );
 
-  const placeHolderText = 'Search words…';
-
   return (
-    <BlockElement variant='section' className='flex flex-col justify-center items-center pb-7 flex-1'>
+    <BlockElement variant='section' className={`${flexItemsCenter} flex-col pb-7 flex-1`}>
       <Typography
         variant='h2'
         className='text-3xl mb-4'
@@ -28,7 +27,7 @@ export default function WordList({ data }: IWordlistProps) {
 
       <Input
         type="text"
-        placeholder={placeHolderText}
+        placeholder={wordlistFilterPlaceholder}
         value={searchTerm}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchTerm(e.target.value)}
         className="p-2 mb-4 border rounded-md w-64"

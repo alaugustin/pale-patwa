@@ -1,11 +1,12 @@
 import React from 'react';
-import { Typography } from '../../Typography/Typography';
 import { AppContentData } from '../../../Data/AppContent';
+import { Typography } from '../../Typography/Typography';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import WordAttributes from '../WordAttributes/WordAttributes';
 import { IWordOfTheDayProps } from './WordOfTheDay.d';
 
 const { wodTitleH2 } = AppContentData.wordOfTheDayContent;
+const { flexItemsCenter } = AppContentData.uiClasses;
 
 export default function WordOfTheDay(props: IWordOfTheDayProps) {
   const {
@@ -17,7 +18,7 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
   } = props;
 
   return (
-    <BlockElement variant='section' className='flex items-center justify-center flex-col pb-7 flex-3'>
+    <BlockElement variant='section' className={`${flexItemsCenter} flex-col pb-7 flex-3`}>
       <Typography
         variant="h2"
         className={'text-3xl mb-4'}
