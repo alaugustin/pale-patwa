@@ -51,7 +51,9 @@ export default function Header({ headerContainerClass }: IHeaderProps) {
     setCurrentDayOfMonth(`${dayOfMonth}`);
   }, []);
 
-  const headerDate = `${currentDay}, ${currentDayOfMonth} ${currentMonth}, ${currentYear}`;
+  const headerDate = `${currentDay} ${currentDayOfMonth === '1' ?
+    'pwèmyé' :
+    currentDayOfMonth} ${currentMonth}, ${currentYear}`;
 
   return (
     <BlockElement variant='header' className={headerContainerClass}>

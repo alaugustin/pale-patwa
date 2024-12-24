@@ -19,10 +19,10 @@ export default function WordList({ data }: IWordlistProps) {
   );
 
   return (
-    <BlockElement variant='section' className={`${flexItemsCenter} flex-col pb-7 flex-1`}>
+    <BlockElement variant='section' className={`${flexItemsCenter} flex-col pb-7 flex-1 border-t border-gray-100`}>
       <Typography
         variant='h2'
-        className='text-3xl mb-4'
+        className='text-3xl mb-6'
       >{libraryTitleH2}</Typography>
 
       <Input
@@ -30,7 +30,7 @@ export default function WordList({ data }: IWordlistProps) {
         placeholder={wordlistFilterPlaceholder}
         value={searchTerm}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchTerm(e.target.value)}
-        className="p-2 mb-4 border rounded-md w-64"
+        className="p-2 mb-8 border rounded-md w-64"
       />
 
       <List

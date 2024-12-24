@@ -21,8 +21,22 @@ export default function App() {
   };
 
   useEffect(() => {
-    const interval = setInterval(getRandomItem, 5000);
-    return () => clearInterval(interval);
+    const dayInterval = setInterval(() => {
+      const now = new Date();
+      const midnight = new Date();
+      midnight.setHours(24, 0, 0, 0);
+      const timeUntilMidnight = midnight.getTime() - now.getTime();
+
+      getRandomItem();
+      clearInterval(dayInterval);
+
+      setTimeout(() => {
+        getRandomItem();
+        setInterval(getRandomItem, 24 * 60 * 60 * 1000);
+      }, timeUntilMidnight);
+    }, 24 * 60 * 60 * 1000);
+
+    return () => clearInterval(dayInterval);
   }, []);
 
   const [year, setYear] = useState(date.getFullYear());
@@ -43,7 +57,7 @@ export default function App() {
         />
 
         <Footer
-          footerContainerClass={`${flexItemsCenter} border-t border-gray-200 pt-6 p-2 basis-14`}
+          footerContainerClass={'flex border-t border-gray-200 pt-6 p-2 basis-14'}
           currentYear={year}
           siteName={mainHeading}
         />

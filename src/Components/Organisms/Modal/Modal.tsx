@@ -8,6 +8,7 @@ import Button from '../../UI/Form/Button/Button';
 import { IModalProps } from './Modal.d';
 
 const { flexItemsCenter, primaryButton } = AppContentData.uiClasses;
+const { modalClose } = AppContentData.libraryContent;
 
 export default function Modal({
   modalTitle,
@@ -44,7 +45,7 @@ export default function Modal({
 
         <Button
           buttonClass={primaryButton}
-          buttonLabel='Close'
+          buttonLabel={modalClose}
           onClickFunc={clickHandler}
         />
       </BlockElement>
