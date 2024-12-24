@@ -9,5 +9,16 @@ export const dataLibG = [{
   crossReference: null,
   etymology: '[< Fr. garçon]',
   dialect: '🇱🇨',
+}, {
+  word: 'gwi',
+  partOfSpeech: 'ADJ',
+  definition: 'grey',
+  egSentenceKw: 'Chouval gwi-a genyen kous-la.',
+  egSentenceEn: 'The grey horse won the race.',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. gris]',
+  dialect: '🇱🇨',
 },
 ];

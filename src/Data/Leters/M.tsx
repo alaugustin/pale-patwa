@@ -9,5 +9,16 @@ export const dataLibM = [{
   crossReference: null,
   etymology: '[< Fr. mouton]',
   dialect: '🇱🇨',
+}, {
+  word: 'mwa',
+  partOfSpeech: 'N',
+  definition: 'month',
+  egSentenceKw: 'Yo kay wèsté dé mwa lòt péyi.',
+  egSentenceEn: 'They are going to stay two months overseas.',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. mois]',
+  dialect: '🇱🇨',
 },
 ];

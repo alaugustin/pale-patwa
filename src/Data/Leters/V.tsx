@@ -9,5 +9,16 @@ export const dataLibV = [{
   crossReference: null,
   etymology: '[< Fr. ver]',
   dialect: '🇱🇨',
+}, {
+  word: 'vè',
+  partOfSpeech: 'ADJ',
+  definition: 'green',
+  egSentenceKw: 'Nou kontan kay vè-a.',
+  egSentenceEn: 'We like the green house.',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. vert]',
+  dialect: '🇱🇨',
 },
 ];
