@@ -25,7 +25,9 @@ export const ListItem = ({
         )}
 
         {isPopupOpen && (
-          <Modal modalTitle={word} clickHandler={() => setIsPopupOpen(false)} />
+          <>
+            <Modal modalTitle={word} clickHandler={() => setIsPopupOpen(false)} />
+          </>
         )}
       </li>
     </>

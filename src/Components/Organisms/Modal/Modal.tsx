@@ -1,46 +1,52 @@
 import React from 'react';
-import { dataLib } from '../../../Data/data';
+import { SortedDictionary } from '../../../Data/data';
+import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Typography } from '../../Typography/Typography';
 import WordAttributes from '../WordAttributes/WordAttributes';
+import Button from '../../UI/Form/Button/Button';
 import { IModalProps } from './Modal.d';
+
+const { flexItemsCenter, primaryButton } = AppContentData.uiClasses;
 
 export default function Modal({
   modalTitle,
   clickHandler
 }: IModalProps) {
-  const wordData = dataLib.find(item => item.word === modalTitle);
+  const selectedWord = SortedDictionary.find(word => word.word === modalTitle);
 
   return (
-    <BlockElement variant='article' className='fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50'>
+    <BlockElement variant='article' className={`${flexItemsCenter} fixed inset-0 bg-black bg-opacity-50 z-50`}>
       <BlockElement className='bg-white p-6 rounded-lg shadow-xl max-w-md'>
-        <Typography variant='h2' className="text-xl font-bold mb-4">{modalTitle}</Typography>
+        <Typography variant='h2' className="text-2xl font-bold mb-2 font-serif">{modalTitle}</Typography>
         <BlockElement className='mb-4'>
-          <Typography variant='p' className='mb-4'>
-            <Typography variant='span' className='font-mono'>
-              {wordData?.definition || ''}&nbsp;
-            </Typography>
+          <BlockElement variant='div' className='mb-4'>
+            <Typography variant='p'>{selectedWord?.definition}</Typography>
 
-            {wordData?.egSentence &&
-              <Typography variant='strong'>
-                {wordData?.egSentence || ''}
-              </Typography>}
+            {selectedWord?.egSentenceKw && (
+              <Typography variant='p'>
+                <Typography variant='strong'>{selectedWord?.egSentenceKw}</Typography>
+              </Typography>
+            )}
 
-          </Typography>
+            {selectedWord?.egSentenceEn && (
+              <Typography variant='p'>{selectedWord?.egSentenceEn}</Typography>
+            )}
+          </BlockElement>
 
           <WordAttributes
-            wordEtymology={wordData?.etymology}
-            wordPartOfSpeech={wordData?.partOfSpeech}
-            wordDialect={wordData?.dialect}
+            wordEtymology={selectedWord?.etymology ?? null}
+            wordPartOfSpeech={selectedWord?.partOfSpeech ?? null}
+            wordDialect={selectedWord?.dialect ?? null}
             containerClasses='text-sm mb-8'
           />
         </BlockElement>
-        <button
-          onClick={clickHandler}
-          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-        >
-          Close
-        </button>
+
+        <Button
+          buttonClass={primaryButton}
+          buttonLabel='Close'
+          onClickFunc={clickHandler}
+        />
       </BlockElement>
     </BlockElement>
   );

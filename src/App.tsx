@@ -8,6 +8,7 @@ import { BlockElement } from './Components/UI/BlockLevel/BlockElement';
 import './styles.css';
 
 const { mainHeading, date } = AppContentData.globalPageContent;
+const { flexItemsCenter, flexCol } = AppContentData.uiClasses;
 
 document.title = mainHeading;
 
@@ -32,17 +33,17 @@ export default function App() {
 
   return (
     <>
-      <BlockElement id='allHolder' className='flex flex-col h-screen max-w-6xl mx-auto'>
-        <Header headerContainerClass='bg-red-400 pt-6 p-2 basis-14 flex items-center justify-between' />
+      <BlockElement id='allHolder' className={`${flexCol} h-screen max-w-6xl mx-auto`}>
+        <Header headerContainerClass={`${flexItemsCenter} border-b border-gray-200 py-3 p-2 basis-14 justify-between`} />
 
         <Main
-          mainContainerClass='bg-yellow-400 pt-6 p-2 flex-1 flex items-center justify-center flex-col'
+          mainContainerClass={`${flexItemsCenter} pt-6 p-2 flex-1 flex-col`}
           wordOfTheDayData={randomItem}
           wordListData={dataLib}
         />
 
         <Footer
-          footerContainerClass='bg-green-400 pt-6 p-2 basis-14 flex items-center'
+          footerContainerClass={`${flexItemsCenter} border-t border-gray-200 pt-6 p-2 basis-14`}
           currentYear={year}
           siteName={mainHeading}
         />

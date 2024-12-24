@@ -1,9 +1,10 @@
 import React from 'react';
+import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Typography } from '../../Typography/Typography';
 import { IWordAttributesProps } from './WordAttributes.d';
 
-const borderClasses = 'pr-2 mr-2 border border-black border-t-0 border-b-0 border-l-0';
+const { wordAttributeBorder } = AppContentData.uiClasses;
 
 export default function WordAttributes({
   wordEtymology,
@@ -13,21 +14,16 @@ export default function WordAttributes({
 }: IWordAttributesProps) {
 
   return (
-    <BlockElement variant='section' className={containerClasses}>
+    <BlockElement variant='div' className={containerClasses}>
       <Typography
         variant="span"
-        className={
-          (wordEtymology || wordPartOfSpeech) ? `${borderClasses}` : ''
-        } >{wordDialect}</Typography>
+        className={`${wordPartOfSpeech && wordAttributeBorder}`} >{wordDialect}</Typography>
 
       {wordPartOfSpeech && (
         <Typography
           variant="span"
-          className={
-            (wordEtymology || wordPartOfSpeech)
-              ? `${wordEtymology ? `${borderClasses} font-mono` : ''}`
-              : ''
-          } >{wordPartOfSpeech ?? ''}</Typography>
+          className={`font-mono text-xs ${wordEtymology && wordAttributeBorder}`}
+        >{wordPartOfSpeech ?? ''}</Typography>
       )}
 
       {wordEtymology ?

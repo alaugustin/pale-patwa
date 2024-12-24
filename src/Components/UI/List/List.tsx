@@ -1,6 +1,9 @@
 import React from 'react';
+import { AppContentData } from '../../../Data/AppContent';
 import { ListItem } from './ListItem/ListItem';
 import { IListProps } from './List.d';
+
+const { listClass } = AppContentData.uiClasses;
 
 export default function List({
   data,
@@ -15,7 +18,7 @@ export default function List({
           key={index}
           word={element.word}
           hasLink={hasLink}
-          listItemClass='mr-2 mb-2'
+          listItemClass={listClass}
         />
       ))}
     </ul>

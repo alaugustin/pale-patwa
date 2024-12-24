@@ -1,11 +1,12 @@
 import React from 'react';
-import { Typography } from '../../Typography/Typography';
 import { AppContentData } from '../../../Data/AppContent';
+import { Typography } from '../../Typography/Typography';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import WordAttributes from '../WordAttributes/WordAttributes';
 import { IWordOfTheDayProps } from './WordOfTheDay.d';
 
 const { wodTitleH2 } = AppContentData.wordOfTheDayContent;
+const { flexItemsCenter } = AppContentData.uiClasses;
 
 export default function WordOfTheDay(props: IWordOfTheDayProps) {
   const {
@@ -17,7 +18,7 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
   } = props;
 
   return (
-    <BlockElement variant='section' className='flex items-center justify-center flex-col mb-10'>
+    <BlockElement variant='section' className={`${flexItemsCenter} flex-col pb-7 flex-3`}>
       <Typography
         variant="h2"
         className={'text-3xl mb-4'}
@@ -25,19 +26,19 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
 
       <Typography
         variant="h3"
-        className={'text-8xl font-serif mb-2 font-bold'}
+        className={'text-3xl sm:text-6xl lg:text-8xl font-serif mb-2 font-bold'}
       >{kweyoleWord}</Typography>
 
       <WordAttributes
         wordEtymology={etymology ?? null}
         wordPartOfSpeech={partOfSpeech ?? null}
         wordDialect={dialect}
-        containerClasses='text-sm mb-8'
+        containerClasses='text-xs md:text-sm mb-8'
       />
 
       <Typography
         variant="p"
-        className="text-6xl font-thin"
+        className="text-3xl sm:text-4xl lg:text-6xl font-thin"
       >{definition}</Typography>
     </BlockElement>
   );
