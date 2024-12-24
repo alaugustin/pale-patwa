@@ -7,7 +7,7 @@ import { Input } from '../../UI/Form/Input/Input';
 import { IWordlistProps } from './Wordlist.d';
 
 const { libraryTitleH2, wordlistFilterPlaceholder } = AppContentData.libraryContent;
-const { flexItemsCenter } = AppContentData.uiClasses;
+const { flexItemsCenter, blockElementPadding } = AppContentData.uiClasses;
 
 export default function WordList({ data }: IWordlistProps) {
   const [searchTerm, setSearchTerm] = useState('');
@@ -19,7 +19,7 @@ export default function WordList({ data }: IWordlistProps) {
   );
 
   return (
-    <BlockElement variant='section' className={`${flexItemsCenter} flex-col pb-7 flex-1 border-t border-gray-100`}>
+    <BlockElement variant='section' className={`${flexItemsCenter} ${blockElementPadding} flex-col flex-1 border-t border-gray-100`}>
       <Typography
         variant='h2'
         className='text-3xl mb-6'

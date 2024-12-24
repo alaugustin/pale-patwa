@@ -3,7 +3,7 @@ import { AppContentData } from '../../../Data/AppContent';
 import { ListItem } from './ListItem/ListItem';
 import { IListProps } from './List.d';
 
-const { listClass } = AppContentData.uiClasses;
+const { listItemClass } = AppContentData.uiClasses;
 
 export default function List({
   data,
@@ -18,7 +18,7 @@ export default function List({
           key={index}
           word={element.word}
           hasLink={hasLink}
-          listItemClass={listClass}
+          listItemClass={listItemClass}
         />
       ))}
     </ul>

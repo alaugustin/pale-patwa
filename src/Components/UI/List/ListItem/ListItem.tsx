@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
+import { AppContentData } from '../../../../Data/AppContent';
 import Modal from '../../../Organisms/Modal/Modal';
 import { Typography } from '../../../Typography/Typography';
 import Button from '../../Form/Button/Button';
 import { IListItemProps } from './ListItem.d';
+
+const { listButtonClass } = AppContentData.uiClasses;
 
 export const ListItem = ({
   word,
@@ -20,7 +23,7 @@ export const ListItem = ({
       <li className={listItemClass}>
         {hasLink ? (
           <Button
-            buttonClass={'p-4 bg-gray-100 hover:bg-gray-200'}
+            buttonClass={listButtonClass}
             buttonLabel={word || ''}
             onClickFunc={handleClick}
           />

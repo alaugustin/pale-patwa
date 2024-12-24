@@ -21,9 +21,11 @@ export default function App() {
   };
 
   useEffect(() => {
+    getRandomItem();
+
     const dayInterval = setInterval(() => {
-      const now = new Date();
-      const midnight = new Date();
+      const now = date;
+      const midnight = date;
       midnight.setHours(24, 0, 0, 0);
       const timeUntilMidnight = midnight.getTime() - now.getTime();
 
@@ -51,7 +53,7 @@ export default function App() {
         <Header headerContainerClass={`${flexItemsCenter} border-b border-gray-200 py-3 p-2 basis-14 justify-between`} />
 
         <Main
-          mainContainerClass={`${flexItemsCenter} pt-6 p-2 flex-1 flex-col`}
+          mainContainerClass={`${flexItemsCenter} flex-1 flex-col`}
           wordOfTheDayData={randomItem}
           wordListData={dataLib}
         />
