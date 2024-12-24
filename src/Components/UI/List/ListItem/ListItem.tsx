@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Modal from '../../../Organisms/Modal/Modal';
 import { IListItemProps } from './ListItem.d';
+import { Typography } from '../../../Typography/Typography';
 
 export const ListItem = ({
   word,
@@ -20,7 +21,7 @@ export const ListItem = ({
         {hasLink ? (
           <a href={`/${word}`} onClick={handleClick}>{word}</a>
         ) : (
-          <span>{word}</span>
+          <Typography variant='span'>{word}</Typography>
         )}
 
         {isPopupOpen && (
