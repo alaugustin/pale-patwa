@@ -1,18 +1,78 @@
 # Kwéyòl Dictionary App
 
-A dynamic React application that displays random dictionary entries with a clean, responsive layout.
+> A dynamic React application that displays random dictionary entries with a clean, responsive layout.
 
-## Features
+## 📚 Quick Links
+- [Features](#features)
+- [Installation](#installation)
+- [Tech Stack](#tech-stack)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Testing](#testing)
 
-- Random word generator that updates every 5 seconds
+## ✨ Features
+- Daily word refresh at midnight
 - Full dictionary word list display
-- Responsive three-panel layout with header, main content, and footer
-- Built with React and TypeScript
-- Styled with Tailwind CSS
+- Responsive three-panel layout
 - Modal system for detailed word viewing
-- Search functionality in dictionary list
-- Dynamic word attributes display
+- Search functionality
 - Etymology and part of speech indicators
+
+## 🚀 Installation
+```bash
+npm install
+```
+
+## 🛠️ Tech Stack
+```markdown:README.md
+React 18
+TypeScript
+Tailwind CSS
+```
+
+## 📖 Usage
+```bash
+npm run start
+```
+## Project Structure
+
+```markdown:README.md
+src/
+├── components/   # UI building blocks
+│   ├── Header/
+│   ├── WordList/
+│   └── Footer/
+├── data/         # Dictionary entries
+├── hooks/        # Custom React hooks
+├── styles/       # Tailwind configurations
+├── types/        # TypeScript definitions
+└── utils/        # Helper functions
+```
+
+## Browser Support
+
+```markdown:README.md
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+```
+
+## 🧪 Testing
+
+```bash
+npm run test
+```
+
+## 🤝 Contributing
+
+```markdown:README.md
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
+```
 
 ## Component Structure
 
@@ -36,10 +96,6 @@ The app uses a three-part layout:
 Uses Tailwind CSS classes for:
 - Flex layout
 - Responsive design
-<!-- - Color schemes
-  - Header: Red background
-  - Main content: Yellow background
-  - Footer: Green background -->
 
 ## Data Management
 
@@ -51,14 +107,13 @@ Uses Tailwind CSS classes for:
 - Centralized content management through AppContentData
 
 ## Typography System
+
 - Supports h1, h2, h3, p, span, and strong variants
 
-## Setup
+## 📜 License
+MIT
 
-The app automatically:
-- Sets up state management for random words
-- Initializes intervals for word rotation
-- Updates copyright year
+## 🙏 Acknowledgements
 
-## Acknowledgements
 - [Kwéyòl Dictionary, David Frank](http://www.saintluciancreole.dbfrank.net/dictionary/KweyolDictionary.pdf)
+- [Kwéyòl Dictionary, Webonary](https://www.webonary.org/kweyol/)
