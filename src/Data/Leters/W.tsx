@@ -9,5 +9,16 @@ export const dataLibW = [{
   crossReference: null,
   etymology: '[< Fr. rat]',
   dialect: '🇱🇨',
+}, {
+  word: 'wouj',
+  partOfSpeech: 'ADJ',
+  definition: 'red',
+  egSentenceKw: 'Nonm-lan ka pòté on chimiz wouj',
+  egSentenceEn: 'The man\'s wearing a red shirt.',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. rouge]',
+  dialect: '🇱🇨',
 },
 ];

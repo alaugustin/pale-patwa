@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
+import { AppContentData } from '../../../../Data/AppContent';
 import Modal from '../../../Organisms/Modal/Modal';
-import { IListItemProps } from './ListItem.d';
 import { Typography } from '../../../Typography/Typography';
+import Button from '../../Form/Button/Button';
+import { IListItemProps } from './ListItem.d';
+
+const { listButtonClass } = AppContentData.uiClasses;
 
 export const ListItem = ({
   word,
@@ -10,8 +14,7 @@ export const ListItem = ({
 }: IListItemProps) => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
-  const handleClick = (e: React.MouseEvent) => {
-    e.preventDefault();
+  const handleClick = () => {
     setIsPopupOpen(true);
   };
 
@@ -19,7 +22,11 @@ export const ListItem = ({
     <>
       <li className={listItemClass}>
         {hasLink ? (
-          <a href={`/${word}`} onClick={handleClick}>{word}</a>
+          <Button
+            buttonClass={listButtonClass}
+            buttonLabel={word || ''}
+            onClickFunc={handleClick}
+          />
         ) : (
           <Typography variant='span'>{word}</Typography>
         )}

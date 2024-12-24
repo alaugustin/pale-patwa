@@ -9,5 +9,16 @@ export const dataLibL = [{
   crossReference: null,
   etymology: '[< Fr. livre]',
   dialect: '🇱🇨',
+}, {
+  word: 'lanné',
+  partOfSpeech: 'N',
+  definition: 'year',
+  egSentenceKw: 'Lanné sala kay ni an chay lapli.',
+  egSentenceEn: 'This year there will be a lot of rain.',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. l\'année]',
+  dialect: '🇱🇨',
 },
 ];

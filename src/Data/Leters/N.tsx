@@ -20,5 +20,16 @@ export const dataLibN = [{
   crossReference: null,
   etymology: '[< Fr. niche]',
   dialect: '🇱🇨',
+}, {
+  word: 'nwè',
+  partOfSpeech: 'ADJ',
+  definition: 'black',
+  egSentenceKw: 'I ka pòté soulyé nwè.',
+  egSentenceEn: 'He\'s wearing black shoes.',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. noir]',
+  dialect: '🇱🇨',
 },
 ];

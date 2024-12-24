@@ -6,7 +6,7 @@ import WordAttributes from '../WordAttributes/WordAttributes';
 import { IWordOfTheDayProps } from './WordOfTheDay.d';
 
 const { wodTitleH2 } = AppContentData.wordOfTheDayContent;
-const { flexItemsCenter } = AppContentData.uiClasses;
+const { flexItemsCenter, blockElementPadding } = AppContentData.uiClasses;
 
 export default function WordOfTheDay(props: IWordOfTheDayProps) {
   const {
@@ -18,7 +18,7 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
   } = props;
 
   return (
-    <BlockElement variant='section' className={`${flexItemsCenter} flex-col pb-7 flex-3`}>
+    <BlockElement variant='section' className={`${flexItemsCenter} ${blockElementPadding} flex-col flex-3 bg-zinc-100 w-full`}>
       <Typography
         variant="h2"
         className={'text-3xl mb-4'}
