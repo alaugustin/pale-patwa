@@ -48,5 +48,10 @@ export const dataLib = [
 
 export const SortedNumbers = dataLibNum.sort((a, b) => Number(a.definition) - Number(b.definition)); // implement sorting helper function
 
-export const SortedDictionary = dataLib.sort((a, b) => a.word.localeCompare(b.word)); // implement sorting helper function
-
+export const SortedDictionary = dataLib.sort((a, b) => {
+  const wordComparison = String(a.word).localeCompare(String(b.word));
+  if (wordComparison === 0) {
+    return String(a.definition).localeCompare(String(b.definition));
+  }
+  return wordComparison;
+});
