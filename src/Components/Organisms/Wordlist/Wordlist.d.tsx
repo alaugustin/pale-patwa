@@ -1,7 +1,7 @@
-export interface IListWordDataProps {
+export interface IWordListDataProps {
   word: string;
 }
 
 export interface IWordlistProps {
-  data: IListWordDataProps[];
+  data: IWordListDataProps[];
 }
