@@ -4,10 +4,15 @@ import { Typography } from '../../Typography/Typography';
 import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Input } from '../../UI/Form/Input/Input';
-import Button from '../../UI/Form/Button/Button';
+import { Pagination } from '../Pagination/Pagination';
 import { IWordlistProps } from './Wordlist.d';
 
-const { libraryTitleH2, wordlistFilterPlaceholder } = AppContentData.libraryContent;
+const {
+  libraryTitleH2,
+  wordlistFilterPlaceholder,
+  prevButtonLabel,
+  nextButtonLabel
+} = AppContentData.libraryContent;
 const { flexItemsCenter, blockElementPadding } = AppContentData.uiClasses;
 const searchFields = ['word', 'definition', 'egSentenceKw', 'egSentenceEn', 'etymology'];
 const ITEMS_PER_PAGE = 25;
@@ -38,6 +43,12 @@ export default function WordList({ data }: IWordlistProps) {
   const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
   const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
 
+  const isFirstPage = currentPage === 1;
+  const isLastPage = currentPage === totalPages;
+  const decreasePage = () => handlePageChange(currentPage - 1);
+  const increasePage = () => handlePageChange(currentPage + 1);
+  const paginationInfo = `${currentPage} of ${totalPages}`;
+
   return (
     <BlockElement variant='section' className={`${flexItemsCenter} ${blockElementPadding} flex-col flex-1 border-t border-gray-100 w-full`}>
       <Typography
@@ -59,25 +70,15 @@ export default function WordList({ data }: IWordlistProps) {
         hasLink={true}
       />
 
-      <BlockElement id='pagination' variant='nav'>
-        <Button
-          // buttonClass={primaryButton}
-          buttonLabel='Previous'
-          onClickFunc={() => handlePageChange(currentPage - 1)}
-          buttonDisabled={currentPage === 1}
-        />
-
-        <Typography
-          variant='span'
-        >{currentPage} of {totalPages}</Typography>
-
-        <Button
-          // buttonClass={primaryButton}
-          buttonLabel='Next'
-          onClickFunc={() => handlePageChange(currentPage + 1)}
-          buttonDisabled={currentPage === totalPages}
-        />
-      </BlockElement>
+      <Pagination
+        prevButtonLabel={prevButtonLabel}
+        prevOnClickFunc={decreasePage}
+        prevButtonDisabled={isFirstPage}
+        nextButtonLabel={nextButtonLabel}
+        nextOnClickFunc={increasePage}
+        nextButtonDisabled={isLastPage}
+        paginationInfo={paginationInfo}
+      />
     </BlockElement>
   );
 }

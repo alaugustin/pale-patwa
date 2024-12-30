@@ -12,6 +12,8 @@ const libraryContent = {
   libraryTitleH2: 'Library',
   wordlistFilterPlaceholder: 'Search words…',
   modalClose: 'Close',
+  prevButtonLabel: 'Previous',
+  nextButtonLabel: 'Next',
 };
 
 const uiClasses = {
