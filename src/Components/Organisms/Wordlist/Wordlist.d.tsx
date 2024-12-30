@@ -3,6 +3,7 @@ export interface IWordListDataProps {
   definition: string | number;
   egSentenceKw: string;
   egSentenceEn: string;
+  etymology: string;
 }
 
 export interface IWordlistProps {

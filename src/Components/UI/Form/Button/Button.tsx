@@ -4,6 +4,7 @@ import { IButtonProps } from './Button.d';
 export default function Button({
   buttonLabel,
   buttonClass,
+  buttonDisabled,
   onClickFunc
 }: IButtonProps) {
 
@@ -11,6 +12,7 @@ export default function Button({
     <button
       onClick={onClickFunc}
       className={buttonClass}
+      disabled={buttonDisabled}
     >
       {buttonLabel}
     </button>
