@@ -31,5 +31,16 @@ export const dataLibT = [{
   crossReference: null,
   etymology: '[< Fr. cœur]',
   dialect: '🇱🇨',
+}, {
+  word: 'tjilòt',
+  partOfSpeech: '',
+  definition: 'pants',
+  egSentenceKw: 'Mwen té ka pòté tjilòt nwè.',
+  egSentenceEn: 'I was wearing black pants.',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. culotte]',
+  dialect: '🇱🇨',
 },
 ];

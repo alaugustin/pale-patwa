@@ -1,4 +1,4 @@
-import { IListWordDataProps } from '../Wordlist/Wordlist.d';
+import { IWordListDataProps } from '../Wordlist/Wordlist.d';
 
 export interface IMainProps {
   mainContainerClass: string;
@@ -8,6 +8,8 @@ export interface IMainProps {
     definition: string | number;
     partOfSpeech?: string | null;
     etymology?: string | null;
+    egSentenceKw?: string | null;
+    egSentenceEn?: string | null;
   };
-  wordListData: IListWordDataProps[];
+  wordListData: IWordListDataProps[];
 }

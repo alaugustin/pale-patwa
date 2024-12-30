@@ -20,5 +20,16 @@ export const dataLibG = [{
   crossReference: null,
   etymology: '[< Fr. gris]',
   dialect: '🇱🇨',
+}, {
+  word: 'gòch',
+  partOfSpeech: '',
+  definition: 'left',
+  egSentenceKw: 'Pyé gòch li kasé an aksidan-an.',
+  egSentenceEn: 'His left foot was broken in an accident.',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. gauche]',
+  dialect: '🇱🇨',
 },
 ];

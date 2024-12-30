@@ -1,11 +1,14 @@
 {
-  "name": "react-typescript",
+  "name": "pale-patwa",
   "version": "1.0.0",
-  "description": "React and TypeScript example starter project",
+  "description": "A dynamic React application that displays random dictionary entries with a clean, responsive layout",
   "keywords": [
     "typescript",
     "react",
-    "starter"
+    "dictionary",
+    "creole",
+    "kweyol",
+    "saint-lucia"
   ],
   "main": "src/index.tsx",
   "dependencies": {
@@ -29,7 +32,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "dev": "react-scripts start"
   },
   "browserslist": [
     ">0.2%",

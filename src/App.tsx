@@ -6,6 +6,7 @@ import { Main } from './Components/Organisms/Main/Main';
 import Footer from './Components/Organisms/Footer/Footer';
 import { BlockElement } from './Components/UI/BlockLevel/BlockElement';
 import Button from './Components/UI/Form/Button/Button';
+import { IWordListDataProps } from './Components/Organisms/Wordlist/Wordlist.d';
 import './styles.css';
 
 const { mainHeading, date, backToTopLabel } = AppContentData.globalPageContent;
@@ -19,19 +20,19 @@ const {
 document.title = mainHeading;
 
 export default function App() {
-  const [randomItem, setRandomItem] = useState(SortedDictionary[0]);
+  const [randomItem, setRandomItem] = useState<IWordListDataProps & { dialect: string }>(SortedDictionary[0] as IWordListDataProps & { dialect: string });
 
   const getRandomItem = () => {
     const randomIndex = Math.floor(Math.random() * SortedDictionary.length);
-    setRandomItem(SortedDictionary[randomIndex]);
+    setRandomItem(SortedDictionary[randomIndex] as IWordListDataProps & { dialect: string });
   };
 
   useEffect(() => {
     getRandomItem();
 
     const dayInterval = setInterval(() => {
-      const now = date;
-      const midnight = date;
+      const now = new Date();
+      const midnight = new Date(now);
       midnight.setHours(24, 0, 0, 0);
       const timeUntilMidnight = midnight.getTime() - now.getTime();
 
@@ -79,7 +80,7 @@ export default function App() {
         <Main
           mainContainerClass={`${flexItemsCenter} flex-1 flex-col`}
           wordOfTheDayData={randomItem}
-          wordListData={dataLib}
+          wordListData={dataLib as IWordListDataProps[]}
         />
 
         <Footer

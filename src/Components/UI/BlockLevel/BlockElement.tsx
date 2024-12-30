@@ -16,6 +16,7 @@ export const BlockElement = ({
     header: 'header',
     ul: 'ul',
     aside: 'aside',
+    nav: 'nav',
   } as const;
 
   const Element = variant && variant in elements ?
