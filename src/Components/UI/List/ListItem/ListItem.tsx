@@ -9,6 +9,9 @@ const { listButtonClass } = AppContentData.uiClasses;
 
 export const ListItem = ({
   word,
+  definition,
+  egSentenceKw,
+  egSentenceEn,
   hasLink,
   listItemClass
 }: IListItemProps) => {
@@ -33,7 +36,13 @@ export const ListItem = ({
 
         {isPopupOpen && (
           <>
-            <Modal modalTitle={word} clickHandler={() => setIsPopupOpen(false)} />
+            <Modal
+              modalTitle={word}
+              modalDefinition={definition}
+              modalSentenceKw={egSentenceKw}
+              modalSentenceEn={egSentenceEn}
+              clickHandler={() => setIsPopupOpen(false)}
+            />
           </>
         )}
       </li>

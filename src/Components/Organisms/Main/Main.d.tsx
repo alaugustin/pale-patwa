@@ -8,6 +8,8 @@ export interface IMainProps {
     definition: string | number;
     partOfSpeech?: string | null;
     etymology?: string | null;
+    egSentenceKw?: string | null;
+    egSentenceEn?: string | null;
   };
   wordListData: IWordListDataProps[];
 }

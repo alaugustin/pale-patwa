@@ -6,4 +6,7 @@ export interface IListProps {
 
 export interface IListDataProps {
   word: string;
+  definition: string | number;
+  egSentenceKw: string;
+  egSentenceEn: string;
 }

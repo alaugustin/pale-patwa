@@ -17,6 +17,9 @@ export default function List({
         <ListItem
           key={index}
           word={element.word}
+          definition={element.definition}
+          egSentenceKw={element.egSentenceKw}
+          egSentenceEn={element.egSentenceEn}
           hasLink={hasLink}
           listItemClass={listItemClass}
         />

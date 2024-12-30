@@ -12,6 +12,9 @@ const { modalClose } = AppContentData.libraryContent;
 
 export default function Modal({
   modalTitle,
+  modalDefinition,
+  modalSentenceKw,
+  modalSentenceEn,
   clickHandler
 }: IModalProps) {
   const selectedWord = SortedDictionary.find(word => word.word === modalTitle);
@@ -22,16 +25,16 @@ export default function Modal({
         <Typography variant='h2' className="text-2xl font-bold mb-2 font-serif">{modalTitle}</Typography>
         <BlockElement className='mb-4'>
           <BlockElement variant='div' className='mb-4'>
-            <Typography variant='p'>{selectedWord?.definition}</Typography>
+            <Typography variant='p'>{modalDefinition}</Typography>
 
-            {selectedWord?.egSentenceKw && (
+            {modalSentenceKw && (
               <Typography variant='p'>
-                <Typography variant='strong'>{selectedWord?.egSentenceKw}</Typography>
+                <Typography variant='strong'>{modalSentenceKw}</Typography>
               </Typography>
             )}
 
-            {selectedWord?.egSentenceEn && (
-              <Typography variant='p'>{selectedWord?.egSentenceEn}</Typography>
+            {modalSentenceEn && (
+              <Typography variant='p'>{modalSentenceEn}</Typography>
             )}
           </BlockElement>
 
