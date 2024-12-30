@@ -9,5 +9,16 @@ export const dataLibH = [{
   crossReference: null,
   etymology: '[< Fr. hache]',
   dialect: '🇱🇨',
+}, {
+  word: 'had dòmi',
+  partOfSpeech: 'N',
+  definition: 'night clothes',
+  egSentenceKw: 'Manman mwen ka lavé sé had dòmi-an.',
+  egSentenceEn: 'My mother is washing the night clothes.',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: null,
+  dialect: '🇱🇨',
 },
 ];

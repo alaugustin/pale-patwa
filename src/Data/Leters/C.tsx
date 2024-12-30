@@ -9,8 +9,7 @@ export const dataLibC = [{
   crossReference: null,
   etymology: '[< Fr. chat]',
   dialect: '🇱🇨',
-},
-{
+}, {
   word: 'chèz',
   partOfSpeech: 'N',
   definition: 'chair',
@@ -20,6 +19,17 @@ export const dataLibC = [{
   antonym: null,
   crossReference: null,
   etymology: '[< Fr. chaise]',
+  dialect: '🇱🇨',
+}, {
+  word: 'chimiz',
+  partOfSpeech: 'N',
+  definition: 'shirt',
+  egSentenceKw: 'I ni on chimiz wouj.',
+  egSentenceEn: 'He has a red shirt.',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. chemise]',
   dialect: '🇱🇨',
 },
 ];

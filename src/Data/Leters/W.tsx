@@ -20,5 +20,16 @@ export const dataLibW = [{
   crossReference: null,
   etymology: '[< Fr. rouge]',
   dialect: '🇱🇨',
+}, {
+  word: 'wòb',
+  partOfSpeech: 'N',
+  definition: 'dress',
+  egSentenceKw: 'Ou mété wòb ou lanvè.',
+  egSentenceEn: 'You put your dress on backwards.',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. robe]',
+  dialect: '🇱🇨',
 },
 ];

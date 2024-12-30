@@ -20,5 +20,16 @@ export const dataLibM = [{
   crossReference: null,
   etymology: '[< Fr. mois]',
   dialect: '🇱🇨',
+}, {
+  word: 'mouchwè',
+  partOfSpeech: 'N',
+  definition: 'kerchief, scarf',
+  egSentenceKw: 'Sé pou tèt ou mawé èk mouchwè pou\'w té dansé kòdwil.',
+  egSentenceEn: 'Your head must be tied with a kerchief for you to danse the quadrille.',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. mouchoir]',
+  dialect: '🇱🇨',
 },
 ];
