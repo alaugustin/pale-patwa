@@ -31,5 +31,16 @@ export const dataLibC = [{
   crossReference: null,
   etymology: '[< Fr. chemise]',
   dialect: '🇱🇨',
+}, {
+  word: 'choson',
+  partOfSpeech: 'N',
+  definition: 'sock',
+  egSentenceKw: 'Ban mwen choson-an pou mwen mété an pyé mwen.',
+  egSentenceEn: 'Give me the sock for me to put on my foot.',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. chausson]',
+  dialect: '🇱🇨',
 },
 ];

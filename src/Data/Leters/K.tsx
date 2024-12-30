@@ -42,5 +42,16 @@ export const dataLibK = [{
   crossReference: null,
   etymology: '[< Fr. catapulte]',
   dialect: '🇱🇨',
+}, {
+  word: 'kwavat',
+  partOfSpeech: 'N',
+  definition: 'necktie',
+  egSentenceKw: 'I mété an kwavat nwè pou i alé lètèman-an.',
+  egSentenceEn: 'He put on a black tie to go to the funeral.',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. cravate]',
+  dialect: '🇱🇨',
 },
 ];

@@ -20,5 +20,16 @@ export const dataLibH = [{
   crossReference: null,
   etymology: null,
   dialect: '🇱🇨',
+}, {
+  word: 'had ben',
+  partOfSpeech: 'N',
+  definition: 'bathing suit',
+  egSentenceKw: null,
+  egSentenceEn: null,
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: null,
+  dialect: '🇱🇨',
 },
 ];

@@ -31,5 +31,16 @@ export const dataLibP = [{
   crossReference: null,
   etymology: '[< Fr. pot]',
   dialect: '🇱🇨',
+}, {
+  word: 'pawasòl',
+  partOfSpeech: 'N',
+  definition: 'umbrella, parasol',
+  egSentenceKw: 'Sé pou ou maché épi pawasòl ou jòdi-a; i kay fè lapli.',
+  egSentenceEn: 'You must carry your umbrella today; it is going to rain.',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. parasol]',
+  dialect: '🇱🇨',
 },
 ];

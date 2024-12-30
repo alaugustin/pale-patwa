@@ -31,5 +31,16 @@ export const dataLibM = [{
   crossReference: null,
   etymology: '[< Fr. mouchoir]',
   dialect: '🇱🇨',
+}, {
+  word: 'mont',
+  partOfSpeech: 'N',
+  definition: 'clock, watch',
+  egSentenceKw: 'I ni on mont nèf.',
+  egSentenceEn: 'He has a new watch.',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. montre]',
+  dialect: '🇱🇨',
 },
 ];
