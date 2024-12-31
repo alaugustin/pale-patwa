@@ -3,8 +3,8 @@ import List from '../../UI/List/List';
 import { Typography } from '../../Typography/Typography';
 import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
-import { Input } from '../../UI/Form/Input/Input';
 import { Pagination } from '../Pagination/Pagination';
+import { DictionarySearch } from '../DictionarySearch/DictionarySearch';
 import { IWordlistProps } from './Wordlist.d';
 
 const {
@@ -13,9 +13,20 @@ const {
   prevButtonLabel,
   nextButtonLabel
 } = AppContentData.libraryContent;
-const { flexItemsCenter, blockElementPadding } = AppContentData.uiClasses;
-const searchFields = ['word', 'definition', 'egSentenceKw', 'egSentenceEn', 'etymology'];
-const ITEMS_PER_PAGE = 25;
+const {
+  flexItemsCenter,
+  blockElementPadding,
+  wordListContainerClasses,
+  wordListListClasses
+} = AppContentData.uiClasses;
+const searchFields = [
+  'word',
+  'definition',
+  'egSentenceKw',
+  'egSentenceEn',
+  'etymology'
+];
+const PAGINATION_ITEMS_PER_PAGE = 25;
 
 export default function WordList({ data }: IWordlistProps) {
   const normalizeString = (str: string) => {
@@ -32,41 +43,45 @@ export default function WordList({ data }: IWordlistProps) {
     setCurrentPage(1);
   }, [searchTerm]);
 
+  const handleSearch = (value: string) => setSearchTerm(value);
+
   const filteredData = data.filter(item =>
     searchFields.some(field =>
       normalizeString(String(item[field as keyof typeof item]).toLowerCase()).includes(normalizeString(searchTerm.toLowerCase()))
     )
   );
 
-  const indexOfLastItem = currentPage * ITEMS_PER_PAGE;
-  const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
+  const indexOfLastItem = currentPage * PAGINATION_ITEMS_PER_PAGE;
+  const indexOfFirstItem = indexOfLastItem - PAGINATION_ITEMS_PER_PAGE;
   const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
-  const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
+  const totalPages = Math.ceil(filteredData.length / PAGINATION_ITEMS_PER_PAGE);
 
   const isFirstPage = currentPage === 1;
   const isLastPage = currentPage === totalPages;
   const decreasePage = () => handlePageChange(currentPage - 1);
   const increasePage = () => handlePageChange(currentPage + 1);
-  const paginationInfo = `${currentPage} of ${totalPages}`;
+
+  const handleClear = () => {
+    handleSearch('');
+  };
 
   return (
-    <BlockElement variant='section' className={`${flexItemsCenter} ${blockElementPadding} flex-col flex-1 border-t border-gray-100 w-full`}>
+    <BlockElement variant='section' className={`${flexItemsCenter} ${blockElementPadding} ${wordListContainerClasses}`}>
       <Typography
         variant='h2'
         className='text-3xl mb-6'
       >{libraryTitleH2}</Typography>
 
-      <Input
-        type="text"
-        placeholder={wordlistFilterPlaceholder}
-        value={searchTerm}
-        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchTerm(e.target.value)}
-        className="p-2 mb-8 border rounded-md w-64"
+      <DictionarySearch
+        placeholderLabel={wordlistFilterPlaceholder}
+        searchValue={searchTerm}
+        onChangeFunc={handleSearch}
+        onClickFunc={handleClear}
       />
 
       <List
         data={currentItems}
-        linkClass='text-xl flex max-w-4xl flex-wrap justify-center items-center gap-4'
+        linkClass={`${flexItemsCenter} ${wordListListClasses}`}
         hasLink={true}
       />
 
@@ -77,7 +92,8 @@ export default function WordList({ data }: IWordlistProps) {
         nextButtonLabel={nextButtonLabel}
         nextOnClickFunc={increasePage}
         nextButtonDisabled={isLastPage}
-        paginationInfo={paginationInfo}
+        currentPage={currentPage}
+        totalPages={totalPages}
       />
     </BlockElement>
   );

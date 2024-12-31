@@ -3,7 +3,8 @@ export interface IPaginationProps {
   nextButtonLabel: string;
   prevButtonDisabled: boolean;
   nextButtonDisabled: boolean;
-  paginationInfo: string;
+  currentPage: number;
+  totalPages: number;
   prevOnClickFunc: () => void;
   nextOnClickFunc: () => void;
 }

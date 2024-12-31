@@ -7,7 +7,13 @@ import WordAttributes from '../WordAttributes/WordAttributes';
 import Button from '../../UI/Form/Button/Button';
 import { IModalProps } from './Modal.d';
 
-const { flexItemsCenter, primaryButton } = AppContentData.uiClasses;
+const {
+  flexItemsCenter,
+  primaryButton,
+  modalContainerClasses,
+  modalContentClasses,
+  modalH2Classes
+} = AppContentData.uiClasses;
 const { modalClose } = AppContentData.libraryContent;
 
 export default function Modal({
@@ -20,9 +26,9 @@ export default function Modal({
   const selectedWord = SortedDictionary.find(word => word.word === modalTitle);
 
   return (
-    <BlockElement variant='article' className={`${flexItemsCenter} fixed inset-0 bg-black bg-opacity-50 z-50`}>
-      <BlockElement className='bg-white p-6 rounded-lg shadow-xl max-w-md mx-4'>
-        <Typography variant='h2' className="text-2xl font-bold mb-2 font-serif">{modalTitle}</Typography>
+    <BlockElement variant='article' className={`${flexItemsCenter} ${modalContainerClasses}`}>
+      <BlockElement className={modalContentClasses}>
+        <Typography variant='h2' className={modalH2Classes}>{modalTitle}</Typography>
         <BlockElement className='mb-4'>
           <BlockElement variant='div' className='mb-4'>
             <Typography variant='p'>{modalDefinition}</Typography>
