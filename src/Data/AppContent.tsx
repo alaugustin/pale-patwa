@@ -26,6 +26,9 @@ const uiClasses = {
   blockElementPadding: 'pt-6 p-2 pb-7',
   backToTopButton: 'fixed bottom-8 right-8 rounded-full shadow-lg text-white flex flex-row gap-x-2 p-4 bg-gray-400 hover:bg-gray-500',
   backToTopButtonIcon: 'h-6 w-6 fill-gray-700',
+  paginationNumberContainer: 'w-6 h-6 rounded border-2 border-gray-200 flex items-center justify-center',
+  paginationButton: 'hover:bg-gray-200 p-2',
+  paginationButtonDisabled: 'cursor-not-allowed disabled:opacity-50',
 };
 
 export const AppContentData = { globalPageContent, wordOfTheDayContent, libraryContent, uiClasses };

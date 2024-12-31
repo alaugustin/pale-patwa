@@ -3,8 +3,8 @@ import List from '../../UI/List/List';
 import { Typography } from '../../Typography/Typography';
 import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
-import { Input } from '../../UI/Form/Input/Input';
 import { Pagination } from '../Pagination/Pagination';
+import { DictionarySearch } from '../DictionarySearch/DictionarySearch';
 import { IWordlistProps } from './Wordlist.d';
 
 const {
@@ -32,6 +32,8 @@ export default function WordList({ data }: IWordlistProps) {
     setCurrentPage(1);
   }, [searchTerm]);
 
+  const handleSearch = (value: string) => setSearchTerm(value);
+
   const filteredData = data.filter(item =>
     searchFields.some(field =>
       normalizeString(String(item[field as keyof typeof item]).toLowerCase()).includes(normalizeString(searchTerm.toLowerCase()))
@@ -47,7 +49,10 @@ export default function WordList({ data }: IWordlistProps) {
   const isLastPage = currentPage === totalPages;
   const decreasePage = () => handlePageChange(currentPage - 1);
   const increasePage = () => handlePageChange(currentPage + 1);
-  const paginationInfo = `${currentPage} of ${totalPages}`;
+
+  const handleClear = () => {
+    handleSearch('');
+  };
 
   return (
     <BlockElement variant='section' className={`${flexItemsCenter} ${blockElementPadding} flex-col flex-1 border-t border-gray-100 w-full`}>
@@ -56,12 +61,11 @@ export default function WordList({ data }: IWordlistProps) {
         className='text-3xl mb-6'
       >{libraryTitleH2}</Typography>
 
-      <Input
-        type="text"
-        placeholder={wordlistFilterPlaceholder}
-        value={searchTerm}
-        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchTerm(e.target.value)}
-        className="p-2 mb-8 border rounded-md w-64"
+      <DictionarySearch
+        placeholderLabel={wordlistFilterPlaceholder}
+        searchValue={searchTerm}
+        onChangeFunc={handleSearch}
+        onClickFunc={handleClear}
       />
 
       <List
@@ -77,7 +81,8 @@ export default function WordList({ data }: IWordlistProps) {
         nextButtonLabel={nextButtonLabel}
         nextOnClickFunc={increasePage}
         nextButtonDisabled={isLastPage}
-        paginationInfo={paginationInfo}
+        currentPage={currentPage}
+        totalPages={totalPages}
       />
     </BlockElement>
   );
