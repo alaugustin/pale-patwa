@@ -8,7 +8,8 @@ import { IPaginationProps } from './Pagination.d';
 const {
   paginationNumberContainer,
   paginationButton,
-  paginationButtonDisabled
+  paginationButtonDisabled,
+  flexItemsCenter
 } = AppContentData.uiClasses;
 
 export const Pagination = ({
@@ -31,7 +32,7 @@ export const Pagination = ({
         buttonDisabled={prevButtonDisabled}
         buttonClass={`mr-3 ${buttonStyling}`}
       />
-      <BlockElement variant='div' className='flex flex-row items-center justify-center'>
+      <BlockElement variant='div' className={`${flexItemsCenter} flex-row`}>
         <Typography variant='span' className={paginationNumberContainer}>{currentPage}</Typography>
         <Typography variant='span' className='mx-2'>{'of'}</Typography>
         <Typography variant='span' className={paginationNumberContainer}>{totalPages}</Typography>

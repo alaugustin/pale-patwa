@@ -6,7 +6,13 @@ import WordAttributes from '../WordAttributes/WordAttributes';
 import { IWordOfTheDayProps } from './WordOfTheDay.d';
 
 const { wodTitleH2 } = AppContentData.wordOfTheDayContent;
-const { flexItemsCenter, blockElementPadding } = AppContentData.uiClasses;
+const {
+  flexItemsCenter,
+  blockElementPadding,
+  wordOfTheDayContainerClasses,
+  wordOfTheDayH3Classes,
+  wordOfTheDayDefinitionClasses
+} = AppContentData.uiClasses;
 
 export default function WordOfTheDay(props: IWordOfTheDayProps) {
   const {
@@ -18,7 +24,7 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
   } = props;
 
   return (
-    <BlockElement variant='section' className={`${flexItemsCenter} ${blockElementPadding} flex-col flex-3 bg-zinc-100 w-full`}>
+    <BlockElement variant='section' className={`${flexItemsCenter} ${blockElementPadding} ${wordOfTheDayContainerClasses}`}>
       <Typography
         variant="h2"
         className={'text-3xl mb-4'}
@@ -26,7 +32,7 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
 
       <Typography
         variant="h3"
-        className={'text-3xl sm:text-6xl lg:text-8xl font-serif mb-2 font-bold'}
+        className={wordOfTheDayH3Classes}
       >{kweyoleWord}</Typography>
 
       <WordAttributes
@@ -38,7 +44,7 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
 
       <Typography
         variant="p"
-        className="text-3xl sm:text-4xl lg:text-6xl font-thin"
+        className={wordOfTheDayDefinitionClasses}
       >{definition}</Typography>
     </BlockElement>
   );

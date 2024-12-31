@@ -1,6 +1,10 @@
 import React from 'react';
+import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { IFooterProps } from './Footer.d';
+
+const { footerInfoClasses } = AppContentData.uiClasses;
+const { copyRight } = AppContentData.icons;
 
 export default function Footer({
   footerContainerClass,
@@ -11,7 +15,7 @@ export default function Footer({
 
   return (
     <BlockElement variant='footer' className={footerContainerClass}>
-      <BlockElement id='copyRight'>&copy; {footerInfo}</BlockElement>
+      <BlockElement className={footerInfoClasses}>{copyRight}&nbsp;{footerInfo}</BlockElement>
     </BlockElement>
   );
 }

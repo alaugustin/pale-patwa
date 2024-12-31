@@ -7,6 +7,10 @@ import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { IHeaderProps } from './Header.d';
 
 const { mainHeading, date } = AppContentData.globalPageContent;
+const {
+  headerH1Classes,
+  headerDateClasses
+} = AppContentData.uiClasses;
 
 const kweyolDays = {
   'Sunday': dataDays[0].word,
@@ -59,10 +63,10 @@ export default function Header({ headerContainerClass }: IHeaderProps) {
     <BlockElement variant='header' className={headerContainerClass}>
       <Typography
         variant="h1"
-        className={'text-2xl sm:text-2xl md:text-3xl lg:text-4xl mr-2'}
+        className={headerH1Classes}
       >{mainHeading}</Typography>
 
-      <Typography variant='span' className='ml-2 text-xs md:text-sm lg:text-lg'>{headerDate}</Typography>
+      <Typography variant='span' className={headerDateClasses}>{headerDate}</Typography>
     </BlockElement>
   );
 }

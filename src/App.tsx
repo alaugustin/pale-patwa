@@ -9,13 +9,20 @@ import Button from './Components/UI/Form/Button/Button';
 import { IWordListDataProps } from './Components/Organisms/Wordlist/Wordlist.d';
 import './styles.css';
 
-const { mainHeading, date, backToTopLabel } = AppContentData.globalPageContent;
+const {
+  mainHeading,
+  date,
+  backToTopLabel
+} = AppContentData.globalPageContent;
 const {
   flexItemsCenter,
-  flexCol,
   backToTopButton,
-  backToTopButtonIcon
+  appAllHolderClasses,
+  headerContainerClasses,
+  footerContainerClasses
 } = AppContentData.uiClasses;
+
+const { backToTopIcon } = AppContentData.icons;
 
 document.title = mainHeading;
 
@@ -74,8 +81,8 @@ export default function App() {
 
   return (
     <>
-      <BlockElement id='allHolder' className={`${flexCol} h-screen max-w-6xl mx-auto text-slate-900`}>
-        <Header headerContainerClass={`${flexItemsCenter} border-b border-gray-200 py-3 p-2 basis-14 justify-between`} />
+      <BlockElement id='allHolder' className={appAllHolderClasses}>
+        <Header headerContainerClass={`${flexItemsCenter} ${headerContainerClasses}`} />
 
         <Main
           mainContainerClass={`${flexItemsCenter} flex-1 flex-col`}
@@ -84,7 +91,7 @@ export default function App() {
         />
 
         <Footer
-          footerContainerClass={'flex border-t border-gray-200 pt-6 p-2 basis-14'}
+          footerContainerClass={footerContainerClasses}
           currentYear={year}
           siteName={mainHeading}
         />
@@ -93,7 +100,7 @@ export default function App() {
           <Button
             buttonClass={backToTopButton}
             buttonLabel={<>
-              <svg className={backToTopButtonIcon} viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title /><path d="M256,48C141.13,48,48,141.13,48,256s93.13,208,208,208,208-93.13,208-208S370.87,48,256,48ZM363.31,307.31a16,16,0,0,1-22.62,0L256,222.63l-84.69,84.68a16,16,0,0,1-22.62-22.62l96-96a16,16,0,0,1,22.62,0l96,96A16,16,0,0,1,363.31,307.31Z" /></svg>
+              {backToTopIcon}
               <span>{backToTopLabel}</span>
             </>}
             onClickFunc={scrollToTop}

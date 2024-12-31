@@ -13,9 +13,20 @@ const {
   prevButtonLabel,
   nextButtonLabel
 } = AppContentData.libraryContent;
-const { flexItemsCenter, blockElementPadding } = AppContentData.uiClasses;
-const searchFields = ['word', 'definition', 'egSentenceKw', 'egSentenceEn', 'etymology'];
-const ITEMS_PER_PAGE = 25;
+const {
+  flexItemsCenter,
+  blockElementPadding,
+  wordListContainerClasses,
+  wordListListClasses
+} = AppContentData.uiClasses;
+const searchFields = [
+  'word',
+  'definition',
+  'egSentenceKw',
+  'egSentenceEn',
+  'etymology'
+];
+const PAGINATION_ITEMS_PER_PAGE = 25;
 
 export default function WordList({ data }: IWordlistProps) {
   const normalizeString = (str: string) => {
@@ -40,10 +51,10 @@ export default function WordList({ data }: IWordlistProps) {
     )
   );
 
-  const indexOfLastItem = currentPage * ITEMS_PER_PAGE;
-  const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
+  const indexOfLastItem = currentPage * PAGINATION_ITEMS_PER_PAGE;
+  const indexOfFirstItem = indexOfLastItem - PAGINATION_ITEMS_PER_PAGE;
   const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
-  const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
+  const totalPages = Math.ceil(filteredData.length / PAGINATION_ITEMS_PER_PAGE);
 
   const isFirstPage = currentPage === 1;
   const isLastPage = currentPage === totalPages;
@@ -55,7 +66,7 @@ export default function WordList({ data }: IWordlistProps) {
   };
 
   return (
-    <BlockElement variant='section' className={`${flexItemsCenter} ${blockElementPadding} flex-col flex-1 border-t border-gray-100 w-full`}>
+    <BlockElement variant='section' className={`${flexItemsCenter} ${blockElementPadding} ${wordListContainerClasses}`}>
       <Typography
         variant='h2'
         className='text-3xl mb-6'
@@ -70,7 +81,7 @@ export default function WordList({ data }: IWordlistProps) {
 
       <List
         data={currentItems}
-        linkClass='text-xl flex max-w-4xl flex-wrap justify-center items-center gap-4'
+        linkClass={`${flexItemsCenter} ${wordListListClasses}`}
         hasLink={true}
       />
 
