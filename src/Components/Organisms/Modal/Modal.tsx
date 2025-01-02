@@ -2,7 +2,7 @@ import React from 'react';
 import { SortedDictionary } from '../../../Data/data';
 import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
-import { Typography } from '../../Typography/Typography';
+import { Typography } from '../../UI/Typography/Typography';
 import WordAttributes from '../WordAttributes/WordAttributes';
 import Button from '../../UI/Form/Button/Button';
 import { IModalProps } from './Modal.d';

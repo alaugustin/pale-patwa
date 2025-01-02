@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import List from '../../UI/List/List';
-import { Typography } from '../../Typography/Typography';
+import { Typography } from '../../UI/Typography/Typography';
 import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Pagination } from '../Pagination/Pagination';

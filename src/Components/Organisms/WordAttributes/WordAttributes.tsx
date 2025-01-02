@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
-import { Typography } from '../../Typography/Typography';
+import { Typography } from '../../UI/Typography/Typography';
 import { IWordAttributesProps } from './WordAttributes.d';
 
 const { wordAttributeBorder } = AppContentData.uiClasses;

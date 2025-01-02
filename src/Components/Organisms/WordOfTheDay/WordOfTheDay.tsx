@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppContentData } from '../../../Data/AppContent';
-import { Typography } from '../../Typography/Typography';
+import { Typography } from '../../UI/Typography/Typography';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import WordAttributes from '../WordAttributes/WordAttributes';
 import { IWordOfTheDayProps } from './WordOfTheDay.d';

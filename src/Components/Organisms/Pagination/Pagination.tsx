@@ -2,7 +2,7 @@ import React from 'react';
 import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import Button from '../../UI/Form/Button/Button';
-import { Typography } from '../../Typography/Typography';
+import { Typography } from '../../UI/Typography/Typography';
 import { IPaginationProps } from './Pagination.d';
 
 const {
