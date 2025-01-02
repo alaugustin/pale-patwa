@@ -9,8 +9,8 @@ const {
   paginationNumberContainer,
   paginationButton,
   paginationButtonDisabled,
-  flexItemsCenter
 } = AppContentData.uiClasses;
+const { flexItemsCenter } = AppContentData.uiHelperClasses;
 
 export const Pagination = ({
   prevButtonLabel,

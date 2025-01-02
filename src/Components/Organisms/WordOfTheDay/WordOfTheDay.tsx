@@ -7,8 +7,6 @@ import { IWordOfTheDayProps } from './WordOfTheDay.d';
 
 const { wodTitleH2 } = AppContentData.wordOfTheDayContent;
 const {
-  flexItemsCenter,
-  blockElementPadding,
   wordOfTheDayContainerClasses,
   wordOfTheDayH3Classes,
   wordOfTheDayDefinitionClasses
@@ -24,7 +22,7 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
   } = props;
 
   return (
-    <BlockElement variant='section' className={`${flexItemsCenter} ${blockElementPadding} ${wordOfTheDayContainerClasses}`}>
+    <BlockElement variant='section' className={wordOfTheDayContainerClasses}>
       <Typography
         variant="h2"
         className={'text-3xl mb-4'}

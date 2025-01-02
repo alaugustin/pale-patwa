@@ -8,7 +8,6 @@ import Button from '../../UI/Form/Button/Button';
 import { IModalProps } from './Modal.d';
 
 const {
-  flexItemsCenter,
   primaryButton,
   modalContainerClasses,
   modalContentClasses,
@@ -26,7 +25,7 @@ export default function Modal({
   const selectedWord = SortedDictionary.find(word => word.word === modalTitle);
 
   return (
-    <BlockElement variant='article' className={`${flexItemsCenter} ${modalContainerClasses}`}>
+    <BlockElement variant='article' className={modalContainerClasses}>
       <BlockElement className={modalContentClasses}>
         <Typography variant='h2' className={modalH2Classes}>{modalTitle}</Typography>
         <BlockElement className='mb-4'>

@@ -15,12 +15,12 @@ const {
   backToTopLabel
 } = AppContentData.globalPageContent;
 const {
-  flexItemsCenter,
   backToTopButton,
   appAllHolderClasses,
   headerContainerClasses,
   footerContainerClasses
 } = AppContentData.uiClasses;
+const {flexItemsCenter} = AppContentData.uiHelperClasses;
 
 const { backToTopIcon } = AppContentData.icons;
 
@@ -82,7 +82,7 @@ export default function App() {
   return (
     <>
       <BlockElement id='allHolder' className={appAllHolderClasses}>
-        <Header headerContainerClass={`${flexItemsCenter} ${headerContainerClasses}`} />
+        <Header headerContainerClass={headerContainerClasses} />
 
         <Main
           mainContainerClass={`${flexItemsCenter} flex-1 flex-col`}
