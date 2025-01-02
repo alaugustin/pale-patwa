@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AppContentData } from '../../../../Data/AppContent';
 import Modal from '../../../Organisms/Modal/Modal';
-import { Typography } from '../../../Typography/Typography';
+import { Typography } from '../../Typography/Typography';
 import Button from '../../Form/Button/Button';
 import { IListItemProps } from './ListItem.d';
 

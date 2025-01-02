@@ -2,15 +2,15 @@ import React from 'react';
 import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import Button from '../../UI/Form/Button/Button';
-import { Typography } from '../../Typography/Typography';
+import { Typography } from '../../UI/Typography/Typography';
 import { IPaginationProps } from './Pagination.d';
 
 const {
   paginationNumberContainer,
   paginationButton,
   paginationButtonDisabled,
-  flexItemsCenter
 } = AppContentData.uiClasses;
+const { flexItemsCenter } = AppContentData.uiHelperClasses;
 
 export const Pagination = ({
   prevButtonLabel,
@@ -42,7 +42,7 @@ export const Pagination = ({
         buttonLabel={nextButtonLabel}
         onClickFunc={nextOnClickFunc}
         buttonDisabled={totalPages === 0 ? true : nextButtonDisabled}
-        buttonClass={`ml-3 ${buttonStyling}`}
+        buttonClass={`${buttonStyling} ml-3`}
       />
     </BlockElement>
   );

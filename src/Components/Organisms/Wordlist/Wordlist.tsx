@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import List from '../../UI/List/List';
-import { Typography } from '../../Typography/Typography';
+import { Typography } from '../../UI/Typography/Typography';
 import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Pagination } from '../Pagination/Pagination';
@@ -14,8 +14,6 @@ const {
   nextButtonLabel
 } = AppContentData.libraryContent;
 const {
-  flexItemsCenter,
-  blockElementPadding,
   wordListContainerClasses,
   wordListListClasses
 } = AppContentData.uiClasses;
@@ -66,7 +64,7 @@ export default function WordList({ data }: IWordlistProps) {
   };
 
   return (
-    <BlockElement variant='section' className={`${flexItemsCenter} ${blockElementPadding} ${wordListContainerClasses}`}>
+    <BlockElement variant='section' className={wordListContainerClasses}>
       <Typography
         variant='h2'
         className='text-3xl mb-6'
@@ -81,7 +79,7 @@ export default function WordList({ data }: IWordlistProps) {
 
       <List
         data={currentItems}
-        linkClass={`${flexItemsCenter} ${wordListListClasses}`}
+        linkClass={wordListListClasses}
         hasLink={true}
       />
 

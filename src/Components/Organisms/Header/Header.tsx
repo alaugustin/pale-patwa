@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { AppContentData } from '../../../Data/AppContent';
-import { Typography } from '../../Typography/Typography';
+import { Typography } from '../../UI/Typography/Typography';
 import { dataDays } from '../../../Data/Calendar/Days';
 import { dataMonths } from '../../../Data/Calendar/Months';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';

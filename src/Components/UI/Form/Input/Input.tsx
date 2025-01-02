@@ -14,8 +14,8 @@ export const Input = ({
       type={type}
       placeholder={placeholder}
       value={value}
-      onChange={onChange}
       className={className}
+      onChange={onChange}
     />
   );
 };

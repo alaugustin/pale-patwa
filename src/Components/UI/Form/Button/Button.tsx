@@ -10,9 +10,9 @@ export default function Button({
 
   return (
     <button
-      onClick={onClickFunc}
       className={buttonClass}
       disabled={buttonDisabled}
+      onClick={onClickFunc}
     >
       {buttonLabel}
     </button>

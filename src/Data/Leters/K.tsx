@@ -53,5 +53,16 @@ export const dataLibK = [{
   crossReference: null,
   etymology: '[< Fr. cravate]',
   dialect: '🇱🇨',
+}, {
+  word: 'kounoumounou',
+  partOfSpeech: 'N',
+  definition: 'fool',
+  egSentenceKw: 'Gason-an sé on kounoumounou!',
+  egSentenceEn: 'The boy is a fool!',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: null,
+  dialect: '🇱🇨',
 },
 ];
