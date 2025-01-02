@@ -1,6 +1,4 @@
 import React from 'react';
-import { BorderClassHelper } from '../Helper/BorderClass';
-import { HeightAndWidth } from '../Helper/HeightAndWidth';
 
 const globalPageContent = {
   mainHeading: 'Palé Kwéyòl',
@@ -32,32 +30,32 @@ const {
 
 const uiClasses = {
   primaryButton: 'bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded',
-  listItemClass: `hover:border-gray-400 ${BorderClassHelper('border-2', 'gray', 200, true)} `,
+  listItemClass: 'hover:border-gray-400 border-2 border-gray-200 rounded',
   listButtonClass: 'p-4 bg-gray-100 hover:bg-gray-200',
-  wordAttributeBorder: `pr-2 mr-2 ${BorderClassHelper('border-r', 'black', 200, false)}`,
+  wordAttributeBorder: 'pr-2 mr-2 border-r border-black-200',
   backToTopButton: `${flexItemsCenter} fixed bottom-8 right-8 rounded-full shadow-lg text-white flex-row gap-x-2 p-4 bg-gray-400 hover:bg-gray-500`,
-  paginationNumberContainer: `${flexItemsCenter} ${HeightAndWidth(6, 6)} ${BorderClassHelper('border-2', 'gray', 200, true)}`,
+  paginationNumberContainer: `${flexItemsCenter} h-6 w-6 border-2 border-gray-200 rounded`,
   paginationButton: 'hover:bg-gray-200 p-2',
   paginationButtonDisabled: 'cursor-not-allowed disabled:opacity-50',
-  footerContainerClasses: `flex pt-6 p-2 basis-14 ${BorderClassHelper('border-t', 'gray', 200, false)}`,
+  footerContainerClasses: 'flex pt-6 p-2 basis-14 border-t border-gray-200',
   footerInfoClasses: `${flexItemsCenter} flex-row`,
   wordOfTheDayContainerClasses: `${flexItemsCenter} ${blockElementPadding} flex-col flex-3 bg-zinc-100 w-full`,
   wordOfTheDayH3Classes: 'text-3xl sm:text-6xl lg:text-8xl font-serif mb-2 font-bold',
   wordOfTheDayDefinitionClasses: 'text-3xl sm:text-4xl lg:text-6xl font-thin',
-  wordListContainerClasses: `${flexItemsCenter} flex-col flex-1 w-full ${BorderClassHelper('border-t', 'gray', 100, false)}`,
+  wordListContainerClasses: `${flexItemsCenter} ${blockElementPadding} flex-col flex-1 w-full border-t border-gray-1`,
   wordListListClasses: `${flexItemsCenter} ${blockElementPadding} text-xl max-w-4xl flex-wrap gap-4`,
   modalContainerClasses: `${flexItemsCenter} fixed inset-0 bg-black bg-opacity-50 z-50`,
   modalContentClasses: 'bg-white p-6 rounded-lg shadow-xl mx-4 w-full sm:max-w-md sm:min-w-96',
   modalH2Classes: 'text-2xl font-bold mb-2 font-serif',
   headerH1Classes: 'text-2xl sm:text-2xl md:text-3xl lg:text-4xl mr-2',
   headerDateClasses: 'ml-2 text-xs md:text-sm lg:text-lg',
-  headerContainerClasses: `${flexItemsCenter} py-3 p-2 basis-14 justify-between ${BorderClassHelper('border-b', 'gray', 200, false)}`,
-  dictionarySearchClasses: `${flexItemsCenter} flex-row mb-8 ${BorderClassHelper('border', 'gray', 200, true)}`,
-  dictionarySearchInputClasses: `p-2 w-64 ${BorderClassHelper('border-r', 'gray', 200, false)}`,
+  headerContainerClasses: `${flexItemsCenter} py-3 p-2 basis-14 justify-between border-b border-gray-200`,
+  dictionarySearchClasses: `${flexItemsCenter} flex-row mb-8 border border-gray-200 rounded`,
+  dictionarySearchInputClasses: 'p-2 w-64 border-r border-gray-200',
   appAllHolderClasses: 'flex flex-col h-screen max-w-6xl mx-auto text-slate-900',
-  backToTopIconClasses: HeightAndWidth(5, 5),
-  clearInputIconClasses: `${HeightAndWidth(4, 4)} m-2 fill-gray-400`,
-  copyRightIconClasses: HeightAndWidth(3, 3),
+  backToTopIconClasses: 'h-5 w-5',
+  clearInputIconClasses: 'h-4 w-4 m-2 fill-gray-400',
+  copyRightIconClasses: 'h-3 w-3',
 };
 
 const {
