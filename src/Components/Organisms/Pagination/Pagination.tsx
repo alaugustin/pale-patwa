@@ -42,7 +42,7 @@ export const Pagination = ({
         buttonLabel={nextButtonLabel}
         onClickFunc={nextOnClickFunc}
         buttonDisabled={totalPages === 0 ? true : nextButtonDisabled}
-        buttonClass={`ml-3 ${buttonStyling}`}
+        buttonClass={`${buttonStyling} ml-3`}
       />
     </BlockElement>
   );
