@@ -77,19 +77,24 @@ const footerContent = {
   resources: {
     link: [
       {
+        label: 'Kwéyòl Dictionary - Ministry of Education, Government of Saint Lucia',
         href: 'http://www.saintluciancreole.dbfrank.net/dictionary/KweyolDictionary.pdf',
         target: '_blank',
         rel: 'noreferrer noopener',
-        label: 'Kwéyòl Dictionary - Ministry of Education, Government of Saint Lucia',
-        pdfIcon: icons.pdfIcon,
         download: 'Kwéyòl Dictionary - Ministry of Education, Government of Saint Lucia',
         type: 'application/pdf',
-      },
-      {
+        pdfIcon: icons.pdfIcon,
+      }, {
+        label: 'Kwéyòl Dictionary - Webonary',
         href: 'https://www.webonary.org/kweyol/',
         target: '_blank',
         rel: 'noreferrer noopener',
-        label: 'Kwéyòl Dictionary - Webonary',
+        type: 'text/html',
+      }, {
+        label: 'Palé Kwéyòl - Github',
+        href: 'https://github.com/alaugustin/pale-patwa',
+        target: '_blank',
+        rel: 'noreferrer noopener',
         type: 'text/html',
       }
     ]
