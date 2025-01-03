@@ -24,9 +24,46 @@ const searchFields = [
   'egSentenceEn',
   'etymology'
 ];
-const PAGINATION_ITEMS_PER_PAGE = 25;
+
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height
+  };
+}
 
 export default function WordList({ data }: IWordlistProps) {
+  function useWindowDimensions() {
+    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+    useEffect(() => {
+      function handleResize() {
+        setWindowDimensions(getWindowDimensions());
+      }
+
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    return windowDimensions;
+  }
+
+  const { height } = useWindowDimensions();
+
+  const ITEMS_PER_HEIGHT = {
+    0: 10,     // default
+    667: 15,
+    896: 20,
+    1024: 25,
+    1280: 33
+  };
+
+  const PAGINATION_ITEMS_PER_PAGE = Object.entries(ITEMS_PER_HEIGHT)
+    .reverse()
+    .find(([breakpoint]) => height > Number(breakpoint))?.[1]
+    ?? ITEMS_PER_HEIGHT[0];
+
   const normalizeString = (str: string) => {
     return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   };

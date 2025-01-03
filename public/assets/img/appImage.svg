@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="6" fill="url(#gradient)"/>
+  <path d="M8 9.5C8 8.67 8.67 8 9.5 8H22.5C23.33 8 24 8.67 24 9.5V22.5C24 23.33 23.33 24 22.5 24H9.5C8.67 24 8 23.33 8 22.5V9.5Z" fill="white" opacity="0.9"/>
+  <path d="M12 12H20V14H12V12ZM12 16H18V18H12V16Z" fill="url(#gradient)"/>
+  <text x="0" y="35" font-family="Arial Black, sans-serif" font-size="17" fill="#262626">PK</text>
+</svg>

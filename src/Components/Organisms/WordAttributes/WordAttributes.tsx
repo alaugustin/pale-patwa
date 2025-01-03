@@ -17,7 +17,8 @@ export default function WordAttributes({
     <BlockElement variant='div' className={containerClasses}>
       <Typography
         variant="span"
-        className={`${wordPartOfSpeech && wordAttributeBorder}`} >{wordDialect}</Typography>
+        className={`${wordPartOfSpeech && wordAttributeBorder || wordEtymology && wordAttributeBorder}`}
+      >{wordDialect}</Typography>
 
       {wordPartOfSpeech && (
         <Typography
