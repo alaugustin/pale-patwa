@@ -7,6 +7,7 @@ import { IFooterProps } from './Footer.d';
 
 const footerResourcesLink = AppContentData.footerContent.resources.link;
 const { copyRight } = AppContentData.icons;
+const { footerColClasses } = AppContentData.uiClasses;
 
 export default function Footer({
   footerContainerClass,
@@ -17,27 +18,26 @@ export default function Footer({
 
   return (
     <BlockElement variant='footer' className={footerContainerClass}>
-      <BlockElement className='flex flex-row mb-3'>{copyRight}&nbsp;{footerInfo}</BlockElement>
-      <BlockElement className='flex flex-col mb-3'>
-        <Typography variant='h3' className='font-bold text-slate-800 mb-2'>{'Resources'}</Typography>
+      <BlockElement className={`${footerColClasses} order-last md:order-first`}>{copyRight}&nbsp;{footerInfo}</BlockElement>
+      <BlockElement className='flex basis-full flex-col mb-4 md:mb-0 md:px-4 md:basis-1/2'>
+        <Typography variant='h3' className='font-bold text-slate-800 text-sm mb-1'>{'Resources'}</Typography>
 
         {footerResourcesLink.map((link, index) => (
           <Typography key={index} variant='p' className={'mb-1'}>
             <Link
               linkHref={link.href}
               linkTarget={link.target}
-              linkClasses={'text-slate-700'}
+              linkClasses={'text-slate-700 text-xs'}
               linkDownload={link.download}
               linkRel={link.rel}
               linkType={link.type}
             >
               {link.label}
             </Link>
-            {link.pdfIcon && <Typography variant='span'>{link.pdfIcon}</Typography>}
           </Typography>
         ))}
       </BlockElement>
-      <BlockElement className='flex flex-row'>🇱🇨🇩🇲🇬🇩🇹🇹🇭🇹🇬🇫🇻🇪🇻🇨</BlockElement>
+      <BlockElement className={`${footerColClasses} mb-4 md:mb-0 md:justify-end order-first md:order-last`}>🇱🇨🇩🇲🇬🇩🇹🇹🇭🇹🇬🇫🇻🇪🇻🇨</BlockElement>
     </BlockElement>
   );
 }

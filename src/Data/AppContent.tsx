@@ -19,7 +19,8 @@ const uiClasses = {
   paginationNumberContainer: `${flexItemsCenter} h-6 w-6 border-2 border-gray-200 rounded`,
   paginationButton: 'hover:bg-gray-200 p-2',
   paginationButtonDisabled: 'cursor-not-allowed disabled:opacity-50',
-  footerContainerClasses: 'pt-6 p-2 basis-14 border-t border-gray-200',
+  footerContainerClasses: 'pt-6 p-2 basis-14 border-t border-gray-200 flex flex-col md:flex-row justify-between',
+  footerColClasses: 'flex basis-full md:basis-1/4 flex-row text-xs',
   wordOfTheDayContainerClasses: `${flexItemsCenter} ${blockElementPadding} flex-col flex-3 bg-zinc-100 w-full`,
   wordOfTheDayH3Classes: 'text-3xl sm:text-6xl lg:text-8xl font-serif mb-2 font-bold',
   wordOfTheDayDefinitionClasses: 'text-3xl sm:text-4xl lg:text-6xl font-thin',
@@ -36,7 +37,7 @@ const uiClasses = {
   appAllHolderClasses: 'flex flex-col h-screen max-w-6xl mx-auto text-slate-900',
   backToTopIconClasses: 'h-5 w-5',
   clearInputIconClasses: 'h-4 w-4 m-2 fill-gray-400',
-  copyRightIconClasses: 'mt-1.5 h-3 w-3',
+  copyRightIconClasses: 'mt-1 h-2 w-2',
 };
 
 const {
@@ -83,7 +84,6 @@ const footerContent = {
         rel: 'noreferrer noopener',
         download: 'Kwéyòl Dictionary - Ministry of Education, Government of Saint Lucia',
         type: 'application/pdf',
-        pdfIcon: icons.pdfIcon,
       }, {
         label: 'Kwéyòl Dictionary - Webonary',
         href: 'https://www.webonary.org/kweyol/',
