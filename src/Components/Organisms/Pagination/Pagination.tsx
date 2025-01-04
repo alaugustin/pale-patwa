@@ -7,10 +7,15 @@ import { IPaginationProps } from './Pagination.d';
 
 const {
   paginationNumberContainer,
-  paginationButton,
   paginationButtonDisabled,
   paginationBoardClasses,
 } = AppContentData.uiClasses;
+
+const shouldShowButton = (currentPage: number, currentPageComparator: number, totalPages: number) => {
+  return (
+    (currentPage === currentPageComparator || totalPages === 0) ? paginationButtonDisabled : 'cursor-pointer'
+  );
+};
 
 export const Pagination = ({
   prevButtonLabel,
@@ -22,7 +27,6 @@ export const Pagination = ({
   prevOnClickFunc,
   nextOnClickFunc
 }: IPaginationProps) => {
-  const buttonStyling = `${paginationButton} ${totalPages === 0 ? `${paginationButtonDisabled}` : 'cursor-pointer'}`;
 
   return (
     <BlockElement id='pagination' className='mt-6 flex flex-row' variant='nav'>
@@ -30,7 +34,7 @@ export const Pagination = ({
         buttonLabel={prevButtonLabel}
         onClickFunc={prevOnClickFunc}
         buttonDisabled={prevButtonDisabled}
-        buttonClass={`mr-3 ${buttonStyling}`}
+        buttonClass={`${shouldShowButton(currentPage, 1, totalPages)} mr-3`}
       />
       <BlockElement variant='div' className={paginationBoardClasses}>
         <Typography variant='span' className={paginationNumberContainer}>{currentPage}</Typography>
@@ -42,7 +46,7 @@ export const Pagination = ({
         buttonLabel={nextButtonLabel}
         onClickFunc={nextOnClickFunc}
         buttonDisabled={totalPages === 0 ? true : nextButtonDisabled}
-        buttonClass={`${buttonStyling} ml-3`}
+        buttonClass={`${shouldShowButton(currentPage, totalPages, totalPages)} ml-3`}
       />
     </BlockElement>
   );
