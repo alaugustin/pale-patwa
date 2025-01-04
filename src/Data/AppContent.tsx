@@ -11,33 +11,34 @@ const {
 } = uiHelperClasses;
 
 const uiClasses = {
-  primaryButton: 'bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded',
-  listItemClass: 'hover:border-gray-400 border-2 border-gray-200 rounded',
-  listButtonClass: 'p-4 bg-gray-100 hover:bg-gray-200',
-  wordAttributeBorder: 'pr-2 mr-2 border-r border-black',
-  backToTopButton: `${flexItemsCenter} fixed bottom-8 right-8 rounded-full shadow-lg text-white flex-row gap-x-2 p-4 bg-gray-400 hover:bg-gray-500`,
-  paginationNumberContainer: `${flexItemsCenter} h-6 w-6 border-2 border-gray-200 rounded`,
-  paginationButton: 'hover:bg-gray-200 p-2',
-  paginationButtonDisabled: 'cursor-not-allowed disabled:opacity-50',
-  footerContainerClasses: 'pt-6 p-2 basis-14 border-t border-gray-200 flex flex-col md:flex-row justify-between',
-  footerColClasses: 'flex basis-full md:basis-1/4 flex-row text-xs',
-  wordOfTheDayContainerClasses: `${flexItemsCenter} ${blockElementPadding} flex-col flex-3 bg-zinc-100 w-full`,
-  wordOfTheDayH3Classes: 'text-3xl sm:text-6xl lg:text-8xl font-serif mb-2 font-bold',
-  wordOfTheDayDefinitionClasses: 'text-3xl sm:text-4xl lg:text-6xl font-thin',
-  wordListContainerClasses: `${flexItemsCenter} ${blockElementPadding} flex-col flex-1 w-full border-t border-gray-1`,
-  wordListListClasses: `${flexItemsCenter} ${blockElementPadding} text-xl max-w-4xl flex-wrap gap-4`,
-  modalContainerClasses: `${flexItemsCenter} fixed inset-0 bg-black bg-opacity-50 z-50`,
-  modalContentClasses: 'bg-white p-6 rounded-lg shadow-xl mx-4 w-full sm:max-w-md sm:min-w-96',
-  modalH2Classes: 'text-2xl font-bold mb-2 font-serif',
-  headerH1Classes: 'text-2xl sm:text-2xl md:text-3xl lg:text-4xl mr-2',
-  headerDateClasses: 'ml-2 text-xs md:text-sm lg:text-lg',
-  headerContainerClasses: `${flexItemsCenter} py-3 p-2 basis-14 justify-between border-b border-gray-200`,
-  dictionarySearchClasses: `${flexItemsCenter} flex-row mb-8 border border-gray-200 rounded`,
-  dictionarySearchInputClasses: 'p-2 w-64 border-r border-gray-200',
   appAllHolderClasses: 'flex flex-col h-screen max-w-6xl mx-auto text-slate-900',
+  backToTopButton: `${flexItemsCenter} fixed bottom-8 right-8 rounded-full shadow-lg text-white flex-row gap-x-2 p-4 bg-gray-400 hover:bg-gray-500`,
   backToTopIconClasses: 'h-5 w-5',
   clearInputIconClasses: 'h-4 w-4 m-2 fill-gray-400',
   copyRightIconClasses: 'mt-1 h-2 w-2',
+  dictionarySearchClasses: `${flexItemsCenter} flex-row mb-8 border border-gray-200 rounded`,
+  dictionarySearchInputClasses: 'p-2 w-64 border-r border-gray-200',
+  footerColClasses: 'flex basis-full md:basis-1/4 flex-row text-xs',
+  footerContainerClasses: 'pt-6 p-2 basis-14 border-t border-gray-200 flex flex-col md:flex-row justify-between',
+  headerContainerClasses: `${flexItemsCenter} py-3 p-2 basis-14 justify-between border-b border-gray-200`,
+  headerDateClasses: 'ml-2 text-xs md:text-sm lg:text-lg',
+  headerH1Classes: 'text-2xl sm:text-2xl md:text-3xl lg:text-4xl mr-2',
+  listButtonClass: 'p-4 bg-gray-100 hover:bg-gray-200',
+  listItemClass: 'hover:border-gray-400 border-2 border-gray-200 rounded',
+  modalContainerClasses: `${flexItemsCenter} fixed inset-0 bg-black bg-opacity-50 z-50`,
+  modalContentClasses: 'bg-white p-6 rounded-lg shadow-xl mx-4 w-full sm:max-w-md sm:min-w-96',
+  modalH2Classes: 'text-2xl font-bold mb-2 font-serif',
+  paginationButton: 'hover:bg-gray-200 p-2',
+  paginationButtonDisabled: 'cursor-not-allowed disabled:opacity-50',
+  paginationNumberContainer: `${flexItemsCenter} h-6 w-6 border-2 border-gray-200 rounded`,
+  primaryButton: 'bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded',
+  pronounciationContainerClasses: `${blockElementPadding} ${flexItemsCenter} flex-col w-full`,
+  wordAttributeBorder: 'pr-2 mr-2 border-r border-black',
+  wordListContainerClasses: `${flexItemsCenter} ${blockElementPadding} flex-col flex-1 w-full border-t border-gray-1`,
+  wordListListClasses: `${flexItemsCenter} ${blockElementPadding} text-xl max-w-4xl flex-wrap gap-4`,
+  wordOfTheDayContainerClasses: `${flexItemsCenter} ${blockElementPadding} flex-col flex-3 bg-zinc-100 w-full`,
+  wordOfTheDayDefinitionClasses: 'text-3xl sm:text-4xl lg:text-6xl font-thin',
+  wordOfTheDayH3Classes: 'text-3xl sm:text-6xl lg:text-8xl font-serif mb-2 font-bold',
 };
 
 const {
@@ -74,6 +75,10 @@ const libraryContent = {
   nextButtonLabel: 'Next',
 };
 
+const pronounciationContent = {
+  titleH2: 'IPA Pronunciation',
+};
+
 const footerContent = {
   resources: {
     link: [
@@ -101,4 +106,4 @@ const footerContent = {
   },
 };
 
-export const AppContentData = { globalPageContent, wordOfTheDayContent, libraryContent, footerContent, icons, uiClasses, uiHelperClasses };
+export const AppContentData = { globalPageContent, wordOfTheDayContent, libraryContent, pronounciationContent, footerContent, icons, uiClasses, uiHelperClasses };

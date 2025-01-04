@@ -6,8 +6,8 @@ import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import Pronounciation from '../Pronounciation/Pronounciation';
 import { IMainProps } from './Main.d';
 
-const { blockElementPadding } = AppContentData.uiHelperClasses;
-
+const { pronounciationContainerClasses } = AppContentData.uiClasses;
+const { titleH2 } = AppContentData.pronounciationContent;
 
 export const Main = ({
   mainContainerClass,
@@ -32,9 +32,13 @@ export const Main = ({
         partOfSpeech={partOfSpeech}
       />
 
-      <Pronounciation className={`${blockElementPadding} max-w-4xl`} />
-
       <WordList data={wordListData} />
+
+      <Pronounciation
+        className={pronounciationContainerClasses}
+        titleH2={titleH2}
+      />
+
     </BlockElement>
   );
 };

@@ -1,4 +1,4 @@
 export interface IPronunciationsProps {
-  foo?: string;
   className?: string;
+  titleH2?: string;
 }
