@@ -1,13 +1,8 @@
 import React from 'react';
-import { AppContentData } from '../../../Data/AppContent';
 import WordOfTheDay from '../WordOfTheDay/WordOfTheDay';
 import WordList from '../Wordlist/Wordlist';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
-import Pronounciation from '../Pronounciation/Pronounciation';
 import { IMainProps } from './Main.d';
-
-const { pronounciationContainerClasses } = AppContentData.uiClasses;
-const { titleH2 } = AppContentData.pronounciationContent;
 
 export const Main = ({
   mainContainerClass,
@@ -33,11 +28,6 @@ export const Main = ({
       />
 
       <WordList data={wordListData} />
-
-      <Pronounciation
-        className={pronounciationContainerClasses}
-        titleH2={titleH2}
-      />
 
     </BlockElement>
   );

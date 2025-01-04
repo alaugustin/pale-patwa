@@ -3,11 +3,13 @@ import React from 'react';
 const uiHelperClasses = {
   flexItemsCenter: 'flex items-center justify-center',
   blockElementPadding: 'pt-6 p-2 pb-7',
+  footerColClasses: 'flex basis-full md:basis-1/4 flex-row text-xs',
 };
 
 const {
   flexItemsCenter,
   blockElementPadding,
+  footerColClasses
 } = uiHelperClasses;
 
 const uiClasses = {
@@ -15,11 +17,14 @@ const uiClasses = {
   backToTopButton: `${flexItemsCenter} fixed bottom-8 right-8 rounded-full shadow-lg text-white flex-row gap-x-2 p-4 bg-gray-400 hover:bg-gray-500`,
   backToTopIconClasses: 'h-5 w-5',
   clearInputIconClasses: 'h-4 w-4 m-2 fill-gray-400',
+  copyRightContainerClasses: `${footerColClasses} p-2 md:pb-7 order-last md:order-first`,
   copyRightIconClasses: 'mt-1 h-2 w-2',
   dictionarySearchClasses: `${flexItemsCenter} flex-row mb-8 border border-gray-200 rounded`,
   dictionarySearchInputClasses: 'p-2 w-64 border-r border-gray-200',
-  footerColClasses: 'flex basis-full md:basis-1/4 flex-row text-xs',
-  footerContainerClasses: 'pt-6 p-2 basis-14 border-t border-gray-200 flex flex-col md:flex-row justify-between',
+  footerContainerClasses: 'pb-7 basis-14 border-t border-gray-200 flex flex-col md:flex-row justify-between md:flex-wrap',
+  footerFlagSectionClasses: `${footerColClasses} p-2 md:pb-7 md:mb-0 md:justify-end`,
+  footerResourcesContinerClasses: 'p-2 md:pb-7 flex basis-full flex-col md:mb-0 md:px-4 md:basis-1/2',
+  footerResourcesTitleClasses: 'font-bold text-slate-800 text-sm mb-1',
   headerContainerClasses: `${flexItemsCenter} py-3 p-2 basis-14 justify-between border-b border-gray-200`,
   headerDateClasses: 'ml-2 text-xs md:text-sm lg:text-lg',
   headerH1Classes: 'text-2xl sm:text-2xl md:text-3xl lg:text-4xl mr-2',
@@ -32,7 +37,9 @@ const uiClasses = {
   paginationButtonDisabled: 'cursor-not-allowed disabled:opacity-50',
   paginationNumberContainer: `${flexItemsCenter} h-6 w-6 border-2 border-gray-200 rounded`,
   primaryButton: 'bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded',
-  pronounciationContainerClasses: `${blockElementPadding} ${flexItemsCenter} flex-col w-full`,
+  pronounciationContainerClasses: `${blockElementPadding} ${flexItemsCenter} mb-4 bg-neutral-500 flex-col w-full text-neutral-200 order-first basis-full flex-auto`,
+  pronounciationListClasses: 'grid grid-cols-4 md:grid-cols-8 gap-4 w-full',
+  pronounciationListItemClasses: `${flexItemsCenter} flex-col text-xs`,
   wordAttributeBorder: 'pr-2 mr-2 border-r border-black',
   wordListContainerClasses: `${flexItemsCenter} ${blockElementPadding} flex-col flex-1 w-full border-t border-gray-1`,
   wordListListClasses: `${flexItemsCenter} ${blockElementPadding} text-xl max-w-4xl flex-wrap gap-4`,
@@ -76,11 +83,12 @@ const libraryContent = {
 };
 
 const pronounciationContent = {
-  titleH2: 'IPA Pronunciation',
+  pronounciationTitleH2: 'IPA Pronunciation',
 };
 
 const footerContent = {
   resources: {
+    titleH2: 'Resources',
     link: [
       {
         label: 'Kwéyòl Dictionary - Ministry of Education, Government of Saint Lucia',

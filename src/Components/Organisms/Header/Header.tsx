@@ -6,7 +6,7 @@ import { dataMonths } from '../../../Data/Calendar/Months';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { IHeaderProps } from './Header.d';
 
-const { mainHeading, date } = AppContentData.globalPageContent;
+const { date } = AppContentData.globalPageContent;
 const {
   headerH1Classes,
   headerDateClasses
@@ -37,7 +37,10 @@ const kweyolMonths = {
   'December': dataMonths[11].word
 };
 
-export default function Header({ headerContainerClass }: IHeaderProps) {
+export default function Header({
+  headerContainerClass,
+  mainHeading
+}: IHeaderProps) {
   const [currentDay, setCurrentDay] = useState('');
   const [currentMonth, setCurrentMonth] = useState('');
   const [currentYear, setCurrentYear] = useState('');
