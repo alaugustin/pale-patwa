@@ -29,7 +29,10 @@ export default function Footer({
     <BlockElement variant='footer' className={footerContainerClass}>
       <Pronunciations className={pronounciationContainerClasses} titleH2={pronounciationTitleH2} />
 
-      <BlockElement className={copyRightContainerClasses}>{copyRight}&nbsp;{footerInfo}</BlockElement>
+      <BlockElement
+        className={copyRightContainerClasses}>
+        {copyRight}&nbsp;{footerInfo}
+      </BlockElement>
 
       <BlockElement className={footerResourcesContinerClasses}>
         <Typography variant='h3' className={footerResourcesTitleClasses}>{titleH2}</Typography>
@@ -49,7 +52,11 @@ export default function Footer({
           </Typography>
         ))}
       </BlockElement>
-      <BlockElement className={footerFlagSectionClasses}>🇱🇨🇩🇲🇬🇩🇹🇹🇭🇹🇬🇫🇻🇪🇻🇨</BlockElement>
+
+      <BlockElement
+        className={footerFlagSectionClasses}>
+          🇱🇨🇩🇲🇬🇩🇹🇹🇭🇹🇬🇫🇻🇪🇻🇨
+      </BlockElement>
     </BlockElement>
   );
 }

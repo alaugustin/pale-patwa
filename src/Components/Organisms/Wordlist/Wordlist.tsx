@@ -11,7 +11,8 @@ const {
   libraryTitleH2,
   wordlistFilterPlaceholder,
   prevButtonLabel,
-  nextButtonLabel
+  nextButtonLabel,
+  paginationItemsPerHeight
 } = AppContentData.libraryContent;
 const {
   wordListContainerClasses,
@@ -51,13 +52,7 @@ export default function WordList({ data }: IWordlistProps) {
 
   const { height } = useWindowDimensions();
 
-  const ITEMS_PER_HEIGHT = {
-    0: 10,     // default
-    667: 15,
-    896: 20,
-    1024: 25,
-    1280: 33
-  };
+  const ITEMS_PER_HEIGHT = paginationItemsPerHeight;
 
   const PAGINATION_ITEMS_PER_PAGE = Object.entries(ITEMS_PER_HEIGHT)
     .reverse()

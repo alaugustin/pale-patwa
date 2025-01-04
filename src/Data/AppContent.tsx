@@ -36,6 +36,7 @@ const uiClasses = {
   paginationButton: 'hover:bg-gray-200 p-2',
   paginationButtonDisabled: 'cursor-not-allowed disabled:opacity-50',
   paginationNumberContainer: `${flexItemsCenter} h-6 w-6 border-2 border-gray-200 rounded`,
+  paginationBoardClasses: `${flexItemsCenter} flex-row`,
   primaryButton: 'bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded',
   pronounciationContainerClasses: `${blockElementPadding} ${flexItemsCenter} mb-4 bg-neutral-500 flex-col w-full text-neutral-200 order-first basis-full flex-auto`,
   pronounciationListClasses: 'grid grid-cols-4 md:grid-cols-8 gap-4 w-full',
@@ -80,6 +81,13 @@ const libraryContent = {
   modalClose: 'Close',
   prevButtonLabel: 'Previous',
   nextButtonLabel: 'Next',
+  paginationItemsPerHeight: {
+    0: 10,     // default
+    667: 15,
+    896: 20,
+    1024: 25,
+    1280: 33
+  }
 };
 
 const pronounciationContent = {
