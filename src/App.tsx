@@ -82,7 +82,7 @@ export default function App() {
   return (
     <>
       <BlockElement id='allHolder' className={appAllHolderClasses}>
-        <Header headerContainerClass={headerContainerClasses} />
+        <Header headerContainerClass={headerContainerClasses} mainHeading={mainHeading} />
 
         <Main
           mainContainerClass={`${flexItemsCenter} flex-1 flex-col`}

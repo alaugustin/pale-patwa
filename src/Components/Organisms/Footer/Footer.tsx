@@ -3,11 +3,20 @@ import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Typography } from '../../UI/Typography/Typography';
 import Link from '../../UI/Link/Link';
+import Pronunciations from '../Pronounciation/Pronounciation';
 import { IFooterProps } from './Footer.d';
 
+const { titleH2 } = AppContentData.footerContent.resources;
+const { pronounciationTitleH2 } = AppContentData.pronounciationContent;
 const footerResourcesLink = AppContentData.footerContent.resources.link;
 const { copyRight } = AppContentData.icons;
-const { footerColClasses } = AppContentData.uiClasses;
+const {
+  pronounciationContainerClasses,
+  copyRightContainerClasses,
+  footerResourcesContinerClasses,
+  footerResourcesTitleClasses,
+  footerFlagSectionClasses
+} = AppContentData.uiClasses;
 
 export default function Footer({
   footerContainerClass,
@@ -18,9 +27,15 @@ export default function Footer({
 
   return (
     <BlockElement variant='footer' className={footerContainerClass}>
-      <BlockElement className={`${footerColClasses} order-last md:order-first`}>{copyRight}&nbsp;{footerInfo}</BlockElement>
-      <BlockElement className='flex basis-full flex-col mb-4 md:mb-0 md:px-4 md:basis-1/2'>
-        <Typography variant='h3' className='font-bold text-slate-800 text-sm mb-1'>{'Resources'}</Typography>
+      <Pronunciations className={pronounciationContainerClasses} titleH2={pronounciationTitleH2} />
+
+      <BlockElement
+        className={copyRightContainerClasses}>
+        {copyRight}&nbsp;{footerInfo}
+      </BlockElement>
+
+      <BlockElement className={footerResourcesContinerClasses}>
+        <Typography variant='h3' className={footerResourcesTitleClasses}>{titleH2}</Typography>
 
         {footerResourcesLink.map((link, index) => (
           <Typography key={index} variant='p' className={'mb-1'}>
@@ -37,7 +52,11 @@ export default function Footer({
           </Typography>
         ))}
       </BlockElement>
-      <BlockElement className={`${footerColClasses} mb-4 md:mb-0 md:justify-end order-first md:order-last`}>🇱🇨🇩🇲🇬🇩🇹🇹🇭🇹🇬🇫🇻🇪🇻🇨</BlockElement>
+
+      <BlockElement
+        className={footerFlagSectionClasses}>
+          🇱🇨🇩🇲🇬🇩🇹🇹🇭🇹🇬🇫🇻🇪🇻🇨
+      </BlockElement>
     </BlockElement>
   );
 }

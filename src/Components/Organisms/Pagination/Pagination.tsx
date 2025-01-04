@@ -9,8 +9,8 @@ const {
   paginationNumberContainer,
   paginationButton,
   paginationButtonDisabled,
+  paginationBoardClasses,
 } = AppContentData.uiClasses;
-const { flexItemsCenter } = AppContentData.uiHelperClasses;
 
 export const Pagination = ({
   prevButtonLabel,
@@ -32,7 +32,7 @@ export const Pagination = ({
         buttonDisabled={prevButtonDisabled}
         buttonClass={`mr-3 ${buttonStyling}`}
       />
-      <BlockElement variant='div' className={`${flexItemsCenter} flex-row`}>
+      <BlockElement variant='div' className={paginationBoardClasses}>
         <Typography variant='span' className={paginationNumberContainer}>{currentPage}</Typography>
         <Typography variant='span' className='mx-2'>{'of'}</Typography>
         <Typography variant='span' className={paginationNumberContainer}>{totalPages}</Typography>

@@ -28,6 +28,7 @@ export const Main = ({
       />
 
       <WordList data={wordListData} />
+
     </BlockElement>
   );
 };
