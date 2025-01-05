@@ -102,6 +102,8 @@ export default function WordList({ data }: IWordlistProps) {
         className='text-3xl mb-6'
       >{libraryTitleH2}</Typography>
 
+      <Typography variant='p' className='mb-6  max-w-md'>{'Search through our comprehensive Kwéyòl dictionary with real-time filtering. Find words, definitions, example sentences, and etymology in both Kwéyòl and English.'}</Typography>
+
       <DictionarySearch
         placeholderLabel={wordlistFilterPlaceholder}
         searchValue={searchTerm}

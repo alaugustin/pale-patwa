@@ -28,6 +28,8 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
         className={'text-3xl mb-4'}
       >{wodTitleH2}</Typography>
 
+      <Typography variant="p" className='mb-6 max-w-md'>{'Discover a new Kwéyòl word daily! Expand your Creole vocabulary with detailed etymology, usage examples, and cultural context - one word at a time.'}</Typography>
+
       <Typography
         variant="h3"
         className={wordOfTheDayH3Classes}
