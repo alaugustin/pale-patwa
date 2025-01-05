@@ -6,7 +6,7 @@ export const dataLibD = [{
   egSentenceEn: 'They extracted his tooth because it was hurting him.',
   synonym: null,
   antonym: null,
-  crossReference: null,
+  crossReference: 'bay dan',
   etymology: '[< Fr. dent]',
   dialect: '🇱🇨',
 },

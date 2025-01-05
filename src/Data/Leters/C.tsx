@@ -4,9 +4,9 @@ export const dataLibC = [{
   definition: 'cat',
   egSentenceKw: 'Chyen ka kouwi dèyè chat.',
   egSentenceEn: 'Dogs chase cats.',
-  synonym: null,
+  synonym: 'tig',
   antonym: null,
-  crossReference: null,
+  crossReference: 'chat tig',
   etymology: '[< Fr. chat]',
   dialect: '🇱🇨',
 }, {
@@ -17,7 +17,7 @@ export const dataLibC = [{
   egSentenceEn: 'There are four tables and chairs.',
   synonym: null,
   antonym: null,
-  crossReference: null,
+  crossReference: 'bwa chèz',
   etymology: '[< Fr. chaise]',
   dialect: '🇱🇨',
 }, {

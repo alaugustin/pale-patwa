@@ -20,6 +20,9 @@ export default function List({
           definition={element.definition}
           egSentenceKw={element.egSentenceKw}
           egSentenceEn={element.egSentenceEn}
+          synonym={element.synonym}
+          antonym={element.antonym}
+          crossReference={element.crossReference}
           hasLink={hasLink}
           listItemClass={listItemClass}
         />

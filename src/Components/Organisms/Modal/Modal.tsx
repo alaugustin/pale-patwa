@@ -20,6 +20,9 @@ export default function Modal({
   modalDefinition,
   modalSentenceKw,
   modalSentenceEn,
+  modalSynonym,
+  modalAntonym,
+  modalCrossRef,
   clickHandler
 }: IModalProps) {
   const selectedWord = SortedDictionary.find(word => word.word === modalTitle);
@@ -40,6 +43,20 @@ export default function Modal({
 
             {modalSentenceEn && (
               <Typography variant='p'>{modalSentenceEn}</Typography>
+            )}
+          </BlockElement>
+
+          <BlockElement className='mb-4 flex flex-row'>
+            {modalSynonym && (
+              <Typography variant='span' className='mr-1'>{`(syn: ${modalSynonym})`}</Typography>
+            )}
+
+            {modalAntonym && (
+              <Typography variant='span' className='mr-1'>{`(opp: ${modalAntonym})`}</Typography>
+            )}
+
+            {modalCrossRef && (
+              <Typography variant='span'>{`(xref: ${modalCrossRef})`}</Typography>
             )}
           </BlockElement>
 

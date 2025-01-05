@@ -9,4 +9,7 @@ export interface IListDataProps {
   definition: string | number;
   egSentenceKw: string;
   egSentenceEn: string;
+  synonym: string;
+  antonym: string;
+  crossReference: string;
 }

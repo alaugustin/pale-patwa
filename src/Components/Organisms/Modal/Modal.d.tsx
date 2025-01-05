@@ -3,5 +3,8 @@ export interface IModalProps {
   modalDefinition: string | number;
   modalSentenceKw: string | null;
   modalSentenceEn: string | null;
+  modalSynonym: string | null;
+  modalAntonym: string | null;
+  modalCrossRef: string | null;
   clickHandler: () => void;
 }

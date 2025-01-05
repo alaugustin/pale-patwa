@@ -6,5 +6,8 @@ export interface IListItemProps {
   hasLink?: boolean;
   listItemClass?: string;
   buttonClass?: string;
+  synonym: string | null;
+  antonym: string | null;
+  crossReference: string | null;
 }
 

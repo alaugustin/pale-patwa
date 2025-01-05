@@ -28,7 +28,7 @@ export const dataLibB = [{
   egSentenceEn: 'They made a cake for my wedding.',
   synonym: null,
   antonym: null,
-  crossReference: null,
+  crossReference: 'bonbon zé',
   etymology: '[< Fr. bonbon]',
   dialect: '🇱🇨',
 }, {
@@ -49,8 +49,8 @@ export const dataLibB = [{
   egSentenceKw: 'Kay-la té pentiwé blan.',
   egSentenceEn: 'The house was painted white.',
   synonym: null,
-  antonym: null,
-  crossReference: null,
+  antonym: 'nwè',
+  crossReference: 'blan balenn',
   etymology: '[< Fr. blanc]',
   dialect: '🇱🇨',
 }, {
