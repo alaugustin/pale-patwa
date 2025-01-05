@@ -7,7 +7,7 @@ export const dataLibY = [{
   synonym: null,
   antonym: null,
   crossReference: null,
-  etymology: null,
+  etymology: '[< Fr. igname]',
   dialect: '🇱🇨',
 },
 ];
