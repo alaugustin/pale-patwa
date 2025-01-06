@@ -4,7 +4,7 @@ export const dataLibF = [{
   definition: 'party, celebration, feast',
   egSentenceKw: 'Jòdi-a la kay ni on fèt.',
   egSentenceEn: 'Today there will be a party.',
-  synonym: null,
+  synonym: 'fèsten, sélébwasyon',
   antonym: null,
   crossReference: null,
   etymology: '[Fr. fête]',

@@ -27,11 +27,14 @@ const { backToTopIcon } = AppContentData.icons;
 document.title = mainHeading;
 
 export default function App() {
-  const [randomItem, setRandomItem] = useState<IWordListDataProps & { dialect: string }>(SortedDictionary[0] as IWordListDataProps & { dialect: string });
+  const [randomItem, setRandomItem] = useState<IWordListDataProps & { dialect: string }>(() => {
+    const item = SortedDictionary[0] as unknown as IWordListDataProps & { dialect: string };
+    return item;
+  });
 
   const getRandomItem = () => {
     const randomIndex = Math.floor(Math.random() * SortedDictionary.length);
-    setRandomItem(SortedDictionary[randomIndex] as IWordListDataProps & { dialect: string });
+    setRandomItem(SortedDictionary[randomIndex] as unknown as IWordListDataProps & { dialect: string });
   };
 
   useEffect(() => {
@@ -87,7 +90,7 @@ export default function App() {
         <Main
           mainContainerClass={`${flexItemsCenter} flex-1 flex-col`}
           wordOfTheDayData={randomItem}
-          wordListData={dataLib as IWordListDataProps[]}
+          wordListData={dataLib as unknown as IWordListDataProps[]}
         />
 
         <Footer

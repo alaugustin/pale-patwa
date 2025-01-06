@@ -6,16 +6,17 @@ import Link from '../../UI/Link/Link';
 import Pronunciations from '../Pronounciation/Pronounciation';
 import { IFooterProps } from './Footer.d';
 
+const footerResourcesLink = AppContentData.footerContent.resources.link;
 const { titleH2 } = AppContentData.footerContent.resources;
 const { pronounciationTitleH2 } = AppContentData.pronounciationContent;
-const footerResourcesLink = AppContentData.footerContent.resources.link;
 const { copyRight } = AppContentData.icons;
 const {
   pronounciationContainerClasses,
   copyRightContainerClasses,
   footerResourcesContinerClasses,
   footerResourcesTitleClasses,
-  footerFlagSectionClasses
+  footerFlagSectionClasses,
+  footerResourcesLinkClasses,
 } = AppContentData.uiClasses;
 
 export default function Footer({
@@ -37,20 +38,23 @@ export default function Footer({
       <BlockElement className={footerResourcesContinerClasses}>
         <Typography variant='h3' className={footerResourcesTitleClasses}>{titleH2}</Typography>
 
-        {footerResourcesLink.map((link, index) => (
-          <Typography key={index} variant='p' className={'mb-1'}>
-            <Link
-              linkHref={link.href}
-              linkTarget={link.target}
-              linkClasses={'text-slate-700 text-xs'}
-              linkDownload={link.download}
-              linkRel={link.rel}
-              linkType={link.type}
-            >
-              {link.label}
-            </Link>
-          </Typography>
-        ))}
+        {footerResourcesLink.map((link, index) => {
+          const { label, href, target, download, rel, type } = link;
+          return (
+            <Typography key={index} variant='p' className='mb-1 text-xs'>
+              <Link
+                linkHref={href}
+                linkTarget={target}
+                linkClasses={footerResourcesLinkClasses}
+                linkDownload={download}
+                linkRel={rel}
+                linkType={type}
+              >
+                {label}
+              </Link>
+            </Typography>
+          );
+        })}
       </BlockElement>
 
       <BlockElement

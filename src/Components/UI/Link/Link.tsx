@@ -18,7 +18,8 @@ export default function Link({
       className={linkClasses}
       download={linkDownload}
       type={linkType}
-      rel={linkRel}>{children
-      }</a>
+      rel={linkRel}>
+      {children}
+    </a>
   );
 }
