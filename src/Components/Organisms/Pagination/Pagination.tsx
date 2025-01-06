@@ -9,6 +9,7 @@ const {
   paginationNumberContainer,
   paginationButtonDisabled,
   paginationBoardClasses,
+  paginationContainerClasses
 } = AppContentData.uiClasses;
 
 const shouldShowButton = (currentPage: number, currentPageComparator: number, totalPages: number) => {
@@ -31,7 +32,7 @@ export const Pagination = ({
 }: IPaginationProps) => {
 
   return (
-    <BlockElement id='pagination' className='mt-6 flex flex-row' variant='nav'>
+    <BlockElement id='pagination' className={paginationContainerClasses} variant='nav'>
       <Button
         buttonLabel={prevButtonLabel}
         onClickFunc={prevOnClickFunc}

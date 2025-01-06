@@ -41,7 +41,7 @@ export default function Footer({
         {footerResourcesLink.map((link, index) => {
           const { label, href, target, download, rel, type } = link;
           return (
-            <Typography key={index} variant='p' className='mb-1'>
+            <Typography key={index} variant='p' className='mb-1 text-xs'>
               <Link
                 linkHref={href}
                 linkTarget={target}
