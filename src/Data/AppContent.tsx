@@ -42,12 +42,14 @@ const uiClasses = {
   pronounciationContainerClasses: `${blockElementPadding} ${flexItemsCenter} mb-4 bg-neutral-500 flex-col w-full text-neutral-200 order-first basis-full flex-auto`,
   pronounciationListClasses: 'grid grid-cols-4 md:grid-cols-8 gap-4 w-full',
   pronounciationListItemClasses: `${flexItemsCenter} flex-col text-xs`,
+  twoColColumnClasses: 'flex flex-col even:basis-5/12 odd:basis-7/12 flex-1 md:odd:pr-2 md:even:pl-2',
+  twoColContainerClasses: 'md:flex md:flex-col md:flex-row flex-wrap w-full max-w-screen-sm',
   wordAttributeBorder: 'pr-2 mr-2 border-r border-black',
   wordListContainerClasses: `${flexItemsCenter} ${blockElementPadding} flex-col flex-1 w-full border-t border-gray-1`,
   wordListListClasses: `${flexItemsCenter} ${blockElementPadding} text-xl max-w-4xl flex-wrap gap-4`,
   wordOfTheDayContainerClasses: `${flexItemsCenter} ${blockElementPadding} flex-col flex-3 bg-zinc-100 w-full`,
-  wordOfTheDayDefinitionClasses: 'text-2xl font-thin',
-  wordOfTheDayH3Classes: 'underline text-3xl font-serif mb-4 font-bold',
+  wordOfTheDayDefinitionClasses: 'text-xl font-thin',
+  wordOfTheDayH3Classes: 'underline text-2xl font-serif mb-4 font-bold',
 };
 
 const {

@@ -6,9 +6,9 @@ import Link from '../../UI/Link/Link';
 import Pronunciations from '../Pronounciation/Pronounciation';
 import { IFooterProps } from './Footer.d';
 
+const footerResourcesLink = AppContentData.footerContent.resources.link;
 const { titleH2 } = AppContentData.footerContent.resources;
 const { pronounciationTitleH2 } = AppContentData.pronounciationContent;
-const footerResourcesLink = AppContentData.footerContent.resources.link;
 const { copyRight } = AppContentData.icons;
 const {
   pronounciationContainerClasses,

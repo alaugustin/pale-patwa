@@ -23,7 +23,6 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
     definition
   } = props;
 
-
   const wodTwoColData = [
     <>
       <Typography
@@ -35,7 +34,7 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
         wodContent.map((blurbCopy, index) => (
           <Typography
             key={index}
-            className='mb-2 text-left'
+            className='mb-2 last:mb-0 text-left'
           >{blurbCopy}</Typography>
         ))
       }</BlockElement>

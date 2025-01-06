@@ -13,7 +13,7 @@ export default function RenderElementHead({
     <>
       <Typography
         variant="h2"
-        className={'text-3xl mb-4'}
+        className='text-3xl mb-4'
       >{elementTitle}</Typography>
 
       <BlockElement className={copyWrapperClassName}>{

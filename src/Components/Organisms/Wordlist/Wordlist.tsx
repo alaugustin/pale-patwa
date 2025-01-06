@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import List from '../../UI/List/List';
-import { Typography } from '../../UI/Typography/Typography';
 import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Pagination } from '../Pagination/Pagination';
 import { DictionarySearch } from '../DictionarySearch/DictionarySearch';
-import { IWordlistProps } from './Wordlist.d';
 import RenderElementHead from '../RenderElementHead/RenderElementHead';
+import { IWordlistProps } from './Wordlist.d';
 
 const {
   libraryTitleH2,
@@ -88,7 +87,6 @@ export default function WordList({ data }: IWordlistProps) {
   const indexOfFirstItem = indexOfLastItem - PAGINATION_ITEMS_PER_PAGE;
   const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
   const totalPages = Math.ceil(filteredData.length / PAGINATION_ITEMS_PER_PAGE);
-
   const isFirstPage = currentPage === 1;
   const isLastPage = currentPage === totalPages;
   const decreasePage = () => handlePageChange(currentPage - 1);

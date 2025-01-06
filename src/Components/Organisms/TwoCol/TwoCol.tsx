@@ -1,6 +1,9 @@
 import React from 'react';
+import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { ITwoColProps } from './TwoCol.d';
+
+const { twoColContainerClasses, twoColColumnClasses } = AppContentData.uiClasses;
 
 export default function TwoCol({
   twoColData,
@@ -8,9 +11,12 @@ export default function TwoCol({
   console.log(twoColData);
 
   return (
-    <BlockElement className='flex flex-col md:flex-row flex-wrap w-full max-w-screen-sm'>
+    <BlockElement className={twoColContainerClasses}>
       {Array.isArray(twoColData) && twoColData.map((colData, index) => (
-        <BlockElement className='flex flex-col basis-50 flex-1 md:odd:pr-2 md:even:pl-2' key={index}>
+        <BlockElement
+          key={index}
+          className={twoColColumnClasses}
+        >
           {colData}
         </BlockElement>
       ))}
