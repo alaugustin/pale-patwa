@@ -4,7 +4,7 @@ export const dataLibT = [{
   definition: 'young girl, young lady',
   egSentenceKw: 'Sa ki tifi sala?',
   egSentenceEn: 'Who is that girl?',
-  synonym: null,
+  synonym: 'kabwès',
   antonym: null,
   crossReference: null,
   etymology: '[< Fr. petit fille]',

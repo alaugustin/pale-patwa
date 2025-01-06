@@ -33,10 +33,10 @@ export default function Modal({
         <Typography variant='h2' className={modalH2Classes}>{modalTitle}</Typography>
         <BlockElement className='mb-4'>
           <BlockElement variant='div' className='mb-4'>
-            <Typography variant='p'>{modalDefinition}</Typography>
+            <Typography variant='p' className='mb-2'>{modalDefinition}</Typography>
 
             {modalSentenceKw && (
-              <Typography variant='p'>
+              <Typography variant='p' className='mb-1'>
                 <Typography variant='strong'>{modalSentenceKw}</Typography>
               </Typography>
             )}
@@ -46,7 +46,7 @@ export default function Modal({
             )}
           </BlockElement>
 
-          <BlockElement className='mb-4 flex flex-row'>
+          <BlockElement className='mb-4 flex flex-row text-sm'>
             {modalSynonym && (
               <Typography variant='span' className='mr-1'>{`(syn: ${modalSynonym})`}</Typography>
             )}
