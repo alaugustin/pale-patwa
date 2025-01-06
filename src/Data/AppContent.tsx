@@ -16,6 +16,7 @@ const uiClasses = {
   appAllHolderClasses: 'flex flex-col h-screen max-w-6xl mx-auto text-slate-900',
   backToTopButton: `${flexItemsCenter} fixed bottom-8 right-8 rounded-full shadow-lg text-white flex-row gap-x-2 p-4 bg-gray-400 hover:bg-gray-500`,
   backToTopIconClasses: 'h-5 w-5',
+  centeredBlurbCopyClasses: 'mb-6 max-w-screen-sm text-center',
   clearInputIconClasses: 'h-4 w-4 m-2 fill-gray-400',
   copyRightContainerClasses: `${footerColClasses} p-2 md:pb-7 order-last md:order-first`,
   copyRightIconClasses: 'mt-1 h-2 w-2',
@@ -33,10 +34,10 @@ const uiClasses = {
   modalContainerClasses: `${flexItemsCenter} fixed inset-0 bg-black bg-opacity-50 z-50`,
   modalContentClasses: 'bg-white p-6 rounded-lg shadow-xl mx-4 w-full sm:max-w-md sm:min-w-96',
   modalH2Classes: 'text-2xl font-bold mb-2 font-serif',
+  paginationBoardClasses: `${flexItemsCenter} flex-row`,
   paginationButton: 'hover:bg-gray-200 p-2',
   paginationButtonDisabled: 'cursor-not-allowed disabled:opacity-50',
   paginationNumberContainer: `${flexItemsCenter} h-6 w-6 border-2 border-gray-200 rounded`,
-  paginationBoardClasses: `${flexItemsCenter} flex-row`,
   primaryButton: 'bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded',
   pronounciationContainerClasses: `${blockElementPadding} ${flexItemsCenter} mb-4 bg-neutral-500 flex-col w-full text-neutral-200 order-first basis-full flex-auto`,
   pronounciationListClasses: 'grid grid-cols-4 md:grid-cols-8 gap-4 w-full',
@@ -45,8 +46,8 @@ const uiClasses = {
   wordListContainerClasses: `${flexItemsCenter} ${blockElementPadding} flex-col flex-1 w-full border-t border-gray-1`,
   wordListListClasses: `${flexItemsCenter} ${blockElementPadding} text-xl max-w-4xl flex-wrap gap-4`,
   wordOfTheDayContainerClasses: `${flexItemsCenter} ${blockElementPadding} flex-col flex-3 bg-zinc-100 w-full`,
-  wordOfTheDayDefinitionClasses: 'text-3xl sm:text-4xl lg:text-6xl font-thin',
-  wordOfTheDayH3Classes: 'text-3xl sm:text-6xl lg:text-8xl font-serif mb-2 font-bold',
+  wordOfTheDayDefinitionClasses: 'text-2xl font-thin',
+  wordOfTheDayH3Classes: 'underline text-3xl font-serif mb-4 font-bold',
 };
 
 const {
@@ -73,6 +74,10 @@ const globalPageContent = {
 
 const wordOfTheDayContent = {
   wodTitleH2: 'Word of the Day',
+  wodContent: [
+    'Discover a new Kwéyòl word daily!',
+    'Expand your Creole vocabulary with detailed etymology, usage examples, and cultural context - one word at a time.'
+  ]
 };
 
 const libraryContent = {
@@ -87,7 +92,11 @@ const libraryContent = {
     896: 20,
     1024: 25,
     1280: 33
-  }
+  },
+  wordListContent: [
+    'Search through our comprehensive Kwéyòl dictionary with real-time filtering.',
+    'Find words, definitions, example sentences, and etymology in both Kwéyòl and English.'
+  ]
 };
 
 const pronounciationContent = {
@@ -112,7 +121,7 @@ const footerContent = {
         rel: 'noreferrer noopener',
         type: 'text/html',
       }, {
-        label: 'Palé Kwéyòl - Github',
+        label: 'Github',
         href: 'https://github.com/alaugustin/pale-patwa',
         target: '_blank',
         rel: 'noreferrer noopener',

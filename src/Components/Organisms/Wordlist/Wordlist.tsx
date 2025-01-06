@@ -6,6 +6,7 @@ import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Pagination } from '../Pagination/Pagination';
 import { DictionarySearch } from '../DictionarySearch/DictionarySearch';
 import { IWordlistProps } from './Wordlist.d';
+import RenderElementHead from '../RenderElementHead/RenderElementHead';
 
 const {
   libraryTitleH2,
@@ -16,8 +17,10 @@ const {
 } = AppContentData.libraryContent;
 const {
   wordListContainerClasses,
-  wordListListClasses
+  wordListListClasses,
+  centeredBlurbCopyClasses
 } = AppContentData.uiClasses;
+const { wordListContent } = AppContentData.libraryContent;
 const searchFields = [
   'word',
   'definition',
@@ -97,12 +100,11 @@ export default function WordList({ data }: IWordlistProps) {
 
   return (
     <BlockElement variant='section' className={wordListContainerClasses}>
-      <Typography
-        variant='h2'
-        className='text-3xl mb-6'
-      >{libraryTitleH2}</Typography>
-
-      <Typography variant='p' className='mb-6  max-w-md'>{'Search through our comprehensive Kwéyòl dictionary with real-time filtering. Find words, definitions, example sentences, and etymology in both Kwéyòl and English.'}</Typography>
+      <RenderElementHead
+        elementTitle={libraryTitleH2}
+        copyWrapperClassName={centeredBlurbCopyClasses}
+        copyData={wordListContent}
+      />
 
       <DictionarySearch
         placeholderLabel={wordlistFilterPlaceholder}
