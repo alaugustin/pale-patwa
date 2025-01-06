@@ -15,10 +15,11 @@ export default function Link({
     <a
       href={linkHref}
       target={linkTarget}
-      className={`hover:underline text-blue-800 hover:text-blue-700 visited:text-violet-700 ${linkClasses}`}
+      className={linkClasses}
       download={linkDownload}
       type={linkType}
-      rel={linkRel}>{children
-      }</a>
+      rel={linkRel}>
+      {children}
+    </a>
   );
 }

@@ -13,7 +13,9 @@ const {
 
 const shouldShowButton = (currentPage: number, currentPageComparator: number, totalPages: number) => {
   return (
-    (currentPage === currentPageComparator || totalPages === 0) ? paginationButtonDisabled : 'cursor-pointer'
+    (currentPage === currentPageComparator || totalPages === 0) ?
+      paginationButtonDisabled :
+      'cursor-pointer'
   );
 };
 

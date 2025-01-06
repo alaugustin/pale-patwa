@@ -48,7 +48,7 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
         wordEtymology={etymology ?? null}
         wordPartOfSpeech={partOfSpeech ?? null}
         wordDialect={dialect}
-        containerClasses='text-xs md:text-sm mb-4'
+        containerClasses='text-xs mb-2 md:text-right'
       />
 
       <Typography

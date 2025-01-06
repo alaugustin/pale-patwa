@@ -19,13 +19,21 @@ export default function Pronunciations({
       <Typography variant='h2' className='text-3xl mb-6'>{titleH2}</Typography>
 
       <ul className={pronounciationListClasses}>
-        {Pronounciation.map((item, index) => (
-          <li key={index} className={pronounciationListItemClasses}>
-            <span>{item.letter}</span>
-            <span>{item.pronounciation}</span>
-            <span>{item.sound}</span>
-          </li>
-        ))}
+        {Pronounciation.map((item, index) => {
+          const {
+            letter,
+            pronounciation,
+            sound
+          } = item;
+
+          return (
+            <li key={index} className={pronounciationListItemClasses}>
+              <span>{letter}</span>
+              <span>{pronounciation}</span>
+              <span>{sound}</span>
+            </li>
+          );
+        })}
       </ul>
     </BlockElement>
   );

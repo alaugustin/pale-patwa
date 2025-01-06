@@ -25,6 +25,7 @@ const uiClasses = {
   footerContainerClasses: 'pb-7 basis-14 border-t border-gray-200 flex flex-col md:flex-row justify-between md:flex-wrap',
   footerFlagSectionClasses: `${footerColClasses} p-2 md:pb-7 md:mb-0 md:justify-end`,
   footerResourcesContinerClasses: 'p-2 md:pb-7 flex basis-full flex-col md:mb-0 md:px-4 md:basis-1/2',
+  footerResourcesLinkClasses: 'text-slate-700 text-xs hover:underline text-blue-800 hover:text-blue-700 visited:text-violet-700',
   footerResourcesTitleClasses: 'font-bold text-slate-800 text-sm mb-1',
   headerContainerClasses: `${flexItemsCenter} py-3 p-2 basis-14 justify-between border-b border-gray-200`,
   headerDateClasses: 'ml-2 text-xs md:text-sm lg:text-lg',
@@ -42,14 +43,14 @@ const uiClasses = {
   pronounciationContainerClasses: `${blockElementPadding} ${flexItemsCenter} mb-4 bg-neutral-500 flex-col w-full text-neutral-200 order-first basis-full flex-auto`,
   pronounciationListClasses: 'grid grid-cols-4 md:grid-cols-8 gap-4 w-full',
   pronounciationListItemClasses: `${flexItemsCenter} flex-col text-xs`,
-  twoColColumnClasses: 'flex flex-col even:basis-5/12 odd:basis-7/12 flex-1 md:odd:pr-2 md:even:pl-2',
-  twoColContainerClasses: 'md:flex md:flex-col md:flex-row flex-wrap w-full max-w-screen-sm',
+  twoColColumnClasses: 'even:basis-5/12 odd:basis-7/12 md:odd:pr-2 md:even:pl-2',
+  twoColContainerClasses: 'max-w-screen-sm md:flex md:flex-row flex-col',
   wordAttributeBorder: 'pr-2 mr-2 border-r border-black',
   wordListContainerClasses: `${flexItemsCenter} ${blockElementPadding} flex-col flex-1 w-full border-t border-gray-1`,
   wordListListClasses: `${flexItemsCenter} ${blockElementPadding} text-xl max-w-4xl flex-wrap gap-4`,
   wordOfTheDayContainerClasses: `${flexItemsCenter} ${blockElementPadding} flex-col flex-3 bg-zinc-100 w-full`,
-  wordOfTheDayDefinitionClasses: 'text-xl font-thin',
-  wordOfTheDayH3Classes: 'underline text-2xl font-serif mb-4 font-bold',
+  wordOfTheDayDefinitionClasses: 'text-xl font-thin md:text-right',
+  wordOfTheDayH3Classes: 'underline text-2xl font-serif mb-4 font-bold  md:text-right',
 };
 
 const {
