@@ -7,7 +7,7 @@ export const dataLibP = [{
   synonym: null,
   antonym: null,
   crossReference: null,
-  etymology: '[< French pain]',
+  etymology: '[< Fr. pain]',
   dialect: '🇱🇨',
 }, {
   word: 'pòpòt',
@@ -15,7 +15,7 @@ export const dataLibP = [{
   definition: 'doll',
   egSentenceKw: 'Achté an pòpòt bay tifi-a.',
   egSentenceEn: 'Buy a doll for the girl.',
-  synonym: null,
+  synonym: 'bolonm',
   antonym: null,
   crossReference: null,
   etymology: '[< Fr. popote]',

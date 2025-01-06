@@ -15,7 +15,7 @@ export const dataLibH = [{
   definition: 'night clothes',
   egSentenceKw: 'Manman mwen ka lavé sé had dòmi-an.',
   egSentenceEn: 'My mother is washing the night clothes.',
-  synonym: null,
+  synonym: 'abiman, lenj',
   antonym: null,
   crossReference: null,
   etymology: null,

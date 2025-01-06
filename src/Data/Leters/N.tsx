@@ -27,7 +27,7 @@ export const dataLibN = [{
   egSentenceKw: 'I ka pòté soulyé nwè.',
   egSentenceEn: 'He\'s wearing black shoes.',
   synonym: null,
-  antonym: null,
+  antonym: 'blan',
   crossReference: null,
   etymology: '[< Fr. noir]',
   dialect: '🇱🇨',

@@ -59,7 +59,7 @@ export const dataLibK = [{
   definition: 'fool',
   egSentenceKw: 'Gason-an sé on kounoumounou!',
   egSentenceEn: 'The boy is a fool!',
-  synonym: null,
+  synonym: 'kouyon, kouyon, lèlè',
   antonym: null,
   crossReference: null,
   etymology: null,

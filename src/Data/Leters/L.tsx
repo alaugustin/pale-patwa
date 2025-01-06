@@ -26,7 +26,7 @@ export const dataLibL = [{
   definition: 'perfume',
   egSentenceKw: 'Losyon sala ni on bon lòdè.',
   egSentenceEn: 'This perfume has a nice scent.',
-  synonym: null,
+  synonym: 'pawfimen',
   antonym: null,
   crossReference: null,
   etymology: '[< Fr. lotion]',

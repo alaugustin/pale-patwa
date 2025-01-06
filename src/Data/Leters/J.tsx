@@ -16,7 +16,7 @@ export const dataLibJ = [{
   egSentenceKw: 'Ki jou ou kay viwé?',
   egSentenceEn: 'What day will you return?',
   synonym: null,
-  antonym: null,
+  antonym: 'swè',
   crossReference: null,
   etymology: '[< Fr. jour]',
   dialect: '🇱🇨',
@@ -51,7 +51,7 @@ export const dataLibJ = [{
   synonym: null,
   antonym: null,
   crossReference: null,
-  etymology: '[< Fr. jupon]',
+  etymology: '[< Fr. jupe]',
   dialect: '🇱🇨',
 },
 ];
