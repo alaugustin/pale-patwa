@@ -25,7 +25,10 @@ const searchFields = [
   'definition',
   'egSentenceKw',
   'egSentenceEn',
-  'etymology'
+  'etymology',
+  'synonym',
+  'antonym',
+  'variant',
 ];
 
 function getWindowDimensions() {

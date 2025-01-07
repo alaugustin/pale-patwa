@@ -1,9 +1,6 @@
 import React from 'react';
-import { AppContentData } from '../../../Data/AppContent';
 import { ListItem } from './ListItem/ListItem';
 import { IListProps } from './List.d';
-
-const { listItemClass } = AppContentData.uiClasses;
 
 export default function List({
   data,
@@ -21,7 +18,8 @@ export default function List({
           egSentenceKw,
           synonym,
           antonym,
-          crossReference
+          crossReference,
+          variant
         } = element;
 
         return (
@@ -34,8 +32,8 @@ export default function List({
             synonym={synonym}
             antonym={antonym}
             crossReference={crossReference}
+            variant={variant}
             hasLink={hasLink}
-            listItemClass={listItemClass}
           />
         );
       })}

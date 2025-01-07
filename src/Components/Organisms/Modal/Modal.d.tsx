@@ -6,5 +6,6 @@ export interface IModalProps {
   modalSynonym: string | null;
   modalAntonym: string | null;
   modalCrossRef: string | null;
+  modalVariant: string | null;
   clickHandler: () => void;
 }

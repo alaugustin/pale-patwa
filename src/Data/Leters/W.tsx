@@ -23,7 +23,7 @@ export const dataLibW = [{
 }, {
   word: 'wòb',
   partOfSpeech: 'N',
-  definition: 'dress',
+  definition: ['dress'],
   egSentenceKw: 'Ou mété wòb ou lanvè.',
   egSentenceEn: 'You put your dress on backwards.',
   synonym: null,

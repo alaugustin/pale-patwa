@@ -1,7 +1,7 @@
 export const dataLibH = [{
   word: 'hach',
   partOfSpeech: 'N',
-  definition: 'axe',
+  definition: ['axe'],
   egSentenceKw: 'I ni on hach nèf.',
   egSentenceEn: 'He has a new axe.',
   synonym: null,
@@ -12,10 +12,10 @@ export const dataLibH = [{
 }, {
   word: 'had dòmi',
   partOfSpeech: 'N',
-  definition: 'night clothes',
+  definition: ['night clothes'],
   egSentenceKw: 'Manman mwen ka lavé sé had dòmi-an.',
   egSentenceEn: 'My mother is washing the night clothes.',
-  synonym: 'abiman, lenj',
+  synonym: ['abiman', 'lenj'],
   antonym: null,
   crossReference: null,
   etymology: null,
@@ -23,7 +23,7 @@ export const dataLibH = [{
 }, {
   word: 'had ben',
   partOfSpeech: 'N',
-  definition: 'bathing suit',
+  definition: ['bathing suit'],
   egSentenceKw: null,
   egSentenceEn: null,
   synonym: null,

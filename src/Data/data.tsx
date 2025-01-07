@@ -1,3 +1,4 @@
+import { dataLibA } from './Leters/A';
 import { dataLibB } from './Leters/B';
 import { dataLibC } from './Leters/C';
 import { dataLibD } from './Leters/D';
@@ -9,6 +10,7 @@ import { dataLibJ } from './Leters/J';
 import { dataLibK } from './Leters/K';
 import { dataLibL } from './Leters/L';
 import { dataLibM } from './Leters/M';
+import { dataLibO } from './Leters/O';
 import { dataLibN } from './Leters/N';
 import { dataLibP } from './Leters/P';
 import { dataLibR } from './Leters/R';
@@ -23,6 +25,7 @@ import { dataDays } from './Calendar/Days';
 import { dataMonths } from './Calendar/Months';
 
 export const dataLib = [
+  ...dataLibA,
   ...dataLibB,
   ...dataLibC,
   ...dataLibD,
@@ -35,6 +38,7 @@ export const dataLib = [
   ...dataLibL,
   ...dataLibM,
   ...dataLibN,
+  ...dataLibO,
   ...dataLibP,
   ...dataLibR,
   ...dataLibS,
@@ -47,6 +51,8 @@ export const dataLib = [
   ...dataDays,
   ...dataMonths,
 ];
+
+// add he, she, they, them, their, theirs, themself
 
 /**
  - Sorts the `dataLibNum` array in numerical order by the `definition` property.
@@ -65,35 +71,40 @@ export const SortedDictionary = dataLib.sort((a, b) => {
   return wordComparison;
 });
 
-
 /**
- - Calculates the frequency of words in the `SortedDictionary` array and returns the top 10 most frequent words.
+ * Calculates the frequency of words in the `SortedDictionary` array, excluding a list of words.
  *
- - The `wordFrequency` object is used to keep track of the frequency of each word. The code iterates through the `SortedDictionary` array, extracts the words from the `egSentenceKw` property, and updates the `wordFrequency` object accordingly.
- *
- - The `topWords` array is then created by sorting the `wordFrequency` object by the frequency values in descending order, and taking the first 10 entries. Each entry in `topWords` is an object with `word` and `count` properties.
- *
- - Finally, the `topWords` array is logged to the console.
+ * @param field - The field in the `SortedDictionary` array to analyze for word frequency.
+ * @returns An array of the top 10 most frequent words and their counts.
  */
-const excludedWords = [''];
+const excludedWords = ['li.', 'sann,', 'mwen.'];
 const dictionaryWords = SortedDictionary.map(entry => entry.word.toLowerCase());
 const allExcludedWords = [...excludedWords, ...dictionaryWords];
-const wordFrequency: { [key: string]: number } = {};
 
-SortedDictionary.forEach(entry => {
-  if (typeof entry.egSentenceKw === 'string' && entry.egSentenceKw) {
-    const words = entry.egSentenceKw.toLowerCase().split(' ');
-    words.forEach(word => {
-      if (!allExcludedWords.includes(word)) {
-        wordFrequency[word] = (wordFrequency[word] || 0) + 1;
-      }
-    });
-  }
-});
+const calculateWordFrequency = (field: keyof typeof SortedDictionary[0]) =>{
+  const wordFrequency: { [key: string]: number } = {};
 
-const topWords = Object.entries(wordFrequency)
-  .sort(([, a], [, b]) => b - a)
-  .slice(0, 10)
-  .map(([word, count]) => ({ word, count }));
+  SortedDictionary.forEach(entry => {
+    if (typeof entry[field] === 'string' && entry[field]) {
+      const words = (entry[field] as string).toLowerCase().split(' ');
+      words.forEach(word => {
+        if (!allExcludedWords.includes(word)) {
+          wordFrequency[word] = (wordFrequency[word] || 0) + 1;
+        }
+      });
+    }
+  });
 
-console.log(topWords);
+  return Object.entries(wordFrequency)
+    .sort(([, a], [, b]) => b - a)
+    .slice(0, 10)
+    .map(([word, count]) => ({ word, count }));
+};
+
+const topEgSentenceKw = calculateWordFrequency('egSentenceKw');
+const topWordsSyn = calculateWordFrequency('synonym');
+
+// console.log('SortedNumbers: ', SortedNumbers);
+// console.log('SortedDictionary: ', SortedDictionary);
+console.log('topWords: ', topEgSentenceKw);
+console.log('topWordsSyn: ', topWordsSyn);

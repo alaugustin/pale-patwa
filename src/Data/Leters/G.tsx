@@ -1,7 +1,7 @@
 export const dataLibG = [{
   word: 'gason',
   partOfSpeech: 'N',
-  definition: 'son, boy',
+  definition: ['son', 'boy'],
   egSentenceKw: 'Yo ni dé tifi èk dé gason.',
   egSentenceEn: 'They have two girls and two boys.',
   synonym: 'tibway',
@@ -12,7 +12,7 @@ export const dataLibG = [{
 }, {
   word: 'gwi',
   partOfSpeech: 'ADJ',
-  definition: 'grey',
+  definition: ['grey'],
   egSentenceKw: 'Chouval gwi-a genyen kous-la.',
   egSentenceEn: 'The grey horse won the race.',
   synonym: 'sann, sann',
@@ -22,12 +22,12 @@ export const dataLibG = [{
   dialect: '🇱🇨',
 }, {
   word: 'gòch',
-  partOfSpeech: '',
-  definition: 'left',
+  partOfSpeech: null,
+  definition: ['left'],
   egSentenceKw: 'Pyé gòch li kasé an aksidan-an.',
   egSentenceEn: 'His left foot was broken in an accident.',
   synonym: null,
-  antonym: 'dwèt, dwèt',
+  antonym: ['dwèt', 'dwèt'],
   crossReference: null,
   etymology: '[< Fr. gauche]',
   dialect: '🇱🇨',

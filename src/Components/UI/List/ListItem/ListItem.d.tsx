@@ -9,5 +9,6 @@ export interface IListItemProps {
   synonym: string | null;
   antonym: string | null;
   crossReference: string | null;
+  variant: string | null;
 }
 

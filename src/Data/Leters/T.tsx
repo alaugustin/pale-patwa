@@ -1,7 +1,7 @@
 export const dataLibT = [{
   word: 'tifi',
   partOfSpeech: 'N',
-  definition: 'young girl, young lady',
+  definition: ['young girl', 'young lady'],
   egSentenceKw: 'Sa ki tifi sala?',
   egSentenceEn: 'Who is that girl?',
   synonym: 'kabwès',
@@ -12,7 +12,7 @@ export const dataLibT = [{
 }, {
   word: 'tab',
   partOfSpeech: 'N',
-  definition: 'table',
+  definition: ['table'],
   egSentenceKw: 'Yo mété kouto-a asou tab-la.',
   egSentenceEn: 'They put the knife on the table.',
   synonym: null,
@@ -23,7 +23,7 @@ export const dataLibT = [{
 }, {
   word: 'tjè',
   partOfSpeech: 'N',
-  definition: 'heart',
+  definition: ['heart'],
   egSentenceKw: 'Madanm sala malad an tjè\'y.',
   egSentenceEn: 'That woman has a problem with her heart.',
   synonym: null,
@@ -33,8 +33,8 @@ export const dataLibT = [{
   dialect: '🇱🇨',
 }, {
   word: 'tjilòt',
-  partOfSpeech: '',
-  definition: 'pants',
+  partOfSpeech: 'N',
+  definition: ['pants'],
   egSentenceKw: 'Mwen té ka pòté tjilòt nwè.',
   egSentenceEn: 'I was wearing black pants.',
   synonym: null,
@@ -42,5 +42,17 @@ export const dataLibT = [{
   crossReference: null,
   etymology: '[< Fr. culotte]',
   dialect: '🇱🇨',
+}, {
+  word: 'té',
+  partOfSpeech: 'ADV',
+  definition: ['anterior verb marker'],
+  egSentenceKw: 'I té vini plas sala an chay tan ki pasé.',
+  egSentenceEn: 'He had come to that place a long time ago.',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: null,
+  dialect: '🇱🇨',
+  variant: 'sété',
 },
 ];

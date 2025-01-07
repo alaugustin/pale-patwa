@@ -1,7 +1,7 @@
 export const dataLibB = [{
   word: 'bak',
   partOfSpeech: 'N',
-  definition: 'river crab',
+  definition: ['river crab'],
   egSentenceKw: 'Yo ka tjébé bak.',
   egSentenceEn: 'They\'re catching crabs.',
   synonym: null,
@@ -12,7 +12,7 @@ export const dataLibB = [{
 }, {
   word: 'bèf',
   partOfSpeech: 'N',
-  definition: 'cow, cattle',
+  definition: ['cow', 'cattle'],
   egSentenceKw: 'Bèf-la kwazé jaden mwen.',
   egSentenceEn: 'The cow destroyed my garden.',
   synonym: null,
@@ -23,7 +23,7 @@ export const dataLibB = [{
 }, {
   word: 'bonbon',
   partOfSpeech: 'N',
-  definition: 'cake',
+  definition: ['cake'],
   egSentenceKw: 'Yo fè on bonbon pou nòs mwen.',
   egSentenceEn: 'They made a cake for my wedding.',
   synonym: null,
@@ -34,7 +34,7 @@ export const dataLibB = [{
 }, {
   word: 'blé',
   partOfSpeech: 'ADJ',
-  definition: 'blue',
+  definition: ['blue'],
   egSentenceKw: 'I ka pòté on chimiz blé.',
   egSentenceEn: 'He is wearing a blue shirt.',
   synonym: null,
@@ -45,7 +45,7 @@ export const dataLibB = [{
 }, {
   word: 'blan',
   partOfSpeech: 'ADJ',
-  definition: 'white',
+  definition: ['white'],
   egSentenceKw: 'Kay-la té pentiwé blan.',
   egSentenceEn: 'The house was painted white.',
   synonym: null,
@@ -56,7 +56,7 @@ export const dataLibB = [{
 }, {
   word: 'bwaslé',
   partOfSpeech: 'N',
-  definition: 'bracelet',
+  definition: ['bracelet'],
   egSentenceKw: 'Tifi-a ni on bwaslé nèf.',
   egSentenceEn: 'The girl has a new bracelet.',
   synonym: null,
@@ -67,7 +67,7 @@ export const dataLibB = [{
 }, {
   word: 'bag',
   partOfSpeech: 'N',
-  definition: 'ring',
+  definition: ['ring'],
   egSentenceKw: 'Mwen achté on bag lò',
   egSentenceEn: 'I bought a gold ring.',
   synonym: null,
