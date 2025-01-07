@@ -12,4 +12,5 @@ export interface IListDataProps {
   synonym: string;
   antonym: string;
   crossReference: string;
+  variant: string;
 }

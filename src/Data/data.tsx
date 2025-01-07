@@ -77,7 +77,7 @@ export const SortedDictionary = dataLib.sort((a, b) => {
  * @param field - The field in the `SortedDictionary` array to analyze for word frequency.
  * @returns An array of the top 10 most frequent words and their counts.
  */
-const excludedWords = [''];
+const excludedWords = ['li.', 'sann,', 'mwen.'];
 const dictionaryWords = SortedDictionary.map(entry => entry.word.toLowerCase());
 const allExcludedWords = [...excludedWords, ...dictionaryWords];
 
@@ -104,5 +104,7 @@ const calculateWordFrequency = (field: keyof typeof SortedDictionary[0]) =>{
 const topEgSentenceKw = calculateWordFrequency('egSentenceKw');
 const topWordsSyn = calculateWordFrequency('synonym');
 
+// console.log('SortedNumbers: ', SortedNumbers);
+// console.log('SortedDictionary: ', SortedDictionary);
 console.log('topWords: ', topEgSentenceKw);
 console.log('topWordsSyn: ', topWordsSyn);

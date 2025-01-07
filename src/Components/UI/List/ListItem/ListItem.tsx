@@ -16,7 +16,8 @@ export const ListItem = ({
   antonym,
   crossReference,
   hasLink,
-  listItemClass
+  listItemClass,
+  variant
 }: IListItemProps) => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
@@ -47,6 +48,7 @@ export const ListItem = ({
               modalSynonym={synonym}
               modalAntonym={antonym}
               modalCrossRef={crossReference}
+              modalVariant={variant}
               clickHandler={() => setIsPopupOpen(false)}
             />
           </>

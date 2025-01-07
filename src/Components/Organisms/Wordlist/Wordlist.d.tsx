@@ -7,6 +7,7 @@ export interface IWordListDataProps {
   synonym: string;
   antonym: string;
   crossReference: string;
+  variant: string;
 }
 
 export interface IWordlistProps {

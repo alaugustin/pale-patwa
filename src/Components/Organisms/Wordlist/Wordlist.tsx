@@ -27,7 +27,8 @@ const searchFields = [
   'egSentenceEn',
   'etymology',
   'synonym',
-  'antonym'
+  'antonym',
+  'variant',
 ];
 
 function getWindowDimensions() {
