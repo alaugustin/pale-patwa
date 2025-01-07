@@ -8,7 +8,6 @@ const { twoColContainerClasses, twoColColumnClasses } = AppContentData.uiClasses
 export default function TwoCol({
   twoColData,
 }: ITwoColProps) {
-  console.log(twoColData);
 
   return (
     <BlockElement className={twoColContainerClasses}>

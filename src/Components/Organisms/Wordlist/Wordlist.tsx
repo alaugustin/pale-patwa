@@ -25,7 +25,9 @@ const searchFields = [
   'definition',
   'egSentenceKw',
   'egSentenceEn',
-  'etymology'
+  'etymology',
+  'synonym',
+  'antonym'
 ];
 
 function getWindowDimensions() {
