@@ -1,3 +1,4 @@
+import { dataLibA } from './Leters/A';
 import { dataLibB } from './Leters/B';
 import { dataLibC } from './Leters/C';
 import { dataLibD } from './Leters/D';
@@ -9,6 +10,7 @@ import { dataLibJ } from './Leters/J';
 import { dataLibK } from './Leters/K';
 import { dataLibL } from './Leters/L';
 import { dataLibM } from './Leters/M';
+import { dataLibO } from './Leters/O';
 import { dataLibN } from './Leters/N';
 import { dataLibP } from './Leters/P';
 import { dataLibR } from './Leters/R';
@@ -23,6 +25,7 @@ import { dataDays } from './Calendar/Days';
 import { dataMonths } from './Calendar/Months';
 
 export const dataLib = [
+  ...dataLibA,
   ...dataLibB,
   ...dataLibC,
   ...dataLibD,
@@ -35,6 +38,7 @@ export const dataLib = [
   ...dataLibL,
   ...dataLibM,
   ...dataLibN,
+  ...dataLibO,
   ...dataLibP,
   ...dataLibR,
   ...dataLibS,
@@ -47,6 +51,8 @@ export const dataLib = [
   ...dataDays,
   ...dataMonths,
 ];
+
+// add he, she, they, them, their, theirs, themself
 
 /**
  - Sorts the `dataLibNum` array in numerical order by the `definition` property.

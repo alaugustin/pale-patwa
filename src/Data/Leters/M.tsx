@@ -42,5 +42,16 @@ export const dataLibM = [{
   crossReference: null,
   etymology: '[< Fr. montre]',
   dialect: '🇱🇨',
+}, {
+  word: 'mété',
+  partOfSpeech: 'V',
+  definition: 'to put',
+  egSentenceKw: 'Mété bwèt-la asou tab-la.',
+  egSentenceEn: 'Put the box on the table.',
+  synonym: 'ladjé, pitjé, pwan',
+  antonym: 'tiwé',
+  crossReference: null,
+  etymology: null,
+  dialect: '🇱🇨',
 },
 ];

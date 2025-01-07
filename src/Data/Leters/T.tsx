@@ -42,5 +42,17 @@ export const dataLibT = [{
   crossReference: null,
   etymology: '[< Fr. culotte]',
   dialect: '🇱🇨',
+}, {
+  word: 'té',
+  partOfSpeech: 'ADV',
+  definition: 'anterior verb marker',
+  egSentenceKw: 'I té vini plas sala an chay tan ki pasé.',
+  egSentenceEn: 'He had come to that place a long time ago.',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: null,
+  dialect: '🇱🇨',
+  variant: 'sété',
 },
 ];

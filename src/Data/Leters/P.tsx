@@ -42,5 +42,16 @@ export const dataLibP = [{
   crossReference: null,
   etymology: '[< Fr. parasol]',
   dialect: '🇱🇨',
+}, {
+  word: 'pou',
+  partOfSpeech: 'PREP',
+  definition: 'for (in the sense of duration)',
+  egSentenceKw: 'I wété la pou twa simenn.',
+  egSentenceEn: 'He stayed there for three weeks.',
+  synonym: 'apwézan, atjwèlman',
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. pour]',
+  dialect: '🇱🇨',
 },
 ];

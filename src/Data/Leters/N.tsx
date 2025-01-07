@@ -31,5 +31,16 @@ export const dataLibN = [{
   crossReference: null,
   etymology: '[< Fr. noir]',
   dialect: '🇱🇨',
+}, {
+  word: 'ni',
+  partOfSpeech: 'V',
+  definition: 'to have',
+  egSentenceKw: 'Mwen ni twa dòla an pòch mwen.',
+  egSentenceEn: 'I have three dollars in my pocket.',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: null,
+  dialect: '🇱🇨',
 },
 ];
