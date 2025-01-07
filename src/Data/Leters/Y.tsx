@@ -1,7 +1,7 @@
 export const dataLibY = [{
   word: 'yanm',
   partOfSpeech: 'N',
-  definition: 'yam',
+  definition: ['yam'],
   egSentenceKw: null,
   egSentenceEn: null,
   synonym: null,
@@ -12,7 +12,7 @@ export const dataLibY = [{
 }, {
   word: 'yo',
   partOfSpeech: 'PRO',
-  definition: 'they, them, their',
+  definition: ['they', 'them', 'their'],
   egSentenceKw: 'Yo ban nou gwo chat yo.',
   egSentenceEn: 'They gave us their big cat.',
   synonym: null,

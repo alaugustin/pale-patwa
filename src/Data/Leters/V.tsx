@@ -1,7 +1,7 @@
 export const dataLibV = [{
   word: 'vè',
   partOfSpeech: 'N',
-  definition: 'worm',
+  definition: ['worm'],
   egSentenceKw: 'Vyann-an gaté; i benyen vè.',
   egSentenceEn: 'The meat is spoiled; it is full of worms.',
   synonym: null,
@@ -12,7 +12,7 @@ export const dataLibV = [{
 }, {
   word: 'vè',
   partOfSpeech: 'ADJ',
-  definition: 'green',
+  definition: ['green'],
   egSentenceKw: 'Nou kontan kay vè-a.',
   egSentenceEn: 'We like the green house.',
   synonym: null,

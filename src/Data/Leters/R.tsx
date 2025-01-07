@@ -1,7 +1,7 @@
 export const dataLibR = [{
   word: 'radyo',
   partOfSpeech: 'N',
-  definition: 'radio',
+  definition: ['radio'],
   egSentenceKw: 'Nou tann nouvèl-la asou radyo-a.',
   egSentenceEn: 'We heard the news on the radio.',
   synonym: null,

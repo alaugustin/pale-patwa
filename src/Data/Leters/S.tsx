@@ -1,7 +1,7 @@
 export const dataLibS = [{
   word: 'souwi',
   partOfSpeech: 'N',
-  definition: 'mouse',
+  definition: ['mouse'],
   egSentenceKw: 'Chat-la kouwi dèyè souwi-a.',
   egSentenceEn: 'The cat chased the mouse.',
   synonym: null,
@@ -12,7 +12,7 @@ export const dataLibS = [{
 }, {
   word: 'soulyé',
   partOfSpeech: 'N',
-  definition: 'shoe',
+  definition: ['shoe'],
   egSentenceKw: 'I ka pòté soulyé nwè.',
   egSentenceEn: 'He\'s wearing black shoes.',
   synonym: null,
@@ -23,7 +23,7 @@ export const dataLibS = [{
 }, {
   word: 'sanng',
   partOfSpeech: 'N',
-  definition: 'belt',
+  definition: ['belt'],
   egSentenceKw: 'Sanng-lan té twò gwo pou wen\'y.',
   egSentenceEn: 'The belt was too large for his waist.',
   synonym: null,
@@ -34,7 +34,7 @@ export const dataLibS = [{
 }, {
   word: 'sèvyèt',
   partOfSpeech: 'N',
-  definition: 'towel',
+  definition: ['towel'],
   egSentenceKw: 'Ba li on sèvyèt pou i swiyé bouch li.',
   egSentenceEn: 'Give him a towel to wipe his mouth.',
   synonym: null,
@@ -45,7 +45,7 @@ export const dataLibS = [{
 }, {
   word: 'sak',
   partOfSpeech: 'N',
-  definition: 'bag, sack',
+  definition: ['bag', 'sack'],
   egSentenceKw: 'Mwen vlé on sak sik.',
   egSentenceEn: 'I want a bag of sugar.',
   synonym: null,
@@ -56,7 +56,7 @@ export const dataLibS = [{
 }, {
   word: 'sé',
   partOfSpeech: 'V',
-  definition: 'to be',
+  definition: ['to be'],
   egSentenceKw: 'Fwè mwen sé on dòktè.',
   egSentenceEn: 'My brother\'s a doctor.',
   synonym: null,
@@ -68,7 +68,7 @@ export const dataLibS = [{
 }, {
   word: 'sé',
   partOfSpeech: null,
-  definition: 'pluralizer',
+  definition: ['pluralizer'],
   egSentenceKw: 'Sé wòb sala bèl pasé sé lézòt-la.',
   egSentenceEn: 'These dresses are prettier than the others.',
   synonym: null,
