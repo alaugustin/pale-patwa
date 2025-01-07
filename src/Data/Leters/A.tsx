@@ -1,7 +1,7 @@
 export const dataLibA = [{
   word: 'an',
   partOfSpeech: 'ART',
-  definition: 'a, an',
+  definition: ['a', 'an'],
   egSentenceKw: 'I ni an chimiz wouj.',
   egSentenceEn: 'He has a red shirt.',
   synonym: null,

@@ -28,13 +28,29 @@ export default function Modal({
 }: IModalProps) {
   const selectedWord = SortedDictionary.find(word => word.word === modalTitle);
 
+  const renderWordList = (words: string[] | string, prefix: string) => {
+    return (
+      <Typography variant='span'>{`(${prefix}:`}
+        {Array.isArray(words) ? words.map((def: string, index: number) => (
+          <Typography variant='span' className='first:mx-1 mr-1 last:mr-0' key={index}>
+            {def}{index !== words.length - 1 ? ',' : ''}
+          </Typography>
+        )) : words}
+        {')'}</Typography>
+    );
+  };
+
   return (
     <BlockElement variant='article' className={modalContainerClasses}>
       <BlockElement className={modalContentClasses}>
         <Typography variant='h2' className={modalH2Classes}>{modalTitle}</Typography>
         <BlockElement className='mb-4'>
           <BlockElement variant='div' className='mb-4'>
-            <Typography variant='p' className='mb-2'>{modalDefinition}</Typography>
+            <Typography variant='p' className='mb-2'>
+              {Array.isArray(modalDefinition) ? modalDefinition.map((def: string, index: number) => (
+                <Typography variant='span' className='mr-1 last:mr-0' key={index}>{def}{index !== modalDefinition.length - 1 ? ',' : ''}</Typography>
+              )) : modalDefinition}
+            </Typography>
 
             {modalSentenceKw && (
               <Typography variant='p' className='mb-1'>
@@ -52,13 +68,8 @@ export default function Modal({
               <Typography variant='span' className='mr-1'>{`(var: ${modalVariant})`}</Typography>
             )}
 
-            {modalSynonym && (
-              <Typography variant='span' className='mr-1'>{`(syn: ${modalSynonym})`}</Typography>
-            )}
-
-            {modalAntonym && (
-              <Typography variant='span' className='mr-1'>{`(opp: ${modalAntonym})`}</Typography>
-            )}
+            {modalSynonym && renderWordList(modalSynonym, 'syn')}
+            {modalAntonym && renderWordList(modalAntonym, 'opp')}
 
             {modalCrossRef && (
               <Typography variant='span'>{`(xref: ${modalCrossRef})`}</Typography>

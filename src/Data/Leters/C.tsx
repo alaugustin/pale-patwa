@@ -1,7 +1,7 @@
 export const dataLibC = [{
   word: 'chat',
   partOfSpeech: 'N',
-  definition: 'cat',
+  definition: ['cat'],
   egSentenceKw: 'Chyen ka kouwi dèyè chat.',
   egSentenceEn: 'Dogs chase cats.',
   synonym: 'tig',
@@ -12,7 +12,7 @@ export const dataLibC = [{
 }, {
   word: 'chèz',
   partOfSpeech: 'N',
-  definition: 'chair',
+  definition: ['chair'],
   egSentenceKw: 'La ni kat chèz èk kat tab.',
   egSentenceEn: 'There are four tables and chairs.',
   synonym: null,
@@ -23,7 +23,7 @@ export const dataLibC = [{
 }, {
   word: 'chimiz',
   partOfSpeech: 'N',
-  definition: 'shirt',
+  definition: ['shirt'],
   egSentenceKw: 'I ni on chimiz wouj.',
   egSentenceEn: 'He has a red shirt.',
   synonym: null,
@@ -34,7 +34,7 @@ export const dataLibC = [{
 }, {
   word: 'choson',
   partOfSpeech: 'N',
-  definition: 'sock',
+  definition: ['sock'],
   egSentenceKw: 'Ban mwen choson-an pou mwen mété an pyé mwen.',
   egSentenceEn: 'Give me the sock for me to put on my foot.',
   synonym: null,
