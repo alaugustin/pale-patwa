@@ -1,7 +1,7 @@
 export const dataLibK = [{
   word: 'koko',
   partOfSpeech: 'N',
-  definition: 'coconut',
+  definition: ['coconut'],
   egSentenceKw: 'Vòlè-a tjouwi tout koko-a an jaden mwen.',
   egSentenceEn: 'The thief picked all of the coconuts in my garden.',
   synonym: null,
@@ -12,7 +12,7 @@ export const dataLibK = [{
 }, {
   word: 'kanmizòl',
   partOfSpeech: 'N',
-  definition: 'coat, jacket, suitcoat, sportcoat',
+  definition: ['coat', 'jacket', 'suitcoat', 'sportcoat'],
   egSentenceKw: 'I mété kwavat-la épi kanmizòl li.',
   egSentenceEn: 'He put on his tie and jacket.',
   synonym: null,
@@ -23,7 +23,7 @@ export const dataLibK = [{
 }, {
   word: 'kalson',
   partOfSpeech: 'N',
-  definition: 'drawers, underpants',
+  definition: ['drawers', 'underpants'],
   egSentenceKw: 'Madanm-lan achté kalson bay mawi\'y.',
   egSentenceEn: 'The woman bought underpants for her husband.',
   synonym: null,
@@ -34,7 +34,7 @@ export const dataLibK = [{
 }, {
   word: 'katapòl',
   partOfSpeech: 'N',
-  definition: 'slipper, thong, sandal, flipflop',
+  definition: ['slipper', 'thong', 'sandal', 'flipflop'],
   egSentenceKw: 'I mété kouwi épi katapòl li volé sòti an pyé\'y.',
   egSentenceEn: 'He started running and his slipper flew off his foot.',
   synonym: null,
@@ -45,7 +45,7 @@ export const dataLibK = [{
 }, {
   word: 'kwavat',
   partOfSpeech: 'N',
-  definition: 'necktie',
+  definition: ['necktie'],
   egSentenceKw: 'I mété an kwavat nwè pou i alé lètèman-an.',
   egSentenceEn: 'He put on a black tie to go to the funeral.',
   synonym: null,
@@ -56,10 +56,10 @@ export const dataLibK = [{
 }, {
   word: 'kounoumounou',
   partOfSpeech: 'N',
-  definition: 'fool',
+  definition: ['fool'],
   egSentenceKw: 'Gason-an sé on kounoumounou!',
   egSentenceEn: 'The boy is a fool!',
-  synonym: 'kouyon, kouyon, lèlè',
+  synonym: ['kouyon', 'kouyon', 'lèlè'],
   antonym: null,
   crossReference: null,
   etymology: null,
@@ -67,7 +67,7 @@ export const dataLibK = [{
 }, {
   word: 'ka',
   partOfSpeech: 'ADV',
-  definition: 'progressive aspect marker',
+  definition: ['progressive aspect marker'],
   egSentenceKw: 'I ka palé.',
   egSentenceEn: 'He is speaking.',
   synonym: null,
@@ -78,7 +78,7 @@ export const dataLibK = [{
 }, {
   word: 'kay',
   partOfSpeech: 'ADV',
-  definition: 'future tense indicator',
+  definition: ['future tense indicator'],
   egSentenceKw: 'Denmen nou kay pati.',
   egSentenceEn: 'Tomorrow we will depart.',
   synonym: null,
@@ -89,7 +89,7 @@ export const dataLibK = [{
 }, {
   word: 'kay',
   partOfSpeech: 'N',
-  definition: 'house, building',
+  definition: ['house, building'],
   egSentenceKw: 'I ja ni dé lanné dépi misyé-a koumansé kay-la épi i p\'òkò sa wèsté adan\'y jik toujou.',
   egSentenceEn: 'It has already been two years since the man began to build the house and he still can\'t live in it yet.',
   synonym: null,

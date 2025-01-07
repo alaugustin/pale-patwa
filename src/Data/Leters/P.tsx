@@ -1,7 +1,7 @@
 export const dataLibP = [{
   word: 'pen',
   partOfSpeech: 'N',
-  definition: 'bread',
+  definition: ['bread'],
   egSentenceKw: 'Bonmaten-an i ka fè pen.',
   egSentenceEn: 'This morning she is making bread.',
   synonym: null,
@@ -12,10 +12,10 @@ export const dataLibP = [{
 }, {
   word: 'pòpòt',
   partOfSpeech: 'N',
-  definition: 'doll',
+  definition: ['doll'],
   egSentenceKw: 'Achté an pòpòt bay tifi-a.',
   egSentenceEn: 'Buy a doll for the girl.',
-  synonym: 'bolonm',
+  synonym: ['bolonm'],
   antonym: null,
   crossReference: null,
   etymology: '[< Fr. popote]',
@@ -23,7 +23,7 @@ export const dataLibP = [{
 }, {
   word: 'pòt',
   partOfSpeech: 'N',
-  definition: 'can, tin, enamel cup',
+  definition: ['can', 'tin', 'enamel cup'],
   egSentenceKw: 'Nou genyen senk pòt lèt.',
   egSentenceEn: 'We bought five cans of milk.',
   synonym: null,
@@ -34,7 +34,7 @@ export const dataLibP = [{
 }, {
   word: 'pawasòl',
   partOfSpeech: 'N',
-  definition: 'umbrella, parasol',
+  definition: ['umbrella', 'parasol'],
   egSentenceKw: 'Sé pou ou maché épi pawasòl ou jòdi-a; i kay fè lapli.',
   egSentenceEn: 'You must carry your umbrella today; it is going to rain.',
   synonym: null,
@@ -45,10 +45,10 @@ export const dataLibP = [{
 }, {
   word: 'pou',
   partOfSpeech: 'PREP',
-  definition: 'for (in the sense of duration)',
+  definition: ['for (in the sense of duration)'],
   egSentenceKw: 'I wété la pou twa simenn.',
   egSentenceEn: 'He stayed there for three weeks.',
-  synonym: 'apwézan, atjwèlman',
+  synonym: ['apwézan', 'atjwèlman'],
   antonym: null,
   crossReference: null,
   etymology: '[< Fr. pour]',
