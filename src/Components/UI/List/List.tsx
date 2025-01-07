@@ -1,9 +1,6 @@
 import React from 'react';
-import { AppContentData } from '../../../Data/AppContent';
 import { ListItem } from './ListItem/ListItem';
 import { IListProps } from './List.d';
-
-const { listItemClass } = AppContentData.uiClasses;
 
 export default function List({
   data,
@@ -35,7 +32,6 @@ export default function List({
             antonym={antonym}
             crossReference={crossReference}
             hasLink={hasLink}
-            listItemClass={listItemClass}
           />
         );
       })}
