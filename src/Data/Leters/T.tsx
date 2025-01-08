@@ -54,5 +54,28 @@ export const dataLibT = [{
   etymology: null,
   dialect: '🇱🇨',
   variant: 'sété',
+}, {
+  word: 'tonton',
+  partOfSpeech: 'N',
+  definition: ['uncle'],
+  egSentenceKw: 'Tonton mwen sé on chapantyé.',
+  egSentenceEn: 'My uncle is a carpenter.',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. oncle]',
+  dialect: '🇱🇨',
+}, {
+  word: 'tantant',
+  partOfSpeech: 'N',
+  definition: ['aunt'],
+  egSentenceKw: 'Nou té ka wété épi tantant nou.',
+  egSentenceEn: 'We used to live with our aunt.',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. tante]',
+  dialect: '🇱🇨',
 },
 ];
+

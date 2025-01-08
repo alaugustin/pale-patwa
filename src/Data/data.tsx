@@ -77,7 +77,7 @@ export const SortedDictionary = dataLib.sort((a, b) => {
  * @param field - The field in the `SortedDictionary` array to analyze for word frequency.
  * @returns An array of the top 10 most frequent words and their counts.
  */
-const excludedWords = ['li.', 'sann,', 'mwen.'];
+const excludedWords = ['li.', 'sann,', 'mwen.', 'nèf.'];
 const dictionaryWords = SortedDictionary.map(entry => entry.word.toLowerCase());
 const allExcludedWords = [...excludedWords, ...dictionaryWords];
 

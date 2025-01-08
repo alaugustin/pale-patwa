@@ -76,5 +76,27 @@ export const dataLibS = [{
   crossReference: null,
   etymology: null,
   dialect: '🇱🇨',
-},
+}, {
+  word: 'sésé',
+  partOfSpeech: 'N',
+  definition: ['sister'],
+  egSentenceKw: 'Sésé mwen ka twavay an lopital-la.',
+  egSentenceEn: 'My sister works at the hospital.',
+  synonym: ['sè'],
+  antonym: ['fwè'],
+  crossReference: null,
+  etymology: null,
+  dialect: '🇱🇨',
+}, {
+  word: 'sé',
+  partOfSpeech: 'N',
+  definition: ['sister'],
+  egSentenceKw: 'Sé moun sala sé fwè èk sè mwen an Jézi.',
+  egSentenceEn: 'Those people are my brothers and sisters in Jesus.',
+  synonym: ['sè'],
+  antonym: ['fwè'],
+  crossReference: null,
+  etymology: null,
+  dialect: '🇱🇨',
+}
 ];
