@@ -21,6 +21,7 @@ const {
   centeredBlurbCopyClasses,
 } = AppContentData.uiClasses;
 const { wordListContent } = AppContentData.libraryContent;
+const { bookIcon } = AppContentData.icons;
 const searchFields = [
   'word',
   'definition',
@@ -103,7 +104,7 @@ export default function WordList({ data }: IWordlistProps) {
   const addSubscriptsToWords = (words: any[]) => {
     const wordCounts = new Map();
 
-    return words.map((item, index) => {
+    return words.map((item) => {
       const word = item.word;
       wordCounts.set(word, (wordCounts.get(word) || 0) + 1);
 
@@ -123,6 +124,7 @@ export default function WordList({ data }: IWordlistProps) {
         elementTitle={libraryTitleH2}
         copyWrapperClassName={centeredBlurbCopyClasses}
         copyData={wordListContent}
+        headingIcon={bookIcon}
       />
 
       <DictionarySearch
