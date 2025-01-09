@@ -15,9 +15,7 @@ export default function TwoCol({
         <BlockElement
           key={index}
           className={twoColColumnClasses}
-        >
-          {colData}
-        </BlockElement>
+        >{colData}</BlockElement>
       ))}
     </BlockElement>
   );

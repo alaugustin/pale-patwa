@@ -26,9 +26,7 @@ export default function RenderElementHead({
             <Typography
               key={index}
               className='mb-2'
-            >
-              {blurbCopy}
-            </Typography>
+            >{blurbCopy}</Typography>
           ))
         }</BlockElement>
       )}

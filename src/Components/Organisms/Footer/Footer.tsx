@@ -49,9 +49,7 @@ export default function Footer({
                 linkDownload={download}
                 linkRel={rel}
                 linkType={type}
-              >
-                {label}
-              </Link>
+              >{label}</Link>
             </Typography>
           );
         })}

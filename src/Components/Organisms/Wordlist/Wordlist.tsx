@@ -5,8 +5,8 @@ import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Pagination } from '../Pagination/Pagination';
 import { DictionarySearch } from '../DictionarySearch/DictionarySearch';
 import RenderElementHead from '../RenderElementHead/RenderElementHead';
-import { IWordlistProps } from './Wordlist.d';
 import { Typography } from '../../UI/Typography/Typography';
+import { IWordlistProps } from './Wordlist.d';
 
 const {
   libraryTitleH2,
@@ -58,7 +58,6 @@ export default function WordList({ data }: IWordlistProps) {
   }
 
   const { height } = useWindowDimensions();
-
   const ITEMS_PER_HEIGHT = paginationItemsPerHeight;
 
   const PAGINATION_ITEMS_PER_PAGE = Object.entries(ITEMS_PER_HEIGHT)

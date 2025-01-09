@@ -34,7 +34,7 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
     definition
   } = props;
 
-  const renderCalendarIcon = parseInt(currentDayOfMonth) > 10 ? currentDayOfMonth : `0${currentDayOfMonth}`;
+  const renderCalendarIconText = parseInt(currentDayOfMonth) > 10 ? currentDayOfMonth : `0${currentDayOfMonth}`;
 
   const calendarIcon = (
     iconClasses: string,
@@ -50,7 +50,7 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
         y={iconYOffset}
         fontSize={iconTextFontSize}
         fill={`#${iconFillColor}`}
-      >{renderCalendarIcon}</text>
+      >{renderCalendarIconText}</text>
     </svg>
   );
 
