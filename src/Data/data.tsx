@@ -92,8 +92,7 @@ const calculateWordFrequency = (field: keyof typeof SortedDictionary[0]) =>{
           wordFrequency[word] = (wordFrequency[word] || 0) + 1;
         }
       });
-    }
-  });
+    }});
 
   return Object.entries(wordFrequency)
     .sort(([, a], [, b]) => b - a)
