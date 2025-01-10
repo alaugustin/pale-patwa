@@ -30,6 +30,15 @@ npm install
 ### ✨ Features
 - Full dictionary word list display
 - Search functionality
+- Etymology information from French origins
+- Example sentences in both Kwéyòl and English
+
+#### Language Features
+- Complete family relationship vocabulary
+- Personal pronoun system
+- Cross-referencing between related terms
+- Synonym and antonym relationships
+- Variant forms documentation
 
 #### Daily Word Feature
 - Automatic refresh at midnight
@@ -64,6 +73,7 @@ src/
 │   ├── WordList/
 │   └── Footer/
 ├── data/         # Dictionary entries
+│   └── Letters/  # Alphabetically organized word collections
 ├── hooks/        # Custom React hooks
 ├── styles/       # Tailwind configurations
 ├── types/        # TypeScript definitions
@@ -77,13 +87,17 @@ The app uses a three-part layout:
 - **Footer**: Copyright information and site details
 
 ### Data Management
-- Dictionary entries stored in JSON format
-- Word selection algorithm for daily featured words
-- Search functionality with accent-agnostic matching
-- Filtering system for parts of speech and etymology
+- JSON-stored dictionary entries
+- Daily featured word selection algorithm
+- Accent-agnostic search functionality
+- Filters for parts of speech and etymology
 - Modal integration with dictionary data
-- Search term normalization for improved word filtering
-- Centralized content management through AppContentData
+- Search term normalization for better filtering
+- Centralized content via AppContentData
+- Entries categorized by letter
+- Bilingual example sentences
+- Etymology tracking for French-derived terms
+- Dialect indicators with country flags
 
 ### 🛠️ Tech Stack
 ```markdown:README.md

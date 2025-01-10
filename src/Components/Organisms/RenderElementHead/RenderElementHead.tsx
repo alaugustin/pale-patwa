@@ -6,26 +6,30 @@ import { IRenderElementHeadProps } from './RenderElementHead.d';
 export default function RenderElementHead({
   elementTitle,
   copyWrapperClassName,
-  copyData
+  copyData,
+  headingIcon
 }: IRenderElementHeadProps) {
 
   return (
     <>
-      <Typography
-        variant="h2"
-        className='text-3xl mb-4'
-      >{elementTitle}</Typography>
+      <Typography variant='span' className='flex'>
+        {headingIcon && headingIcon}
+        <Typography
+          variant="h2"
+          className='text-3xl mb-4'
+        >{elementTitle}</Typography>
+      </Typography>
 
-      <BlockElement className={copyWrapperClassName}>{
-        copyData.map((blurbCopy, index) => (
-          <Typography
-            key={index}
-            className='mb-2'
-          >
-            {blurbCopy}
-          </Typography>
-        ))
-      }</BlockElement>
+      {copyData && (
+        <BlockElement className={copyWrapperClassName}>{
+          copyData.map((blurbCopy, index) => (
+            <Typography
+              key={index}
+              className='mb-2'
+            >{blurbCopy}</Typography>
+          ))
+        }</BlockElement>
+      )}
     </>
   );
 }

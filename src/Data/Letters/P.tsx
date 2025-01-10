@@ -53,5 +53,17 @@ export const dataLibP = [{
   crossReference: null,
   etymology: '[< Fr. pour]',
   dialect: '🇱🇨',
+}, {
+  word: 'papa',
+  partOfSpeech: 'N',
+  definition: ['father'],
+  egSentenceKw: 'Papa\'y té ja an vyéyès li lè i fè dènyé gason\'y.',
+  egSentenceEn: 'His father was already in his old age when he had his last son.',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. papa]',
+  dialect: '🇱🇨',
+  variant: 'Apa',
 },
 ];

@@ -1,20 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { AppContentData } from '../../../Data/AppContent';
 import { Typography } from '../../UI/Typography/Typography';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import WordAttributes from '../WordAttributes/WordAttributes';
 import TwoCol from '../TwoCol/TwoCol';
+import RenderElementHead from '../RenderElementHead/RenderElementHead';
 import { IWordOfTheDayProps } from './WordOfTheDay.d';
 
-const { wodTitleH2, wodContent } = AppContentData.wordOfTheDayContent;
+const {
+  wodTitleH2,
+  wodContent,
+} = AppContentData.wordOfTheDayContent;
 const {
   wordOfTheDayContainerClasses,
   wordOfTheDayH3Classes,
   wordOfTheDayDefinitionClasses,
-  centeredBlurbCopyClasses
+  calendarIconClasses
 } = AppContentData.uiClasses;
+const { date } = AppContentData.globalPageContent;
+const { calendarIcon } = AppContentData.icons;
 
 export default function WordOfTheDay(props: IWordOfTheDayProps) {
+  const [currentDayOfMonth, setCurrentDayOfMonth] = useState('');
+  useEffect(() => {
+    const dayOfMonth = date.getDate();
+    setCurrentDayOfMonth(`${dayOfMonth}`);
+  }, []);
+  const renderCalendarIconText = parseInt(currentDayOfMonth) < 10 ? `0${'9'}` : currentDayOfMonth;
+
   const {
     kweyoleWord,
     dialect,
@@ -23,21 +36,22 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
     definition
   } = props;
 
+
   const wodTwoColData = [
     <>
-      <Typography
-        variant="h2"
-        className={'text-3xl mb-4'}
-      >{wodTitleH2}</Typography>
-
-      <BlockElement className={centeredBlurbCopyClasses}>{
-        wodContent.map((blurbCopy, index) => (
-          <Typography
-            key={index}
-            className='mb-2 last:mb-0 text-left'
-          >{blurbCopy}</Typography>
-        ))
-      }</BlockElement>
+      <RenderElementHead
+        elementTitle={wodTitleH2}
+        copyData={wodContent}
+        headingIcon={
+          calendarIcon(
+            calendarIconClasses,
+            3,
+            12,
+            8,
+            '262626',
+            renderCalendarIconText
+          )}
+      />
     </>, <>
       <Typography
         variant="h3"

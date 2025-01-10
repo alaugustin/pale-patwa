@@ -1,25 +1,25 @@
-import { dataLibA } from './Leters/A';
-import { dataLibB } from './Leters/B';
-import { dataLibC } from './Leters/C';
-import { dataLibD } from './Leters/D';
-import { dataLibF } from './Leters/F';
-import { dataLibG } from './Leters/G';
-import { dataLibH } from './Leters/H';
-import { dataLibI } from './Leters/I';
-import { dataLibJ } from './Leters/J';
-import { dataLibK } from './Leters/K';
-import { dataLibL } from './Leters/L';
-import { dataLibM } from './Leters/M';
-import { dataLibO } from './Leters/O';
-import { dataLibN } from './Leters/N';
-import { dataLibP } from './Leters/P';
-import { dataLibR } from './Leters/R';
-import { dataLibS } from './Leters/S';
-import { dataLibT } from './Leters/T';
-import { dataLibV } from './Leters/V';
-import { dataLibW } from './Leters/W';
-import { dataLibY } from './Leters/Y';
-import { dataLibZ } from './Leters/Z';
+import { dataLibA } from './Letters/A';
+import { dataLibB } from './Letters/B';
+import { dataLibC } from './Letters/C';
+import { dataLibD } from './Letters/D';
+import { dataLibF } from './Letters/F';
+import { dataLibG } from './Letters/G';
+import { dataLibH } from './Letters/H';
+import { dataLibI } from './Letters/I';
+import { dataLibJ } from './Letters/J';
+import { dataLibK } from './Letters/K';
+import { dataLibL } from './Letters/L';
+import { dataLibM } from './Letters/M';
+import { dataLibO } from './Letters/O';
+import { dataLibN } from './Letters/N';
+import { dataLibP } from './Letters/P';
+import { dataLibR } from './Letters/R';
+import { dataLibS } from './Letters/S';
+import { dataLibT } from './Letters/T';
+import { dataLibV } from './Letters/V';
+import { dataLibW } from './Letters/W';
+import { dataLibY } from './Letters/Y';
+import { dataLibZ } from './Letters/Z';
 import { dataLibNum } from './Numbers/Numbers';
 import { dataDays } from './Calendar/Days';
 import { dataMonths } from './Calendar/Months';
@@ -77,7 +77,7 @@ export const SortedDictionary = dataLib.sort((a, b) => {
  * @param field - The field in the `SortedDictionary` array to analyze for word frequency.
  * @returns An array of the top 10 most frequent words and their counts.
  */
-const excludedWords = ['li.', 'sann,', 'mwen.'];
+const excludedWords = ['li.', 'sann,', 'mwen.', 'nèf.'];
 const dictionaryWords = SortedDictionary.map(entry => entry.word.toLowerCase());
 const allExcludedWords = [...excludedWords, ...dictionaryWords];
 
@@ -92,8 +92,7 @@ const calculateWordFrequency = (field: keyof typeof SortedDictionary[0]) =>{
           wordFrequency[word] = (wordFrequency[word] || 0) + 1;
         }
       });
-    }
-  });
+    }});
 
   return Object.entries(wordFrequency)
     .sort(([, a], [, b]) => b - a)

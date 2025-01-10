@@ -12,7 +12,11 @@ const {
   paginationContainerClasses
 } = AppContentData.uiClasses;
 
-const shouldShowButton = (currentPage: number, currentPageComparator: number, totalPages: number) => {
+const shouldShowButton = (
+  currentPage: number,
+  currentPageComparator: number,
+  totalPages: number
+) => {
   return (
     (currentPage === currentPageComparator || totalPages === 0) ?
       paginationButtonDisabled :

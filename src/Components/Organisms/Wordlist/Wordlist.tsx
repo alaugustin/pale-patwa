@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import List from '../../UI/List/List';
+import { ListItem } from '../../UI/List/ListItem/ListItem';
 import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Pagination } from '../Pagination/Pagination';
 import { DictionarySearch } from '../DictionarySearch/DictionarySearch';
 import RenderElementHead from '../RenderElementHead/RenderElementHead';
+import { Typography } from '../../UI/Typography/Typography';
 import { IWordlistProps } from './Wordlist.d';
 
 const {
@@ -17,9 +18,11 @@ const {
 const {
   wordListContainerClasses,
   wordListListClasses,
-  centeredBlurbCopyClasses
+  centeredBlurbCopyClasses,
+  bookIconClasses
 } = AppContentData.uiClasses;
 const { wordListContent } = AppContentData.libraryContent;
+const { bookIcon } = AppContentData.icons;
 const searchFields = [
   'word',
   'definition',
@@ -56,7 +59,6 @@ export default function WordList({ data }: IWordlistProps) {
   }
 
   const { height } = useWindowDimensions();
-
   const ITEMS_PER_HEIGHT = paginationItemsPerHeight;
 
   const PAGINATION_ITEMS_PER_PAGE = Object.entries(ITEMS_PER_HEIGHT)
@@ -99,12 +101,30 @@ export default function WordList({ data }: IWordlistProps) {
     handleSearch('');
   };
 
+  const addSubscriptsToWords = (words: any[]) => {
+    const wordCounts = new Map();
+
+    return words.map((item) => {
+      const word = item.word;
+      wordCounts.set(word, (wordCounts.get(word) || 0) + 1);
+
+      if (wordCounts.get(word) > 1) {
+        return {
+          ...item,
+          word: <Typography variant='span'>{word}<sub>{wordCounts.get(word)}</sub></Typography>
+        };
+      }
+      return item;
+    });
+  };
+
   return (
     <BlockElement variant='section' className={wordListContainerClasses}>
       <RenderElementHead
         elementTitle={libraryTitleH2}
         copyWrapperClassName={centeredBlurbCopyClasses}
         copyData={wordListContent}
+        headingIcon={bookIcon(bookIconClasses)}
       />
 
       <DictionarySearch
@@ -114,11 +134,22 @@ export default function WordList({ data }: IWordlistProps) {
         onClickFunc={handleClear}
       />
 
-      <List
-        data={currentItems}
-        linkClass={wordListListClasses}
-        hasLink={true}
-      />
+      <ul className={wordListListClasses}>
+        {addSubscriptsToWords(currentItems).map((item) => (
+          <ListItem
+            key={item.id}
+            word={item.word}
+            definition={item.definition}
+            egSentenceKw={item.egSentenceKw}
+            egSentenceEn={item.egSentenceEn}
+            synonym={item.synonym}
+            antonym={item.antonym}
+            crossReference={item.crossReference}
+            variant={item.variant}
+            hasLink={true}
+          />
+        ))}
+      </ul>
 
       <Pagination
         prevButtonLabel={prevButtonLabel}
