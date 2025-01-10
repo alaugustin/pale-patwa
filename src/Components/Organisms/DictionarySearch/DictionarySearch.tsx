@@ -8,7 +8,8 @@ import { IDictionarySearchProps } from './DictionarySearch.d';
 const { clearInputIcon } = AppContentData.icons;
 const {
   dictionarySearchClasses,
-  dictionarySearchInputClasses
+  dictionarySearchInputClasses,
+  clearInputIconClasses
 } = AppContentData.uiClasses;
 
 export const DictionarySearch = ({
@@ -31,7 +32,7 @@ export const DictionarySearch = ({
         searchValue && (
           <Button
             buttonClass='text-gray-400'
-            buttonLabel={clearInputIcon}
+            buttonLabel={clearInputIcon(clearInputIconClasses)}
             onClickFunc={onClickFunc}
           />
         )

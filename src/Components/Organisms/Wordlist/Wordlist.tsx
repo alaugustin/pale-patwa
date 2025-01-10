@@ -19,6 +19,7 @@ const {
   wordListContainerClasses,
   wordListListClasses,
   centeredBlurbCopyClasses,
+  bookIconClasses
 } = AppContentData.uiClasses;
 const { wordListContent } = AppContentData.libraryContent;
 const { bookIcon } = AppContentData.icons;
@@ -123,7 +124,7 @@ export default function WordList({ data }: IWordlistProps) {
         elementTitle={libraryTitleH2}
         copyWrapperClassName={centeredBlurbCopyClasses}
         copyData={wordListContent}
-        headingIcon={bookIcon}
+        headingIcon={bookIcon(bookIconClasses)}
       />
 
       <DictionarySearch

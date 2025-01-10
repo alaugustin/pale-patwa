@@ -9,7 +9,7 @@ import { IFooterProps } from './Footer.d';
 const footerResourcesLink = AppContentData.footerContent.resources.link;
 const { titleH2 } = AppContentData.footerContent.resources;
 const { pronounciationTitleH2 } = AppContentData.pronounciationContent;
-const { copyRight } = AppContentData.icons;
+const { copyright } = AppContentData.icons;
 const {
   pronounciationContainerClasses,
   copyRightContainerClasses,
@@ -17,6 +17,7 @@ const {
   footerResourcesTitleClasses,
   footerFlagSectionClasses,
   footerResourcesLinkClasses,
+  copyRightIconClasses
 } = AppContentData.uiClasses;
 
 export default function Footer({
@@ -32,7 +33,7 @@ export default function Footer({
 
       <BlockElement
         className={copyRightContainerClasses}>
-        {copyRight}&nbsp;{footerInfo}
+        {copyright(copyRightIconClasses)}&nbsp;{footerInfo}
       </BlockElement>
 
       <BlockElement className={footerResourcesContinerClasses}>

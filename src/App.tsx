@@ -18,7 +18,8 @@ const {
   backToTopButton,
   appAllHolderClasses,
   headerContainerClasses,
-  footerContainerClasses
+  footerContainerClasses,
+  backToTopIconClasses
 } = AppContentData.uiClasses;
 const {flexItemsCenter} = AppContentData.uiHelperClasses;
 
@@ -103,7 +104,7 @@ export default function App() {
           <Button
             buttonClass={backToTopButton}
             buttonLabel={<>
-              {backToTopIcon}
+              {backToTopIcon(backToTopIconClasses)}
               <span>{backToTopLabel}</span>
             </>}
             onClickFunc={scrollToTop}
