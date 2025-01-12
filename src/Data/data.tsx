@@ -100,10 +100,10 @@ const calculateWordFrequency = (field: keyof typeof SortedDictionary[0]) =>{
     .map(([word, count]) => ({ word, count }));
 };
 
-const topEgSentenceKw = calculateWordFrequency('egSentenceKw');
-const topWordsSyn = calculateWordFrequency('synonym');
+// const topEgSentenceKw = calculateWordFrequency('egSentenceKw');
+// const topWordsSyn = calculateWordFrequency('synonym');
 
 // console.log('SortedNumbers: ', SortedNumbers);
 // console.log('SortedDictionary: ', SortedDictionary);
-console.log('topWords: ', topEgSentenceKw);
-console.log('topWordsSyn: ', topWordsSyn);
+// console.log('topWords: ', topEgSentenceKw);
+// console.log('topWordsSyn: ', topWordsSyn);
