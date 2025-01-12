@@ -76,6 +76,28 @@ export const dataLibT = [{
   crossReference: null,
   etymology: '[< Fr. tante]',
   dialect: '🇱🇨',
+}, {
+  word: 'tig',
+  partOfSpeech: 'N',
+  definition: ['tiger'],
+  egSentenceKw: 'Jik toujou tig ka wété an bwa-a.',
+  egSentenceEn: 'To this day tigers live in the woods.',
+  synonym: 'chat tig',
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. tigre]',
+  dialect: '🇱🇨',
+}, {
+  word: 'tibway',
+  partOfSpeech: 'N',
+  definition: ['boy', 'son'],
+  egSentenceKw: 'Konmen tibway ou ni?',
+  egSentenceEn: 'How many boys do you have?',
+  synonym: 'gason',
+  antonym: null,
+  crossReference: null,
+  etymology: null,
+  dialect: '🇱🇨',
 },
 ];
 

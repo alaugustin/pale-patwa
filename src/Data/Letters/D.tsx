@@ -28,7 +28,7 @@ export const dataLibD = [{
   egSentenceKw: 'I soud an zòwèy dwèt li.',
   egSentenceEn: 'He is deaf in his right ear.',
   synonym: null,
-  antonym: 'gòch, kochi',
+  antonym: ['gòch', 'kochi'],
   crossReference: null,
   etymology: '[< Fr. droit]',
   dialect: '🇱🇨',

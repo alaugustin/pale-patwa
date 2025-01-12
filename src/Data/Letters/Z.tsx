@@ -1,7 +1,7 @@
 export const dataLibZ = [{
   word: 'zonng',
   partOfSpeech: 'N',
-  definition: 'fingernail, toenail',
+  definition: ['fingernail', 'toenail'],
   egSentenceKw: 'Yo té ni pou tiyé zonng li.',
   egSentenceEn: 'They had to remove his fingernail.',
   synonym: null,
@@ -12,7 +12,7 @@ export const dataLibZ = [{
 }, {
   word: 'zé',
   partOfSpeech: 'N',
-  definition: 'egg',
+  definition: ['egg'],
   egSentenceKw: 'Koté poul-la ki ka ponn sé zé sala?',
   egSentenceEn: 'Where is the hen that layed these eggs?',
   synonym: null,
@@ -23,7 +23,7 @@ export const dataLibZ = [{
 }, {
   word: 'zanno',
   partOfSpeech: 'N',
-  definition: 'earring',
+  definition: ['earring'],
   egSentenceKw: 'Fanm-lan ni dé gwo zanno.',
   egSentenceEn: 'The woman has two big earrings.',
   synonym: null,

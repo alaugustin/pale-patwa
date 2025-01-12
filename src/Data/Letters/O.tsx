@@ -10,5 +10,17 @@ export const dataLibO = [{
   etymology: null,
   dialect: '🇱🇨',
   variant: 'an',
+}, {
+  word: 'ou',
+  partOfSpeech: 'PRO',
+  definition: ['second person singular pronoun'],
+  egSentenceKw: 'Ou pèd lajan\'w?',
+  egSentenceEn: 'Did you lose your money?',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: null,
+  dialect: '🇱🇨',
+  variant: '\'w',
 },
 ];

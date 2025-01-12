@@ -9,5 +9,16 @@ export const dataLibA = [{
   crossReference: null,
   etymology: '[< Fr. un]',
   dialect: '🇱🇨',
+}, {
+  word: 'asou',
+  partOfSpeech: 'PREP',
+  definition: ['on', 'on top of', 'atop', 'upon'],
+  egSentenceKw: 'Mété\'y asou tab- la.',
+  egSentenceEn: 'Put it on the table.',
+  synonym: ['anlè', 'konsèné'],
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. sur]',
+  dialect: '🇱🇨',
 },
 ];

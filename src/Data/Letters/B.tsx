@@ -75,5 +75,16 @@ export const dataLibB = [{
   crossReference: null,
   etymology: '[< Fr. bague]',
   dialect: '🇱🇨',
+}, {
+  word: 'boug',
+  partOfSpeech: 'N',
+  definition: ['fellow', 'guy'],
+  egSentenceKw: 'Sa boug-la ka di la-a?',
+  egSentenceEn: 'What is that guy saying?',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. bague]',
+  dialect: '🇱🇨',
 },
 ];

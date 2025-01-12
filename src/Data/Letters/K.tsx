@@ -97,5 +97,16 @@ export const dataLibK = [{
   crossReference: null,
   etymology: null,
   dialect: '🇱🇨',
+}, {
+  word: 'kabwès',
+  partOfSpeech: 'N',
+  definition: ['young girl'],
+  egSentenceKw: 'Mi kabwès-la la',
+  egSentenceEn: 'Look at the young girl there!',
+  synonym: ['tifi', 'tifi'],
+  antonym: null,
+  crossReference: null,
+  etymology: null,
+  dialect: '🇱🇨',
 },
 ];
