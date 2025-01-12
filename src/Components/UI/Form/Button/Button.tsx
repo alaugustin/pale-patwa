@@ -13,8 +13,6 @@ export default function Button({
       className={buttonClass}
       disabled={buttonDisabled}
       onClick={onClickFunc}
-    >
-      {buttonLabel}
-    </button>
+    >{buttonLabel}</button>
   );
 }
