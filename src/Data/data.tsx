@@ -2,6 +2,7 @@ import { dataLibA } from './Letters/A';
 import { dataLibB } from './Letters/B';
 import { dataLibC } from './Letters/C';
 import { dataLibD } from './Letters/D';
+import { dataLibE } from './Letters/E';
 import { dataLibF } from './Letters/F';
 import { dataLibG } from './Letters/G';
 import { dataLibH } from './Letters/H';
@@ -29,6 +30,7 @@ export const dataLib = [
   ...dataLibB,
   ...dataLibC,
   ...dataLibD,
+  ...dataLibE,
   ...dataLibF,
   ...dataLibG,
   ...dataLibH,

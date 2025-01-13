@@ -155,5 +155,16 @@ export const dataLibS = [{
   crossReference: null,
   etymology: '[< Fr. cendre]',
   dialect: '🇱🇨',
+}, {
+  word: 'sòlèy',
+  partOfSpeech: 'N',
+  definition: ['sun'],
+  egSentenceKw: 'Sòlèy-la ka kouché bonnè sé jou sala.',
+  egSentenceEn: 'The sun sets early these days.',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. soleil]',
+  dialect: '🇱🇨',
 },
 ];

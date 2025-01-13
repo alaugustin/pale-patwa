@@ -90,5 +90,17 @@ export const dataLibL = [{
   etymology: '[< Fr. là]',
   dialect: '🇱🇨',
   variant: null,
+}, {
+  word: '-la',
+  partOfSpeech: 'ART',
+  definition: ['the', '(conditioned variant)'],
+  egSentenceKw: 'I ka manjé fig-la.',
+  egSentenceEn: 'She is eating the banana.',
+  synonym: null,
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. là]',
+  dialect: '🇱🇨',
+  variant: ['-a', '-an', '-lan'],
 },
 ];

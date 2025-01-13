@@ -20,5 +20,17 @@ export const dataLibA = [{
   crossReference: null,
   etymology: '[< Fr. sur]',
   dialect: '🇱🇨',
+}, {
+  word: 'alé',
+  partOfSpeech: 'PREP',
+  definition: ['to go (to)'],
+  egSentenceKw: 'Lè sòlèy kouché, i alé lakay li.',
+  egSentenceEn: 'When the sun went down, he went home.',
+  synonym: null,
+  antonym: ['vini', 'viwé', 'witounen', 'witounen'],
+  crossReference: null,
+  etymology: '[< Fr. aller]',
+  dialect: '🇱🇨',
+  variant: ['ay'],
 },
 ];
