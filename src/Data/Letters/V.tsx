@@ -20,5 +20,16 @@ export const dataLibV = [{
   crossReference: null,
   etymology: '[< Fr. vert]',
   dialect: '🇱🇨',
+}, {
+  word: 'vlé',
+  partOfSpeech: 'V',
+  definition: ['to want'],
+  egSentenceKw: 'Mwen vlé tak kafé, souplé.',
+  egSentenceEn: 'I want some coffee, please.',
+  synonym: ['anvi'],
+  antonym: null,
+  crossReference: null,
+  etymology: '[< Fr. voulez]',
+  dialect: '🇱🇨',
 },
 ];
