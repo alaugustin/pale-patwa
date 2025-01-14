@@ -144,7 +144,6 @@ export default function WordList({ data }: IWordlistProps) {
             egSentenceEn={item.egSentenceEn}
             synonym={item.synonym}
             antonym={item.antonym}
-            crossReference={item.crossReference}
             variant={item.variant}
             hasLink={true}
           />

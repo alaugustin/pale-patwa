@@ -14,7 +14,6 @@ export const ListItem = ({
   egSentenceEn,
   synonym,
   antonym,
-  crossReference,
   hasLink,
   listItemClass,
   variant
@@ -47,7 +46,6 @@ export const ListItem = ({
               modalSentenceEn={egSentenceEn}
               modalSynonym={synonym}
               modalAntonym={antonym}
-              modalCrossRef={crossReference}
               modalVariant={variant}
               clickHandler={() => setIsPopupOpen(false)}
             />

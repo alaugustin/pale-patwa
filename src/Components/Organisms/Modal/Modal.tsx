@@ -22,7 +22,6 @@ export default function Modal({
   modalSentenceEn,
   modalSynonym,
   modalAntonym,
-  modalCrossRef,
   modalVariant,
   clickHandler
 }: IModalProps) {
@@ -70,10 +69,6 @@ export default function Modal({
 
             {modalSynonym && renderWordList(modalSynonym, 'syn')}
             {modalAntonym && renderWordList(modalAntonym, 'opp')}
-
-            {modalCrossRef && (
-              <Typography variant='span'>{`(xref: ${modalCrossRef})`}</Typography>
-            )}
           </BlockElement>
 
           <WordAttributes

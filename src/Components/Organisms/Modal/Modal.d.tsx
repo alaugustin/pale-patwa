@@ -7,7 +7,6 @@
  * @property {string | null} modalSentenceEn - The modal sentence in English.
  * @property {string | null} modalSynonym - The synonym for the modal content.
  * @property {string | null} modalAntonym - The antonym for the modal content.
- * @property {string | null} modalCrossRef - The cross-reference for the modal content.
  * @property {string | null} modalVariant - The variant of the modal content.
  * @property {() => void} clickHandler - The function to be called when the modal is clicked.
  */
@@ -19,7 +18,6 @@ export interface IModalProps {
   modalSentenceEn: string | null;
   modalSynonym: string | null;
   modalAntonym: string | null;
-  modalCrossRef: string | null;
   modalVariant: string | null;
   clickHandler: () => void;
 }
