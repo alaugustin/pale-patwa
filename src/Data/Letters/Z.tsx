@@ -9,6 +9,7 @@ export const dataLibZ = [{
   crossReference: 'zonng makak',
   etymology: '[< Fr. les ongles]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'zé',
   partOfSpeech: 'N',
@@ -20,6 +21,7 @@ export const dataLibZ = [{
   crossReference: null,
   etymology: '[< Fr. les oeufs]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'zanno',
   partOfSpeech: 'N',
@@ -31,5 +33,6 @@ export const dataLibZ = [{
   crossReference: null,
   etymology: '[< Fr. les anneaus]',
   dialect: '🇱🇨',
+  variant: [null],
 },
 ];

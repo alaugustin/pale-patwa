@@ -9,6 +9,7 @@ export const dataLibT = [{
   crossReference: null,
   etymology: '[< Fr. petit fille]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'tab',
   partOfSpeech: 'N',
@@ -20,6 +21,7 @@ export const dataLibT = [{
   crossReference: null,
   etymology: '[< Fr. table]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'tjè',
   partOfSpeech: 'N',
@@ -31,6 +33,7 @@ export const dataLibT = [{
   crossReference: null,
   etymology: '[< Fr. cœur]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'tjilòt',
   partOfSpeech: 'N',
@@ -42,6 +45,7 @@ export const dataLibT = [{
   crossReference: null,
   etymology: '[< Fr. culotte]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'té',
   partOfSpeech: 'ADV',
@@ -65,6 +69,7 @@ export const dataLibT = [{
   crossReference: null,
   etymology: '[< Fr. oncle]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'tantant',
   partOfSpeech: 'N',
@@ -76,6 +81,7 @@ export const dataLibT = [{
   crossReference: null,
   etymology: '[< Fr. tante]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'tig',
   partOfSpeech: 'N',
@@ -87,6 +93,7 @@ export const dataLibT = [{
   crossReference: null,
   etymology: '[< Fr. tigre]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'tibway',
   partOfSpeech: 'N',
@@ -98,6 +105,7 @@ export const dataLibT = [{
   crossReference: null,
   etymology: null,
   dialect: '🇱🇨',
+  variant: [null],
 },
 ];
 

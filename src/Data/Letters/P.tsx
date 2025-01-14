@@ -9,6 +9,7 @@ export const dataLibP = [{
   crossReference: null,
   etymology: '[< Fr. pain]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'pòpòt',
   partOfSpeech: 'N',
@@ -20,6 +21,7 @@ export const dataLibP = [{
   crossReference: null,
   etymology: '[< Fr. popote]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'pòt',
   partOfSpeech: 'N',
@@ -31,6 +33,7 @@ export const dataLibP = [{
   crossReference: null,
   etymology: '[< Fr. pot]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'pawasòl',
   partOfSpeech: 'N',
@@ -42,6 +45,7 @@ export const dataLibP = [{
   crossReference: null,
   etymology: '[< Fr. parasol]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'pou',
   partOfSpeech: 'PREP',
@@ -53,6 +57,7 @@ export const dataLibP = [{
   crossReference: null,
   etymology: '[< Fr. pour]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'papa',
   partOfSpeech: 'N',
@@ -76,7 +81,7 @@ export const dataLibP = [{
   crossReference: null,
   etymology: '[< Fr. pas]',
   dialect: '🇱🇨',
-  variant: null,
+  variant: [null],
 }, {
   word: 'pa',
   partOfSpeech: 'PREP',
@@ -100,7 +105,7 @@ export const dataLibP = [{
   crossReference: null,
   etymology: '[< Fr. porter]',
   dialect: '🇱🇨',
-  variant: null,
+  variant: [null],
 }, {
   word: 'pòté',
   partOfSpeech: 'V',
@@ -112,6 +117,6 @@ export const dataLibP = [{
   crossReference: null,
   etymology: '[< Fr. porter]',
   dialect: '🇱🇨',
-  variant: null,
+  variant: [null],
 },
 ];

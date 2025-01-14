@@ -9,6 +9,7 @@ export const dataLibY = [{
   crossReference: null,
   etymology: '[< Fr. igname]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'yo',
   partOfSpeech: 'PRO',
@@ -20,5 +21,6 @@ export const dataLibY = [{
   crossReference: null,
   etymology: '[< Fr. eux]',
   dialect: '🇱🇨',
+  variant: [null],
 },
 ];

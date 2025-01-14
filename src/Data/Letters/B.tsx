@@ -9,6 +9,7 @@ export const dataLibB = [{
   crossReference: null,
   etymology: null,
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'bèf',
   partOfSpeech: 'N',
@@ -20,6 +21,7 @@ export const dataLibB = [{
   crossReference: null,
   etymology: '[< Fr. bouef]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'bonbon',
   partOfSpeech: 'N',
@@ -31,6 +33,7 @@ export const dataLibB = [{
   crossReference: 'bonbon zé',
   etymology: '[< Fr. bonbon]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'blé',
   partOfSpeech: 'ADJ',
@@ -42,6 +45,7 @@ export const dataLibB = [{
   crossReference: null,
   etymology: '[< Fr. bleu]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'blan',
   partOfSpeech: 'ADJ',
@@ -53,6 +57,7 @@ export const dataLibB = [{
   crossReference: 'blan balenn',
   etymology: '[< Fr. blanc]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'bwaslé',
   partOfSpeech: 'N',
@@ -64,6 +69,7 @@ export const dataLibB = [{
   crossReference: null,
   etymology: '[< Fr. bracelet]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'bag',
   partOfSpeech: 'N',
@@ -75,6 +81,7 @@ export const dataLibB = [{
   crossReference: null,
   etymology: '[< Fr. bague]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'boug',
   partOfSpeech: 'N',
@@ -86,6 +93,7 @@ export const dataLibB = [{
   crossReference: null,
   etymology: null,
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'bagay',
   partOfSpeech: 'N',
@@ -97,5 +105,6 @@ export const dataLibB = [{
   crossReference: null,
   etymology: null,
   dialect: '🇱🇨',
+  variant: [null],
 },
 ];

@@ -9,6 +9,7 @@ export const dataLibM = [{
   crossReference: null,
   etymology: '[< Fr. mouton]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'mwa',
   partOfSpeech: 'N',
@@ -20,6 +21,7 @@ export const dataLibM = [{
   crossReference: null,
   etymology: '[< Fr. mois]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'mouchwè',
   partOfSpeech: 'N',
@@ -31,6 +33,7 @@ export const dataLibM = [{
   crossReference: null,
   etymology: '[< Fr. mouchoir]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'mont',
   partOfSpeech: 'N',
@@ -42,6 +45,7 @@ export const dataLibM = [{
   crossReference: null,
   etymology: '[< Fr. montre]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'mété',
   partOfSpeech: 'V',
@@ -53,6 +57,7 @@ export const dataLibM = [{
   crossReference: null,
   etymology: null,
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'manman',
   partOfSpeech: 'N',
@@ -64,6 +69,7 @@ export const dataLibM = [{
   crossReference: null,
   etymology: '[< Fr. maman]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'mwen',
   partOfSpeech: 'PRO',
@@ -75,6 +81,7 @@ export const dataLibM = [{
   crossReference: null,
   etymology: '[< Fr. moi]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'misyé',
   partOfSpeech: 'TITLE',
@@ -86,6 +93,7 @@ export const dataLibM = [{
   crossReference: null,
   etymology: '[< Fr. monsieur]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'misyé',
   partOfSpeech: 'TITLE',
@@ -97,5 +105,6 @@ export const dataLibM = [{
   crossReference: null,
   etymology: '[< Fr. monsieur]',
   dialect: '🇱🇨',
+  variant: [null],
 },
 ];

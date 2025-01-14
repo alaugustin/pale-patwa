@@ -9,5 +9,6 @@ export const dataLibR = [{
   crossReference: null,
   etymology: '[< Eng. radio]',
   dialect: '🇱🇨',
+  variant: [null],
 },
 ];

@@ -9,5 +9,6 @@ export const dataLibI = [{
   crossReference: null,
   etymology: '[< Fr. il]',
   dialect: '🇱🇨',
+  variant: [null],
 },
 ];

@@ -9,6 +9,7 @@ export const dataMonths = [{
   crossReference: null,
   etymology: '[< Fr. janvier',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'Févwiyé',
   partOfSpeech: 'N',
@@ -20,6 +21,7 @@ export const dataMonths = [{
   crossReference: null,
   etymology: '[< Fr. février]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'Mas',
   partOfSpeech: 'N',
@@ -31,6 +33,7 @@ export const dataMonths = [{
   crossReference: null,
   etymology: '[< Fr. mars]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'Avwi',
   partOfSpeech: 'N',
@@ -42,6 +45,7 @@ export const dataMonths = [{
   crossReference: null,
   etymology: '[< Fr. avril]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'Mé',
   partOfSpeech: 'N',
@@ -53,6 +57,7 @@ export const dataMonths = [{
   crossReference: null,
   etymology: '[< Fr. mai]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'Jen',
   partOfSpeech: 'N',
@@ -64,6 +69,7 @@ export const dataMonths = [{
   crossReference: null,
   etymology: '[< Fr. juin]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'Jwiyèt',
   partOfSpeech: 'N',
@@ -75,6 +81,7 @@ export const dataMonths = [{
   crossReference: null,
   etymology: '[< Fr. juillet]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'Awou',
   partOfSpeech: 'N',
@@ -86,6 +93,7 @@ export const dataMonths = [{
   crossReference: null,
   etymology: '[< Fr. août]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'Sèptanm',
   partOfSpeech: 'N',
@@ -97,6 +105,7 @@ export const dataMonths = [{
   crossReference: null,
   etymology: '[< Fr. septembre]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'Òktòb',
   partOfSpeech: 'N',
@@ -108,6 +117,7 @@ export const dataMonths = [{
   crossReference: null,
   etymology: '[< Fr. octobre]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'Novanm',
   partOfSpeech: 'N',
@@ -119,6 +129,7 @@ export const dataMonths = [{
   crossReference: null,
   etymology: '[< Fr. novembre]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'Désanm',
   partOfSpeech: 'N',
@@ -130,5 +141,6 @@ export const dataMonths = [{
   crossReference: null,
   etymology: '[< Fr. decembre]',
   dialect: '🇱🇨',
+  variant: [null],
 },
 ];

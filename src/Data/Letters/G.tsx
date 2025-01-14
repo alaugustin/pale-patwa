@@ -9,6 +9,7 @@ export const dataLibG = [{
   crossReference: null,
   etymology: '[< Fr. garçon]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'gwi',
   partOfSpeech: 'ADJ',
@@ -20,6 +21,7 @@ export const dataLibG = [{
   crossReference: null,
   etymology: '[< Fr. gris]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'gòch',
   partOfSpeech: null,
@@ -31,6 +33,7 @@ export const dataLibG = [{
   crossReference: null,
   etymology: '[< Fr. gauche]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'Gwanmanman ',
   partOfSpeech: 'N',
@@ -42,6 +45,7 @@ export const dataLibG = [{
   crossReference: null,
   etymology: '[< Fr. grande-manman]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'Gwanpapa',
   partOfSpeech: 'N',
@@ -53,6 +57,7 @@ export const dataLibG = [{
   crossReference: null,
   etymology: null,
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'gwo',
   partOfSpeech: 'ADJ',

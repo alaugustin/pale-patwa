@@ -9,6 +9,7 @@ export const dataLibC = [{
   crossReference: 'chat tig',
   etymology: '[< Fr. chat]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'chèz',
   partOfSpeech: 'N',
@@ -20,6 +21,7 @@ export const dataLibC = [{
   crossReference: 'bwa chèz',
   etymology: '[< Fr. chaise]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'chimiz',
   partOfSpeech: 'N',
@@ -31,6 +33,7 @@ export const dataLibC = [{
   crossReference: null,
   etymology: '[< Fr. chemise]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'choson',
   partOfSpeech: 'N',
@@ -42,6 +45,7 @@ export const dataLibC = [{
   crossReference: null,
   etymology: '[< Fr. chausson]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'cho',
   partOfSpeech: 'ADJ',
@@ -53,6 +57,7 @@ export const dataLibC = [{
   crossReference: null,
   etymology: '[< Fr. chausson]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'cho',
   partOfSpeech: 'ADJ',
@@ -64,5 +69,6 @@ export const dataLibC = [{
   crossReference: null,
   etymology: '[< Fr. chaud]',
   dialect: '🇱🇨',
+  variant: [null],
 },
 ];

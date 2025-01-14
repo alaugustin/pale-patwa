@@ -9,6 +9,7 @@ export const dataLibNum = [{
   crossReference: null,
   etymology: null,
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'dé',
   partOfSpeech: 'ADJ',
@@ -20,6 +21,7 @@ export const dataLibNum = [{
   crossReference: null,
   etymology: '[< Fr. deux]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'twa',
   partOfSpeech: 'ADJ',
@@ -31,6 +33,7 @@ export const dataLibNum = [{
   crossReference: null,
   etymology: '[< Fr. trois]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'senk',
   partOfSpeech: 'ADJ',
@@ -42,6 +45,7 @@ export const dataLibNum = [{
   crossReference: null,
   etymology: '[< Fr. cinq]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'sis',
   partOfSpeech: 'ADJ',
@@ -53,6 +57,7 @@ export const dataLibNum = [{
   crossReference: null,
   etymology: '[<  Fr. six]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'ywit',
   partOfSpeech: 'ADJ',
@@ -64,6 +69,7 @@ export const dataLibNum = [{
   crossReference: null,
   etymology: '[< Fr. huit]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'nèf',
   partOfSpeech: 'ADJ',
@@ -75,6 +81,7 @@ export const dataLibNum = [{
   crossReference: null,
   etymology: '[< Fr. neuf]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'dis',
   partOfSpeech: 'ADJ',
@@ -86,6 +93,7 @@ export const dataLibNum = [{
   crossReference: null,
   etymology: '[< Fr. dix]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'sèt',
   partOfSpeech: 'ADJ',
@@ -97,6 +105,7 @@ export const dataLibNum = [{
   crossReference: null,
   etymology: '[< Fr. sept]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'kat',
   partOfSpeech: 'ADJ',
@@ -108,5 +117,6 @@ export const dataLibNum = [{
   crossReference: null,
   etymology: '[< Fr. quatre]',
   dialect: '🇱🇨',
+  variant: [null],
 },
 ];

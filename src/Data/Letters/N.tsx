@@ -9,6 +9,7 @@ export const dataLibN = [{
   crossReference: null,
   etymology: '[< Fr. nez]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'nich',
   partOfSpeech: 'N',
@@ -20,6 +21,7 @@ export const dataLibN = [{
   crossReference: null,
   etymology: '[< Fr. niche]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'nwè',
   partOfSpeech: 'ADJ',
@@ -31,6 +33,7 @@ export const dataLibN = [{
   crossReference: null,
   etymology: '[< Fr. noir]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'ni',
   partOfSpeech: 'V',
@@ -42,6 +45,7 @@ export const dataLibN = [{
   crossReference: null,
   etymology: null,
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'nou',
   partOfSpeech: 'PRO',
@@ -53,6 +57,7 @@ export const dataLibN = [{
   crossReference: null,
   etymology: '[< Fr. nous]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'nou',
   partOfSpeech: 'PRO',
@@ -64,5 +69,6 @@ export const dataLibN = [{
   crossReference: null,
   etymology: '[< Fr. nouveau]',
   dialect: '🇱🇨',
+  variant: [null],
 },
 ];

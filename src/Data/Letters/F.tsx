@@ -9,6 +9,7 @@ export const dataLibF = [{
   crossReference: null,
   etymology: '[Fr. fête]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'fwè',
   partOfSpeech: 'N',
@@ -20,6 +21,7 @@ export const dataLibF = [{
   crossReference: null,
   etymology: '[< Fr. frère]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'fè',
   partOfSpeech: 'V',
@@ -31,5 +33,6 @@ export const dataLibF = [{
   crossReference: null,
   etymology: '[< Fr. faire]',
   dialect: '🇱🇨',
+  variant: [null],
 },
 ];

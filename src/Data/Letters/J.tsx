@@ -9,6 +9,7 @@ export const dataLibJ = [{
   crossReference: null,
   etymology: '[< Fr. jacquot]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'jou',
   partOfSpeech: 'N',
@@ -20,6 +21,7 @@ export const dataLibJ = [{
   crossReference: null,
   etymology: '[< Fr. jour]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'jòn',
   partOfSpeech: 'ADJ',
@@ -31,6 +33,7 @@ export const dataLibJ = [{
   crossReference: null,
   etymology: '[< Fr. jaune]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'jilyé',
   partOfSpeech: 'N',
@@ -42,6 +45,7 @@ export const dataLibJ = [{
   crossReference: null,
   etymology: '[< Fr. gilet]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'jip',
   partOfSpeech: 'N',
@@ -53,5 +57,6 @@ export const dataLibJ = [{
   crossReference: null,
   etymology: '[< Fr. jupe]',
   dialect: '🇱🇨',
+  variant: [null],
 },
 ];

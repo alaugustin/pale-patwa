@@ -9,6 +9,7 @@ export const dataLibV = [{
   crossReference: null,
   etymology: '[< Fr. ver]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'vè',
   partOfSpeech: 'ADJ',
@@ -20,6 +21,7 @@ export const dataLibV = [{
   crossReference: null,
   etymology: '[< Fr. vert]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'vlé',
   partOfSpeech: 'V',
@@ -31,5 +33,6 @@ export const dataLibV = [{
   crossReference: null,
   etymology: '[< Fr. voulez]',
   dialect: '🇱🇨',
+  variant: [null],
 },
 ];

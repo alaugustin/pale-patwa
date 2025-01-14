@@ -9,6 +9,7 @@ export const dataLibE = [{
   crossReference: null,
   etymology: '[< Fr. avec]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'èvèk',
   partOfSpeech: 'PREP',
@@ -20,6 +21,7 @@ export const dataLibE = [{
   crossReference: null,
   etymology: '[< Fr. avec]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'èk',
   partOfSpeech: null,

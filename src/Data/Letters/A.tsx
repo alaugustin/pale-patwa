@@ -9,6 +9,7 @@ export const dataLibA = [{
   crossReference: null,
   etymology: '[< Fr. un]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'asou',
   partOfSpeech: 'PREP',
@@ -20,6 +21,7 @@ export const dataLibA = [{
   crossReference: null,
   etymology: '[< Fr. sur]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'alé',
   partOfSpeech: 'PREP',

@@ -9,6 +9,7 @@ export const dataDays = [{
   crossReference: null,
   etymology: '[< Fr. dimanche]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'Lendi',
   partOfSpeech: 'N',
@@ -20,6 +21,7 @@ export const dataDays = [{
   crossReference: null,
   etymology: '[< Fr. lundi]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'Madi',
   partOfSpeech: 'N',
@@ -31,6 +33,7 @@ export const dataDays = [{
   crossReference: null,
   etymology: '[< Fr. mardi]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'Mékwédi',
   partOfSpeech: 'N',
@@ -42,6 +45,7 @@ export const dataDays = [{
   crossReference: null,
   etymology: '[< Fr. mercredi]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'Jédi',
   partOfSpeech: 'N',
@@ -53,6 +57,7 @@ export const dataDays = [{
   crossReference: null,
   etymology: '[< Fr. jeudi]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'Vandwédi',
   partOfSpeech: 'N',
@@ -64,6 +69,7 @@ export const dataDays = [{
   crossReference: null,
   etymology: '[< Fr. vendredi]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'Sanmdi',
   partOfSpeech: 'N',
@@ -75,5 +81,6 @@ export const dataDays = [{
   crossReference: null,
   etymology: '[< Fr. samedi]',
   dialect: '🇱🇨',
+  variant: [null],
 },
 ];

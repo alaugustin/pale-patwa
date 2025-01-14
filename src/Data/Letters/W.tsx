@@ -9,6 +9,7 @@ export const dataLibW = [{
   crossReference: null,
   etymology: '[< Fr. rat]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'wouj',
   partOfSpeech: 'ADJ',
@@ -20,6 +21,7 @@ export const dataLibW = [{
   crossReference: null,
   etymology: '[< Fr. rouge]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'wòb',
   partOfSpeech: 'N',
@@ -31,5 +33,6 @@ export const dataLibW = [{
   crossReference: null,
   etymology: '[< Fr. robe]',
   dialect: '🇱🇨',
+  variant: [null],
 },
 ];

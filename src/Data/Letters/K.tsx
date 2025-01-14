@@ -9,6 +9,7 @@ export const dataLibK = [{
   crossReference: null,
   etymology: '[< Fr. coco]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'kanmizòl',
   partOfSpeech: 'N',
@@ -20,6 +21,7 @@ export const dataLibK = [{
   crossReference: null,
   etymology: '[< Fr. camisole]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'kalson',
   partOfSpeech: 'N',
@@ -31,6 +33,7 @@ export const dataLibK = [{
   crossReference: null,
   etymology: null,
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'katapòl',
   partOfSpeech: 'N',
@@ -42,6 +45,7 @@ export const dataLibK = [{
   crossReference: null,
   etymology: '[< Fr. catapulte]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'kwavat',
   partOfSpeech: 'N',
@@ -53,6 +57,7 @@ export const dataLibK = [{
   crossReference: null,
   etymology: '[< Fr. cravate]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'kounoumounou',
   partOfSpeech: 'N',
@@ -64,6 +69,7 @@ export const dataLibK = [{
   crossReference: null,
   etymology: null,
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'ka',
   partOfSpeech: 'ADV',
@@ -75,6 +81,7 @@ export const dataLibK = [{
   crossReference: null,
   etymology: null,
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'kay',
   partOfSpeech: 'ADV',
@@ -86,6 +93,7 @@ export const dataLibK = [{
   crossReference: null,
   etymology: null,
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'kay',
   partOfSpeech: 'N',
@@ -97,6 +105,7 @@ export const dataLibK = [{
   crossReference: null,
   etymology: null,
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'kabwès',
   partOfSpeech: 'N',
@@ -108,6 +117,7 @@ export const dataLibK = [{
   crossReference: null,
   etymology: null,
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'ki',
   partOfSpeech: 'ADJ',
@@ -119,6 +129,7 @@ export const dataLibK = [{
   crossReference: null,
   etymology: '[< Fr. qui]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'ki',
   partOfSpeech: 'CONJ',
@@ -130,5 +141,6 @@ export const dataLibK = [{
   crossReference: null,
   etymology: '[< Fr. qui]',
   dialect: '🇱🇨',
+  variant: [null],
 },
 ];

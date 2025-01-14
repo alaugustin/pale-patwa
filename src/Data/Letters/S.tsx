@@ -9,6 +9,7 @@ export const dataLibS = [{
   crossReference: null,
   etymology: '[< Fr. souris]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'soulyé',
   partOfSpeech: 'N',
@@ -20,6 +21,7 @@ export const dataLibS = [{
   crossReference: null,
   etymology: '[< Fr. soulier]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'sanng',
   partOfSpeech: 'N',
@@ -31,6 +33,7 @@ export const dataLibS = [{
   crossReference: null,
   etymology: null,
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'sèvyèt',
   partOfSpeech: 'N',
@@ -42,6 +45,7 @@ export const dataLibS = [{
   crossReference: null,
   etymology: '[< Fr. serviette]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'sak',
   partOfSpeech: 'N',
@@ -53,6 +57,7 @@ export const dataLibS = [{
   crossReference: null,
   etymology: '[< Fr. sac]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'sé',
   partOfSpeech: 'V',
@@ -76,6 +81,7 @@ export const dataLibS = [{
   crossReference: null,
   etymology: null,
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'sésé',
   partOfSpeech: 'N',
@@ -87,6 +93,7 @@ export const dataLibS = [{
   crossReference: null,
   etymology: null,
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'sé',
   partOfSpeech: 'N',
@@ -98,6 +105,7 @@ export const dataLibS = [{
   crossReference: null,
   etymology: null,
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'sala',
   partOfSpeech: 'ADJ',
@@ -133,6 +141,7 @@ export const dataLibS = [{
   crossReference: null,
   etymology: '[< Fr. cendre]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'sann',
   partOfSpeech: 'N',
@@ -144,6 +153,7 @@ export const dataLibS = [{
   crossReference: null,
   etymology: '[< Fr. cendre]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'sann',
   partOfSpeech: 'N',
@@ -155,6 +165,7 @@ export const dataLibS = [{
   crossReference: null,
   etymology: '[< Fr. cendre]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'sòlèy',
   partOfSpeech: 'N',
@@ -166,5 +177,6 @@ export const dataLibS = [{
   crossReference: null,
   etymology: '[< Fr. soleil]',
   dialect: '🇱🇨',
+  variant: [null],
 },
 ];

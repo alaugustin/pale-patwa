@@ -9,6 +9,7 @@ export const dataLibD = [{
   crossReference: 'bay dan',
   etymology: '[< Fr. dent]',
   dialect: '🇱🇨',
+  variant: [null],
 },
 {
   word: 'djòl',
@@ -21,6 +22,7 @@ export const dataLibD = [{
   crossReference: 'bat djòl',
   etymology: '[< Fr. gueule]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'dwèt',
   partOfSpeech: 'ADJ',
@@ -32,6 +34,7 @@ export const dataLibD = [{
   crossReference: null,
   etymology: '[< Fr. droit]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'dèyè',
   partOfSpeech: 'PREP',
@@ -43,6 +46,7 @@ export const dataLibD = [{
   crossReference: null,
   etymology: '[< Fr. derrière]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'douvan',
   partOfSpeech: 'PREP',
@@ -54,5 +58,6 @@ export const dataLibD = [{
   crossReference: null,
   etymology: '[< Fr. devant]',
   dialect: '🇱🇨',
+  variant: [null],
 }
 ];

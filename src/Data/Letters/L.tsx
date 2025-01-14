@@ -9,6 +9,7 @@ export const dataLibL = [{
   crossReference: null,
   etymology: '[< Fr. livre]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'lanné',
   partOfSpeech: 'N',
@@ -20,6 +21,7 @@ export const dataLibL = [{
   crossReference: null,
   etymology: '[< Fr. l\'année]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'losyon',
   partOfSpeech: 'N',
@@ -31,6 +33,7 @@ export const dataLibL = [{
   crossReference: null,
   etymology: '[< Fr. lotion]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'linèt',
   partOfSpeech: 'N',
@@ -42,6 +45,7 @@ export const dataLibL = [{
   crossReference: null,
   etymology: '[< Fr. lunettes]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'lajan',
   partOfSpeech: 'N',
@@ -65,7 +69,7 @@ export const dataLibL = [{
   crossReference: null,
   etymology: null,
   dialect: '🇱🇨',
-  variant: null,
+  variant: [null],
 }, {
   word: 'la',
   partOfSpeech: 'ADV',
@@ -77,7 +81,7 @@ export const dataLibL = [{
   crossReference: null,
   etymology: '[< Fr. là]',
   dialect: '🇱🇨',
-  variant: null,
+  variant: [null],
 }, {
   word: 'la',
   partOfSpeech: 'ADV',
@@ -89,7 +93,7 @@ export const dataLibL = [{
   crossReference: null,
   etymology: '[< Fr. là]',
   dialect: '🇱🇨',
-  variant: null,
+  variant: [null],
 }, {
   word: '-la',
   partOfSpeech: 'ART',

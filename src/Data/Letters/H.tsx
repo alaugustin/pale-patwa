@@ -9,6 +9,7 @@ export const dataLibH = [{
   crossReference: null,
   etymology: '[< Fr. hache]',
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'had dòmi',
   partOfSpeech: 'N',
@@ -20,6 +21,7 @@ export const dataLibH = [{
   crossReference: null,
   etymology: null,
   dialect: '🇱🇨',
+  variant: [null],
 }, {
   word: 'had ben',
   partOfSpeech: 'N',
@@ -31,5 +33,6 @@ export const dataLibH = [{
   crossReference: null,
   etymology: null,
   dialect: '🇱🇨',
+  variant: [null],
 },
 ];
