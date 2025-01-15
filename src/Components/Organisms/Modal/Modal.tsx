@@ -72,9 +72,9 @@ export default function Modal({
           )}
 
           <WordAttributes
-            wordEtymology={etymology ?? null}
-            wordPartOfSpeech={partOfSpeech ?? null}
-            wordDialect={dialect ?? null}
+            wordEtymology={etymology || null}
+            wordPartOfSpeech={partOfSpeech || null}
+            wordDialect={dialect || null}
             containerClasses='text-sm mb-8'
           />
         </BlockElement>

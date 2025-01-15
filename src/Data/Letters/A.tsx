@@ -31,5 +31,16 @@ export const dataLibA = [{
   etymology: '[< Fr. aller]',
   dialect: '🇱🇨',
   variant: ['ay'],
+}, {
+  word: 'achté',
+  partOfSpeech: 'V',
+  definition: ['to buy', 'to purchase'],
+  egSentenceKw: 'Nou achté sé chèz-la an lanmen an piti madanm.',
+  egSentenceEn: 'We bought the chairs from a small woman.',
+  synonym: ['ganyen', 'ganyen'],
+  antonym: ['vann', 'vann'],
+  etymology: '[< Fr. acheter]',
+  dialect: '🇱🇨',
+  variant: ['ay'],
 },
 ];

@@ -164,5 +164,16 @@ export const dataLibS = [{
   etymology: '[< Fr. soleil]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'sou',
+  partOfSpeech: 'ADJ',
+  definition: ['drunk'],
+  egSentenceKw: 'Nonm sala toujou sou.',
+  egSentenceEn: 'That man is always drunk.',
+  synonym: [null],
+  antonym: ['natiwèl', 'natiwèl'],
+  etymology: '[< Fr. saoul]',
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];
