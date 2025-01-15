@@ -68,7 +68,9 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
       <Typography
         variant="p"
         className={wordOfTheDayDefinitionClasses}
-      >{definition}</Typography>
+      >{Array.isArray(definition) ? definition.map((def: string, index: number) => (
+          <Typography variant='span' className='mr-1 last:mr-0' key={index}>{def}{index !== definition.length - 1 ? ',' : ''}</Typography>
+        )) : definition}</Typography>
     </>
   ];
 

@@ -1,3 +1,4 @@
 src/Components/List/ListOld.tsx
 src/Components/List/ListItem/ListItemOld.tsx
 node_modules
+build/

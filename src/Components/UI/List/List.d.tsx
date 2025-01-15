@@ -32,6 +32,5 @@ export interface IListDataProps {
   egSentenceEn: string;
   synonym: string;
   antonym: string;
-  crossReference: string;
   variant: string;
 }

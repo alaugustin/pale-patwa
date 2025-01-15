@@ -8,7 +8,6 @@ export interface IListItemProps {
   buttonClass?: string;
   synonym: string | null;
   antonym: string | null;
-  crossReference: string | null;
   variant: string | null;
 }
 

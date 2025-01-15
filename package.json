@@ -1,7 +1,7 @@
 {
-  "name": "pale-patwa",
+  "name": "pale-kweyol",
   "version": "1.0.0",
-  "homepage": "https://jwesoute.online/apps/pale-kweyol/",
+  "homepage": "https://palekweyol.com/",
   "description": "A dynamic React application that displays random dictionary entries with a clean, responsive layout",
   "type": "module",
   "keywords": [

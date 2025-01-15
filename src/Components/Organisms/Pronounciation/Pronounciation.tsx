@@ -28,9 +28,9 @@ export default function Pronunciations({
 
           return (
             <li key={index} className={pronounciationListItemClasses}>
-              <span>{letter}</span>
-              <span>{pronounciation}</span>
-              <span>{sound}</span>
+              <Typography variant='span'>{letter}</Typography>
+              <Typography variant='span'>{pronounciation}</Typography>
+              <Typography variant='span'>{sound}</Typography>
             </li>
           );
         })}

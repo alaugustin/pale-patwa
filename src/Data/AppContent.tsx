@@ -67,9 +67,6 @@ const uiClasses = {
 };
 
 const {
-  clearInputIconClasses,
-  copyRightIconClasses,
-  bookIconClasses,
   pdfIconClasses
 } = uiClasses;
 

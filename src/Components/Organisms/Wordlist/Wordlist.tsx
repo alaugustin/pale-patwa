@@ -135,16 +135,15 @@ export default function WordList({ data }: IWordlistProps) {
       />
 
       <ul className={wordListListClasses}>
-        {addSubscriptsToWords(currentItems).map((item) => (
+        {addSubscriptsToWords(currentItems).map((item, index) => (
           <ListItem
-            key={item.id}
+            key={index}
             word={item.word}
             definition={item.definition}
             egSentenceKw={item.egSentenceKw}
             egSentenceEn={item.egSentenceEn}
             synonym={item.synonym}
             antonym={item.antonym}
-            crossReference={item.crossReference}
             variant={item.variant}
             hasLink={true}
           />

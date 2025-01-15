@@ -18,7 +18,6 @@ export default function List({
           egSentenceKw,
           synonym,
           antonym,
-          crossReference,
           variant
         } = element;
 
@@ -31,7 +30,6 @@ export default function List({
             egSentenceEn={egSentenceEn}
             synonym={synonym}
             antonym={antonym}
-            crossReference={crossReference}
             variant={variant}
             hasLink={hasLink}
           />
