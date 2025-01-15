@@ -142,8 +142,6 @@ export default function WordList({ data }: IWordlistProps) {
             definition={item.definition}
             egSentenceKw={item.egSentenceKw}
             egSentenceEn={item.egSentenceEn}
-            synonym={item.synonym}
-            antonym={item.antonym}
             variant={item.variant}
             hasLink={true}
           />

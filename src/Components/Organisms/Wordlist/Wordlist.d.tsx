@@ -8,8 +8,6 @@ export interface IWordListDataProps {
   egSentenceKw: string;
   egSentenceEn: string;
   etymology: string;
-  synonym: string;
-  antonym: string;
   variant: string;
 }
 

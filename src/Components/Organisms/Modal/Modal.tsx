@@ -20,12 +20,11 @@ export default function Modal({
   modalDefinition,
   modalSentenceKw,
   modalSentenceEn,
-  modalSynonym,
-  modalAntonym,
   modalVariant,
   clickHandler
 }: IModalProps) {
   const selectedWord = SortedDictionary.find(word => word.word === modalTitle);
+  const { variant, synonym, antonym, etymology, partOfSpeech, dialect } = selectedWord ?? {};
 
   const renderWordList = (words: string[] | string, prefix: string) => {
     return (
@@ -62,19 +61,20 @@ export default function Modal({
             )}
           </BlockElement>
 
-          <BlockElement className='mb-4 flex flex-row text-sm'>
-            {modalVariant && (
-              <Typography variant='span' className='mr-1'>{`(var: ${modalVariant})`}</Typography>
-            )}
-
-            {modalSynonym && renderWordList(modalSynonym, 'syn')}
-            {modalAntonym && renderWordList(modalAntonym, 'opp')}
-          </BlockElement>
+          {(variant && variant[0] || synonym && synonym[0] || antonym && antonym[0]) && (
+            <BlockElement className='mb-4 flex flex-row text-sm'>
+              {variant && variant[0] && (
+                <Typography variant='span' className='mr-1'>{`(var: ${modalVariant})`}</Typography>
+              )}
+              {synonym && synonym[0] && renderWordList(synonym[0], 'syn')}
+              {antonym && antonym[0] && renderWordList(antonym[0], 'opp')}
+            </BlockElement>
+          )}
 
           <WordAttributes
-            wordEtymology={selectedWord?.etymology ?? null}
-            wordPartOfSpeech={selectedWord?.partOfSpeech ?? null}
-            wordDialect={selectedWord?.dialect ?? null}
+            wordEtymology={etymology ?? null}
+            wordPartOfSpeech={partOfSpeech ?? null}
+            wordDialect={dialect ?? null}
             containerClasses='text-sm mb-8'
           />
         </BlockElement>
