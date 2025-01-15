@@ -15,26 +15,33 @@ export default function WordAttributes({
   containerClasses
 }: IWordAttributesProps) {
 
+  const dictionaryLink = 'https://www.collinsdictionary.com/dictionary/';
   const parseEtymologyLink = (): string => {
-    if (wordEtymology?.search('Fr.') !== undefined && wordEtymology.search('Fr.') > 0) {
-      return `https://www.collinsdictionary.com/dictionary/french-english/${filteredWord}`;
-    }
-    if (wordEtymology?.search('Eng.') !== undefined && wordEtymology.search('En.') > 0) {
-      return `https://www.collinsdictionary.com/dictionary/english-french/${filteredWord}`;
-    }
-    return ''; // Add a default return value
+    if (!wordEtymology) return '';
+
+    const etymologyMap: { [key: string]: string } = {
+      'Fr.': `${dictionaryLink}/french-english/${filteredWord}`,
+      'Eng.': `${dictionaryLink}/english-french/${filteredWord}`
+    };
+
+    const matchedLanguage = Object.keys(etymologyMap).find(lang =>
+      wordEtymology.includes(lang)
+    );
+
+    return matchedLanguage ? etymologyMap[matchedLanguage] : '';
   };
 
-  const extractWord = (text: string) => {
-    const match = text.normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '')
-      .match(/(?<=\. )\w+(?=\])/);
+  const extractWord = (text: string): string => {
+    const normalized = text.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    const pattern = /(?<=\. )\w+(?=\])/;
+    const match = normalized.match(pattern);
 
     if (!match) return text;
 
-    const startIndex = text.indexOf('. ') + 2;
-    const endIndex = text.indexOf(']');
-    return text.slice(startIndex, endIndex);
+    return text.slice(
+      text.indexOf('. ') + 2,
+      text.indexOf(']')
+    );
   };
 
   const filteredWord = wordEtymology ? extractWord(wordEtymology) : '';

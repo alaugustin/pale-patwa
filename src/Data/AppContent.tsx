@@ -12,7 +12,7 @@ const uiHelperClasses = {
   footerColClasses: 'flex basis-full md:basis-1/4 flex-row text-xs',
   buttonHelperClasses: 'bg-sky-500 border-slate-400 hover:bg-sky-400',
   headerIconClasses: 'w-6 h-6 mr-2 mt-1',
-  linkClasses: 'text-blue-800 text-xs hover:underline text-sky-500 hover:text-blue-500 visited:text-purple-700',
+  linkClasses: 'text-blue-800 text-xs hover:underline text-sky-500 hover:text-blue-500 visited:text-purple-700 cursor-pointer',
 };
 
 const {
@@ -35,7 +35,9 @@ const uiClasses = {
   copyRightContainerClasses: `${footerColClasses} p-2 md:pb-7 order-last md:order-first`,
   copyRightIconClasses: 'mt-1 h-2 w-2',
   dictionarySearchClasses: `${flexItemsCenter} flex-row mb-8 border border-gray-200 rounded`,
-  dictionarySearchInputClasses: 'p-2 w-64 border-r border-gray-200',
+  // dictionarySearchClasses: `${flexItemsCenter} flex-row mb-8 border border-gray-200 rounded`,
+  dictionarySearchInputClasses: 'p-2 w-64',
+  // dictionarySearchInputClasses: 'p-2 w-64 border-r border-gray-200',
   footerContainerClasses: 'pb-7 basis-14 border-t border-gray-200 flex flex-col md:flex-row justify-between md:flex-wrap',
   footerFlagSectionClasses: `${footerColClasses} p-2 md:pb-7 md:mb-0 md:justify-end`,
   footerResourcesContinerClasses: 'p-2 md:pb-7 flex basis-full flex-col md:mb-0 md:px-4 md:basis-1/2',

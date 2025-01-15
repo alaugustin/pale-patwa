@@ -26,7 +26,7 @@ export const DictionarySearch = ({
         placeholder={placeholderLabel}
         value={searchValue}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => onChangeFunc(e.target.value)}
-        className={dictionarySearchInputClasses}
+        className={`${dictionarySearchInputClasses} ${searchValue && 'border-r border-gray-200'}`}
       />
       {
         searchValue && (
