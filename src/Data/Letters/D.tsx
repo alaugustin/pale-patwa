@@ -54,5 +54,27 @@ export const dataLibD = [{
   etymology: '[< Fr. devant]',
   dialect: '🇱🇨',
   variant: [null],
-}
+}, {
+  word: 'dé',
+  partOfSpeech: 'ADJ',
+  definition: ['some', 'a few'],
+  egSentenceKw: 'La ni dé koté ki ni pinèz.',
+  egSentenceEn: 'There are some places that have bedbugs.',
+  synonym: [null],
+  antonym: [null],
+  etymology: '[< Fr. des]',
+  dialect: '🇱🇨',
+  variant: [null],
+}, {
+  word: 'dis',
+  partOfSpeech: 'N',
+  definition: ['tenth'],
+  egSentenceKw: 'Papa mwen ban mwen yon dis an sa i té ni.',
+  egSentenceEn: 'My father gave me one tenth of what he had.',
+  synonym: [null],
+  antonym: [null],
+  etymology: '[< Fr. dix]',
+  dialect: '🇱🇨',
+  variant: [null],
+},
 ];

@@ -97,5 +97,16 @@ export const dataLibL = [{
   etymology: '[< Fr. là]',
   dialect: '🇱🇨',
   variant: ['-a', '-an', '-lan'],
+}, {
+  word: 'lè',
+  partOfSpeech: 'N',
+  definition: ['time', 'hour'],
+  egSentenceKw: 'Ki lè i yé?',
+  egSentenceEn: 'What time is it?',
+  synonym: ['kon'],
+  antonym: [null],
+  etymology: '',
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];
