@@ -1,7 +1,7 @@
 export const dataLibNum = [{
   word: 'yonn',
   partOfSpeech: 'PRO',
-  definition: 1,
+  definition: [1, '(one)'],
   egSentenceKw: 'Mi koko-a! Ès ou vlé yonn?',
   egSentenceEn: 'Look at the coconuts! Do you want one?',
   synonym: [null],
@@ -12,7 +12,7 @@ export const dataLibNum = [{
 }, {
   word: 'dé',
   partOfSpeech: 'ADJ',
-  definition: 2,
+  definition: [2, '(two)'],
   egSentenceKw: 'Kay sala ni dé lapòt.',
   egSentenceEn: 'That house has two doors.',
   synonym: [null],
@@ -23,7 +23,7 @@ export const dataLibNum = [{
 }, {
   word: 'twa',
   partOfSpeech: 'ADJ',
-  definition: 3,
+  definition: [3, '(three)'],
   egSentenceKw: 'Yo ni twa ti manmay tousèl.',
   egSentenceEn: 'They have only three children.',
   synonym: [null],
@@ -34,7 +34,7 @@ export const dataLibNum = [{
 }, {
   word: 'senk',
   partOfSpeech: 'ADJ',
-  definition: 5,
+  definition: [5, '(five)'],
   egSentenceKw: 'Gason-an ni senk sésé.',
   egSentenceEn: 'The boy has five sisters.',
   synonym: [null],
@@ -45,7 +45,7 @@ export const dataLibNum = [{
 }, {
   word: 'sis',
   partOfSpeech: 'ADJ',
-  definition: 6,
+  definition: [6, '(six)'],
   egSentenceKw: 'Gason-an ni sis lanné.',
   egSentenceEn: 'The boy is six years old.',
   synonym: [null],
@@ -56,7 +56,7 @@ export const dataLibNum = [{
 }, {
   word: 'ywit',
   partOfSpeech: 'ADJ',
-  definition: 8,
+  definition: [8, '(eight)'],
   egSentenceKw: 'Mwen ni ywit dòla tousèl.',
   egSentenceEn: 'I have only eight dollars.',
   synonym: [null],
@@ -67,7 +67,7 @@ export const dataLibNum = [{
 }, {
   word: 'nèf',
   partOfSpeech: 'ADJ',
-  definition: 9,
+  definition: [9, '(nine)'],
   egSentenceKw: null,
   egSentenceEn: null,
   synonym: [null],
@@ -78,7 +78,7 @@ export const dataLibNum = [{
 }, {
   word: 'dis',
   partOfSpeech: 'ADJ',
-  definition: 10,
+  definition: [10, '(ten)'],
   egSentenceKw: 'Yo ni dis panyen mango.',
   egSentenceEn: 'They have ten baskets of mangoes.',
   synonym: [null],
@@ -89,7 +89,7 @@ export const dataLibNum = [{
 }, {
   word: 'sèt',
   partOfSpeech: 'ADJ',
-  definition: 7,
+  definition: [7, '(seven)'],
   egSentenceKw: 'Yo ni sèt mal bouwik.',
   egSentenceEn: 'They have seven male donkeys.',
   synonym: [null],
@@ -100,7 +100,7 @@ export const dataLibNum = [{
 }, {
   word: 'kat',
   partOfSpeech: 'ADJ',
-  definition: 4,
+  definition: [4, '(four)'],
   egSentenceKw: 'Mwen vlé kat liv sèl.',
   egSentenceEn: 'I want four pounds of salt',
   synonym: [null],
@@ -111,7 +111,7 @@ export const dataLibNum = [{
 }, {
   word: 'wonz',
   partOfSpeech: 'ADJ',
-  definition: 11,
+  definition: [11, '(eleven)'],
   egSentenceKw: 'Ti manmay-la ni wonz lanné.',
   egSentenceEn: 'The child is eleven years old.',
   synonym: [null],
@@ -122,7 +122,7 @@ export const dataLibNum = [{
 }, {
   word: 'douz',
   partOfSpeech: 'ADJ',
-  definition: 12,
+  definition: [12, '(twelve)'],
   egSentenceKw: 'Mwen genyen douz zé.',
   egSentenceEn: 'I bought twelve eggs.',
   synonym: [null],
@@ -133,7 +133,7 @@ export const dataLibNum = [{
 }, {
   word: 'twèz',
   partOfSpeech: 'ADJ',
-  definition: 13,
+  definition: [13, '(thirteen)'],
   egSentenceKw: 'Nou ni twèz dòla tousèl.',
   egSentenceEn: 'We have only thirteen dollars.',
   synonym: [null],
@@ -144,7 +144,7 @@ export const dataLibNum = [{
 }, {
   word: 'katòz',
   partOfSpeech: 'ADJ',
-  definition: 14,
+  definition: [14, '(fourteen)'],
   egSentenceKw: 'Nou ni katòz liv.',
   egSentenceEn: 'We have fourteen books.',
   synonym: [null],
@@ -155,7 +155,7 @@ export const dataLibNum = [{
 }, {
   word: 'kenz',
   partOfSpeech: 'ADJ',
-  definition: 15,
+  definition: [15, '(fifteen)'],
   egSentenceKw: 'Yo ni kenz dòla.',
   egSentenceEn: 'They have fifteen dollars.',
   synonym: [null],
@@ -166,7 +166,7 @@ export const dataLibNum = [{
 }, {
   word: 'sèz',
   partOfSpeech: 'ADJ',
-  definition: 16,
+  definition: [16, '(sixteen)'],
   egSentenceKw: 'I péyé sèz dòla pou dé koutla.',
   egSentenceEn: 'He paid sixteen dollars for two cutlasses.',
   synonym: [null],
@@ -177,7 +177,7 @@ export const dataLibNum = [{
 }, {
   word: 'disèt',
   partOfSpeech: 'ADJ',
-  definition: 17,
+  definition: [17, '(seventeen)'],
   egSentenceKw: null,
   egSentenceEn: null,
   synonym: [null],
@@ -188,7 +188,7 @@ export const dataLibNum = [{
 }, {
   word: 'dizwit',
   partOfSpeech: 'ADJ',
-  definition: 18,
+  definition: [18, '(eighteen)'],
   egSentenceKw: '',
   egSentenceEn: '',
   synonym: [null],
@@ -199,7 +199,7 @@ export const dataLibNum = [{
 }, {
   word: 'diznèf',
   partOfSpeech: 'ADJ',
-  definition: 19,
+  definition: [19, '(nineteen)'],
   egSentenceKw: '',
   egSentenceEn: '',
   synonym: [null],
@@ -210,7 +210,7 @@ export const dataLibNum = [{
 }, {
   word: 'ven',
   partOfSpeech: 'ADJ',
-  definition: 20,
+  definition: [20, '(twenty)'],
   egSentenceKw: '',
   egSentenceEn: '',
   synonym: [null],
@@ -221,7 +221,7 @@ export const dataLibNum = [{
 }, {
   word: 'twant',
   partOfSpeech: 'ADJ',
-  definition: 30,
+  definition: [30, '(thirty)'],
   egSentenceKw: 'I péyé nou twant dòla pou panyen mango-a.',
   egSentenceEn: 'He paid us thirty dollars for the basket of mangoes.',
   synonym: [null],
@@ -232,7 +232,7 @@ export const dataLibNum = [{
 }, {
   word: 'kawant',
   partOfSpeech: 'ADJ',
-  definition: 40,
+  definition: [40, '(forty)'],
   egSentenceKw: 'Yo ni kawant dòla.',
   egSentenceEn: 'They have forty dollars.',
   synonym: [null],
@@ -243,7 +243,7 @@ export const dataLibNum = [{
 }, {
   word: 'senkant',
   partOfSpeech: 'ADJ',
-  definition: 50,
+  definition: [50, '(fifty)'],
   egSentenceKw: 'Si nou té ni senkant dòla nou té kay genyen\'y.',
   egSentenceEn: 'If we had fifty dollars we would buy it.',
   synonym: [null],
@@ -254,7 +254,7 @@ export const dataLibNum = [{
 }, {
   word: 'swasant',
   partOfSpeech: 'ADJ',
-  definition: 60,
+  definition: [60, '(sixty)'],
   egSentenceKw: '',
   egSentenceEn: '',
   synonym: [null],
@@ -265,7 +265,7 @@ export const dataLibNum = [{
 }, {
   word: 'swasant dis',
   partOfSpeech: 'ADJ',
-  definition: 70,
+  definition: [70, '(seventy)'],
   egSentenceKw: '',
   egSentenceEn: '',
   synonym: [null],
@@ -276,7 +276,7 @@ export const dataLibNum = [{
 }, {
   word: 'katwiven',
   partOfSpeech: 'ADJ',
-  definition: 80,
+  definition: [80, '(eighty)'],
   egSentenceKw: 'Yo ni katwiven dòla.',
   egSentenceEn: 'They have eighty dollars.',
   synonym: [null],
@@ -287,7 +287,7 @@ export const dataLibNum = [{
 }, {
   word: 'katwiven dis',
   partOfSpeech: 'ADJ',
-  definition: 90,
+  definition: [90, '(ninety)'],
   egSentenceKw: 'Yo ni katwiven dis dòla.',
   egSentenceEn: 'They have ninety dollars.',
   synonym: [null],
@@ -298,7 +298,7 @@ export const dataLibNum = [{
 }, {
   word: 'san',
   partOfSpeech: 'ADJ',
-  definition: 100,
+  definition: [100, '(hundred)'],
   egSentenceKw: 'Sa kouté konmen san dòla.',
   egSentenceEn: 'That costs many hundred dollars.',
   synonym: [null],
@@ -309,7 +309,7 @@ export const dataLibNum = [{
 }, {
   word: 'mil',
   partOfSpeech: 'ADJ',
-  definition: 1000,
+  definition: [1000, '(thousand)'],
   egSentenceKw: 'I té ni senk mil dòla épi i pèd li.',
   egSentenceEn: 'He had five thousand dollars and he lost it.',
   synonym: [null],

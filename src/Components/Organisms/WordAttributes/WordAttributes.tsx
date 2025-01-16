@@ -33,7 +33,7 @@ export default function WordAttributes({
 
   const extractWord = (text: string): string => {
     const normalized = text.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-    const pattern = /(?<=\. )\w+(?=\])/;
+    const pattern = /(?<=\. )[\w-]+(?=\])/;
     const match = normalized.match(pattern);
 
     if (!match) return text;
@@ -65,7 +65,7 @@ export default function WordAttributes({
           variant="span"
         >
           <Link
-            linkHref={parseEtymologyLink() || ''} // Provide a fallback empty string
+            linkHref={parseEtymologyLink() || ''}
             linkTarget='_blank'
             linkRel='noreferrer'
             linkClasses={`${linkClasses} underline`}
