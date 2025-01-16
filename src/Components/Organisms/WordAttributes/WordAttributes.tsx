@@ -15,7 +15,7 @@ export default function WordAttributes({
   containerClasses
 }: IWordAttributesProps) {
 
-  const dictionaryLink = 'https://www.collinsdictionary.com/dictionary/';
+  const dictionaryLink = 'https://www.collinsdictionary.com/dictionary';
   const parseEtymologyLink = (): string => {
     if (!wordEtymology) return '';
 

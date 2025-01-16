@@ -53,5 +53,16 @@ export const dataLibC = [{
   etymology: '[< Fr. chaud]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'chay',
+  partOfSpeech: 'N',
+  definition: ['load'],
+  egSentenceKw: 'I ka pòté an gwo chay lou asou tèt li.',
+  egSentenceEn: 'She is carrying a big, heavy load on her head.',
+  synonym: [null],
+  antonym: [null],
+  etymology: '[< Fr. charrier]',
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];
