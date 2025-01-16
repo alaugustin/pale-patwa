@@ -5,6 +5,7 @@ import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Typography } from '../../UI/Typography/Typography';
 import WordAttributes from '../WordAttributes/WordAttributes';
 import Button from '../../UI/Form/Button/Button';
+import WordRelations from '../WordRelations/WordRelations';
 import { IModalProps } from './Modal.d';
 
 const {
@@ -25,18 +26,6 @@ export default function Modal({
 }: IModalProps) {
   const selectedWord = SortedDictionary.find(word => word.word === modalTitle);
   const { variant, synonym, antonym, etymology, partOfSpeech, dialect } = selectedWord ?? {};
-
-  const renderWordList = (words: string[] | string, prefix: string) => {
-    return (
-      <Typography variant='span'>{`(${prefix}:`}
-        {Array.isArray(words) ? words.map((def: string, index: number) => (
-          <Typography variant='span' className='first:mx-1 mr-1 last:mr-0' key={index}>
-            {def}{index !== words.length - 1 ? ',' : ''}
-          </Typography>
-        )) : words}
-        {')'}</Typography>
-    );
-  };
 
   return (
     <BlockElement variant='article' className={modalContainerClasses}>
@@ -61,15 +50,11 @@ export default function Modal({
             )}
           </BlockElement>
 
-          {(variant && variant[0] || synonym && synonym[0] || antonym && antonym[0]) && (
-            <BlockElement className='mb-4 flex flex-row text-sm'>
-              {variant && variant[0] && (
-                <Typography variant='span' className='mr-1'>{`(var: ${modalVariant})`}</Typography>
-              )}
-              {synonym && synonym[0] && renderWordList(synonym[0], 'syn')}
-              {antonym && antonym[0] && renderWordList(antonym[0], 'opp')}
-            </BlockElement>
-          )}
+          <WordRelations
+            varData={variant}
+            synData={synonym}
+            antData={antonym}
+          />
 
           <WordAttributes
             wordEtymology={etymology || null}

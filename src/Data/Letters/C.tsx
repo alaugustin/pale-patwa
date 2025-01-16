@@ -4,7 +4,7 @@ export const dataLibC = [{
   definition: ['cat'],
   egSentenceKw: 'Chyen ka kouwi dèyè chat.',
   egSentenceEn: 'Dogs chase cats.',
-  synonym: 'tig',
+  synonym: ['tig'],
   antonym: [null],
   etymology: '[< Fr. chat]',
   dialect: '🇱🇨',

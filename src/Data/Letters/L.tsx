@@ -48,7 +48,7 @@ export const dataLibL = [{
   definition: ['money'],
   egSentenceKw: 'Nonm-lan ni an chay lajan.',
   egSentenceEn: 'The man has lots of money.',
-  synonym: 'lenpo',
+  synonym: ['lenpo'],
   antonym: [null],
   etymology: '[< Fr. l\'argent]',
   dialect: '🇱🇨',
