@@ -4,6 +4,16 @@ const globalPageContent = {
   mainHeading: 'Palé Kwéyòl',
   date: new Date(),
   backToTopLabel: 'To Top',
+  searchFields: [
+    'word',
+    'definition',
+    'egSentenceKw',
+    'egSentenceEn',
+    'etymology',
+    'synonym',
+    'antonym',
+    'variant',
+  ]
 };
 
 const uiHelperClasses = {
@@ -66,6 +76,7 @@ const uiClasses = {
   wordOfTheDayContainerClasses: `${flexItemsCenter} ${blockElementPadding} flex-col flex-3 bg-yellow-400 w-full`,
   wordOfTheDayDefinitionClasses: 'text-xl font-thin md:text-right',
   wordOfTheDayH3Classes: 'underline text-2xl font-serif mb-4 font-bold  md:text-right',
+  wordRelationsContainerClasses: 'mb-4 flex flex-row text-sm flex-wrap',
 };
 
 const {
@@ -153,7 +164,7 @@ const pronounciationContent = {
 const footerContent = {
   resources: {
     titleH2: 'Resources',
-    link: [
+    links: [
       {
         label: 'Kwéyòl Dictionary - Ministry of Education, Government of Saint Lucia',
         href: 'http://www.saintluciancreole.dbfrank.net/dictionary/KweyolDictionary.pdf',
@@ -178,6 +189,12 @@ const footerContent = {
   },
 };
 
+const helperFunc = {
+  normalizeText: (text: string): string => {
+    return text.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  }
+};
+
 export const AppContentData = {
   globalPageContent,
   wordOfTheDayContent,
@@ -186,5 +203,6 @@ export const AppContentData = {
   footerContent,
   icons,
   uiClasses,
-  uiHelperClasses
+  uiHelperClasses,
+  helperFunc
 };

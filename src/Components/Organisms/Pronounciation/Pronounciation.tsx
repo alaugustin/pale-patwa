@@ -3,6 +3,7 @@ import { AppContentData } from '../../../Data/AppContent';
 import { Pronounciation } from '../../../Data/Pronounciation';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Typography } from '../../UI/Typography/Typography';
+import PronunciationList from './PronounciationList/PronounciationList';
 import { IPronunciationsProps } from './Pronounciation.d';
 
 const {
@@ -17,6 +18,12 @@ export default function Pronunciations({
   return (
     <BlockElement variant='div' className={className}>
       <Typography variant='h2' className='text-3xl mb-6'>{titleH2}</Typography>
+
+      <PronunciationList
+        dataArr={Pronounciation}
+        listClasses={pronounciationListClasses}
+        listItemClasses={pronounciationListItemClasses}
+      />
 
       <ul className={pronounciationListClasses}>
         {Pronounciation.map((item, index) => {

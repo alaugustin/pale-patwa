@@ -7,6 +7,7 @@ import { IWordAttributesProps } from './WordAttributes.d';
 
 const { linkClasses } = AppContentData.uiHelperClasses;
 const { wordAttributeBorder } = AppContentData.uiClasses;
+const { normalizeText } = AppContentData.helperFunc;
 
 export default function WordAttributes({
   wordEtymology,
@@ -32,7 +33,8 @@ export default function WordAttributes({
   };
 
   const extractWord = (text: string): string => {
-    const normalized = text.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    const normalized = normalizeText(text);
+
     const pattern = /(?<=\. )[\w-]+(?=\])/;
     const match = normalized.match(pattern);
 

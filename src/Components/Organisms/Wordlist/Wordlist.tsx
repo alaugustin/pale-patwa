@@ -13,7 +13,8 @@ const {
   wordlistFilterPlaceholder,
   prevButtonLabel,
   nextButtonLabel,
-  paginationItemsPerHeight
+  paginationItemsPerHeight,
+  wordListContent
 } = AppContentData.libraryContent;
 const {
   wordListContainerClasses,
@@ -21,18 +22,9 @@ const {
   centeredBlurbCopyClasses,
   bookIconClasses
 } = AppContentData.uiClasses;
-const { wordListContent } = AppContentData.libraryContent;
+const { searchFields } = AppContentData.globalPageContent;
 const { bookIcon } = AppContentData.icons;
-const searchFields = [
-  'word',
-  'definition',
-  'egSentenceKw',
-  'egSentenceEn',
-  'etymology',
-  'synonym',
-  'antonym',
-  'variant',
-];
+const { normalizeText } = AppContentData.helperFunc;
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -67,7 +59,7 @@ export default function WordList({ data }: IWordlistProps) {
     ?? ITEMS_PER_HEIGHT[0];
 
   const normalizeString = (str: string) => {
-    return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    return normalizeText(str);
   };
 
   const [currentPage, setCurrentPage] = useState(1);

@@ -1,9 +1,15 @@
 import React from 'react';
+import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Typography } from '../../UI/Typography/Typography';
-import { IWordRelationsProps } from './WordRelations.d';
+import { IWordRelationsProps, IWordGroupProps } from './WordRelations.d';
 
-const WordGroup = ({ label, data }: { label: string; data: string[] }) => {
+const { wordRelationsContainerClasses } = AppContentData.uiClasses;
+
+const WordGroup = ({
+  label,
+  data
+}: IWordGroupProps) => {
   return data?.[0] && Array.isArray(data) ? (
     <>
       {`(${label}: `}
@@ -19,17 +25,25 @@ const WordGroup = ({ label, data }: { label: string; data: string[] }) => {
 };
 
 export default function WordRelations({
-  varData = [],
-  synData = [],
-  antData = []
+  varData,
+  synData,
+  antData
 }: IWordRelationsProps) {
   const hasContent = varData?.[0] || synData?.[0] || antData?.[0];
 
   return hasContent ? (
-    <BlockElement className="mb-4 flex flex-row text-sm flex-wrap">
-      <WordGroup label="var" data={varData} />
-      <WordGroup label="syn" data={synData} />
-      <WordGroup label="ant" data={antData} />
+    <BlockElement className={wordRelationsContainerClasses}>
+      <Typography variant="span" className="mr-1 last:mr-0">
+        <WordGroup label="var" data={varData} />
+      </Typography>
+
+      <Typography variant="span" className="mr-1 last:mr-0">
+        <WordGroup label="syn" data={synData} />
+      </Typography>
+
+      <Typography variant="span" className="mr-1 last:mr-0">
+        <WordGroup label="ant" data={antData} />
+      </Typography>
     </BlockElement>
   ) : null;
 }

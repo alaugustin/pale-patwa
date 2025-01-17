@@ -12,30 +12,16 @@ const {
   headerDateClasses
 } = AppContentData.uiClasses;
 
-const kweyolDays = {
-  'Sunday': dataDays[0].word,
-  'Monday': dataDays[1].word,
-  'Tuesday': dataDays[2].word,
-  'Wednesday': dataDays[3].word,
-  'Thursday': dataDays[4].word,
-  'Friday': dataDays[5].word,
-  'Saturday': dataDays[6].word
-};
+const kweyolDays = Object.fromEntries(
+  ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+    .map((day, index) => [day, dataDays[index].word])
+);
 
-const kweyolMonths = {
-  'January': dataMonths[0].word,
-  'February': dataMonths[1].word,
-  'March': dataMonths[2].word,
-  'April': dataMonths[3].word,
-  'May': dataMonths[4].word,
-  'June': dataMonths[5].word,
-  'July': dataMonths[6].word,
-  'August': dataMonths[7].word,
-  'September': dataMonths[8].word,
-  'October': dataMonths[9].word,
-  'November': dataMonths[10].word,
-  'December': dataMonths[11].word
-};
+const kweyolMonths = Object.fromEntries(
+  ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+    .map((month, index) => [month, dataMonths[index].word])
+);
+
 
 export default function Header({
   headerContainerClass,

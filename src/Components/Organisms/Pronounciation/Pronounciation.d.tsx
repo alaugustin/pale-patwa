@@ -9,3 +9,13 @@ export interface IPronunciationsProps {
   className?: string;
   titleH2?: string;
 }
+
+export interface IPronunciationListProps {
+  dataArr: Array<{
+    letter: string;
+    pronounciation: string;
+    sound: string;
+  }>;
+  listClasses: string;
+  listItemClasses: string;
+}
