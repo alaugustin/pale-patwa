@@ -21,7 +21,6 @@ export default function Modal({
   modalDefinition,
   modalSentenceKw,
   modalSentenceEn,
-  modalVariant,
   clickHandler
 }: IModalProps) {
   const selectedWord = SortedDictionary.find(word => word.word === modalTitle);

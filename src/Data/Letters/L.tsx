@@ -108,5 +108,16 @@ export const dataLibL = [{
   etymology: '',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: '-lan',
+  partOfSpeech: 'ART',
+  definition: ['the', '(conditioned variant)'],
+  egSentenceKw: 'Nonm-lan ki fè\'y-la té ka pòté on chimiz nwè.',
+  egSentenceEn: 'The man who did it was wearing a black shirt.',
+  synonym: [null],
+  antonym: [null],
+  etymology: null,
+  dialect: '🇱🇨',
+  variant: ['-an', '-la', '-a'],
 },
 ];

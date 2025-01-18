@@ -8,7 +8,6 @@
  * @property {string | null} modalVariant - The variant of the modal content.
  * @property {() => void} clickHandler - The function to be called when the modal is clicked.
  */
-
 export interface IModalProps {
   modalTitle: string | null;
   modalDefinition: string | number;

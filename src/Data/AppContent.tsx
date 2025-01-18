@@ -179,6 +179,12 @@ const footerContent = {
         rel: 'noreferrer noopener',
         type: 'text/html',
       }, {
+        label: 'Saint Lucian Creole',
+        href: 'https://en.wikipedia.org/wiki/Saint_Lucian_Creole',
+        target: '_blank',
+        rel: 'noreferrer noopener',
+        type: 'text/html',
+      }, {
         label: 'Github',
         href: 'https://github.com/alaugustin/pale-patwa',
         target: '_blank',

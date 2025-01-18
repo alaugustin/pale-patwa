@@ -2,10 +2,9 @@ import React from 'react';
 import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Typography } from '../../UI/Typography/Typography';
-import Link from '../../UI/Link/Link';
 import Pronunciations from '../Pronounciation/Pronounciation';
-import { IFooterProps } from './Footer.d';
 import ResourcesLink from './ResourcesLink/ResourcesLink';
+import { IFooterProps } from './Footer.d';
 
 const footerResourcesLinks = AppContentData.footerContent.resources.links;
 const { titleH2 } = AppContentData.footerContent.resources;
