@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppContentData } from '../../../Data/AppContent';
-import { Pronounciation } from '../../../Data/Pronounciation';
+import { Pronounciation } from '../../../Data/Misc/Pronounciation';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Typography } from '../../UI/Typography/Typography';
 import PronunciationList from './PronounciationList/PronounciationList';

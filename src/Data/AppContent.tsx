@@ -179,7 +179,7 @@ const footerContent = {
         rel: 'noreferrer noopener',
         type: 'text/html',
       }, {
-        label: 'Saint Lucian Creole',
+        label: 'Saint Lucian Creole - Wikipedia',
         href: 'https://en.wikipedia.org/wiki/Saint_Lucian_Creole',
         target: '_blank',
         rel: 'noreferrer noopener',

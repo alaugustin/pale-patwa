@@ -1,4 +1,4 @@
-import { stLucia } from './StLucia';
+import { stLucia } from './Misc/StLucia';
 import { dataLibA } from './Letters/A';
 import { dataLibB } from './Letters/B';
 import { dataLibC } from './Letters/C';
