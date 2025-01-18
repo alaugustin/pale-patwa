@@ -1,3 +1,4 @@
+import { stLucia } from './StLucia';
 import { dataLibA } from './Letters/A';
 import { dataLibB } from './Letters/B';
 import { dataLibC } from './Letters/C';
@@ -26,6 +27,7 @@ import { dataDays } from './Calendar/Days';
 import { dataMonths } from './Calendar/Months';
 
 export const dataLib = [
+  ...stLucia,
   ...dataLibA,
   ...dataLibB,
   ...dataLibC,
@@ -54,8 +56,6 @@ export const dataLib = [
   ...dataMonths,
 ];
 
-// add he, she, they, them, their, theirs, themself
-
 /**
  - Sorts the `dataLibNum` array in numerical order by the `definition` property.
  */
@@ -79,7 +79,9 @@ export const SortedDictionary = dataLib.sort((a, b) => {
  * @param field - The field in the `SortedDictionary` array to analyze for word frequency.
  * @returns An array of the top 5 most frequent words and their counts.
  */
-const excludedWords = ['li.', 'mwen.', 'nèf.', 'lenpo', 'nwè.', 'nou.', 'sala?', 'dòla.'];
+const excludedWords = [
+  'li.', 'mwen.', 'nèf.', 'lenpo', 'nwè.', 'nou.', 'sala?', 'dòla.', 'gason-an'
+];
 const dictionaryWords = SortedDictionary.map(entry => entry.word.toLowerCase());
 const allExcludedWords = [...excludedWords, ...dictionaryWords];
 
