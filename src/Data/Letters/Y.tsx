@@ -20,5 +20,16 @@ export const dataLibY = [{
   etymology: '[< Fr. eux]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'yonn',
+  partOfSpeech: 'ADJ',
+  definition: ['alone', 'only', 'by oneself'],
+  egSentenceKw: 'Mwen yonn ki ka twavay.',
+  egSentenceEn: 'I am the only one working.',
+  synonym: ['sèlman', 'tousèl'],
+  antonym: [null],
+  etymology: '[< Fr. seul]',
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];

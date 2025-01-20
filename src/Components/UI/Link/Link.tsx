@@ -16,7 +16,7 @@ export default function Link({
       href={linkHref}
       target={linkTarget}
       className={linkClasses}
-      download={linkDownload}
+      {...(linkDownload ? { download: linkDownload } : {})}
       type={linkType}
       rel={linkRel}>
       {children}

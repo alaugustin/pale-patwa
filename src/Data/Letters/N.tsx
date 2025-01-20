@@ -64,5 +64,16 @@ export const dataLibN = [{
   etymology: '[< Fr. nouveau]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'nèf',
+  partOfSpeech: 'PRO',
+  definition: ['new'],
+  egSentenceKw: 'Motoka\'y té nèf lè i kwazé\'y.',
+  egSentenceEn: 'His car was new when he wrecked it.',
+  synonym: ['nivo'],
+  antonym: ['vyé'],
+  etymology: '[< Fr. neuf]',
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];

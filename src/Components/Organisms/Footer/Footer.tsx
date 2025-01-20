@@ -2,11 +2,11 @@ import React from 'react';
 import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Typography } from '../../UI/Typography/Typography';
-import Link from '../../UI/Link/Link';
 import Pronunciations from '../Pronounciation/Pronounciation';
+import ResourcesLink from './ResourcesLink/ResourcesLink';
 import { IFooterProps } from './Footer.d';
 
-const footerResourcesLink = AppContentData.footerContent.resources.link;
+const footerResourcesLinks = AppContentData.footerContent.resources.links;
 const { titleH2 } = AppContentData.footerContent.resources;
 const { pronounciationTitleH2 } = AppContentData.pronounciationContent;
 const { copyright } = AppContentData.icons;
@@ -37,23 +37,15 @@ export default function Footer({
       </BlockElement>
 
       <BlockElement className={footerResourcesContinerClasses}>
-        <Typography variant='h3' className={footerResourcesTitleClasses}>{titleH2}</Typography>
+        <Typography
+          variant='h3'
+          className={footerResourcesTitleClasses}
+        >{titleH2}</Typography>
 
-        {footerResourcesLink.map((link, index) => {
-          const { label, href, target, download, rel, type } = link;
-          return (
-            <Typography key={index} variant='p' className='mb-1 text-xs'>
-              <Link
-                linkHref={href}
-                linkTarget={target}
-                linkClasses={footerResourcesLinkClasses}
-                linkDownload={download}
-                linkRel={rel}
-                linkType={type}
-              >{label}</Link>
-            </Typography>
-          );
-        })}
+        <ResourcesLink
+          linkData={footerResourcesLinks}
+          linkClasses={footerResourcesLinkClasses}
+        />
       </BlockElement>
 
       <BlockElement

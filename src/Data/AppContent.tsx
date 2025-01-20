@@ -4,6 +4,16 @@ const globalPageContent = {
   mainHeading: 'Palé Kwéyòl',
   date: new Date(),
   backToTopLabel: 'To Top',
+  searchFields: [
+    'word',
+    'definition',
+    'egSentenceKw',
+    'egSentenceEn',
+    'etymology',
+    'synonym',
+    'antonym',
+    'variant',
+  ]
 };
 
 const uiHelperClasses = {
@@ -12,6 +22,7 @@ const uiHelperClasses = {
   footerColClasses: 'flex basis-full md:basis-1/4 flex-row text-xs',
   buttonHelperClasses: 'bg-sky-500 border-slate-400 hover:bg-sky-400',
   headerIconClasses: 'w-6 h-6 mr-2 mt-1',
+  linkClasses: 'text-blue-800 text-xs hover:underline text-sky-500 hover:text-blue-500 visited:text-purple-700 cursor-pointer',
 };
 
 const {
@@ -19,7 +30,8 @@ const {
   blockElementPadding,
   footerColClasses,
   buttonHelperClasses,
-  headerIconClasses
+  headerIconClasses,
+  linkClasses
 } = uiHelperClasses;
 
 const uiClasses = {
@@ -32,12 +44,12 @@ const uiClasses = {
   clearInputIconClasses: 'h-4 w-4 m-2 fill-gray-400',
   copyRightContainerClasses: `${footerColClasses} p-2 md:pb-7 order-last md:order-first`,
   copyRightIconClasses: 'mt-1 h-2 w-2',
-  dictionarySearchClasses: `${flexItemsCenter} flex-row mb-8 border border-gray-200 rounded`,
-  dictionarySearchInputClasses: 'p-2 w-64 border-r border-gray-200',
+  dictionarySearchClasses: `${flexItemsCenter} flex-row mb-8 border border-gray-200 rounded-full`,
+  dictionarySearchInputClasses: 'p-2 px-4 w-64 rounded-full border-r-0',
   footerContainerClasses: 'pb-7 basis-14 border-t border-gray-200 flex flex-col md:flex-row justify-between md:flex-wrap',
   footerFlagSectionClasses: `${footerColClasses} p-2 md:pb-7 md:mb-0 md:justify-end`,
   footerResourcesContinerClasses: 'p-2 md:pb-7 flex basis-full flex-col md:mb-0 md:px-4 md:basis-1/2',
-  footerResourcesLinkClasses: 'text-blue-800 text-xs hover:underline text-sky-500 hover:text-blue-500 visited:text-purple-700',
+  footerResourcesLinkClasses: linkClasses,
   footerResourcesTitleClasses: 'font-bold text-slate-800 text-sm mb-1',
   headerContainerClasses: `${flexItemsCenter} py-3 p-2 basis-14 justify-between border-b border-gray-200`,
   headerDateClasses: 'ml-2 text-xs md:text-sm lg:text-lg',
@@ -64,6 +76,7 @@ const uiClasses = {
   wordOfTheDayContainerClasses: `${flexItemsCenter} ${blockElementPadding} flex-col flex-3 bg-yellow-400 w-full`,
   wordOfTheDayDefinitionClasses: 'text-xl font-thin md:text-right',
   wordOfTheDayH3Classes: 'underline text-2xl font-serif mb-4 font-bold  md:text-right',
+  wordRelationsContainerClasses: 'mb-4 flex flex-row text-sm flex-wrap',
 };
 
 const {
@@ -151,7 +164,7 @@ const pronounciationContent = {
 const footerContent = {
   resources: {
     titleH2: 'Resources',
-    link: [
+    links: [
       {
         label: 'Kwéyòl Dictionary - Ministry of Education, Government of Saint Lucia',
         href: 'http://www.saintluciancreole.dbfrank.net/dictionary/KweyolDictionary.pdf',
@@ -166,6 +179,12 @@ const footerContent = {
         rel: 'noreferrer noopener',
         type: 'text/html',
       }, {
+        label: 'Saint Lucian Creole - Wikipedia',
+        href: 'https://en.wikipedia.org/wiki/Saint_Lucian_Creole',
+        target: '_blank',
+        rel: 'noreferrer noopener',
+        type: 'text/html',
+      }, {
         label: 'Github',
         href: 'https://github.com/alaugustin/pale-patwa',
         target: '_blank',
@@ -176,6 +195,12 @@ const footerContent = {
   },
 };
 
+const helperFunc = {
+  normalizeText: (text: string): string => {
+    return text.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  }
+};
+
 export const AppContentData = {
   globalPageContent,
   wordOfTheDayContent,
@@ -184,5 +209,6 @@ export const AppContentData = {
   footerContent,
   icons,
   uiClasses,
-  uiHelperClasses
+  uiHelperClasses,
+  helperFunc
 };

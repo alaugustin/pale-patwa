@@ -5,6 +5,7 @@ import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Typography } from '../../UI/Typography/Typography';
 import WordAttributes from '../WordAttributes/WordAttributes';
 import Button from '../../UI/Form/Button/Button';
+import WordRelations from '../WordRelations/WordRelations';
 import { IModalProps } from './Modal.d';
 
 const {
@@ -20,24 +21,10 @@ export default function Modal({
   modalDefinition,
   modalSentenceKw,
   modalSentenceEn,
-  modalSynonym,
-  modalAntonym,
-  modalVariant,
   clickHandler
 }: IModalProps) {
   const selectedWord = SortedDictionary.find(word => word.word === modalTitle);
-
-  const renderWordList = (words: string[] | string, prefix: string) => {
-    return (
-      <Typography variant='span'>{`(${prefix}:`}
-        {Array.isArray(words) ? words.map((def: string, index: number) => (
-          <Typography variant='span' className='first:mx-1 mr-1 last:mr-0' key={index}>
-            {def}{index !== words.length - 1 ? ',' : ''}
-          </Typography>
-        )) : words}
-        {')'}</Typography>
-    );
-  };
+  const { variant, synonym, antonym, etymology, partOfSpeech, dialect } = selectedWord ?? {};
 
   return (
     <BlockElement variant='article' className={modalContainerClasses}>
@@ -62,19 +49,16 @@ export default function Modal({
             )}
           </BlockElement>
 
-          <BlockElement className='mb-4 flex flex-row text-sm'>
-            {modalVariant && (
-              <Typography variant='span' className='mr-1'>{`(var: ${modalVariant})`}</Typography>
-            )}
-
-            {modalSynonym && renderWordList(modalSynonym, 'syn')}
-            {modalAntonym && renderWordList(modalAntonym, 'opp')}
-          </BlockElement>
+          <WordRelations
+            varData={variant}
+            synData={synonym}
+            antData={antonym}
+          />
 
           <WordAttributes
-            wordEtymology={selectedWord?.etymology ?? null}
-            wordPartOfSpeech={selectedWord?.partOfSpeech ?? null}
-            wordDialect={selectedWord?.dialect ?? null}
+            wordEtymology={etymology || null}
+            wordPartOfSpeech={partOfSpeech || null}
+            wordDialect={dialect || null}
             containerClasses='text-sm mb-8'
           />
         </BlockElement>

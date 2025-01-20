@@ -16,8 +16,6 @@ export default function List({
           definition,
           egSentenceEn,
           egSentenceKw,
-          synonym,
-          antonym,
           variant
         } = element;
 
@@ -28,8 +26,6 @@ export default function List({
             definition={definition}
             egSentenceKw={egSentenceKw}
             egSentenceEn={egSentenceEn}
-            synonym={synonym}
-            antonym={antonym}
             variant={variant}
             hasLink={hasLink}
           />

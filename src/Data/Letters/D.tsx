@@ -54,5 +54,27 @@ export const dataLibD = [{
   etymology: '[< Fr. devant]',
   dialect: '🇱🇨',
   variant: [null],
-}
+}, {
+  word: 'dé',
+  partOfSpeech: 'ADJ',
+  definition: ['some', 'a few'],
+  egSentenceKw: 'La ni dé koté ki ni pinèz.',
+  egSentenceEn: 'There are some places that have bedbugs.',
+  synonym: [null],
+  antonym: [null],
+  etymology: '[< Fr. des]',
+  dialect: '🇱🇨',
+  variant: [null],
+}, {
+  word: 'dòla',
+  partOfSpeech: 'N',
+  definition: ['dollar'],
+  egSentenceKw: 'Konmen dòla ou ni?',
+  egSentenceEn: 'How many dollars do you have?',
+  synonym: ['goud'],
+  antonym: [null],
+  etymology: '[< Fr. dollar]',
+  dialect: '🇱🇨',
+  variant: [null],
+},
 ];
