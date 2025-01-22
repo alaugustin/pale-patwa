@@ -1,5 +1,7 @@
 import React from 'react';
 import { Typography } from '../../../UI/Typography/Typography';
+import Link from '../../../UI/Link/Link';
+import { BlockElement } from '../../../UI/BlockLevel/BlockElement';
 import { IPronunciationListProps } from './PronounciationList.d';
 
 export default function PronunciationList({
@@ -9,18 +11,29 @@ export default function PronunciationList({
 }: IPronunciationListProps) {
   return (
     <ul className={listClasses}>
-      {dataArr.map((item: { letter: any; pronounciation: any; sound: any; }, index: React.Key | null | undefined) => {
+      {dataArr.map((item: { letter: string; pronounciation: string; phoneme: string; link?: string; name?: string; }, index: number) => {
         const {
           letter,
           pronounciation,
-          sound
+          phoneme,
+          link
         } = item;
 
         return (
-          <li key={index} className={listItemClasses}>
-            <Typography variant='span'>{letter}</Typography>
-            <Typography variant='span'>{pronounciation}</Typography>
-            <Typography variant='span'>{sound}</Typography>
+          <li key={index}>
+            {link ? (
+              <Link linkHref={link} linkTarget='_blank' linkClasses={listItemClasses} >
+                <Typography variant='span'>{letter}</Typography>
+                <Typography variant='span'>{pronounciation}</Typography>
+                <Typography variant='span'>{phoneme}</Typography>
+              </Link>
+            ) : (
+              <BlockElement variant='div' className={listItemClasses}>
+                <Typography variant='span'>{letter}</Typography>
+                <Typography variant='span'>{pronounciation}</Typography>
+                <Typography variant='span'>{phoneme}</Typography>
+              </BlockElement>
+            )}
           </li>
         );
       })}
