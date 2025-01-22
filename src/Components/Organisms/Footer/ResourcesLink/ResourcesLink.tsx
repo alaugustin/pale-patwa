@@ -12,7 +12,7 @@ export default function ResourcesLink({
     linkData.map((link: { label: any; href: any; target: any; download: any; rel: any; type: any; }, index: React.Key | null | undefined) => {
       const { label, href, target, download, rel, type } = link;
       return (
-        <Typography key={index} variant='p' className='mb-1 text-xs'>
+        <Typography key={index} variant='p' className='mb-2 last:mb-0 text-xs'>
           <Link
             linkHref={href}
             linkTarget={target}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppContentData } from '../../../Data/AppContent';
-import { Pronounciation } from '../../../Data/Misc/Pronounciation';
+import { Pronounciation } from '../../../Data/Misc/PronounciationData';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Typography } from '../../UI/Typography/Typography';
 import PronunciationList from './PronounciationList/PronounciationList';
@@ -24,24 +24,6 @@ export default function Pronunciations({
         listClasses={pronounciationListClasses}
         listItemClasses={pronounciationListItemClasses}
       />
-
-      <ul className={pronounciationListClasses}>
-        {Pronounciation.map((item, index) => {
-          const {
-            letter,
-            pronounciation,
-            sound
-          } = item;
-
-          return (
-            <li key={index} className={pronounciationListItemClasses}>
-              <Typography variant='span'>{letter}</Typography>
-              <Typography variant='span'>{pronounciation}</Typography>
-              <Typography variant='span'>{sound}</Typography>
-            </li>
-          );
-        })}
-      </ul>
     </BlockElement>
   );
 }
