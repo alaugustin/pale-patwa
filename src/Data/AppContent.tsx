@@ -17,12 +17,13 @@ const globalPageContent = {
 };
 
 const uiHelperClasses = {
-  flexItemsCenter: 'flex items-center justify-center',
+  backToTopTextColor: 'slate-900',
   blockElementPadding: 'pt-6 p-2 pb-7',
-  footerColClasses: 'flex basis-full md:basis-1/4 flex-row text-xs',
   buttonHelperClasses: 'bg-sky-500 border-slate-400 hover:bg-sky-400',
+  flexItemsCenter: 'flex items-center justify-center',
+  footerColClasses: 'flex basis-full md:basis-1/4 flex-row text-xs',
   headerIconClasses: 'w-6 h-6 mr-2 mt-1',
-  linkClasses: 'text-blue-800 text-xs hover:underline text-sky-500 hover:text-blue-500 visited:text-purple-700 cursor-pointer',
+  linkClasses: 'text-blue-900 text-xs hover:underline text-sky-500 hover:text-blue-500 visited:text-purple-700 cursor-pointer',
 };
 
 const {
@@ -31,13 +32,14 @@ const {
   footerColClasses,
   buttonHelperClasses,
   headerIconClasses,
-  linkClasses
+  linkClasses,
+  backToTopTextColor
 } = uiHelperClasses;
 
 const uiClasses = {
   appAllHolderClasses: 'flex flex-col h-screen max-w-6xl mx-auto text-slate-900',
-  backToTopButton: `${flexItemsCenter} fixed bottom-8 right-8 rounded-full shadow-lg text-white flex-row gap-x-2 p-4 bg-gray-400 hover:bg-gray-500`,
-  backToTopIconClasses: 'h-5 w-5 fill-white',
+  backToTopButton: `${flexItemsCenter} fixed bottom-8 right-8 rounded-full shadow-lg flex-row gap-x-2 p-4 bg-gray-100 border-gray-200 hover:bg-gray-200 border-2 text-${backToTopTextColor}`,
+  backToTopIconClasses: `h-5 w-5 fill-${backToTopTextColor}`,
   bookIconClasses: `${headerIconClasses} mt-2`,
   calendarIconClasses: headerIconClasses,
   centeredBlurbCopyClasses: 'mb-6 max-w-screen-sm text-center',
