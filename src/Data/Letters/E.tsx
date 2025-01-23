@@ -54,5 +54,16 @@ export const dataLibE = [{
   etymology: null,
   dialect: '🇱🇨',
   variant: ['é', 'èp'],
+}, {
+  word: 'ensiswatil',
+  partOfSpeech: 'INTERJ',
+  definition: ['amen'],
+  egSentenceKw: 'Mwen ka mandé tout sé bagay an non Jézi Kwi, ensiswatil.',
+  egSentenceEn: 'I ask all of these things in the name of Jesus Christ, amen.',
+  synonym: ['amèn'],
+  antonym: [null],
+  etymology: '[< Eng. amen]',
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];

@@ -76,5 +76,16 @@ export const dataLibD = [{
   etymology: '[< Fr. dollar]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'djè',
+  partOfSpeech: 'ADV',
+  definition: ['hardly any', 'scarcely any'],
+  egSentenceKw: 'Nou pa té sa jwé bol-la paski la pa té ni djè moun.',
+  egSentenceEn: 'We couldn\'t play ball because there were hardly any people.',
+  synonym: [null],
+  antonym: ['an chay'],
+  etymology: '[< Fr. guère]',
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];

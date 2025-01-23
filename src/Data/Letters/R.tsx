@@ -9,5 +9,16 @@ export const dataLibR = [{
   etymology: '[< Eng. radio]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'roti',
+  partOfSpeech: 'N',
+  definition: ['East Indian flat bread'],
+  egSentenceKw: 'Mwen enmen roti lè i cho.',
+  egSentenceEn: 'I like rotis when they are hot.',
+  synonym: ['bék'],
+  antonym: [null],
+  etymology: null,
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];
