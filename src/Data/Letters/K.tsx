@@ -130,5 +130,16 @@ export const dataLibK = [{
   etymology: '[< Fr. qui]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'kozé',
+  partOfSpeech: 'V',
+  definition: ['to chat'],
+  egSentenceKw: 'Sé nonm-lan ka jwé dòmino épi sé madanm-lan ka kozé.',
+  egSentenceEn: 'The men are playing dominoes and the women are chatting.',
+  synonym: ['diskasyon', 'pale'],
+  antonym: [null],
+  etymology: '[< Fr.causer]',
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];
