@@ -119,5 +119,16 @@ export const dataLibL = [{
   etymology: null,
   dialect: '🇱🇨',
   variant: ['-an', '-la', '-a'],
+}, {
+  word: 'lizin',
+  partOfSpeech: 'N',
+  definition: ['factory'],
+  egSentenceKw: 'I ka twavay an lizin-an.',
+  egSentenceEn: 'He works in the factory.',
+  synonym: ['faktri'],
+  antonym: [null],
+  etymology: '[< Fr. l\'usine]',
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];
