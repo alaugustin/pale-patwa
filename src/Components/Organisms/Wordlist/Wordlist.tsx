@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useSwipeable } from 'react-swipeable';
 import { ListItem } from '../../UI/List/ListItem/ListItem';
 import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
@@ -110,6 +111,21 @@ export default function WordList({ data }: IWordlistProps) {
     });
   };
 
+  const swipeHandlers = useSwipeable({
+    onSwipedLeft: () => {
+      if (!isLastPage) {
+        increasePage();
+      }
+    },
+    onSwipedRight: () => {
+      if (!isFirstPage) {
+        decreasePage();
+      }
+    },
+    preventScrollOnSwipe: true,
+    trackMouse: true
+  });
+
   return (
     <BlockElement variant='section' className={wordListContainerClasses}>
       <RenderElementHead
@@ -126,7 +142,7 @@ export default function WordList({ data }: IWordlistProps) {
         onClickFunc={handleClear}
       />
 
-      <ul className={wordListListClasses}>
+      <ul className={wordListListClasses} {...swipeHandlers}>
         {addSubscriptsToWords(currentItems).map((item, index) => (
           <ListItem
             key={index}
