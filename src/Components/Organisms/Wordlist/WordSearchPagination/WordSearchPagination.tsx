@@ -5,7 +5,7 @@ import { AppContentData } from '../../../../Data/AppContent';
 import { Pagination } from '../../Pagination/Pagination';
 import { DictionarySearch } from '../../DictionarySearch/DictionarySearch';
 import { Typography } from '../../../UI/Typography/Typography';
-import { IWordlistObjectsProps } from './WordlistObjects.d';
+import { IWordSearchPaginationProps } from './WordSearchPagination.d';
 
 const {
   wordlistFilterPlaceholder,
@@ -26,7 +26,7 @@ function getWindowDimensions() {
   };
 }
 
-export default function WordlistObjects({ data }: IWordlistObjectsProps) {
+export default function WordlistObjects({ data }: IWordSearchPaginationProps) {
   function useWindowDimensions() {
     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
 

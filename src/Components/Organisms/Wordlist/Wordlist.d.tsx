@@ -1,5 +1,11 @@
 /**
- * Defines the properties of a word list data item, including the word, definition, example sentences, etymology, synonyms, antonyms, cross-references, and variants.
+ * Defines the properties of a word list data item.
+ * @property {string} word - The word.
+ * @property {string | number} definition - The definition of the word.
+ * @property {string} egSentenceKw - The example sentence in the keyword language.
+ * @property {string} egSentenceEn - The example sentence in English.
+ * @property {string} etymology - The etymology of the word.
+ * @property {string} variant - The variant of the word.
  */
 
 export interface IWordListDataProps {
@@ -12,7 +18,8 @@ export interface IWordListDataProps {
 }
 
 /**
- * Defines the properties of a word list component, including the data for each word list item.
+ * Defines the props for the Wordlist component.
+ * @property {IWordListDataProps[]} data - An array of word data objects.
  */
 
 export interface IWordlistProps {
