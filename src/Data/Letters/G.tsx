@@ -75,5 +75,16 @@ export const dataLibG = [{
   etymology: '[< Fr. gros]',
   dialect: '🇱🇨',
   variant: 'go',
+}, {
+  word: 'goud',
+  partOfSpeech: 'N',
+  definition: ['dollar'],
+  egSentenceKw: 'I mandé nou dé goud pou lo mango-a.',
+  egSentenceEn: 'He asked us two dollars for the heap of mangos.',
+  synonym: ['dòla'],
+  antonym: [null],
+  etymology: '[< Fr. gourde]',
+  dialect: '🇱🇨',
+  variant: null,
 },
 ];

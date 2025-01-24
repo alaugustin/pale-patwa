@@ -108,6 +108,28 @@ export const dataLibT = [{
   etymology: '[< Eng. tax]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'twavay',
+  partOfSpeech: 'V',
+  definition: ['to work'],
+  egSentenceKw: 'I ka twavay wèd bay lizin-an.',
+  egSentenceEn: 'He works hard for the factory.',
+  synonym: ['djòb'],
+  antonym: [null],
+  etymology: '[< Fr. travailler, Fr.travail]',
+  dialect: '🇱🇨',
+  variant: ['twimé'],
+}, {
+  word: 'twavay',
+  partOfSpeech: 'N',
+  definition: ['work', 'job'],
+  egSentenceKw: 'La pa ni djè twavay isi.',
+  egSentenceEn: 'There\'s scarcely any work here.',
+  synonym: ['djòb'],
+  antonym: [null],
+  etymology: '[< Fr. travailler, Fr.travail]',
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];
 

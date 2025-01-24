@@ -79,6 +79,7 @@ const uiClasses = {
   wordOfTheDayDefinitionClasses: 'text-xl font-thin md:text-right',
   wordOfTheDayH3Classes: 'underline text-2xl font-serif mb-4 font-bold  md:text-right',
   wordRelationsContainerClasses: 'mb-4 flex flex-row text-sm flex-wrap',
+  wordRelationsItemClasses: 'font-bold mr-1 last:mr-0',
 };
 
 const {

@@ -4,7 +4,10 @@ import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Typography } from '../../UI/Typography/Typography';
 import { IWordRelationsProps, IWordGroupProps } from './WordRelations.d';
 
-const { wordRelationsContainerClasses } = AppContentData.uiClasses;
+const {
+  wordRelationsContainerClasses,
+  wordRelationsItemClasses
+} = AppContentData.uiClasses;
 
 const WordGroup = ({
   label,
@@ -14,7 +17,7 @@ const WordGroup = ({
     <>
       {`(${label}: `}
       {data.map((item, index) => (
-        <Typography key={item} variant="span" className="font-bold">
+        <Typography key={item} variant="span" className={wordRelationsItemClasses}>
           {item}
           {index !== data.length - 1 ? ',' : ''}
         </Typography>

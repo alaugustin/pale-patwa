@@ -95,18 +95,14 @@ export default function App() {
   useEffect(() => {
     checkAndUpdateDailyWord();
 
-    // Calculate milliseconds until next hour
     const now = new Date();
     const nextHour = new Date(now.getFullYear(), now.getMonth(), now.getDate(), now.getHours() + 1, 0, 0);
     const timeUntilNextHour = nextHour.getTime() - now.getTime();
 
-    // Initial timeout to sync with the hour
     const initialTimeout = setTimeout(() => {
       checkAndUpdateDailyWord();
 
-      // Then start the regular hourly interval
       const intervalId = setInterval(checkAndUpdateDailyWord, 3600000);
-      console.log('hourly check executed', intervalId);
 
       return () => clearInterval(intervalId);
     }, timeUntilNextHour);
