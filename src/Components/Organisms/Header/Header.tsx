@@ -22,7 +22,6 @@ const kweyolMonths = Object.fromEntries(
     .map((month, index) => [month, dataMonths[index].word])
 );
 
-
 export default function Header({
   headerContainerClass,
   mainHeading
