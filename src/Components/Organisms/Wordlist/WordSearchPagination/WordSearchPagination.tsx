@@ -16,15 +16,11 @@ const {
 
 const { wordListListClasses } = AppContentData.uiClasses;
 const { searchFields } = AppContentData.globalPageContent;
-const { normalizeText } = AppContentData.helperFunc;
 
-function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window;
-  return {
-    width,
-    height
-  };
-}
+const {
+  normalizeText,
+  getWindowDimensions
+} = AppContentData.helperFunc;
 
 export default function WordlistObjects({ data }: IWordSearchPaginationProps) {
   function useWindowDimensions() {

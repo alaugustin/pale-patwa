@@ -31,5 +31,16 @@ export const dataLibH = [{
   etymology: null,
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'hèlsenta',
+  partOfSpeech: 'N',
+  definition: ['health center'],
+  egSentenceKw: 'Dòktè-a ka vini an hèlsenta-a jòdi-a.',
+  egSentenceEn: 'The doctor is coming to the health center today.',
+  synonym: [null],
+  antonym: [null],
+  etymology: '[< Eng. health center]',
+  dialect: '🇱🇨',
+  variant: ['gwòg'],
 },
 ];

@@ -9,5 +9,16 @@ export const dataLibI = [{
   etymology: '[< Fr. il]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'ilèkté',
+  partOfSpeech: 'V',
+  definition: ['to elect'],
+  egSentenceKw: 'Yo vlé ilèkté\'y pou wépwézanté nou an lòt ilèksyon-an.',
+  egSentenceEn: 'They want to elect him to represent us in the next election.',
+  synonym: [null],
+  antonym: [null],
+  etymology: '[< Eng. elect]',
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];

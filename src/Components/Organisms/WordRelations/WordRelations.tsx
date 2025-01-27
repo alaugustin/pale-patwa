@@ -35,18 +35,27 @@ export default function WordRelations({
   const hasContent = varData?.[0] || synData?.[0] || antData?.[0];
 
   return hasContent ? (
-    <BlockElement className={wordRelationsContainerClasses}>
-      <Typography variant="span" className="mr-1 last:mr-0">
-        <WordGroup label="var" data={varData} />
-      </Typography>
+    varData?.[0] && Array.isArray(varData) &&
+    synData?.[0] && Array.isArray(synData) &&
+    antData?.[0] && Array.isArray(antData) && (
+      <BlockElement className={wordRelationsContainerClasses}>
+        {varData?.[0] && Array.isArray(varData) && (
+          <Typography variant="span" className="mr-1 last:mr-0">
+            <WordGroup label="var" data={varData} />
+          </Typography>
+        )}
 
-      <Typography variant="span" className="mr-1 last:mr-0">
-        <WordGroup label="syn" data={synData} />
-      </Typography>
+        {synData?.[0] && Array.isArray(synData) && (
+          <Typography variant="span" className="mr-1 last:mr-0">
+            <WordGroup label="syn" data={synData} />
+          </Typography>
+        )}
 
-      <Typography variant="span" className="mr-1 last:mr-0">
-        <WordGroup label="ant" data={antData} />
-      </Typography>
-    </BlockElement>
+        {antData?.[0] && Array.isArray(antData) && (
+          <Typography variant="span" className="mr-1 last:mr-0">
+            <WordGroup label="ant" data={antData} />
+          </Typography>
+        )}
+      </BlockElement>)
   ) : null;
 }

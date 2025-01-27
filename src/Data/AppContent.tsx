@@ -5,20 +5,25 @@ const globalPageContent = {
   date: new Date(),
   backToTopLabel: 'To Top',
   searchFields: [
-    'word',
-    'definition',
-    'egSentenceKw',
-    'egSentenceEn',
-    'etymology',
-    'synonym',
-    'antonym',
-    'variant',
+    'word', 'definition', 'egSentenceKw', 'egSentenceEn', 'etymology', 'synonym', 'antonym', 'variant',
+  ],
+  excludedWordsArr: [
+    'li.', 'mwen.', 'nèf.', 'lenpo', 'nwè.', 'nou.', 'sala?', 'dòla.', 'gason-an', 'nonm-lan'
+  ],
+  daysOfTheWeekArr: [
+    'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
+  ],
+  monthsOfTheYearArr: [
+    'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
   ]
 };
 
 const uiHelperClasses = {
   backToTopTextColor: 'slate-900',
   blockElementPadding: 'pt-6 p-2 pb-7',
+  borderBottom: 'border-gray-200 border-b',
+  borderColor: 'border-gray-200',
+  borderTop: 'border-gray-200 border-t',
   buttonHelperClasses: 'bg-sky-500 border-slate-400 hover:bg-sky-400',
   flexItemsCenter: 'flex items-center justify-center',
   footerColClasses: 'flex basis-full md:basis-1/4 flex-row text-xs',
@@ -33,12 +38,15 @@ const {
   buttonHelperClasses,
   headerIconClasses,
   linkClasses,
-  backToTopTextColor
+  backToTopTextColor,
+  borderColor,
+  borderBottom,
+  borderTop
 } = uiHelperClasses;
 
 const uiClasses = {
   appAllHolderClasses: 'flex flex-col h-screen max-w-6xl mx-auto text-slate-900',
-  backToTopButton: `${flexItemsCenter} fixed bottom-8 right-8 rounded-full shadow-lg flex-row gap-x-2 p-4 bg-gray-100 border-gray-200 hover:bg-gray-200 border-2 text-${backToTopTextColor}`,
+  backToTopButton: `${flexItemsCenter} ${borderColor} fixed bottom-8 right-8 rounded-full shadow-lg flex-row gap-x-2 p-4 bg-gray-100 hover:bg-gray-200 border-2 text-${backToTopTextColor}`,
   backToTopIconClasses: `h-5 w-5 fill-${backToTopTextColor}`,
   bookIconClasses: `${headerIconClasses} mt-2`,
   calendarIconClasses: headerIconClasses,
@@ -46,25 +54,26 @@ const uiClasses = {
   clearInputIconClasses: 'h-4 w-4 m-2 fill-gray-400',
   copyRightContainerClasses: `${footerColClasses} p-2 md:pb-7 order-last md:order-first`,
   copyRightIconClasses: 'mt-1 h-2 w-2',
-  dictionarySearchClasses: `${flexItemsCenter} flex-row mb-8 border border-gray-200 rounded-full`,
+  definitionTextClasses: `${borderBottom} mb-2 pb-2`,
+  dictionarySearchClasses: `${flexItemsCenter} ${borderColor} flex-row mb-8 border rounded-full`,
   dictionarySearchInputClasses: 'p-2 px-4 w-64 rounded-full border-r-0',
-  footerContainerClasses: 'pb-7 basis-14 border-t border-gray-200 flex flex-col md:flex-row justify-between md:flex-wrap',
+  footerContainerClasses: `${borderTop} pb-7 basis-14 flex flex-col md:flex-row justify-between md:flex-wrap`,
   footerFlagSectionClasses: `${footerColClasses} p-2 md:pb-7 md:mb-0 md:justify-end`,
   footerResourcesContinerClasses: 'p-2 md:pb-7 flex basis-full flex-col md:mb-0 md:px-4 md:basis-1/2',
   footerResourcesLinkClasses: linkClasses,
   footerResourcesTitleClasses: 'font-bold text-slate-800 text-sm mb-1',
-  headerContainerClasses: `${flexItemsCenter} py-3 p-2 basis-14 justify-between border-b border-gray-200`,
+  headerContainerClasses: `${flexItemsCenter} ${borderBottom} py-3 p-2 basis-14 justify-between`,
   headerDateClasses: 'ml-2 text-xs md:text-sm lg:text-lg',
   headerH1Classes: 'text-2xl sm:text-2xl md:text-3xl lg:text-4xl mr-2',
-  listButtonClass: 'bg-gray-100 border-gray-200 hover:bg-gray-200 border-2 p-3 px-6 rounded-full',
+  listButtonClass: `${borderColor} bg-gray-100 hover:bg-gray-200 border-2 p-3 px-6 rounded-full`,
   modalContainerClasses: `${flexItemsCenter} fixed inset-0 bg-black bg-opacity-50 z-50`,
   modalContentClasses: 'bg-white p-6 rounded-lg shadow-xl mx-4 w-full sm:max-w-md sm:min-w-96',
   modalH2Classes: 'text-2xl font-bold mb-2 font-serif',
   paginationBoardClasses: `${flexItemsCenter} flex-row`,
   paginationButton: 'hover:bg-gray-200 p-2',
   paginationButtonDisabled: 'cursor-not-allowed disabled:opacity-50',
-  paginationContainerClasses: 'mt-6 flex flex-row p-2 px-4 rounded-full border border-gray-200',
-  paginationNumberContainer: `${flexItemsCenter} h-6 w-6 border-2 border-gray-200 rounded`,
+  paginationContainerClasses: `${borderColor} mt-6 flex flex-row p-2 px-4 rounded-full border`,
+  paginationNumberContainer: `${flexItemsCenter} ${borderColor} h-6 w-6 border-2 rounded`,
   pdfIconClasses: 'h-3 w-3 fill-red-500',
   primaryButton: `${buttonHelperClasses} border-2 text-white py-2 px-5 rounded-full`,
   pronounciationContainerClasses: `${blockElementPadding} ${flexItemsCenter} mb-4 bg-blue-600 flex-col w-full order-first basis-full flex-auto text-slate-50`,
@@ -73,7 +82,7 @@ const uiClasses = {
   twoColColumnClasses: 'even:basis-5/12 odd:basis-7/12 md:odd:pr-2 md:even:pl-2',
   twoColContainerClasses: 'max-w-screen-sm md:flex md:flex-row flex-col',
   wordAttributeBorder: 'pr-2 mr-2 border-r border-black',
-  wordListContainerClasses: `${flexItemsCenter} ${blockElementPadding} flex-col flex-1 w-full border-t border-gray-1`,
+  wordListContainerClasses: `${flexItemsCenter} ${blockElementPadding} ${borderTop} flex-col flex-1 w-full`,
   wordListListClasses: `${flexItemsCenter} ${blockElementPadding} text-xl max-w-screen-sm flex-wrap gap-4`,
   wordOfTheDayContainerClasses: `${flexItemsCenter} ${blockElementPadding} flex-col flex-3 bg-yellow-400 w-full`,
   wordOfTheDayDefinitionClasses: 'text-xl font-thin md:text-right',
@@ -167,6 +176,7 @@ const pronounciationContent = {
 const footerContent = {
   resources: {
     titleH2: 'Resources',
+    flags: ['🇱🇨', '🇩🇲', '🇬🇩', '🇹🇹', '🇭🇹', '🇬🇫', '🇻🇪', '🇻🇪'],
     links: [
       {
         label: 'Kwéyòl Dictionary - Ministry of Education, Government of Saint Lucia',
@@ -201,6 +211,13 @@ const footerContent = {
 const helperFunc = {
   normalizeText: (text: string): string => {
     return text.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  },
+  getWindowDimensions: () => {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height
+    };
   }
 };
 

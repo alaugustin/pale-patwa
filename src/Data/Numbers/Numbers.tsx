@@ -358,7 +358,7 @@ export const dataLibNum = [{
   egSentenceEn: 'This is the fourth time I\'m going overseas.',
   synonym: [null],
   antonym: [null],
-  etymology: '[< Fr. foo]',
+  etymology: '[< Fr. quatrième]',
   dialect: '🇱🇨',
   variant: ['katzyenm'],
 }, {

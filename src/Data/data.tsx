@@ -1,4 +1,5 @@
-import { stLucia } from './Misc/StLucia';
+import { AppContentData } from '../Data/AppContent';
+import { dataLibStLucia } from './Misc/dataLibStLucia';
 import { dataLibA } from './Letters/A';
 import { dataLibB } from './Letters/B';
 import { dataLibC } from './Letters/C';
@@ -25,9 +26,10 @@ import { dataLibZ } from './Letters/Z';
 import { dataLibNum } from './Numbers/Numbers';
 import { dataDays } from './Calendar/Days';
 import { dataMonths } from './Calendar/Months';
+import { dataLibTime } from './Time/Time';
 
 export const dataLib = [
-  ...stLucia,
+  ...dataLibStLucia,
   ...dataLibA,
   ...dataLibB,
   ...dataLibC,
@@ -54,7 +56,10 @@ export const dataLib = [
   ...dataLibNum,
   ...dataDays,
   ...dataMonths,
+  ...dataLibTime
 ];
+
+// const ;
 
 /**
  - Sorts the `dataLibNum` array in numerical order by the `definition` property.
@@ -79,11 +84,9 @@ export const SortedDictionary = dataLib.sort((a, b) => {
  * @param field - The field in the `SortedDictionary` array to analyze for word frequency.
  * @returns An array of the top 5 most frequent words and their counts.
  */
-const excludedWords = [
-  'li.', 'mwen.', 'nèf.', 'lenpo', 'nwè.', 'nou.', 'sala?', 'dòla.', 'gason-an'
-];
+const { excludedWordsArr } = AppContentData.globalPageContent;
 const dictionaryWords = SortedDictionary.map(entry => entry.word.toLowerCase());
-const allExcludedWords = [...excludedWords, ...dictionaryWords];
+const allExcludedWords = [...excludedWordsArr, ...dictionaryWords];
 
 const calculateWordFrequency = (field: keyof typeof SortedDictionary[0]) =>{
   const wordFrequency: { [key: string]: number } = {};

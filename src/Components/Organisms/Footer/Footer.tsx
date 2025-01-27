@@ -7,9 +7,10 @@ import ResourcesLink from './ResourcesLink/ResourcesLink';
 import { IFooterProps } from './Footer.d';
 
 const footerResourcesLinks = AppContentData.footerContent.resources.links;
-const { titleH2 } = AppContentData.footerContent.resources;
+const { titleH2, flags } = AppContentData.footerContent.resources;
 const { pronounciationTitleH2 } = AppContentData.pronounciationContent;
 const { copyright } = AppContentData.icons;
+
 const {
   pronounciationContainerClasses,
   copyRightContainerClasses,
@@ -48,9 +49,10 @@ export default function Footer({
         />
       </BlockElement>
 
-      <BlockElement
-        className={footerFlagSectionClasses}>
-          🇱🇨🇩🇲🇬🇩🇹🇹🇭🇹🇬🇫🇻🇪🇻🇨
+      <BlockElement className={footerFlagSectionClasses}>
+        {flags.map((flag, index) => (
+          <Typography key={index} variant='span' className='mr-2 last:mr-0'>{flag}</Typography>
+        ))}
       </BlockElement>
     </BlockElement>
   );
