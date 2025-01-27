@@ -1,5 +1,5 @@
 import { AppContentData } from '../Data/AppContent';
-import { stLucia } from './Misc/StLucia';
+import { dataLibStLucia } from './Misc/dataLibStLucia';
 import { dataLibA } from './Letters/A';
 import { dataLibB } from './Letters/B';
 import { dataLibC } from './Letters/C';
@@ -26,9 +26,10 @@ import { dataLibZ } from './Letters/Z';
 import { dataLibNum } from './Numbers/Numbers';
 import { dataDays } from './Calendar/Days';
 import { dataMonths } from './Calendar/Months';
+import { dataLibTime } from './Time/Time';
 
 export const dataLib = [
-  ...stLucia,
+  ...dataLibStLucia,
   ...dataLibA,
   ...dataLibB,
   ...dataLibC,
@@ -55,6 +56,7 @@ export const dataLib = [
   ...dataLibNum,
   ...dataDays,
   ...dataMonths,
+  ...dataLibTime
 ];
 
 // const ;
