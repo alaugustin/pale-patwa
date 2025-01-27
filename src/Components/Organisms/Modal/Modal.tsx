@@ -12,7 +12,8 @@ const {
   primaryButton,
   modalContainerClasses,
   modalContentClasses,
-  modalH2Classes
+  modalH2Classes,
+  definitionTextClasses
 } = AppContentData.uiClasses;
 const { modalClose } = AppContentData.libraryContent;
 
@@ -32,7 +33,7 @@ export default function Modal({
         <Typography variant='h2' className={modalH2Classes}>{modalTitle}</Typography>
         <BlockElement className='mb-4'>
           <BlockElement variant='div' className='mb-4'>
-            <Typography variant='p' className='mb-2'>
+            <Typography variant='p' className={definitionTextClasses}>
               {Array.isArray(modalDefinition) ? modalDefinition.map((def: string, index: number) => (
                 <Typography variant='span' className='mr-1 last:mr-0' key={index}>{def}{index !== modalDefinition.length - 1 ? ',' : ''}</Typography>
               )) : modalDefinition}

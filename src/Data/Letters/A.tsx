@@ -37,7 +37,7 @@ export const dataLibA = [{
   definition: ['to buy', 'to purchase'],
   egSentenceKw: 'Nou achté sé chèz-la an lanmen an piti madanm.',
   egSentenceEn: 'We bought the chairs from a small woman.',
-  synonym: ['ganyen', 'ganyen'],
+  synonym: ['ganyen'],
   antonym: ['vann', 'vann'],
   etymology: '[< Fr. acheter]',
   dialect: '🇱🇨',
@@ -99,5 +99,5 @@ export const dataLibA = [{
   variant: [null],
 },
 // https://en.wikipedia.org/wiki/Saint_Lucian_Creole#English_Derived_Vocabulary
-  // entry ended at faktri
+  // entry ended at hèlsenta
 ];

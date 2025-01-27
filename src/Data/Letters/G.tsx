@@ -86,5 +86,16 @@ export const dataLibG = [{
   etymology: '[< Fr. gourde]',
   dialect: '🇱🇨',
   variant: null,
+}, {
+  word: 'gòg',
+  partOfSpeech: 'N',
+  definition: ['liquor', 'alcoholic beverage'],
+  egSentenceKw: 'Sé an kabawé sala papa mwen ka bwè gòg li.',
+  egSentenceEn: 'It is in this bar my father drinks his liquor.',
+  synonym: ['bwason', 'bwè'],
+  antonym: [null],
+  etymology: '[< Eng. grog]',
+  dialect: '🇱🇨',
+  variant: ['gwòg'],
 },
 ];

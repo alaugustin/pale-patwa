@@ -13,7 +13,10 @@ const globalPageContent = {
     'synonym',
     'antonym',
     'variant',
-  ]
+  ],
+  excludedWordsArr: [
+    'li.', 'mwen.', 'nèf.', 'lenpo', 'nwè.', 'nou.', 'sala?', 'dòla.', 'gason-an', 'nonm-lan'
+  ],
 };
 
 const uiHelperClasses = {
@@ -46,6 +49,7 @@ const uiClasses = {
   clearInputIconClasses: 'h-4 w-4 m-2 fill-gray-400',
   copyRightContainerClasses: `${footerColClasses} p-2 md:pb-7 order-last md:order-first`,
   copyRightIconClasses: 'mt-1 h-2 w-2',
+  definitionTextClasses: 'mb-2 border-b border-gray-1 pb-2',
   dictionarySearchClasses: `${flexItemsCenter} flex-row mb-8 border border-gray-200 rounded-full`,
   dictionarySearchInputClasses: 'p-2 px-4 w-64 rounded-full border-r-0',
   footerContainerClasses: 'pb-7 basis-14 border-t border-gray-200 flex flex-col md:flex-row justify-between md:flex-wrap',
