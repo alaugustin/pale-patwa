@@ -6,20 +6,23 @@ import { dataMonths } from '../../../Data/Calendar/Months';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { IHeaderProps } from './Header.d';
 
-const { date } = AppContentData.globalPageContent;
+const {
+  date,
+  daysOfTheWeekArr,
+  monthsOfTheYearArr
+} = AppContentData.globalPageContent;
+
 const {
   headerH1Classes,
   headerDateClasses
 } = AppContentData.uiClasses;
 
 const kweyolDays = Object.fromEntries(
-  ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
-    .map((day, index) => [day, dataDays[index].word])
+  daysOfTheWeekArr.map((day, index) => [day, dataDays[index].word])
 );
 
 const kweyolMonths = Object.fromEntries(
-  ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-    .map((month, index) => [month, dataMonths[index].word])
+  monthsOfTheYearArr.map((month, index) => [month, dataMonths[index].word])
 );
 
 export default function Header({
