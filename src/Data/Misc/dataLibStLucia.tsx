@@ -1,4 +1,4 @@
-export const stLucia = [{
+export const dataLibStLucia = [{
   word: 'Sent Lisi',
   partOfSpeech: 'N',
   definition: ['Saint Lucia'],
