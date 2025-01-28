@@ -36,6 +36,8 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
     definition
   } = props;
 
+  const definitionToArray = typeof definition === 'string' ? definition.split(',').map(item => item.trim()) : [];
+
   const elementHeadLHS = <>
     <RenderElementHead
       elementTitle={wodTitleH2}
@@ -51,28 +53,29 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
         )} />
   </>;
 
-  const elementHeadRHS = <>
-    <Typography
-      variant="h3"
-      className={wordOfTheDayH3Classes}
-    >{kweyoleWord}</Typography>
+  const elementHeadRHS =
+    <>
+      <Typography
+        variant="h3"
+        className={wordOfTheDayH3Classes}
+      >{kweyoleWord}</Typography>
 
-    <WordAttributes
-      wordEtymology={etymology ?? null}
-      wordPartOfSpeech={partOfSpeech ?? null}
-      wordDialect={dialect}
-      containerClasses='text-xs mb-2 md:text-right'
-    />
+      <WordAttributes
+        wordEtymology={etymology ?? null}
+        wordPartOfSpeech={partOfSpeech ?? null}
+        wordDialect={dialect}
+        containerClasses='text-xs mb-2 md:text-right'
+      />
 
-    <Typography
-      variant="p"
-      className={wordOfTheDayDefinitionClasses}
-    >{Array.isArray(definition) ? definition.map((def: string, index: number) => (
-        <Typography variant='span' className='mr-1 last:mr-0' key={index}>{def}{index !== definition.length - 1 ? ',' : ''}</Typography>
-      )) : definition}</Typography>
-  </>;
+      <Typography
+        variant="p"
+        className={wordOfTheDayDefinitionClasses}
+      >{Array.isArray(definitionToArray) ? definitionToArray.map((def: string, index: number) => (
+          <Typography variant='span' className='mr-1 lg:mr-2 last:mr-0' key={index}>{def}{index !== definitionToArray.length - 1 ? ',' : ''}</Typography>
+        )) : definitionToArray}</Typography>
+    </>;
 
-  const wodTwoColData = [ elementHeadLHS , elementHeadRHS ];
+  const wodTwoColData = [elementHeadLHS, elementHeadRHS];
 
   return (
     <BlockElement variant='section' className={wordOfTheDayContainerClasses}>

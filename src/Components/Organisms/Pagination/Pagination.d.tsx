@@ -20,4 +20,5 @@ export interface IPaginationProps {
   totalPages: number;
   prevOnClickFunc: () => void;
   nextOnClickFunc: () => void;
+  setCurrentPage: (page: number) => void;
 }

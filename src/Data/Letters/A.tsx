@@ -99,5 +99,5 @@ export const dataLibA = [{
   variant: [null],
 },
 // https://en.wikipedia.org/wiki/Saint_Lucian_Creole#English_Derived_Vocabulary
-  // entry ended at kòrèk
+  // entry ended at misték
 ];

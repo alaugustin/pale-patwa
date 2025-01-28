@@ -3,13 +3,14 @@ import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import Button from '../../UI/Form/Button/Button';
 import { Typography } from '../../UI/Typography/Typography';
+import { PaginationJumpButton } from './PaginationJumpButton/PaginationJumpButton';
 import { IPaginationProps } from './Pagination.d';
 
 const {
   paginationNumberContainer,
   paginationButtonDisabled,
   paginationBoardClasses,
-  paginationContainerClasses
+  paginationContainerClasses,
 } = AppContentData.uiClasses;
 
 const shouldShowButton = (
@@ -32,20 +33,42 @@ export const Pagination = ({
   currentPage,
   totalPages,
   prevOnClickFunc,
-  nextOnClickFunc
+  nextOnClickFunc,
+  setCurrentPage,
 }: IPaginationProps) => {
+
+  const handlePageChange = (newPage: number) => {
+    if (newPage >= 1 && newPage <= totalPages) {
+      setCurrentPage(newPage);
+    }
+  };
 
   return (
     <BlockElement id='pagination' className={paginationContainerClasses} variant='nav'>
+      <PaginationJumpButton
+        amount={-10}
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={handlePageChange}
+      />
+
+      <PaginationJumpButton
+        amount={-5}
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={handlePageChange}
+      />
+
       <Button
         buttonLabel={prevButtonLabel}
         onClickFunc={prevOnClickFunc}
         buttonDisabled={prevButtonDisabled}
         buttonClass={`${shouldShowButton(currentPage, 1, totalPages)} mr-3`}
       />
+
       <BlockElement variant='div' className={paginationBoardClasses}>
         <Typography variant='span' className={paginationNumberContainer}>{currentPage}</Typography>
-        <Typography variant='span' className='mx-2'>{'of'}</Typography>
+        <Typography variant='span' className='mx-2 md:mx-4'>{'of'}</Typography>
         <Typography variant='span' className={paginationNumberContainer}>{totalPages}</Typography>
       </BlockElement>
 
@@ -54,6 +77,20 @@ export const Pagination = ({
         onClickFunc={nextOnClickFunc}
         buttonDisabled={totalPages === 0 ? true : nextButtonDisabled}
         buttonClass={`${shouldShowButton(currentPage, totalPages, totalPages)} ml-3`}
+      />
+
+      <PaginationJumpButton
+        amount={5}
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={handlePageChange}
+      />
+
+      <PaginationJumpButton
+        amount={10}
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={handlePageChange}
       />
     </BlockElement>
   );

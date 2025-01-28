@@ -57,6 +57,7 @@ const uiClasses = {
   definitionTextClasses: `${borderBottom} mb-2 pb-2`,
   dictionarySearchClasses: `${flexItemsCenter} ${borderColor} flex-row mb-8 border rounded-full`,
   dictionarySearchInputClasses: 'p-2 px-4 w-64 rounded-full border-r-0',
+  flagHolderClasses: 'mr- sm:mr-1 lg:mr-3 last:mr-0 flex-wrap',
   footerContainerClasses: `${borderTop} pb-7 basis-14 flex flex-col md:flex-row justify-between md:flex-wrap`,
   footerFlagSectionClasses: `${footerColClasses} p-2 md:pb-7 md:mb-0 md:justify-end`,
   footerResourcesContinerClasses: 'p-2 md:pb-7 flex basis-full flex-col md:mb-0 md:px-4 md:basis-1/2',
@@ -73,7 +74,9 @@ const uiClasses = {
   paginationButton: 'hover:bg-gray-200 p-2',
   paginationButtonDisabled: 'cursor-not-allowed disabled:opacity-50',
   paginationContainerClasses: `${borderColor} mt-6 flex flex-row p-2 px-4 rounded-full border`,
+  paginationNextJumpClasses: 'ml-2 sm:ml-3 md:ml-4',
   paginationNumberContainer: `${flexItemsCenter} ${borderColor} h-6 w-6 border-2 rounded`,
+  paginationPrevJumpClasses: 'mr-2 sm:mr-3 md:mr-4',
   pdfIconClasses: 'h-3 w-3 fill-red-500',
   primaryButton: `${buttonHelperClasses} border-2 text-white py-2 px-5 rounded-full`,
   pronounciationContainerClasses: `${blockElementPadding} ${flexItemsCenter} mb-4 bg-blue-600 flex-col w-full order-first basis-full flex-auto text-slate-50`,
@@ -176,7 +179,7 @@ const pronounciationContent = {
 const footerContent = {
   resources: {
     titleH2: 'Resources',
-    flags: ['🇱🇨', '🇩🇲', '🇬🇩', '🇹🇹', '🇭🇹', '🇬🇫', '🇻🇪', '🇻🇪'],
+    flags: ['🇱🇨', '🇻🇨', '🇩🇲', '🇬🇩', '🇹🇹', '🇭🇹', '🇬🇫', '🇻🇪', '🇲🇶'],
     links: [
       {
         label: 'Kwéyòl Dictionary - Ministry of Education, Government of Saint Lucia',
