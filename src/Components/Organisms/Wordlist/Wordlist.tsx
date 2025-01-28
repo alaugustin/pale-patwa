@@ -20,7 +20,7 @@ const { bookIcon } = AppContentData.icons;
 
 export default function WordList({ data }: IWordlistProps) {
   return (
-    <BlockElement variant='section' className={wordListContainerClasses}>
+    <BlockElement variant='div' id='main-content' className={wordListContainerClasses}>
       <RenderElementHead
         elementTitle={libraryTitleH2}
         copyWrapperClassName={centeredBlurbCopyClasses}

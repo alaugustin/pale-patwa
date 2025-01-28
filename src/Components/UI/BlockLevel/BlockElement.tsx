@@ -5,8 +5,9 @@ export const BlockElement = ({
   variant,
   className,
   children,
-  id }: IBlockElementProps
-) => {
+  id,
+  role
+}: IBlockElementProps) => {
   const elements = {
     footer: 'footer',
     section: 'section',
@@ -23,5 +24,5 @@ export const BlockElement = ({
     elements[variant as keyof typeof elements] :
     'div';
 
-  return <Element id={id} className={className}>{children}</Element>;
+  return <Element id={id} className={className} role={role}>{children}</Element>;
 };

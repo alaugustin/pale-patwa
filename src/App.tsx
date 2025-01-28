@@ -6,20 +6,26 @@ import { Main } from './Components/Organisms/Main/Main';
 import Footer from './Components/Organisms/Footer/Footer';
 import { BlockElement } from './Components/UI/BlockLevel/BlockElement';
 import Button from './Components/UI/Form/Button/Button';
+import Link from './Components/UI/Link/Link';
 import { IWordListDataProps } from './Components/Organisms/Wordlist/Wordlist.d';
 import './styles.css';
 
 const {
   mainHeading,
   date,
-  backToTopLabel
+  backToTopLabel,
+  skipLinkLabel,
+  skipLinkHref,
+  backToTopAriaLabel
 } = AppContentData.globalPageContent;
+
 const {
   backToTopButton,
   appAllHolderClasses,
   headerContainerClasses,
   footerContainerClasses,
-  backToTopIconClasses
+  backToTopIconClasses,
+  skipLinkClasses
 } = AppContentData.uiClasses;
 const { flexItemsCenter } = AppContentData.uiHelperClasses;
 const { backToTopIcon } = AppContentData.icons;
@@ -112,7 +118,12 @@ export default function App() {
 
   return (
     <>
-      <BlockElement id='allHolder' className={appAllHolderClasses}>
+      <Link
+        linkHref={skipLinkHref}
+        linkClasses={skipLinkClasses}
+      >{skipLinkLabel}</Link>
+
+      <BlockElement id='allHolder' variant='main' role="main" className={appAllHolderClasses}>
         <Header headerContainerClass={headerContainerClasses} mainHeading={mainHeading} />
 
         <Main
@@ -140,6 +151,7 @@ export default function App() {
               {backToTopIcon(backToTopIconClasses)}
               <span>{backToTopLabel}</span>
             </>}
+            ariaLabel={backToTopAriaLabel}
             onClickFunc={scrollToTop}
           />
         )}

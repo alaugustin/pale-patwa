@@ -5,6 +5,7 @@ export default function Button({
   buttonLabel,
   buttonClass,
   buttonDisabled,
+  ariaLabel,
   onClickFunc
 }: IButtonProps) {
 
@@ -13,6 +14,7 @@ export default function Button({
       className={buttonClass}
       disabled={buttonDisabled}
       onClick={onClickFunc}
+      aria-label={ariaLabel}
     >{buttonLabel}</button>
   );
 }

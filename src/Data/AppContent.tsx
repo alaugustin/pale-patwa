@@ -4,6 +4,9 @@ const globalPageContent = {
   mainHeading: 'Palé Kwéyòl',
   date: new Date(),
   backToTopLabel: 'To Top',
+  backToTopAriaLabel: 'Scroll back to top',
+  skipLinkLabel: 'Skip to main content',
+  skipLinkHref: '#main-content',
   searchFields: [
     'word', 'definition', 'egSentenceKw', 'egSentenceEn', 'etymology', 'synonym', 'antonym', 'variant',
   ],
@@ -82,6 +85,7 @@ const uiClasses = {
   pronounciationContainerClasses: `${blockElementPadding} ${flexItemsCenter} mb-4 bg-blue-600 flex-col w-full order-first basis-full flex-auto text-slate-50`,
   pronounciationListClasses: 'grid grid-cols-4 md:grid-cols-8 gap-4 w-full',
   pronounciationListItemClasses: `${flexItemsCenter} flex-col text-xs`,
+  skipLinkClasses: 'sr-only focus:not-sr-only text-center flex justify-center items-center underline py-2 bg-blue-600 text-slate-50',
   twoColColumnClasses: 'even:basis-5/12 odd:basis-7/12 md:odd:pr-2 md:even:pl-2',
   twoColContainerClasses: 'max-w-screen-sm md:flex md:flex-row flex-col',
   wordAttributeBorder: 'pr-2 mr-2 border-r border-black',
