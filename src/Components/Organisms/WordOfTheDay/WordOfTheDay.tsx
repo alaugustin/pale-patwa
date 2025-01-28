@@ -51,7 +51,8 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
         )} />
   </>;
 
-  const elementHeadRHS = <>
+  const elementHeadRHS =
+  <>
     <Typography
       variant="h3"
       className={wordOfTheDayH3Classes}

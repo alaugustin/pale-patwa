@@ -145,6 +145,7 @@ export default function WordlistObjects({ data }: IWordSearchPaginationProps) {
         nextButtonDisabled={isLastPage}
         currentPage={currentPage}
         totalPages={totalPages}
+        setCurrentPage={handlePageChange}
       />
     </>
   );

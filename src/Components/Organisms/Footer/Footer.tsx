@@ -18,7 +18,8 @@ const {
   footerResourcesTitleClasses,
   footerFlagSectionClasses,
   footerResourcesLinkClasses,
-  copyRightIconClasses
+  copyRightIconClasses,
+  flagHolderClasses
 } = AppContentData.uiClasses;
 
 export default function Footer({
@@ -51,7 +52,10 @@ export default function Footer({
 
       <BlockElement className={footerFlagSectionClasses}>
         {flags.map((flag, index) => (
-          <Typography key={index} variant='span' className='mr-2 last:mr-0'>{flag}</Typography>
+          <Typography
+            key={index}
+            variant='span'
+            className={flagHolderClasses}>{flag}</Typography>
         ))}
       </BlockElement>
     </BlockElement>
