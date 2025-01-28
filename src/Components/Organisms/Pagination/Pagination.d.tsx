@@ -9,6 +9,7 @@
  * @property {number} totalPages - The total number of pages.
  * @property {() => void} prevOnClickFunc - The function to be called when the previous button is clicked.
  * @property {() => void} nextOnClickFunc - The function to be called when the next button is clicked.
+ * @property {(page: number) => void} setCurrentPage - A function to set the current page.
  */
 
 export interface IPaginationProps {
@@ -21,4 +22,18 @@ export interface IPaginationProps {
   prevOnClickFunc: () => void;
   nextOnClickFunc: () => void;
   setCurrentPage: (page: number) => void;
+}
+
+/**
+ * Defines the props for determining whether to show a button in the Pagination component.
+ *
+ * @property {number} currentPage - The current page number.
+ * @property {number} currentPageComparator - The page number to compare the current page against.
+ * @property {number} totalPages - The total number of pages.
+ */
+
+export interface IShouldShowButtonProps {
+  currentPage: number,
+  currentPageComparator: number,
+  totalPages: number,
 }

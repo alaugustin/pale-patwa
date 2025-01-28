@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography } from '../../../UI/Typography/Typography';
 import Link from '../../../UI/Link/Link';
-import {IResourceLinkProps} from './ResourcesLink.d';
+import { IResourceLinkProps, IResourceLinkDataProps } from './ResourcesLink.d';
 
 export default function ResourcesLink({
   linkData,
@@ -9,7 +9,10 @@ export default function ResourcesLink({
 }: IResourceLinkProps) {
 
   return (
-    linkData.map((link: { label: any; href: any; target: any; download: any; rel: any; type: any; }, index: React.Key | null | undefined) => {
+    linkData.map((
+      link: IResourceLinkDataProps,
+      index: React.Key | null | undefined
+    ) => {
       const { label, href, target, download, rel, type } = link;
 
       return (
@@ -18,7 +21,7 @@ export default function ResourcesLink({
             linkHref={href}
             linkTarget={target}
             linkClasses={linkClasses}
-            linkDownload={download}
+            linkDownload={download ? '' : undefined}
             linkRel={rel}
             linkType={type}
           >{label}</Link>
