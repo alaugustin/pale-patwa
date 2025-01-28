@@ -119,5 +119,16 @@ export const dataLibM = [{
   etymology: '[< Eng. mistake]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'mitin',
+  partOfSpeech: 'N',
+  definition: ['meeting'],
+  egSentenceKw: 'Nou ka tjenn mitin nou òswè-a.',
+  egSentenceEn: 'We are having our meeting tonight.',
+  synonym: [null],
+  antonym: [null],
+  etymology: '[< Eng. meeting]',
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];
