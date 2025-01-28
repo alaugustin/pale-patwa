@@ -22,6 +22,8 @@ export const ListItem = ({
     setIsPopupOpen(true);
   };
 
+  const wordDefinitionAriaLabel = `Word: ${word} | ${definition}`;
+
   return (
     <>
       <li className={listItemClass}>
@@ -29,23 +31,22 @@ export const ListItem = ({
           <Button
             buttonClass={listButtonClass}
             buttonLabel={word || ''}
+            ariaLabel={wordDefinitionAriaLabel}
             onClickFunc={handleClick}
           />
         ) : (
-          <Typography variant='span'>{word}</Typography>
+          <Typography variant='span' ariaLabel={wordDefinitionAriaLabel}>{word}</Typography>
         )}
 
         {isPopupOpen && (
-          <>
-            <Modal
-              modalTitle={word}
-              modalDefinition={definition}
-              modalSentenceKw={egSentenceKw}
-              modalSentenceEn={egSentenceEn}
-              modalVariant={variant}
-              clickHandler={() => setIsPopupOpen(false)}
-            />
-          </>
+          <Modal
+            modalTitle={word}
+            modalDefinition={definition}
+            modalSentenceKw={egSentenceKw}
+            modalSentenceEn={egSentenceEn}
+            modalVariant={variant}
+            clickHandler={() => setIsPopupOpen(false)}
+          />
         )}
       </li>
     </>

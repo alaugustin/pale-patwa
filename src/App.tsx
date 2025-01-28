@@ -10,6 +10,9 @@ import Link from './Components/UI/Link/Link';
 import { IWordListDataProps } from './Components/Organisms/Wordlist/Wordlist.d';
 import './styles.css';
 
+const { flexItemsCenter } = AppContentData.uiHelperClasses;
+const { backToTopIcon } = AppContentData.icons;
+
 const {
   mainHeading,
   date,
@@ -27,10 +30,8 @@ const {
   backToTopIconClasses,
   skipLinkClasses
 } = AppContentData.uiClasses;
-const { flexItemsCenter } = AppContentData.uiHelperClasses;
-const { backToTopIcon } = AppContentData.icons;
 
-document.title = mainHeading;
+document.title = `${mainHeading}  | Online Dictionary`;
 
 export default function App() {
   /**
