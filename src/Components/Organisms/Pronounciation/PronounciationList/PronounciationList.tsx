@@ -2,7 +2,7 @@ import React from 'react';
 import { Typography } from '../../../UI/Typography/Typography';
 import Link from '../../../UI/Link/Link';
 import { BlockElement } from '../../../UI/BlockLevel/BlockElement';
-import { IPronunciationListProps } from './PronounciationList.d';
+import { IPronunciationListProps, IPronunciationListDataItemProps } from './PronounciationList.d';
 
 export default function PronunciationList({
   dataArr,
@@ -11,7 +11,7 @@ export default function PronunciationList({
 }: IPronunciationListProps) {
   return (
     <ul className={listClasses}>
-      {dataArr.map((item: { letter: string; pronounciation: string; phoneme: string; link?: string; name?: string; }, index: number) => {
+      {dataArr.map((item: IPronunciationListDataItemProps, index: number) => {
         const {
           letter,
           pronounciation,

@@ -18,7 +18,7 @@ export const Main = ({
   } = wordOfTheDayData;
 
   return (
-    <BlockElement variant='main' className={mainContainerClass}>
+    <BlockElement variant='section' className={mainContainerClass}>
       <WordOfTheDay
         definition={definition}
         dialect={dialect}

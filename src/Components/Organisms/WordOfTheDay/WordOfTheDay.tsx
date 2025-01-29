@@ -7,18 +7,20 @@ import TwoCol from '../TwoCol/TwoCol';
 import RenderElementHead from '../RenderElementHead/RenderElementHead';
 import { IWordOfTheDayProps } from './WordOfTheDay.d';
 
+const { date } = AppContentData.globalPageContent;
+const { calendarIcon } = AppContentData.icons;
+
 const {
   wodTitleH2,
   wodContent,
 } = AppContentData.wordOfTheDayContent;
+
 const {
   wordOfTheDayContainerClasses,
   wordOfTheDayH3Classes,
   wordOfTheDayDefinitionClasses,
   calendarIconClasses
 } = AppContentData.uiClasses;
-const { date } = AppContentData.globalPageContent;
-const { calendarIcon } = AppContentData.icons;
 
 export default function WordOfTheDay(props: IWordOfTheDayProps) {
   const [currentDayOfMonth, setCurrentDayOfMonth] = useState('');
