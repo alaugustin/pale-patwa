@@ -6,6 +6,8 @@ import { Pagination } from '../../Pagination/Pagination';
 import { DictionarySearch } from '../../DictionarySearch/DictionarySearch';
 import { Typography } from '../../../UI/Typography/Typography';
 import { IWordSearchPaginationProps } from './WordSearchPagination.d';
+import { BlockElement } from '../../../UI/BlockLevel/BlockElement';
+import Button from '../../../UI/Form/Button/Button';
 
 const {
   wordlistFilterPlaceholder,
@@ -113,8 +115,23 @@ export default function WordlistObjects({ data }: IWordSearchPaginationProps) {
     trackMouse: true
   });
 
+  const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  const alphabetFilterClasses = 'mr-2 last:mr-0 w-5 h-5 rounded-full bg-gray-300 flex items-center justify-center text-sm font-bold';
+
+
   return (
     <>
+      <BlockElement id='alphabet-filter' className='flex flex-wrap flex-row mb-4'>
+        {alphabet.map(letter => (
+          <Button
+            key={letter}
+            buttonClass={alphabetFilterClasses}
+            buttonLabel={letter}
+            onClickFunc={() => console.log(letter)}
+          />
+        ))}
+      </BlockElement>
+
       <DictionarySearch
         placeholderLabel={wordlistFilterPlaceholder}
         searchValue={searchTerm}

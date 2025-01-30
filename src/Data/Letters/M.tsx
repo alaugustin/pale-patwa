@@ -130,5 +130,16 @@ export const dataLibM = [{
   etymology: '[< Eng. meeting]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'motoka',
+  partOfSpeech: 'N',
+  definition: ['automobile', 'car'],
+  egSentenceKw: 'I genyen on motoka nèf.',
+  egSentenceEn: 'He bought a new car.',
+  synonym: [null],
+  antonym: [null],
+  etymology: '[< Eng. motor car]',
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];
