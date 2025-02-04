@@ -10,6 +10,10 @@ import Button from '../../../UI/Form/Button/Button';
 import AlphaFilter from '../AlphaFilter/AlphaFilter';
 import { IWordSearchPaginationProps } from './WordSearchPagination.d';
 
+const { alphabet } = AppContentData.libraryContent.filter;
+const { wordListListClasses, alphabetFilterClasses } = AppContentData.uiClasses;
+const { searchFields } = AppContentData.globalPageContent;
+
 const {
   wordlistFilterPlaceholder,
   prevButtonLabel,
