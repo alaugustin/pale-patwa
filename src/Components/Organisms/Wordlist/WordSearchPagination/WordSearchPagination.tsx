@@ -10,16 +10,16 @@ import Button from '../../../UI/Form/Button/Button';
 import AlphaFilter from '../AlphaFilter/AlphaFilter';
 import { IWordSearchPaginationProps } from './WordSearchPagination.d';
 
+const { alphabet } = AppContentData.libraryContent.filter;
+const { wordListListClasses, alphabetFilterClasses } = AppContentData.uiClasses;
+const { searchFields } = AppContentData.globalPageContent;
+
 const {
   wordlistFilterPlaceholder,
   prevButtonLabel,
   nextButtonLabel,
   paginationItemsPerHeight
 } = AppContentData.libraryContent;
-
-const { alphabet } = AppContentData.libraryContent.filter;
-const { wordListListClasses, alphabetFilterClasses } = AppContentData.uiClasses;
-const { searchFields } = AppContentData.globalPageContent;
 
 const {
   normalizeText,
@@ -67,17 +67,21 @@ export default function WordlistObjects({ data }: IWordSearchPaginationProps) {
 
   const handleSearch = (value: string) => {
     setSearchTerm(value);
-    setActiveLetterFilter('');
   };
 
   const filteredData = data.filter(item => {
-    if (activeLetterFilter) {
-      return normalizeString(String(item.word)).toLowerCase().startsWith(normalizeString(activeLetterFilter.toLowerCase()));
-    }
+    const matchesAlphaFilter = !activeLetterFilter ||
+      normalizeString(String(item.word)).toLowerCase().startsWith(normalizeString(activeLetterFilter.toLowerCase()));
 
-    return searchFields.some(field =>
-      normalizeString(String(item[field as keyof typeof item]).toLowerCase()).includes(normalizeString(searchTerm.toLowerCase()))
+    const matchesSearch = !searchTerm || (
+      activeLetterFilter
+        ? normalizeString(String(item.word)).toLowerCase().includes(normalizeString(searchTerm.toLowerCase()))
+        : searchFields.some(field =>
+          normalizeString(String(item[field as keyof typeof item]).toLowerCase()).includes(normalizeString(searchTerm.toLowerCase()))
+        )
     );
+
+    return matchesAlphaFilter && matchesSearch;
   });
 
   const indexOfLastItem = currentPage * PAGINATION_ITEMS_PER_PAGE;
@@ -141,7 +145,9 @@ export default function WordlistObjects({ data }: IWordSearchPaginationProps) {
         ))}
       </BlockElement>
 
-      {/* <AlphaFilter alphabetCollection={alphabet} /> */}
+      {/* <AlphaFilter
+        alphabetCollection={alphabet}
+      /> */}
 
       <DictionarySearch
         placeholderLabel={wordlistFilterPlaceholder}

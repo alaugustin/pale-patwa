@@ -176,9 +176,10 @@ const libraryContent = {
     'Find words, definitions, example sentences, and etymology in both Kwéyòl and English.'
   ],
   filter: {
-    alphabet: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    alphabet: 'ABCDEFGHIJKLMNOPRSTVWYZ'
   }
 };
+
 const pronounciationContent = {
   pronounciationTitleH2: 'IPA Pronunciation',
 };

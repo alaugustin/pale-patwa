@@ -16,7 +16,6 @@ export default function AlphaFilter({ alphabetCollection }: IAlphaFilterProps) {
             key={index}
             buttonClass={alphabetFilterClasses}
             buttonLabel={letter}
-            onClickFunc={() => console.log(letter)}
           />
         ))}
       </BlockElement>
