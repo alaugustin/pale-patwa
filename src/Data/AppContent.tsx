@@ -1,4 +1,5 @@
 import React from 'react';
+import { Pronounciation } from './Misc/PronounciationData';
 
 const globalPageContent = {
   mainHeading: 'Palé Kwéyòl',
@@ -185,6 +186,7 @@ const libraryContent = {
 
 const pronounciationContent = {
   pronounciationTitleH2: 'IPA Pronunciation',
+  phoneme: Pronounciation
 };
 
 const footerContent = {
