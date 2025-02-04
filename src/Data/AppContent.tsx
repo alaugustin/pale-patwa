@@ -48,6 +48,7 @@ const {
 } = uiHelperClasses;
 
 const uiClasses = {
+  alphabetFilterClasses: 'mr-2 last:mr-0 w-5 h-5 rounded-full bg-gray-300 flex items-center justify-center text-sm font-bold',
   appAllHolderClasses: 'flex flex-col h-screen max-w-6xl mx-auto text-slate-900',
   backToTopButton: `${flexItemsCenter} ${borderColor} fixed bottom-8 right-8 rounded-full shadow-lg flex-row gap-x-2 p-4 bg-gray-100 hover:bg-gray-200 border-2 text-${backToTopTextColor}`,
   backToTopIconClasses: `h-5 w-5 fill-${backToTopTextColor}`,
@@ -173,7 +174,10 @@ const libraryContent = {
   wordListContent: [
     'Search through our comprehensive Kwéyòl dictionary with real-time filtering.',
     'Find words, definitions, example sentences, and etymology in both Kwéyòl and English.'
-  ]
+  ],
+  filter: {
+    alphabet: 'ABCDEFGHIJKLMNOPRSTVWYZ'
+  }
 };
 
 const pronounciationContent = {
