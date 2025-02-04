@@ -1,10 +1,11 @@
 import React from 'react';
 import { AppContentData } from '../../../Data/AppContent';
-import { Pronounciation } from '../../../Data/Misc/PronounciationData';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Typography } from '../../UI/Typography/Typography';
 import PronunciationList from './PronounciationList/PronounciationList';
 import { IPronunciationsProps } from './Pronounciation.d';
+
+const { phoneme } = AppContentData.pronounciationContent;
 
 const {
   pronounciationListItemClasses,
@@ -20,7 +21,7 @@ export default function Pronunciations({
       <Typography variant='h2' className='text-3xl mb-6'>{titleH2}</Typography>
 
       <PronunciationList
-        dataArr={Pronounciation}
+        dataArr={phoneme}
         listClasses={pronounciationListClasses}
         listItemClasses={pronounciationListItemClasses}
       />

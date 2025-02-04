@@ -1,4 +1,5 @@
 import React from 'react';
+import { Pronounciation } from './Misc/PronounciationData';
 
 const globalPageContent = {
   mainHeading: 'Palé Kwéyòl',
@@ -22,6 +23,7 @@ const globalPageContent = {
 };
 
 const uiHelperClasses = {
+  alphaFilterHelperClasses: 'w-5 h-5 flex items-center justify-center text-sm font-bold m-2 md:m-3 lg:m-2',
   backToTopTextColor: 'slate-900',
   blockElementPadding: 'pt-6 p-2 pb-7',
   borderBottom: 'border-gray-200 border-b',
@@ -44,11 +46,14 @@ const {
   backToTopTextColor,
   borderColor,
   borderBottom,
-  borderTop
+  borderTop,
+  alphaFilterHelperClasses
 } = uiHelperClasses;
 
 const uiClasses = {
-  alphabetFilterClasses: 'mr-2 last:mr-0 w-5 h-5 rounded-full bg-gray-300 flex items-center justify-center text-sm font-bold',
+  alphabetFilterClasses: `${alphaFilterHelperClasses} rounded-full bg-gray-300 `,
+  alphabetFilterHolderClasses: 'flex flex-row flex-wrap mb-4 justify-center items-center',
+  alphabetFilterClassesAllButton: `${alphaFilterHelperClasses} underline`,
   appAllHolderClasses: 'flex flex-col h-screen max-w-6xl mx-auto text-slate-900',
   backToTopButton: `${flexItemsCenter} ${borderColor} fixed bottom-8 right-8 rounded-full shadow-lg flex-row gap-x-2 p-4 bg-gray-100 hover:bg-gray-200 border-2 text-${backToTopTextColor}`,
   backToTopIconClasses: `h-5 w-5 fill-${backToTopTextColor}`,
@@ -176,12 +181,13 @@ const libraryContent = {
     'Find words, definitions, example sentences, and etymology in both Kwéyòl and English.'
   ],
   filter: {
-    alphabet: 'ABCDEFGHIJKLMNOPRSTVWYZ'
+    alphabet: '-ABCDEFGHIJKLMNOPRSTVWYZ'
   }
 };
 
 const pronounciationContent = {
   pronounciationTitleH2: 'IPA Pronunciation',
+  phoneme: Pronounciation
 };
 
 const footerContent = {
