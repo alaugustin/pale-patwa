@@ -20,5 +20,16 @@ export const dataLibI = [{
   etymology: '[< Eng. elect]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'inyowans',
+  partOfSpeech: 'N',
+  definition: ['ignorance'],
+  egSentenceKw: 'Kité yo wété adan inyowans yo.',
+  egSentenceEn: 'Let them remain in their ignorance.',
+  synonym: ['boutèy nwè'],
+  antonym: ['lakopwan', 'nnòlaj'],
+  etymology: '[< Fr. ignorance]',
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];

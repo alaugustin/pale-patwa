@@ -5,7 +5,14 @@ import { AppContentData } from '../../../../Data/AppContent';
 import { Pagination } from '../../Pagination/Pagination';
 import { DictionarySearch } from '../../DictionarySearch/DictionarySearch';
 import { Typography } from '../../../UI/Typography/Typography';
+import { BlockElement } from '../../../UI/BlockLevel/BlockElement';
+import Button from '../../../UI/Form/Button/Button';
+import AlphaFilter from '../AlphaFilter/AlphaFilter';
 import { IWordSearchPaginationProps } from './WordSearchPagination.d';
+
+const { alphabet } = AppContentData.libraryContent.filter;
+const { wordListListClasses, alphabetFilterClasses } = AppContentData.uiClasses;
+const { searchFields } = AppContentData.globalPageContent;
 
 const {
   wordlistFilterPlaceholder,
@@ -13,9 +20,6 @@ const {
   nextButtonLabel,
   paginationItemsPerHeight
 } = AppContentData.libraryContent;
-
-const { wordListListClasses } = AppContentData.uiClasses;
-const { searchFields } = AppContentData.globalPageContent;
 
 const {
   normalizeText,
@@ -55,18 +59,30 @@ export default function WordlistObjects({ data }: IWordSearchPaginationProps) {
     setCurrentPage(pageNumber);
   };
 
+  const [activeLetterFilter, setActiveLetterFilter] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
   useEffect(() => {
     setCurrentPage(1);
   }, [searchTerm]);
 
-  const handleSearch = (value: string) => setSearchTerm(value);
+  const handleSearch = (value: string) => {
+    setSearchTerm(value);
+  };
 
-  const filteredData = data.filter(item =>
-    searchFields.some(field =>
-      normalizeString(String(item[field as keyof typeof item]).toLowerCase()).includes(normalizeString(searchTerm.toLowerCase()))
-    )
-  );
+  const filteredData = data.filter(item => {
+    const matchesAlphaFilter = !activeLetterFilter ||
+      normalizeString(String(item.word)).toLowerCase().startsWith(normalizeString(activeLetterFilter.toLowerCase()));
+
+    const matchesSearch = !searchTerm || (
+      activeLetterFilter
+        ? normalizeString(String(item.word)).toLowerCase().includes(normalizeString(searchTerm.toLowerCase()))
+        : searchFields.some(field =>
+          normalizeString(String(item[field as keyof typeof item]).toLowerCase()).includes(normalizeString(searchTerm.toLowerCase()))
+        )
+    );
+
+    return matchesAlphaFilter && matchesSearch;
+  });
 
   const indexOfLastItem = currentPage * PAGINATION_ITEMS_PER_PAGE;
   const indexOfFirstItem = indexOfLastItem - PAGINATION_ITEMS_PER_PAGE;
@@ -115,6 +131,24 @@ export default function WordlistObjects({ data }: IWordSearchPaginationProps) {
 
   return (
     <>
+      <BlockElement id='alphabet-filter' className='flex flex-wrap flex-row mb-4'>
+        {alphabet.split('').map(letter => (
+          <Button
+            key={letter}
+            buttonClass={alphabetFilterClasses}
+            buttonLabel={letter}
+            onClickFunc={() => {
+              setActiveLetterFilter(letter);
+              setSearchTerm('');
+            }}
+          />
+        ))}
+      </BlockElement>
+
+      {/* <AlphaFilter
+        alphabetCollection={alphabet}
+      /> */}
+
       <DictionarySearch
         placeholderLabel={wordlistFilterPlaceholder}
         searchValue={searchTerm}
