@@ -15,7 +15,8 @@ const { searchFields } = AppContentData.globalPageContent;
 const {
   wordListListClasses,
   alphabetFilterClasses,
-  alphabetFilterClassesAllButton
+  alphabetFilterClassesAllButton,
+  alphabetFilterHolderClasses
 } = AppContentData.uiClasses;
 
 const {
@@ -135,20 +136,12 @@ export default function WordlistObjects({ data }: IWordSearchPaginationProps) {
 
   return (
     <>
-      <BlockElement id='alphabet-filter' className='flex flex-wrap flex-row mb-4'>
+      <BlockElement id='alphabet-filter' className={alphabetFilterHolderClasses}>
         <Button
           buttonClass={alphabetFilterClassesAllButton}
           buttonLabel="All"
           onClickFunc={() => {
             setActiveLetterFilter('');
-            setSearchTerm('');
-          }}
-        />
-        <Button
-          buttonClass={alphabetFilterClasses}
-          buttonLabel={'-'}
-          onClickFunc={() => {
-            setActiveLetterFilter('-');
             setSearchTerm('');
           }}
         />
