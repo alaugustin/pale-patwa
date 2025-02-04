@@ -7,7 +7,6 @@ import { DictionarySearch } from '../../DictionarySearch/DictionarySearch';
 import { Typography } from '../../../UI/Typography/Typography';
 import { BlockElement } from '../../../UI/BlockLevel/BlockElement';
 import Button from '../../../UI/Form/Button/Button';
-import AlphaFilter from '../AlphaFilter/AlphaFilter';
 import { IWordSearchPaginationProps } from './WordSearchPagination.d';
 
 const { alphabet } = AppContentData.libraryContent.filter;
@@ -132,6 +131,15 @@ export default function WordlistObjects({ data }: IWordSearchPaginationProps) {
   return (
     <>
       <BlockElement id='alphabet-filter' className='flex flex-wrap flex-row mb-4'>
+        <Button
+          key="all"
+          buttonClass={'mr-2 last:mr-0 w-5 h-5 flex items-center justify-center text-sm font-bold underline'}
+          buttonLabel="All"
+          onClickFunc={() => {
+            setActiveLetterFilter('');
+            setSearchTerm('');
+          }}
+        />
         {alphabet.split('').map(letter => (
           <Button
             key={letter}
@@ -144,10 +152,6 @@ export default function WordlistObjects({ data }: IWordSearchPaginationProps) {
           />
         ))}
       </BlockElement>
-
-      {/* <AlphaFilter
-        alphabetCollection={alphabet}
-      /> */}
 
       <DictionarySearch
         placeholderLabel={wordlistFilterPlaceholder}
