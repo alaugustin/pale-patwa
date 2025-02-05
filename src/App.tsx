@@ -28,7 +28,8 @@ const {
   headerContainerClasses,
   footerContainerClasses,
   backToTopIconClasses,
-  skipLinkClasses
+  skipLinkClasses,
+  mainContainerClasses
 } = AppContentData.uiClasses;
 
 document.title = `${mainHeading}  | Online Dictionary`;
@@ -128,7 +129,7 @@ export default function App() {
         <Header headerContainerClass={headerContainerClasses} mainHeading={mainHeading} />
 
         <Main
-          mainContainerClass={`${flexItemsCenter} flex-1 flex-col`}
+          mainContainerClass={mainContainerClasses}
           wordOfTheDayData={{
             word: currentWord?.word || '',
             dialect: currentWord?.dialect || '',
