@@ -50,14 +50,20 @@ export default function Header({
     'pwèmyé' :
     currentDayOfMonth} ${currentMonth}, ${currentYear}`;
 
+  const headerContent = [
+    { variant: 'h1', className: headerH1Classes, content: mainHeading },
+    { variant: 'span', className: headerDateClasses, content: headerDate }
+  ];
+
   return (
     <BlockElement variant='header' className={headerContainerClass}>
-      <Typography
-        variant="h1"
-        className={headerH1Classes}
-      >{mainHeading}</Typography>
-
-      <Typography variant='span' className={headerDateClasses}>{headerDate}</Typography>
+      {headerContent.map(({ variant, className, content }) => (
+        <Typography
+          key={content}
+          variant={variant as 'h1' | 'span' }
+          className={className}
+        >{content}</Typography>
+      ))}
     </BlockElement>
   );
 }

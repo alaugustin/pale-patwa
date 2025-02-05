@@ -27,7 +27,11 @@ const shouldShowButton = (
 
 export const Pagination = ({
   prevButtonLabel,
+  prev5ButtonLabel,
+  prev10ButtonLabel,
   nextButtonLabel,
+  next5ButtonLabel,
+  next10ButtonLabel,
   prevButtonDisabled,
   nextButtonDisabled,
   currentPage,
@@ -36,28 +40,36 @@ export const Pagination = ({
   nextOnClickFunc,
   setCurrentPage,
 }: IPaginationProps) => {
-
   const handlePageChange = (newPage: number) => {
     if (newPage >= 1 && newPage <= totalPages) {
       setCurrentPage(newPage);
     }
   };
 
+  const jumpButtons = {
+    prevButtons: [
+      { amount: prev10ButtonLabel },
+      { amount: prev5ButtonLabel }
+    ],
+    nextButtons: [
+      { amount: next5ButtonLabel },
+      { amount: next10ButtonLabel }
+    ]
+  };
+
+  const { prevButtons, nextButtons } = jumpButtons;
+
   return (
     <BlockElement id='pagination' className={paginationContainerClasses} variant='nav'>
-      <PaginationJumpButton
-        amount={-10}
-        currentPage={currentPage}
-        totalPages={totalPages}
-        onPageChange={handlePageChange}
-      />
-
-      <PaginationJumpButton
-        amount={-5}
-        currentPage={currentPage}
-        totalPages={totalPages}
-        onPageChange={handlePageChange}
-      />
+      {prevButtons.map((button) => (
+        <PaginationJumpButton
+          key={button.amount}
+          amount={button.amount}
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={handlePageChange}
+        />
+      ))}
 
       <Button
         buttonLabel={prevButtonLabel}
@@ -79,19 +91,15 @@ export const Pagination = ({
         buttonClass={`${shouldShowButton(currentPage, totalPages, totalPages)} ml-3`}
       />
 
-      <PaginationJumpButton
-        amount={5}
-        currentPage={currentPage}
-        totalPages={totalPages}
-        onPageChange={handlePageChange}
-      />
-
-      <PaginationJumpButton
-        amount={10}
-        currentPage={currentPage}
-        totalPages={totalPages}
-        onPageChange={handlePageChange}
-      />
+      {nextButtons.map((button) => (
+        <PaginationJumpButton
+          key={button.amount}
+          amount={button.amount}
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={handlePageChange}
+        />
+      ))}
     </BlockElement>
   );
 };

@@ -19,19 +19,25 @@ export default function PronunciationList({
           link
         } = item;
 
+        const typographyItems = [
+          { content: letter },
+          { content: pronounciation },
+          { content: phoneme }
+        ];
+
         return (
           <li key={index}>
             {link ? (
               <Link linkHref={link} linkTarget='_blank' linkClasses={listItemClasses} >
-                <Typography variant='span'>{letter}</Typography>
-                <Typography variant='span'>{pronounciation}</Typography>
-                <Typography variant='span'>{phoneme}</Typography>
+                {typographyItems.map(({ content }) => (
+                  <Typography key={content} variant='span'>{content}</Typography>
+                ))}
               </Link>
             ) : (
               <BlockElement variant='div' className={listItemClasses}>
-                <Typography variant='span'>{letter}</Typography>
-                <Typography variant='span'>{pronounciation}</Typography>
-                <Typography variant='span'>{phoneme}</Typography>
+                {typographyItems.map(({ content }) => (
+                  <Typography key={content} variant='span'>{content}</Typography>
+                ))}
               </BlockElement>
             )}
           </li>

@@ -12,13 +12,18 @@ const globalPageContent = {
     primary: {
       blue: 'blue-600',
       amber: 'amber-500',
-      slate: 'slate-800'
+      slate: 'slate-800',
+      red: 'red-500',
+      purple: 'purple-700'
     },
     supporting: {
       blueLight: 'blue-100',
       slateLight: 'slate-50',
       slateMedium: 'slate-600',
-      blueDark: 'blue-700'
+      blueDark: 'blue-700',
+      gray: 'gray-200',
+      grayDark: 'gray-300',
+      grayMedium: 'gray-400'
     }
   },
   searchFields: [
@@ -35,8 +40,8 @@ const globalPageContent = {
   ]
 };
 
-const {blue, amber, slate} = globalPageContent.colorScheme.primary;
-const {blueLight, slateLight, slateMedium} = globalPageContent.colorScheme.supporting;
+const { blue, amber, slate } = globalPageContent.colorScheme.primary;
+const { blueLight, slateLight, slateMedium } = globalPageContent.colorScheme.supporting;
 
 const uiHelperClasses = {
   alphaFilterHelperClasses: 'w-5 h-5 text-sm font-bold m-2 md:m-3 lg:m-2',
@@ -80,7 +85,7 @@ const uiClasses = {
   centeredBlurbCopyClasses: 'mb-6 max-w-screen-sm text-center',
   clearInputIconClasses: 'h-4 w-4 m-2 fill-gray-400',
   copyRightContainerClasses: `${footerColClasses} p-2 md:pb-7 order-last md:order-first`,
-  copyRightIconClasses: `mt-1 h-2 w-2 fill-${slateLight}`,
+  copyRightIconClasses: `h-3 w-3 fill-${slateLight}`,
   definitionTextClasses: `${borderBottom} mb-2 pb-2`,
   dictionarySearchClasses: `${flexItemsCenter} ${borderColor} flex-row mb-8 border rounded-full`,
   dictionarySearchInputClasses: 'p-2 px-4 w-64 rounded-full border-r-0',
@@ -186,8 +191,14 @@ const libraryContent = {
   libraryTitleH2: 'Library',
   wordlistFilterPlaceholder: 'Search words…',
   modalClose: 'Close',
-  prevButtonLabel: 'Previous',
-  nextButtonLabel: 'Next',
+  pagination: {
+    prevButtonLabel: 'Previous',
+    nextButtonLabel: 'Next',
+    back5Label: -5,
+    back10Label: -10,
+    fwd5Label: 5,
+    fwd10Label: 10
+  },
   paginationItemsPerHeight: {
     0: 8,     // default
     667: 15,
