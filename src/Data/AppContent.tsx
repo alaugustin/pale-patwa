@@ -8,6 +8,19 @@ const globalPageContent = {
   backToTopAriaLabel: 'Scroll back to top',
   skipLinkLabel: 'Skip to main content',
   skipLinkHref: '#main-content',
+  colorScheme: {
+    primary: {
+      blue: 'blue-600',
+      amber: 'amber-500',
+      slate: 'slate-800'
+    },
+    supporting: {
+      blueLight: 'blue-100',
+      slateLight: 'slate-50',
+      slateMedium: 'slate-600',
+      blueDark: 'blue-700'
+    }
+  },
   searchFields: [
     'word', 'definition', 'egSentenceKw', 'egSentenceEn', 'etymology', 'synonym', 'antonym', 'variant',
   ],
@@ -22,9 +35,12 @@ const globalPageContent = {
   ]
 };
 
+const {blue, amber, slate} = globalPageContent.colorScheme.primary;
+const {blueLight, slateLight, slateMedium} = globalPageContent.colorScheme.supporting;
+
 const uiHelperClasses = {
   alphaFilterHelperClasses: 'w-5 h-5 text-sm font-bold m-2 md:m-3 lg:m-2',
-  backToTopTextColor: 'slate-900',
+  backToTopTextColor: slateLight,
   blockElementPadding: 'pt-6 p-2 pb-7',
   borderBottom: 'border-gray-200 border-b',
   borderColor: 'border-gray-200',
@@ -34,7 +50,7 @@ const uiHelperClasses = {
   flexItemsCenter: 'flex items-center justify-center',
   footerColClasses: 'flex basis-full md:basis-1/4 flex-row text-xs',
   headerIconClasses: 'w-6 h-6 mr-2 mt-1',
-  linkClasses: 'text-blue-900 text-xs hover:underline text-sky-500 hover:text-blue-500 visited:text-purple-700 cursor-pointer',
+  linkClasses: `text-${slateMedium} hover:text-${blue} visited:text-amber-700 text-xs hover:underline cursor-pointer`,
 };
 
 const {
@@ -56,29 +72,29 @@ const uiClasses = {
   alphabetFilterClasses: `${alphaFilterHelperClasses} rounded-full bg-gray-300 `,
   alphabetFilterClassesAllButton: `${alphaFilterHelperClasses} underline`,
   alphabetFilterHolderClasses: `${flexItemsCenter} flex-row flex-wrap mb-4`,
-  appAllHolderClasses: `${flexCol} h-screen max-w-6xl mx-auto text-slate-900`,
-  backToTopButton: `${flexItemsCenter} ${borderColor} fixed bottom-8 right-8 rounded-full shadow-lg flex-row gap-x-2 p-4 bg-gray-100 hover:bg-gray-200 border-2 text-${backToTopTextColor}`,
+  appAllHolderClasses: `${flexCol} h-screen max-w-6xl mx-auto text-${slate}`,
+  backToTopButton: `${flexItemsCenter} ${borderColor} fixed bottom-8 right-8 rounded-full shadow-lg flex-row gap-x-2 p-4 bg-${amber} hover:bg-amber-600 border-2 text-${backToTopTextColor}`,
   backToTopIconClasses: `h-5 w-5 fill-${backToTopTextColor}`,
   bookIconClasses: `${headerIconClasses} mt-2`,
   calendarIconClasses: headerIconClasses,
   centeredBlurbCopyClasses: 'mb-6 max-w-screen-sm text-center',
   clearInputIconClasses: 'h-4 w-4 m-2 fill-gray-400',
   copyRightContainerClasses: `${footerColClasses} p-2 md:pb-7 order-last md:order-first`,
-  copyRightIconClasses: 'mt-1 h-2 w-2 fill-slate-50',
+  copyRightIconClasses: `mt-1 h-2 w-2 fill-${slateLight}`,
   definitionTextClasses: `${borderBottom} mb-2 pb-2`,
   dictionarySearchClasses: `${flexItemsCenter} ${borderColor} flex-row mb-8 border rounded-full`,
   dictionarySearchInputClasses: 'p-2 px-4 w-64 rounded-full border-r-0',
   flagHolderClasses: 'mr- sm:mr-1 lg:mr-3 last:mr-0 flex-wrap',
-  footerContainerClasses: `${borderTop} ${flexCol} pb-7 basis-14 md:flex-row justify-between md:flex-wrap bg-slate-800 text-slate-50`,
+  footerContainerClasses: `${borderTop} ${flexCol} pb-7 basis-14 md:flex-row justify-between md:flex-wrap bg-${slate} text-${slateLight}`,
   footerFlagSectionClasses: `${footerColClasses} p-2 md:pb-7 md:mb-0 md:justify-end`,
   footerResourcesContinerClasses: `${flexCol} p-2 md:pb-7 basis-full md:mb-0 md:px-4 md:basis-1/2`,
   footerResourcesLinkClasses: linkClasses,
   footerResourcesTitleClasses: 'font-bold text-sm mb-1',
-  headerContainerClasses: `${flexItemsCenter} ${borderBottom} py-3 p-2 basis-14 justify-between bg-blue-600 text-slate-50`,
+  headerContainerClasses: `${flexItemsCenter} ${borderBottom} py-3 p-2 basis-14 justify-between bg-${blue} text-${slateLight}`,
   headerDateClasses: 'ml-2 text-xs md:text-sm lg:text-lg',
   headerH1Classes: 'text-2xl sm:text-2xl md:text-3xl lg:text-4xl mr-2',
   listButtonClass: `${borderColor} bg-gray-100 hover:bg-gray-200 border-2 p-3 px-6 rounded-full`,
-  mainContainerClasses: `${flexItemsCenter} flex-1 flex-col bg-slate-50 text-slate-800`,
+  mainContainerClasses: `${flexItemsCenter} flex-1 flex-col bg-${slateLight} text-${slate}`,
   modalContainerClasses: `${flexItemsCenter} fixed inset-0 bg-black bg-opacity-50 z-50`,
   modalContentClasses: 'bg-white p-6 rounded-lg shadow-xl mx-4 w-full sm:max-w-md sm:min-w-96',
   modalH2Classes: 'text-2xl font-bold mb-2 font-serif',
@@ -91,16 +107,16 @@ const uiClasses = {
   paginationPrevJumpClasses: 'mr-2 sm:mr-3 md:mr-4',
   pdfIconClasses: 'h-3 w-3 fill-red-500',
   primaryButton: `${buttonHelperClasses} border-2 text-white py-2 px-5 rounded-full`,
-  pronounciationContainerClasses: `${blockElementPadding} ${flexItemsCenter} mb-4 flex-col w-full order-first basis-full flex-auto bg-slate-50 text-slate-800`,
+  pronounciationContainerClasses: `${blockElementPadding} ${flexItemsCenter} mb-4 flex-col w-full order-first basis-full flex-auto bg-${blueLight} text-${slate}`,
   pronounciationListClasses: 'grid grid-cols-4 md:grid-cols-8 gap-4 w-full',
   pronounciationListItemClasses: `${flexItemsCenter} flex-col text-xs`,
-  skipLinkClasses: `${flexItemsCenter} sr-only focus:not-sr-only text-center underline py-2 bg-amber-500 text-slate-50`,
+  skipLinkClasses: `${flexItemsCenter} sr-only focus:not-sr-only text-center underline py-2 bg-${amber} text-${slateLight}`,
   twoColColumnClasses: 'even:basis-5/12 odd:basis-7/12 md:odd:pr-2 md:even:pl-2',
   twoColContainerClasses: 'max-w-screen-sm md:flex md:flex-row flex-col',
   wordAttributeBorder: 'pr-2 mr-2 border-r border-black',
   wordListContainerClasses: `${flexItemsCenter} ${blockElementPadding} ${borderTop} flex-col flex-1 w-full`,
   wordListListClasses: `${flexItemsCenter} ${blockElementPadding} text-xl max-w-screen-sm flex-wrap gap-4`,
-  wordOfTheDayContainerClasses: `${flexItemsCenter} ${blockElementPadding} flex-col flex-3 w-full bg-blue-100 text-slate-800`,
+  wordOfTheDayContainerClasses: `${flexItemsCenter} ${blockElementPadding} flex-col flex-3 w-full bg-${blueLight} text-${slate}`,
   wordOfTheDayDefinitionClasses: 'text-xl font-thin md:text-right',
   wordOfTheDayH3Classes: 'underline text-2xl font-serif mb-4 font-bold  md:text-right',
   wordRelationsContainerClasses: 'mb-4 flex flex-row text-sm flex-wrap',

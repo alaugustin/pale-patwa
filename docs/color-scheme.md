@@ -39,7 +39,6 @@
 - Text: slate-50 (#F8FAFC)
 - Links: amber-500 (#F59E0B)
 
-
 ## IPA Pronunciation Display
 - Container: slate-50 (#F8FAFC)
 - Symbols: slate-800 (#1E293B)
