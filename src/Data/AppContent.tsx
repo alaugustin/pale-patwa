@@ -21,9 +21,10 @@ const globalPageContent = {
       slateLight: 'slate-50',
       slateMedium: 'slate-600',
       blueDark: 'blue-700',
+      grayLight: 'gray-100',
       gray: 'gray-200',
-      grayDark: 'gray-300',
-      grayMedium: 'gray-400'
+      grayMedium: 'gray-300',
+      grayDark: 'gray-400'
     }
   },
   searchFields: [
@@ -40,17 +41,25 @@ const globalPageContent = {
   ]
 };
 
-const { blue, amber, slate } = globalPageContent.colorScheme.primary;
-const { blueLight, slateLight, slateMedium } = globalPageContent.colorScheme.supporting;
+const { blue, amber, slate, red } = globalPageContent.colorScheme.primary;
+const {
+  blueLight,
+  slateLight,
+  slateMedium,
+  gray,
+  grayMedium,
+  grayDark,
+  grayLight
+} = globalPageContent.colorScheme.supporting;
 
 const uiHelperClasses = {
   alphaFilterHelperClasses: 'w-5 h-5 text-sm font-bold m-2 md:m-3 lg:m-2',
   backToTopTextColor: slateLight,
   blockElementPadding: 'pt-6 p-2 pb-7',
-  borderBottom: 'border-gray-200 border-b',
-  borderColor: 'border-gray-200',
-  borderTop: 'border-gray-200 border-t',
-  buttonHelperClasses: 'bg-sky-500 border-slate-400 hover:bg-sky-400',
+  borderBottom: `border-${gray} border-b`,
+  borderColor: `border-${gray}`,
+  borderTop: `border-${gray} border-t`,
+  buttonHelperClasses: `bg-sky-500 border-${slateMedium} hover:bg-sky-400`,
   flexCol: 'flex flex-col',
   flexItemsCenter: 'flex items-center justify-center',
   footerColClasses: 'flex basis-full md:basis-1/4 flex-row text-xs',
@@ -74,7 +83,7 @@ const {
 } = uiHelperClasses;
 
 const uiClasses = {
-  alphabetFilterClasses: `${alphaFilterHelperClasses} rounded-full bg-gray-300 `,
+  alphabetFilterClasses: `${alphaFilterHelperClasses} rounded-full bg-${grayMedium}`,
   alphabetFilterClassesAllButton: `${alphaFilterHelperClasses} underline`,
   alphabetFilterHolderClasses: `${flexItemsCenter} flex-row flex-wrap mb-4`,
   appAllHolderClasses: `${flexCol} h-screen max-w-6xl mx-auto text-${slate}`,
@@ -83,7 +92,7 @@ const uiClasses = {
   bookIconClasses: `${headerIconClasses} mt-2`,
   calendarIconClasses: headerIconClasses,
   centeredBlurbCopyClasses: 'mb-6 max-w-screen-sm text-center',
-  clearInputIconClasses: 'h-4 w-4 m-2 fill-gray-400',
+  clearInputIconClasses: `h-4 w-4 m-2 fill-${grayDark}`,
   copyRightContainerClasses: `${footerColClasses} p-2 md:pb-7 order-last md:order-first`,
   copyRightIconClasses: `h-3 w-3 fill-${slateLight}`,
   definitionTextClasses: `${borderBottom} mb-2 pb-2`,
@@ -98,23 +107,23 @@ const uiClasses = {
   headerContainerClasses: `${flexItemsCenter} ${borderBottom} py-3 p-2 basis-14 justify-between bg-${blue} text-${slateLight}`,
   headerDateClasses: 'ml-2 text-xs md:text-sm lg:text-lg',
   headerH1Classes: 'text-2xl sm:text-2xl md:text-3xl lg:text-4xl mr-2',
-  listButtonClass: `${borderColor} bg-gray-100 hover:bg-gray-200 border-2 p-3 px-6 rounded-full`,
+  listButtonClass: `${borderColor} border-2 p-3 px-6 rounded-full bg-${grayLight}`,
   mainContainerClasses: `${flexItemsCenter} flex-1 flex-col bg-${slateLight} text-${slate}`,
   modalContainerClasses: `${flexItemsCenter} fixed inset-0 bg-black bg-opacity-50 z-50`,
   modalContentClasses: 'bg-white p-6 rounded-lg shadow-xl mx-4 w-full sm:max-w-md sm:min-w-96',
   modalH2Classes: 'text-2xl font-bold mb-2 font-serif',
   paginationBoardClasses: `${flexItemsCenter} flex-row`,
-  paginationButton: 'hover:bg-gray-200 p-2',
+  paginationButton: `hover:bg-${gray} p-2`,
   paginationButtonDisabled: 'cursor-not-allowed disabled:opacity-50',
   paginationContainerClasses: `${borderColor} mt-6 flex flex-row p-2 px-4 rounded-full border`,
   paginationNextJumpClasses: 'ml-2 sm:ml-3 md:ml-4',
   paginationNumberContainer: `${flexItemsCenter} ${borderColor} h-6 w-6 border-2 rounded`,
   paginationPrevJumpClasses: 'mr-2 sm:mr-3 md:mr-4',
-  pdfIconClasses: 'h-3 w-3 fill-red-500',
+  pdfIconClasses: `h-3 w-3 fill-${red}`,
   primaryButton: `${buttonHelperClasses} border-2 text-white py-2 px-5 rounded-full`,
   pronounciationContainerClasses: `${blockElementPadding} ${flexItemsCenter} mb-4 flex-col w-full order-first basis-full flex-auto bg-${blueLight} text-${slate}`,
   pronounciationListClasses: 'grid grid-cols-4 md:grid-cols-8 gap-4 w-full',
-  pronounciationListItemClasses: `${flexItemsCenter} flex-col text-xs`,
+  pronounciationListItemClasses: `${flexItemsCenter} flex-col text-xs text-slate-600 hover:text-blue-600 visited:text-amber-700 hover:underline cursor-pointer`,
   skipLinkClasses: `${flexItemsCenter} sr-only focus:not-sr-only text-center underline py-2 bg-${amber} text-${slateLight}`,
   twoColColumnClasses: 'even:basis-5/12 odd:basis-7/12 md:odd:pr-2 md:even:pl-2',
   twoColContainerClasses: 'max-w-screen-sm md:flex md:flex-row flex-col',

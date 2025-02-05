@@ -59,8 +59,6 @@ export const dataLib = [
   ...dataLibTime
 ];
 
-// const ;
-
 /**
  - Sorts the `dataLibNum` array in numerical order by the `definition` property.
  */
