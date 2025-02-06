@@ -63,9 +63,7 @@ export default function WordAttributes({
       )}
 
       {wordEtymology ?
-        <Typography
-          variant="span"
-        >
+        <Typography variant="span">
           <Link
             linkHref={parseEtymologyLink() || ''}
             linkTarget='_blank'

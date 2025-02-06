@@ -28,7 +28,8 @@ const {
   headerContainerClasses,
   footerContainerClasses,
   backToTopIconClasses,
-  skipLinkClasses
+  skipLinkClasses,
+  mainContainerClasses
 } = AppContentData.uiClasses;
 
 document.title = `${mainHeading}  | Online Dictionary`;
@@ -47,7 +48,7 @@ export default function App() {
   /**
    * Manages the visibility of a "Back to Top" button based on the user's scroll position.
    *
-   * The `showBackToTop` state is initialized to `false`, and is updated to `true` when the user scrolls more than 200 pixels down the page.
+   * The `showBackToTop` state is initialized to `false`, and is updated to `true` when the user scrolls more than 650 pixels down the page.
    * This triggers the display of the "Back to Top" button, which allows the user to smoothly scroll back to the top of the page.
    *
    * The `scrollToTop` function is used to handle the click event on the "Back to Top" button, scrolling the page back to the top with a smooth animation.
@@ -56,7 +57,7 @@ export default function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setShowBackToTop(window.scrollY > 200);
+      setShowBackToTop(window.scrollY > 650);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -128,7 +129,7 @@ export default function App() {
         <Header headerContainerClass={headerContainerClasses} mainHeading={mainHeading} />
 
         <Main
-          mainContainerClass={`${flexItemsCenter} flex-1 flex-col`}
+          mainContainerClass={mainContainerClasses}
           wordOfTheDayData={{
             word: currentWord?.word || '',
             dialect: currentWord?.dialect || '',

@@ -21,10 +21,17 @@ const {
 
 const {
   wordlistFilterPlaceholder,
-  prevButtonLabel,
-  nextButtonLabel,
   paginationItemsPerHeight
 } = AppContentData.libraryContent;
+
+const {
+  prevButtonLabel,
+  back5Label,
+  back10Label,
+  nextButtonLabel,
+  fwd5Label,
+  fwd10Label
+} = AppContentData.libraryContent.pagination;
 
 const {
   normalizeText,
@@ -181,9 +188,13 @@ export default function WordlistObjects({ data }: IWordSearchPaginationProps) {
 
       <Pagination
         prevButtonLabel={prevButtonLabel}
+        prev5ButtonLabel={back5Label}
+        prev10ButtonLabel={back10Label}
         prevOnClickFunc={decreasePage}
         prevButtonDisabled={isFirstPage}
         nextButtonLabel={nextButtonLabel}
+        next5ButtonLabel={fwd5Label}
+        next10ButtonLabel={fwd10Label}
         nextOnClickFunc={increasePage}
         nextButtonDisabled={isLastPage}
         currentPage={currentPage}
