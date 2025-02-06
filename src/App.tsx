@@ -10,7 +10,6 @@ import Link from './Components/UI/Link/Link';
 import { IWordListDataProps } from './Components/Organisms/Wordlist/Wordlist.d';
 import './styles.css';
 
-const { flexItemsCenter } = AppContentData.uiHelperClasses;
 const { backToTopIcon } = AppContentData.icons;
 
 const {
@@ -46,20 +45,26 @@ export default function App() {
   }, []);
 
   /**
-   * Manages the visibility of a "Back to Top" button based on the user's scroll position.
-   *
-   * The `showBackToTop` state is initialized to `false`, and is updated to `true` when the user scrolls more than 650 pixels down the page.
-   * This triggers the display of the "Back to Top" button, which allows the user to smoothly scroll back to the top of the page.
-   *
-   * The `scrollToTop` function is used to handle the click event on the "Back to Top" button, scrolling the page back to the top with a smooth animation.
-   */
+    * Manages the state of the "Back to Top" button visibility based on the user's scroll position.
+    *
+    * The `showBackToTop` state is initialized to `false` and is updated to `true` when the user scrolls past the halfway point of the page. This is determined by checking the position of the `wordPhonemes` element relative to the window height.
+    *
+    * The `handleScroll` function is called whenever the user scrolls the page, and it updates the `showBackToTop` state accordingly.
+    *
+    * The `useEffect` hook is used to add and remove the `scroll` event listener when the component mounts and unmounts, respectively.
+    */
+
+  const handleScroll = () => {
+    const element = document.getElementById('wordPhonemes');
+
+    if (element) {
+      const rect = element.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+      setShowBackToTop(rect.top <= windowHeight / 2);
+    }
+  };
   const [showBackToTop, setShowBackToTop] = useState(false);
-
   useEffect(() => {
-    const handleScroll = () => {
-      setShowBackToTop(window.scrollY > 650);
-    };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);

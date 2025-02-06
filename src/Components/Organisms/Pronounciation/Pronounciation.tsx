@@ -17,7 +17,7 @@ export default function Pronunciations({
   titleH2
 }: IPronunciationsProps) {
   return (
-    <BlockElement variant='div' className={className}>
+    <BlockElement id='wordPhonemes' variant='div' className={className}>
       <Typography variant='h2' className='text-3xl mb-6'>{titleH2}</Typography>
 
       <PronunciationList

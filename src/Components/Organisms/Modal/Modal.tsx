@@ -28,7 +28,7 @@ export default function Modal({
   const { variant, synonym, antonym, etymology, partOfSpeech, dialect } = selectedWord ?? {};
 
   return (
-    <BlockElement variant='article' className={modalContainerClasses}>
+    <BlockElement variant='dialog' className={modalContainerClasses}>
       <BlockElement className={modalContentClasses}>
         <Typography variant='h2' className={modalH2Classes}>{modalTitle}</Typography>
         <BlockElement className='mb-4'>

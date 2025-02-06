@@ -18,6 +18,7 @@ export const BlockElement = ({
     ul: 'ul',
     aside: 'aside',
     nav: 'nav',
+    dialog: 'dialog',
   } as const;
 
   const Element = variant && variant in elements ?

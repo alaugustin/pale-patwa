@@ -141,6 +141,28 @@ export const dataLibT = [{
   etymology: '[< Eng. tax]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'tanmadòz',
+  partOfSpeech: 'N',
+  definition: ['tomatoes'],
+  egSentenceKw: 'Nou alé an jaden-an pou tjouyi tanmadòz.',
+  egSentenceEn: 'We went to the garden to pick tomatoes.',
+  synonym: [null],
+  antonym: [null],
+  etymology: '[< Eng. tomatoes]',
+  dialect: '🇱🇨',
+  variant: [null],
+}, {
+  word: 'taya',
+  partOfSpeech: 'N',
+  definition: ['tire'],
+  egSentenceKw: 'Taya-a pété; sé sa ki fè vann-an maté-a.',
+  egSentenceEn: 'The tire blew; that is what made the van overturn.',
+  synonym: [null],
+  antonym: [null],
+  etymology: '[< Eng. tire]',
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];
 

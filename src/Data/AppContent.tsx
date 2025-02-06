@@ -79,7 +79,7 @@ const uiClasses = {
   headerH1Classes: 'text-2xl sm:text-2xl md:text-3xl lg:text-4xl mr-2',
   listButtonClass: `${borderColor} border-2 p-3 px-6 rounded-full bg-gray-100`,
   mainContainerClasses: `${flexItemsCenter} flex-1 flex-col bg-slate-50 text-slate-800`,
-  modalContainerClasses: `${flexItemsCenter} fixed inset-0 bg-black bg-opacity-50 z-50`,
+  modalContainerClasses: `${flexItemsCenter} fixed inset-0 bg-black bg-opacity-50 z-50 w-screen h-screen`,
   modalContentClasses: 'bg-white p-6 rounded-lg shadow-xl mx-4 w-full sm:max-w-md sm:min-w-96',
   modalH2Classes: 'text-2xl font-bold mb-2 font-serif',
   paginationBoardClasses: `${flexItemsCenter} flex-row`,
