@@ -8,9 +8,10 @@
  * @param role - An optional ARIA role to apply to the block-level element.
  */
 export interface IBlockElementProps {
-  variant?: 'footer' | 'section' | 'article' | 'ol' | 'div' | 'main' | 'header' | 'ul' | 'aside' | 'nav' | undefined;
+  variant?: 'footer' | 'section' | 'article' | 'ol' | 'div' | 'main' | 'header' | 'ul' | 'aside' | 'nav' | 'dialog' | undefined;
   className?: string;
   children?: React.ReactNode;
   id?: string;
   role?: string;
+  onClick?: (event: React.MouseEvent<HTMLDivElement>) => void;
 }

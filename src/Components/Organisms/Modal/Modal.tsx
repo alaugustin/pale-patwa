@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useCallback, useEffect} from 'react';
 import { SortedDictionary } from '../../../Data/data';
 import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
@@ -27,8 +27,25 @@ export default function Modal({
   const selectedWord = SortedDictionary.find(word => word.word === modalTitle);
   const { variant, synonym, antonym, etymology, partOfSpeech, dialect } = selectedWord ?? {};
 
+  const handleDialogClick = useCallback((e: React.MouseEvent) => {
+    if (e.target === e.currentTarget) {
+      clickHandler();
+    }
+  }, [clickHandler]);
+
+  const handleKeyDown = useCallback((e: KeyboardEvent) => {
+    if (e.key === 'Escape') {
+      clickHandler();
+    }
+  }, [clickHandler]);
+
+  useEffect(() => {
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [handleKeyDown]);
+
   return (
-    <BlockElement variant='article' className={modalContainerClasses}>
+    <BlockElement variant='dialog' className={modalContainerClasses} onClick={handleDialogClick}>
       <BlockElement className={modalContentClasses}>
         <Typography variant='h2' className={modalH2Classes}>{modalTitle}</Typography>
         <BlockElement className='mb-4'>
