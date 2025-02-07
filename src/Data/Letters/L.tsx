@@ -152,5 +152,16 @@ export const dataLibL = [{
   etymology: null,
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'li',
+  partOfSpeech: 'PRO',
+  definition: ['Third person singular pronoun'],
+  egSentenceKw: 'Ba li chèz li.',
+  egSentenceEn: 'Give him his chair.',
+  synonym: [null],
+  antonym: [null],
+  etymology: null,
+  dialect: '🇱🇨',
+  variant: ['i'],
 },
 ];

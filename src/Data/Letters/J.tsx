@@ -53,5 +53,16 @@ export const dataLibJ = [{
   etymology: '[< Fr. jupe]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'jòdi',
+  partOfSpeech: 'ADV',
+  definition: ['today (in a general sense)', 'nowadays'],
+  egSentenceKw: 'Manmay jòdi pa kon manmay lontan.',
+  egSentenceEn: 'Children today are not like children in the past.',
+  synonym: [null],
+  antonym: [null],
+  etymology: '[< Fr. aujourd\'hui]',
+  dialect: '🇱🇨',
+  variant: ['hòdi'],
 },
 ];

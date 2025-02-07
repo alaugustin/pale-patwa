@@ -92,12 +92,21 @@ export const dataLibA = [{
   definition: ['a lot'],
   egSentenceKw: 'La té ni an lo moun.',
   egSentenceEn: 'There were a lot of people.',
-  synonym: ['an chay', 'an chay', 'an pil', 'tibwen'],
+  synonym: ['an chay', 'an pil', 'tibwen'],
   antonym: [null],
   etymology: '[< Fr. guère]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'asiz',
+  partOfSpeech: 'V',
+  definition: ['to sit'],
+  egSentenceKw: 'Vyé madanm sala toujou ka asiz anba pyé mango-a.',
+  egSentenceEn: 'The old lady is always sitting under the mango tree.',
+  synonym: [null],
+  antonym: [null],
+  etymology: '[< Fr. assise]',
+  dialect: '🇱🇨',
+  variant: ['asid'],
 },
-// https://en.wikipedia.org/wiki/Saint_Lucian_Creole#English_Derived_Vocabulary
-  // entry ended at taya
 ];
