@@ -13,4 +13,5 @@ export interface IBlockElementProps {
   children?: React.ReactNode;
   id?: string;
   role?: string;
+  onClick?: (event: React.MouseEvent<HTMLDivElement>) => void;
 }

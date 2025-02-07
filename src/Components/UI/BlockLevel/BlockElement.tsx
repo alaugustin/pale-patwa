@@ -6,7 +6,8 @@ export const BlockElement = ({
   className,
   children,
   id,
-  role
+  role,
+  onClick
 }: IBlockElementProps) => {
   const elements = {
     footer: 'footer',
@@ -25,5 +26,5 @@ export const BlockElement = ({
     elements[variant as keyof typeof elements] :
     'div';
 
-  return <Element id={id} className={className} role={role}>{children}</Element>;
+  return <Element id={id} className={className} role={role} onClick={onClick as React.MouseEventHandler<HTMLElement>}>{children}</Element>;
 };
