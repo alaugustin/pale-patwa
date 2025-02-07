@@ -28,7 +28,7 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
     const dayOfMonth = date.getDate();
     setCurrentDayOfMonth(`${dayOfMonth}`);
   }, []);
-  const renderCalendarIconText = parseInt(currentDayOfMonth) < 10 ? `0${'9'}` : currentDayOfMonth;
+  const renderCalendarIconText = parseInt(currentDayOfMonth) < 10 ? `0${currentDayOfMonth}` : currentDayOfMonth;
 
   const {
     kweyoleWord,

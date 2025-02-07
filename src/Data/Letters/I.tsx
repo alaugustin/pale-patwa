@@ -8,7 +8,7 @@ export const dataLibI = [{
   antonym: [null],
   etymology: '[< Fr. il]',
   dialect: '🇱🇨',
-  variant: [null],
+  variant: ['li'],
 }, {
   word: 'ilèkté',
   partOfSpeech: 'V',

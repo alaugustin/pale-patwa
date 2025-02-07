@@ -141,5 +141,16 @@ export const dataLibM = [{
   etymology: '[< Eng. motor car]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'manjé',
+  partOfSpeech: 'V',
+  definition: ['to eat'],
+  egSentenceKw: 'Yo pa manjé pwéson-an.',
+  egSentenceEn: 'They didn\'t eat the fish.',
+  synonym: ['dévowé'],
+  antonym: [null],
+  etymology: '[< Fr. manger]',
+  dialect: '🇱🇨',
+  variant: ['manhé'],
 },
 ];

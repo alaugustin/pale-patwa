@@ -153,5 +153,16 @@ export const dataLibD = [{
   etymology: '[< Eng. drive]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'denmen',
+  partOfSpeech: 'ADV',
+  definition: ['tomorrow'],
+  egSentenceKw: 'Denmen nou kay mouté an jaden.',
+  egSentenceEn: 'Tomorrow we\'ll go to the garden.',
+  synonym: [null],
+  antonym: ['yè'],
+  etymology: '[< Fr. demain]',
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];

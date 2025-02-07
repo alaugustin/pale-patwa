@@ -87,7 +87,7 @@ const uiClasses = {
   paginationButtonDisabled: 'cursor-not-allowed disabled:opacity-50',
   paginationContainerClasses: `${borderColor} mt-6 flex flex-row p-2 px-4 rounded-full border`,
   paginationNextJumpClasses: 'ml-2 sm:ml-3 md:ml-4',
-  paginationNumberContainer: `${flexItemsCenter} ${borderColor} h-6 w-6 border-2 rounded`,
+  paginationNumberContainer: `${flexItemsCenter} ${borderColor} h-6 w-6 border-2 rounded p-4`,
   paginationPrevJumpClasses: 'mr-2 sm:mr-3 md:mr-4',
   pdfIconClasses: 'h-3 w-3 fill-red-500',
   primaryButton: `${buttonHelperClasses} border-2 text-white py-2 px-5 rounded-full`,
