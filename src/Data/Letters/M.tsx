@@ -50,7 +50,7 @@ export const dataLibM = [{
   egSentenceEn: 'Put the box on the table.',
   synonym: ['ladjé', 'pitjé', 'pwan'],
   antonym: ['tiwé'],
-  etymology: null,
+  etymology: '[< Fr. mettre]',
   dialect: '🇱🇨',
   variant: [null],
 }, {
@@ -152,5 +152,16 @@ export const dataLibM = [{
   etymology: '[< Fr. manger]',
   dialect: '🇱🇨',
   variant: ['manhé'],
+}, {
+  word: 'mété',
+  partOfSpeech: 'V',
+  definition: ['to begin to'],
+  egSentenceKw: 'Yo mété kouwi!',
+  egSentenceEn: 'They began to run!',
+  synonym: ['koumansé', 'pitjé', 'pwan'],
+  antonym: [null],
+  etymology: '[< Fr. mettre]',
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];
