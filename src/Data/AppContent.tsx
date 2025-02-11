@@ -210,24 +210,28 @@ const footerContent = {
         target: '_blank',
         rel: 'noreferrer noopener',
         download: 'Kwéyòl Dictionary - Ministry of Education, Government of Saint Lucia',
+        icon: true,
         type: 'application/pdf',
       }, {
         label: 'Kwéyòl Dictionary - Webonary',
         href: 'https://www.webonary.org/kweyol/',
         target: '_blank',
         rel: 'noreferrer noopener',
+        icon: false,
         type: 'text/html',
       }, {
         label: 'Saint Lucian Creole - Wikipedia',
         href: 'https://en.wikipedia.org/wiki/Saint_Lucian_Creole',
         target: '_blank',
         rel: 'noreferrer noopener',
+        icon: false,
         type: 'text/html',
       }, {
         label: 'Github',
         href: 'https://github.com/alaugustin/pale-patwa',
         target: '_blank',
         rel: 'noreferrer noopener',
+        icon: false,
         type: 'text/html',
       }
     ]
