@@ -1,7 +1,10 @@
 import React from 'react';
+import { AppContentData } from '../../../../Data/AppContent';
 import { Typography } from '../../../UI/Typography/Typography';
 import Link from '../../../UI/Link/Link';
 import { IResourceLinkProps, IResourceLinkDataProps } from './ResourcesLink.d';
+
+const { pdfIcon } = AppContentData.icons;
 
 export default function ResourcesLink({
   linkData,
@@ -13,10 +16,10 @@ export default function ResourcesLink({
       link: IResourceLinkDataProps,
       index: React.Key | null | undefined
     ) => {
-      const { label, href, target, download, rel, type } = link;
+      const { label, href, target, download, rel, type, icon } = link;
 
       return (
-        <Typography key={index} variant='p' className='mb-2 last:mb-0 text-xs'>
+        <Typography key={index} variant='p' className='mb-2 last:mb-0 text-xs flex'>
           <Link
             linkHref={href}
             linkTarget={target}
@@ -25,6 +28,9 @@ export default function ResourcesLink({
             linkRel={rel}
             linkType={type}
           >{label}</Link>
+
+          {icon &&
+            <Typography variant='span' className='ml-1'>{pdfIcon}</Typography>}
         </Typography>
       );
     })

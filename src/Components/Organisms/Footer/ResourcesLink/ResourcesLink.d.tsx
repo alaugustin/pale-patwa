@@ -11,12 +11,13 @@ export interface IResourceLinkProps {
 
 /**
  * Defines the props for a resource link.
- * @param label - The label or text to display for the link.
- * @param href - The URL or path the link should point to.
- * @param target - The target attribute for the link (e.g. "_blank" to open in a new tab).
+ * @param label - The label for the link.
+ * @param href - The URL for the link.
+ * @param target - The target for the link (e.g. "_blank" to open in a new tab).
  * @param download - Whether the link should trigger a file download.
- * @param rel - The rel attribute for the link (e.g. "noopener noreferrer" for security).
- * @param type - The MIME type of the resource the link points to.
+ * @param rel - The rel attribute for the link.
+ * @param type - The type attribute for the link.
+ * @param icon - The icon to display for the link.
  */
 
 export interface IResourceLinkDataProps {
@@ -26,4 +27,5 @@ export interface IResourceLinkDataProps {
   download: boolean;
   rel: string;
   type: string;
+  icon: string;
 }
