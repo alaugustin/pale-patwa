@@ -112,6 +112,8 @@ const topWordsAnt = calculateWordFrequency('antonym');
 console.log('topWords: ', topEgSentenceKw);
 console.log('topWordsSyn: ', topWordsSyn);
 console.log('topWordsAnt: ', topWordsAnt);
-
 // console.log('SortedNumbers: ', SortedNumbers);
 // console.log('SortedDictionary: ', SortedDictionary);
+
+// https://en.wikipedia.org/wiki/Saint_Lucian_Creole#Prepositions
+// left off a `ant`

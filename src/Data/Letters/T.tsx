@@ -299,7 +299,7 @@ export const dataLibT = [{
   word: 'tann',
   partOfSpeech: 'V',
   definition: ['to hear'],
-  egSentenceKw: 'M\'a tann sa ou di- a.',
+  egSentenceKw: 'M\'a tann sa ou di-a.',
   egSentenceEn: 'I didn\'t hear what you said.',
   synonym: ['kouté'],
   antonym: [null],
