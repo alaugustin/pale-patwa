@@ -66,7 +66,7 @@ const uiClasses = {
   copyRightContainerClasses: `${footerColClasses} p-2 md:pb-7 order-last md:order-first`,
   copyRightIconClasses: 'h-3 w-3 fill-slate-50',
   definitionTextClasses: `${borderBottom} mb-2 pb-2`,
-  dictionarySearchClasses: `${flexItemsCenter} ${borderColor} flex-row mb-8 border rounded-full`,
+  dictionarySearchClasses: `${flexItemsCenter} ${borderColor} flex-row mb-8 border rounded-full bg-white`,
   dictionarySearchInputClasses: 'p-2 px-4 w-64 rounded-full border-r-0',
   flagHolderClasses: 'mr- sm:mr-1 lg:mr-3 last:mr-0 flex-wrap',
   footerContainerClasses: `${borderTop} ${flexCol} pb-7 basis-14 md:flex-row justify-between md:flex-wrap bg-slate-800 text-slate-50`,

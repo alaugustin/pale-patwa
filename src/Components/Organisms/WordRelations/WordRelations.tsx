@@ -41,17 +41,14 @@ export default function WordRelations({
   ];
 
   return hasContent ? (
-    varData?.[0] && Array.isArray(varData) &&
-    synData?.[0] && Array.isArray(synData) &&
-    antData?.[0] && Array.isArray(antData) && (
-      <BlockElement className={wordRelationsContainerClasses}>
-        {wordTypes.map(({ type, data }) =>
-          data?.[0] && Array.isArray(data) && (
-            <Typography key={type} variant="span" className="mr-1 last:mr-0">
-              <WordGroup label={type} data={data} />
-            </Typography>
-          )
-        )}
-      </BlockElement>)
+    <BlockElement className={wordRelationsContainerClasses}>
+      {wordTypes.map(({ type, data }) =>
+        data?.[0] && Array.isArray(data) && (
+          <Typography key={type} variant="span" className="mr-1 last:mr-0">
+            <WordGroup label={type} data={data} />
+          </Typography>
+        )
+      )}
+    </BlockElement>
   ) : null;
 }
