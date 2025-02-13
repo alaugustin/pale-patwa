@@ -74,7 +74,7 @@ export const dataLibA = [{
   antonym: [null],
   etymology: '[< Eng. Atkinson]',
   dialect: '🇱🇨',
-  variant: ['-a', '-la', '-lan'],
+  variant: [null],
 }, {
   word: 'amèn',
   partOfSpeech: 'INTERJ',
