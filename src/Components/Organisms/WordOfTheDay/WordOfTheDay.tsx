@@ -73,7 +73,11 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
         variant="p"
         className={wordOfTheDayDefinitionClasses}
       >{Array.isArray(definitionToArray) ? definitionToArray.map((def: string, index: number) => (
-          <Typography variant='span' className='mr-1 lg:mr-2 last:mr-0' key={index}>{def}{index !== definitionToArray.length - 1 ? ',' : ''}</Typography>
+          <Typography
+            variant='span'
+            className='mr-1 lg:mr-2 last:mr-0'
+            key={index}>
+            {def}{index !== definitionToArray.length - 1 ? ',' : ''}</Typography>
         )) : definitionToArray}</Typography>
     </>;
 

@@ -252,5 +252,16 @@ export const dataLibD = [{
   etymology: '[< Fr. depuis]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'dèwò',
+  partOfSpeech: 'PREP',
+  definition: ['outside (of)'],
+  egSentenceKw: 'Yo té dèwò kay-la lè yo tann ti manmay-la ka hélé.',
+  egSentenceEn: 'They were outside the house when they heard the child crying.',
+  synonym: [null],
+  antonym: ['adan', 'an', 'andidan'],
+  etymology: '[< Fr. dehors]',
+  dialect: '🇱🇨',
+  variant: ['dòwò'],
 },
 ];

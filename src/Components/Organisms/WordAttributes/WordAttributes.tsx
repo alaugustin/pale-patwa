@@ -7,6 +7,7 @@ import { IWordAttributesProps } from './WordAttributes.d';
 
 const { linkClasses } = AppContentData.uiHelperClasses;
 const { wordAttributeBorder } = AppContentData.uiClasses;
+const { collinsDictionaryLink } = AppContentData.libraryContent;
 const { normalizeText } = AppContentData.helperFunc;
 
 export default function WordAttributes({
@@ -16,13 +17,15 @@ export default function WordAttributes({
   containerClasses
 }: IWordAttributesProps) {
 
-  const dictionaryLink = 'https://www.collinsdictionary.com/dictionary';
   const parseEtymologyLink = (): string => {
     if (!wordEtymology) return '';
 
+    const frLink = `${collinsDictionaryLink}/french-english/${filteredWord}`;
+    const enLink = `${collinsDictionaryLink}/english-french/${filteredWord}`;
+
     const etymologyMap: { [key: string]: string } = {
-      'Fr.': `${dictionaryLink}/french-english/${filteredWord}`,
-      'Eng.': `${dictionaryLink}/english-french/${filteredWord}`
+      'Fr.': frLink,
+      'Eng.': enLink
     };
 
     const matchedLanguage = Object.keys(etymologyMap).find(lang =>
