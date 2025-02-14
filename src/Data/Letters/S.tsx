@@ -242,7 +242,7 @@ export const dataLibS = [{
   dialect: '🇱🇨',
   variant: [null],
 }, {
-  word: 'swè.',
+  word: 'swè',
   partOfSpeech: 'N',
   definition: ['evening', 'night'],
   egSentenceKw: 'I ka vini lé swè.',

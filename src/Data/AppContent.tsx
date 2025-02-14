@@ -12,7 +12,7 @@ const globalPageContent = {
     'word', 'definition', 'egSentenceKw', 'egSentenceEn', 'etymology', 'synonym', 'antonym', 'variant',
   ],
   excludedWordsArr: [
-    'li.', 'mwen.', 'nèf.', 'lenpo', 'nwè.', 'nou.', 'sala?', 'dòla.', 'gason-an', 'nonm-lan'
+    'li.', 'mwen.', 'nèf.', 'lenpo', 'nwè.', 'nou.', 'sala?', 'dòla.', 'gason-an', 'nonm-lan', 'tab-la.', 'sala.'
   ],
   daysOfTheWeekArr: [
     'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
