@@ -306,6 +306,28 @@ export const dataLibT = [{
   etymology: '[< Fr. entendre]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'tout',
+  partOfSpeech: 'ADJ',
+  definition: ['all'],
+  egSentenceKw: 'Vini denmen èk mennen tout sé liv-la.',
+  egSentenceEn: 'Come tomorrow and bring all the books.',
+  synonym: ['dènyé'],
+  antonym: ['pyès'],
+  etymology: '[< Fr. tout]',
+  dialect: '🇱🇨',
+  variant: [null],
+}, {
+  word: 'tout',
+  partOfSpeech: 'ADJ',
+  definition: ['every'],
+  egSentenceKw: 'Kolonm sala ni pou gadé tout détay avan i sa di twavay-la bon.',
+  egSentenceEn: 'That foreman has to look at every detail before he can say the work is good.',
+  synonym: ['dènyé'],
+  antonym: ['pyès'],
+  etymology: '[< Fr. tout]',
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];
 

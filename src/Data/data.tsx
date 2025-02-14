@@ -116,4 +116,4 @@ console.log('topWordsAnt: ', topWordsAnt);
 // console.log('SortedDictionary: ', SortedDictionary);
 
 // https://en.wikipedia.org/wiki/Saint_Lucian_Creole#Prepositions
-// left off at `apwé`
+// left off at `dépi`
