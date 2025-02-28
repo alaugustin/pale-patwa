@@ -7,5 +7,6 @@ export interface IListItemProps {
   listItemClass?: string;
   buttonClass?: string;
   variant: string | null;
+  subscript?: number | null;
 }
 

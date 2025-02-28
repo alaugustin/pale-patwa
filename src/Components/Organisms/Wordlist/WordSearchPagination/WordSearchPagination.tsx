@@ -123,6 +123,16 @@ export default function WordlistObjects({ data }: IWordSearchPaginationProps) {
     trackMouse: true
   });
 
+  // Group items by word to assign subscripts
+  const groupedItems = currentItems.reduce((acc, item) => {
+    const normalizedWord = normalizeString(item.word).toLowerCase();
+    if (!acc[normalizedWord]) {
+      acc[normalizedWord] = [];
+    }
+    acc[normalizedWord].push(item);
+    return acc;
+  }, {} as Record<string, typeof currentItems>);
+
   return (
     <>
       <BlockElement id='alphabet-filter' className={alphabetFilterHolderClasses}>
@@ -155,17 +165,24 @@ export default function WordlistObjects({ data }: IWordSearchPaginationProps) {
       />
 
       <ul className={wordListListClasses} {...swipeHandlers}>
-        {currentItems.map((item, index) => (
-          <ListItem
-            key={index}
-            word={item.word}
-            definition={item.definition}
-            egSentenceKw={item.egSentenceKw}
-            egSentenceEn={item.egSentenceEn}
-            variant={item.variant}
-            hasLink={true}
-          />
-        ))}
+        {Object.values(groupedItems).flat().map((item, index) => {
+          const normalizedWord = normalizeString(item.word).toLowerCase();
+          const subscript = groupedItems[normalizedWord].length > 1
+            ? groupedItems[normalizedWord].indexOf(item) + 1
+            : undefined;
+          return (
+            <ListItem
+              key={index}
+              word={item.word}
+              definition={item.definition}
+              egSentenceKw={item.egSentenceKw}
+              egSentenceEn={item.egSentenceEn}
+              variant={item.variant}
+              hasLink={true}
+              subscript={subscript} // Pass subscript to ListItem
+            />
+          );
+        })}
       </ul>
 
       <Pagination

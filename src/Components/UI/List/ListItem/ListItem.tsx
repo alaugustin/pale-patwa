@@ -14,7 +14,8 @@ export const ListItem = ({
   egSentenceEn,
   hasLink,
   listItemClass,
-  variant
+  variant,
+  subscript
 }: IListItemProps) => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
@@ -23,6 +24,7 @@ export const ListItem = ({
   };
 
   const wordDefinitionAriaLabel = `Word: ${word} | ${definition}`;
+  const wordSubscriptTreatment = `${word} ${subscript ? subscript : ''}` || '';
 
   return (
     <>
@@ -30,7 +32,7 @@ export const ListItem = ({
         {hasLink ? (
           <Button
             buttonClass={listButtonClass}
-            buttonLabel={word || ''}
+            buttonLabel={wordSubscriptTreatment}
             ariaLabel={wordDefinitionAriaLabel}
             onClickFunc={handleClick}
           />
