@@ -4,7 +4,6 @@ import { ListItem } from '../../../UI/List/ListItem/ListItem';
 import { AppContentData } from '../../../../Data/AppContent';
 import { Pagination } from '../../Pagination/Pagination';
 import { DictionarySearch } from '../../DictionarySearch/DictionarySearch';
-import { Typography } from '../../../UI/Typography/Typography';
 import { BlockElement } from '../../../UI/BlockLevel/BlockElement';
 import Button from '../../../UI/Form/Button/Button';
 import { IWordSearchPaginationProps } from './WordSearchPagination.d';
@@ -109,23 +108,6 @@ export default function WordlistObjects({ data }: IWordSearchPaginationProps) {
     handleSearch('');
   };
 
-  const addSubscriptsToWords = (words: any[]) => {
-    const wordCounts = new Map();
-
-    return words.map((item) => {
-      const word = item.word;
-      wordCounts.set(word, (wordCounts.get(word) || 0) + 1);
-
-      if (wordCounts.get(word) > 1) {
-        return {
-          ...item,
-          word: <Typography variant='span'>{word}<sub>{wordCounts.get(word)}</sub></Typography>
-        };
-      }
-      return item;
-    });
-  };
-
   const swipeHandlers = useSwipeable({
     onSwipedLeft: () => {
       if (!isLastPage) {
@@ -173,7 +155,7 @@ export default function WordlistObjects({ data }: IWordSearchPaginationProps) {
       />
 
       <ul className={wordListListClasses} {...swipeHandlers}>
-        {addSubscriptsToWords(currentItems).map((item, index) => (
+        {currentItems.map((item, index) => (
           <ListItem
             key={index}
             word={item.word}

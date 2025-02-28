@@ -131,17 +131,6 @@ export const dataLibT = [{
   dialect: '🇱🇨',
   variant: [null],
 }, {
-  word: 'taks',
-  partOfSpeech: 'N',
-  definition: ['tax'],
-  egSentenceKw: 'Mwen ka péyé taks toulé mwa.',
-  egSentenceEn: 'I pay taxes every month.',
-  synonym: ['lenpo'],
-  antonym: [null],
-  etymology: '[< Eng. tax]',
-  dialect: '🇱🇨',
-  variant: [null],
-}, {
   word: 'tanmadòz',
   partOfSpeech: 'N',
   definition: ['tomatoes'],
