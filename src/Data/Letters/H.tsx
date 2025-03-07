@@ -42,5 +42,16 @@ export const dataLibH = [{
   etymology: '[< Eng. health center]',
   dialect: '🇱🇨',
   variant: ['gwòg'],
+}, {
+  word: 'hòd',
+  partOfSpeech: 'PREP',
+  definition: ['from', 'away from'],
+  egSentenceKw: 'Mwen ka twavay senk lyé hòd kay mwen.',
+  egSentenceEn: 'I work five miles from my home.',
+  synonym: [null],
+  antonym: [null],
+  etymology: '[< Fr. hors de]',
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];
