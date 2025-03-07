@@ -5,7 +5,7 @@ import { Typography } from '../../UI/Typography/Typography';
 import Link from '../../UI/Link/Link';
 import { IWordAttributesProps } from './WordAttributes.d';
 
-const { linkClasses } = AppContentData.uiHelperClasses;
+const { linkClasses, borderTop } = AppContentData.uiHelperClasses;
 const { wordAttributeBorder } = AppContentData.uiClasses;
 const { collinsDictionaryLink } = AppContentData.libraryContent;
 const { normalizeText } = AppContentData.helperFunc;
@@ -52,7 +52,7 @@ export default function WordAttributes({
   const filteredWord = wordEtymology ? extractWord(wordEtymology) : '';
 
   return (
-    <BlockElement variant='div' className={containerClasses}>
+    <BlockElement variant='div' className={`${containerClasses} ${(wordDialect || wordPartOfSpeech || wordEtymology) ? `${borderTop} pt-4` : ''}`}>
       <Typography
         variant="span"
         className={`${(wordPartOfSpeech && wordAttributeBorder) || (wordEtymology && wordAttributeBorder)}`}

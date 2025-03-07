@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect} from 'react';
+import React, { useCallback, useEffect } from 'react';
 import { SortedDictionary } from '../../../Data/data';
 import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
@@ -13,9 +13,9 @@ const {
   modalContainerClasses,
   modalContentClasses,
   modalH2Classes,
-  definitionTextClasses
 } = AppContentData.uiClasses;
 const { modalClose } = AppContentData.libraryContent;
+const { borderTop } = AppContentData.uiHelperClasses;
 
 export default function Modal({
   modalTitle,
@@ -50,14 +50,14 @@ export default function Modal({
         <Typography variant='h2' className={modalH2Classes}>{modalTitle}</Typography>
         <BlockElement className='mb-4'>
           <BlockElement variant='div' className='mb-4'>
-            <Typography variant='p' className={definitionTextClasses}>
+            <Typography variant='p' className={'mb-2 pb-2'}>
               {Array.isArray(modalDefinition) ? modalDefinition.map((def: string, index: number) => (
                 <Typography variant='span' className='mr-1 last:mr-0' key={index}>{def}{index !== modalDefinition.length - 1 ? ',' : ''}</Typography>
               )) : modalDefinition}
             </Typography>
 
             {modalSentenceKw && (
-              <Typography variant='p' className='mb-1'>
+              <Typography variant='p' className={`${borderTop} pt-4 mb-1`}>
                 <Typography variant='strong'>{modalSentenceKw}</Typography>
               </Typography>
             )}

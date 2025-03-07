@@ -8,6 +8,7 @@ const {
   wordRelationsContainerClasses,
   wordRelationsItemClasses
 } = AppContentData.uiClasses;
+const { borderTop } = AppContentData.uiHelperClasses;
 
 const WordGroup = ({
   label,
@@ -41,7 +42,7 @@ export default function WordRelations({
   ];
 
   return hasContent ? (
-    <BlockElement className={wordRelationsContainerClasses}>
+    <BlockElement className={`${wordRelationsContainerClasses} ${hasContent ? `${borderTop} pt-4` : ''}`}>
       {wordTypes.map(({ type, data }) =>
         data?.[0] && Array.isArray(data) && (
           <Typography key={type} variant="span" className="mr-1 last:mr-0">

@@ -318,5 +318,16 @@ export const dataLibD = [{
   etymology: '[< Fr. devant]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'dèyè',
+  partOfSpeech: 'PREP',
+  definition: ['after', 'in pursuit of'],
+  egSentenceKw: 'I alé dèyè Tijan.',
+  egSentenceEn: 'He went in pursuit of Tijan.',
+  synonym: [null],
+  antonym: ['douvan'],
+  etymology: '[< Fr. derrière]',
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];
