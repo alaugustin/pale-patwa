@@ -75,5 +75,16 @@ export const dataLibV = [{
   etymology: '[< Fr. venir]',
   dialect: '🇱🇨',
   variant: ['vin'],
+}, {
+  word: 'vizavi',
+  partOfSpeech: 'PREP',
+  definition: ['in line with', 'with respect to'],
+  egSentenceKw: 'Lè ou wivé vizavi kay-la, gadé dwèt; ou kay wè motoka-a.',
+  egSentenceEn: 'When you get in line with the house, look straight; you will see my car.',
+  synonym: [null],
+  antonym: [null],
+  etymology: '[< Fr. vis à vis]',
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];

@@ -119,5 +119,16 @@ export const dataLibG = [{
   etymology: '[< Fr. regarder]',
   dialect: '🇱🇨',
   variant: ['gadé'],
+}, {
+  word: 'gwiv',
+  partOfSpeech: 'N',
+  definition: ['tropical mockingbird', 'thrush (Minus gilvus)'],
+  egSentenceKw: 'Gwiv-la fè nich li asou pyé mango-a.',
+  egSentenceEn: 'The thrush made its nest in the mango tree.',
+  synonym: [null],
+  antonym: [null],
+  etymology: '[< Fr. grive]',
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];

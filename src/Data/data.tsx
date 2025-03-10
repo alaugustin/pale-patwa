@@ -106,14 +106,16 @@ const calculateWordFrequency = (field: keyof typeof SortedDictionary[0]) =>{
 };
 
 const topEgSentenceKw = calculateWordFrequency('egSentenceKw');
-const topWordsSyn = calculateWordFrequency('synonym');
-const topWordsAnt = calculateWordFrequency('antonym');
-
 console.log('topWords: ', topEgSentenceKw);
-console.log('topWordsSyn: ', topWordsSyn);
-console.log('topWordsAnt: ', topWordsAnt);
+
+// const topWordsSyn = calculateWordFrequency('synonym');
+// console.log('topWordsSyn: ', topWordsSyn);
+
+// const topWordsAnt = calculateWordFrequency('antonym');
+// console.log('topWordsAnt: ', topWordsAnt);
+
 // console.log('SortedNumbers: ', SortedNumbers);
 // console.log('SortedDictionary: ', SortedDictionary);
 
-// https://en.wikipedia.org/wiki/Saint_Lucian_Creole#Prepositions
-// left off at `pou`
+// https://en.wikipedia.org/wiki/Saint_Lucian_Creole#Zannimo_-_Animals
+// left off at `kayal`
