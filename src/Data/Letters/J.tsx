@@ -130,5 +130,16 @@ export const dataLibJ = [{
   etymology: '[< Fr. juste]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'jibyé',
+  partOfSpeech: 'N',
+  definition: ['bird'],
+  egSentenceKw: 'Jibyé kontan ti gwenn sala.',
+  egSentenceEn: 'Birds like that little seed.',
+  synonym: [null],
+  antonym: [null],
+  etymology: null,
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];

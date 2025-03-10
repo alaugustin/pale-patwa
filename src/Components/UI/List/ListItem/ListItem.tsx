@@ -25,7 +25,7 @@ export const ListItem = ({
 
   const wordDefinitionAriaLabel = `Word: ${word} | ${definition}`;
   const wordSubscriptTreatment = (<>
-    {word}{subscript && <sub>{subscript}</sub>}
+    {word}{subscript && <Typography variant='sub' className='text-xs'>{subscript}</Typography>}
   </>);
 
   return (

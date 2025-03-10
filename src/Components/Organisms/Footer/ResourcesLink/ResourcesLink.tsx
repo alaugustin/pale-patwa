@@ -4,7 +4,14 @@ import { Typography } from '../../../UI/Typography/Typography';
 import Link from '../../../UI/Link/Link';
 import { IResourceLinkProps, IResourceLinkDataProps } from './ResourcesLink.d';
 
-const { pdfIcon } = AppContentData.icons;
+const {
+  pdfIcon,
+  linkIcon
+} = AppContentData.icons;
+const {
+  resourcesLinkIconClasses,
+  resourcesLinkClass
+} = AppContentData.uiClasses;
 
 export default function ResourcesLink({
   linkData,
@@ -17,9 +24,16 @@ export default function ResourcesLink({
       index: React.Key | null | undefined
     ) => {
       const { label, href, target, download, rel, type, icon } = link;
+      const resourcesLinkIcon = icon === 'pdf' ? pdfIcon : icon === 'link' ? linkIcon(resourcesLinkIconClasses) : null;
 
       return (
-        <Typography key={index} variant='p' className='mb-2 last:mb-0 text-xs flex'>
+        <Typography key={index} variant='p' className={resourcesLinkClass}>
+          {icon &&
+            <Typography
+              variant='span'
+              className='mr-1'
+            >{resourcesLinkIcon}</Typography>}
+
           <Link
             linkHref={href}
             linkTarget={target}
@@ -28,9 +42,6 @@ export default function ResourcesLink({
             linkRel={rel}
             linkType={type}
           >{label}</Link>
-
-          {icon &&
-            <Typography variant='span' className='ml-1'>{pdfIcon}</Typography>}
         </Typography>
       );
     })
