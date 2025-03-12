@@ -130,5 +130,16 @@ export const dataLibG = [{
   etymology: '[< Fr. grive]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'go',
+  partOfSpeech: 'N',
+  definition: ['one penny', 'two cents E.C.'],
+  egSentenceKw: 'Mwen achté yon chlen dé go pen.',
+  egSentenceEn: 'I bought twenty-nine cents\' worth of bread.',
+  synonym: [null],
+  antonym: [null],
+  etymology: null,
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];
