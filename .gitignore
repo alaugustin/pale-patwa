@@ -2,3 +2,4 @@ src/Components/List/ListOld.tsx
 src/Components/List/ListItem/ListItemOld.tsx
 node_modules
 build/
+src/docs/chatgpt-instruction.html
