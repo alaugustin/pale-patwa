@@ -118,4 +118,4 @@ console.log('topWords: ', topEgSentenceKw);
 // console.log('SortedDictionary: ', SortedDictionary);
 
 // https://en.wikipedia.org/wiki/Saint_Lucian_Creole#Zannimo_-_Animals
-// left off at `kayal`
+// left off at `mèl`

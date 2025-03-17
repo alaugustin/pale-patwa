@@ -185,5 +185,16 @@ export const dataLibL = [{
   etymology: '[< Fr. la main]',
   dialect: '🇱🇨',
   variant: ['lenmen'],
+}, {
+  word: 'lèg',
+  partOfSpeech: 'N',
+  definition: ['eagle'],
+  egSentenceKw: 'Lèg-la ka volé.',
+  egSentenceEn: 'The eagle is flying.',
+  synonym: [null],
+  antonym: [null],
+  etymology: '[< Fr. l\'aigle]',
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];
