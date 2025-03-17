@@ -27,21 +27,22 @@ The Kwéyòl Dictionary App is an interactive digital reference tool that makes 
 
 ### ✨Core Features
 
-- Search System
+- **Search System**
   - Real-time filtering with diacritic support
   - Normalized search terms for improved matches
   - Part of speech and etymology filters
   - Alphabetical letter filtering for quick navigation
-- Interface
+- **Interface**
   - Responsive three-panel layout
   - Modal views for detailed word information
   - Optimized typography for Kwéyòl characters
   - Touch/swipe gesture support
-- Comprehensive bird vocabulary
-- Family relationship terms
-- Personal pronoun system
-- Cross-referencing between related terms
-- Etymology tracking
+- **Comprehensive Vocabulary**
+  - Bird vocabulary
+  - Family relationship terms
+  - Personal pronoun system
+  - Cross-referencing between related terms
+  - Etymology tracking
 
 #### Language Features
 
