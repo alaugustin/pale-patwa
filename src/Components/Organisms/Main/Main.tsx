@@ -23,7 +23,7 @@ export const Main = ({
         definition={definition}
         dialect={dialect}
         etymology={etymology}
-        kweyoleWord={word}
+        kweyolWord={word}
         partOfSpeech={partOfSpeech}
       />
 
