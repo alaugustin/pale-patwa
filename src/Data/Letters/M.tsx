@@ -185,5 +185,16 @@ export const dataLibM = [{
   etymology: '[< Fr. merle]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'mwennson',
+  partOfSpeech: 'N',
+  definition: ['a type of small bird'],
+  egSentenceKw: 'Bèk mwennson-an ka sanm bèk jako.',
+  egSentenceEn: 'The mwennson\'s beak resembles a parrot\'s.',
+  synonym: [null],
+  antonym: [null],
+  etymology: null,
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];

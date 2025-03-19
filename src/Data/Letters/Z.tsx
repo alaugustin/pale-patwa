@@ -42,5 +42,16 @@ export const dataLibZ = [{
   etymology: '[< Fr. vous autres]',
   dialect: '🇱🇨',
   variant: ['hò', 'hòt', 'zò'],
+}, {
+  word: 'zatolan',
+  partOfSpeech: 'PRO',
+  definition: ['Common ground dove', '(Columbina passerina)'],
+  egSentenceKw: null,
+  egSentenceEn: null,
+  synonym: [null],
+  antonym: [null],
+  etymology: null,
+  dialect: '🇱🇨',
+  variant: null,
 },
 ];
