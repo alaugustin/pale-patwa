@@ -3,6 +3,7 @@ import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Typography } from '../../UI/Typography/Typography';
 import Link from '../../UI/Link/Link';
+import { cn } from '../../../Data/AppContent';
 import { IWordAttributesProps } from './WordAttributes.d';
 
 const { linkClasses, borderTop } = AppContentData.uiHelperClasses;
@@ -52,7 +53,7 @@ export default function WordAttributes({
   const filteredWord = wordEtymology ? extractWord(wordEtymology) : '';
 
   return (
-    <BlockElement variant='div' className={`${containerClasses} ${(wordDialect || wordPartOfSpeech || wordEtymology) ? `${borderTop} pt-4` : ''}`}>
+    <BlockElement variant='div' className={cn(containerClasses, (wordDialect || wordPartOfSpeech || wordEtymology) ? `${borderTop} pt-4` : '')}>
       <Typography
         variant="span"
         className={`${(wordPartOfSpeech && wordAttributeBorder) || (wordEtymology && wordAttributeBorder)}`}

@@ -3,6 +3,7 @@ import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Input } from '../../UI/Form/Input/Input';
 import Button from '../../UI/Form/Button/Button';
+import { cn } from '../../../Data/AppContent';
 import { IDictionarySearchProps } from './DictionarySearch.d';
 
 const { clearInputIcon } = AppContentData.icons;
@@ -26,7 +27,7 @@ export const DictionarySearch = ({
         placeholder={placeholderLabel}
         value={searchValue}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => onChangeFunc(e.target.value)}
-        className={`${dictionarySearchInputClasses} ${searchValue && 'border-r border-gray-200'}`}
+        className={cn(dictionarySearchInputClasses, searchValue && 'border-r border-gray-202')}
       />
       {
         searchValue && (

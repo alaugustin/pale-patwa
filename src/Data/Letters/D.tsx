@@ -126,7 +126,7 @@ export const dataLibD = [{
   definition: ['job', 'work'],
   egSentenceKw: 'I pèd djòb li tou.',
   egSentenceEn: 'He lost his job too.',
-  synonym: ['twavay', 'twavay'],
+  synonym: ['twavay'],
   antonym: [null],
   etymology: '[< Eng. job]',
   dialect: '🇱🇨',

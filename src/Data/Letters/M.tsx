@@ -196,5 +196,16 @@ export const dataLibM = [{
   etymology: null,
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'manmzèl',
+  partOfSpeech: 'N',
+  definition: ['unmarried young woman'],
+  egSentenceKw: 'Sa sé on bèl manmzèl ki ka vann an magazen-an.',
+  egSentenceEn: 'That is a pretty young woman who is selling in the store.',
+  synonym: [null],
+  antonym: [null],
+  etymology: '[< Fr. mademoiselle]',
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];
