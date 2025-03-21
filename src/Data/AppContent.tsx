@@ -228,6 +228,13 @@ const footerContent = {
         icon: 'pdf',
         type: 'application/pdf',
       }, {
+        label: 'Configure ChatGPT for Learning Kwéyòl',
+        href: 'https://palekweyol.com/chat-gpt/',
+        target: '_blank',
+        rel: 'noreferrer noopener',
+        icon: 'link',
+        type: 'text/html',
+      }, {
         label: 'Kwéyòl Dictionary - Webonary',
         href: 'https://www.webonary.org/kweyol/',
         target: '_blank',
@@ -248,7 +255,7 @@ const footerContent = {
         rel: 'noreferrer noopener',
         icon: 'link',
         type: 'text/html',
-      }
+      },
     ]
   },
 };
