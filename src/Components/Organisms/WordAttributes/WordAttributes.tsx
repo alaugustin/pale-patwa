@@ -6,7 +6,7 @@ import Link from '../../UI/Link/Link';
 import { cn } from '../../../Data/AppContent';
 import { IWordAttributesProps } from './WordAttributes.d';
 
-const { linkClasses, borderTop } = AppContentData.uiHelperClasses;
+const { wordAttributesLinkClasses, borderTop } = AppContentData.uiHelperClasses;
 const { wordAttributeBorder } = AppContentData.uiClasses;
 const { collinsDictionaryLink } = AppContentData.libraryContent;
 const { normalizeText } = AppContentData.helperFunc;
@@ -72,7 +72,7 @@ export default function WordAttributes({
             linkHref={parseEtymologyLink() || ''}
             linkTarget='_blank'
             linkRel='noreferrer'
-            linkClasses={`${linkClasses} underline`}
+            linkClasses={cn(wordAttributesLinkClasses, 'underline')}
           >{wordEtymology}</Link>
         </Typography> : ''
       }
