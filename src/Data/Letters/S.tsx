@@ -171,7 +171,7 @@ export const dataLibS = [{
   egSentenceKw: 'Nonm sala toujou sou.',
   egSentenceEn: 'That man is always drunk.',
   synonym: [null],
-  antonym: ['natiwèl', 'natiwèl'],
+  antonym: ['natiwèl'],
   etymology: '[< Fr. saoul]',
   dialect: '🇱🇨',
   variant: [null],

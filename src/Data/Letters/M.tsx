@@ -207,5 +207,16 @@ export const dataLibM = [{
   etymology: '[< Fr. mademoiselle]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'manmay',
+  partOfSpeech: 'N',
+  definition: ['child'],
+  egSentenceKw: 'Tout sé manmay-la ni wim.',
+  egSentenceEn: 'All of the children have colds.',
+  synonym: ['ti manmay', 'zanfan'],
+  antonym: [null],
+  etymology: null,
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];

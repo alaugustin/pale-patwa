@@ -148,7 +148,7 @@ export const dataLibD = [{
   definition: ['to drive'],
   egSentenceKw: 'Sa ki ka drayv motoka-a?',
   egSentenceEn: 'Who is driving the car?',
-  synonym: ['kondwi', 'kondwi'],
+  synonym: ['kondwi'],
   antonym: [null],
   etymology: '[< Eng. drive]',
   dialect: '🇱🇨',

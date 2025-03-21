@@ -71,7 +71,7 @@ export const dataLibG = [{
   egSentenceKw: 'Mété pen-an adan an gwan panyen.',
   egSentenceEn: 'Put the bread in a large basket.',
   synonym: ['gwo', 'vyé'],
-  antonym: ['piti', 'piti'],
+  antonym: ['piti'],
   etymology: '[< Fr. gros]',
   dialect: '🇱🇨',
   variant: 'go',
