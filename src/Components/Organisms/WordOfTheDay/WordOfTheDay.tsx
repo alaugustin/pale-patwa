@@ -31,7 +31,7 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
   const renderCalendarIconText = parseInt(currentDayOfMonth) < 10 ? `0${currentDayOfMonth}` : currentDayOfMonth;
 
   const {
-    kweyoleWord,
+    kweyolWord,
     dialect,
     etymology,
     partOfSpeech,
@@ -60,7 +60,7 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
       <Typography
         variant="h3"
         className={wordOfTheDayH3Classes}
-      >{kweyoleWord}</Typography>
+      >{kweyolWord}</Typography>
 
       <WordAttributes
         wordEtymology={etymology ?? null}

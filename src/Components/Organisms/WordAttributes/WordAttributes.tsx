@@ -3,9 +3,10 @@ import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Typography } from '../../UI/Typography/Typography';
 import Link from '../../UI/Link/Link';
+import { cn } from '../../../Data/AppContent';
 import { IWordAttributesProps } from './WordAttributes.d';
 
-const { linkClasses, borderTop } = AppContentData.uiHelperClasses;
+const { wordAttributesLinkClasses, borderTop } = AppContentData.uiHelperClasses;
 const { wordAttributeBorder } = AppContentData.uiClasses;
 const { collinsDictionaryLink } = AppContentData.libraryContent;
 const { normalizeText } = AppContentData.helperFunc;
@@ -52,7 +53,7 @@ export default function WordAttributes({
   const filteredWord = wordEtymology ? extractWord(wordEtymology) : '';
 
   return (
-    <BlockElement variant='div' className={`${containerClasses} ${(wordDialect || wordPartOfSpeech || wordEtymology) ? `${borderTop} pt-4` : ''}`}>
+    <BlockElement variant='div' className={cn(containerClasses, (wordDialect || wordPartOfSpeech || wordEtymology) ? `${borderTop} pt-4` : '')}>
       <Typography
         variant="span"
         className={`${(wordPartOfSpeech && wordAttributeBorder) || (wordEtymology && wordAttributeBorder)}`}
@@ -71,7 +72,7 @@ export default function WordAttributes({
             linkHref={parseEtymologyLink() || ''}
             linkTarget='_blank'
             linkRel='noreferrer'
-            linkClasses={`${linkClasses} underline`}
+            linkClasses={cn(wordAttributesLinkClasses, 'underline')}
           >{wordEtymology}</Link>
         </Typography> : ''
       }

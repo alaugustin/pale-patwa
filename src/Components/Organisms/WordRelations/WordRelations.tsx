@@ -2,6 +2,7 @@ import React from 'react';
 import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Typography } from '../../UI/Typography/Typography';
+import { cn } from '../../../Data/AppContent';
 import { IWordRelationsProps, IWordGroupProps } from './WordRelations.d';
 
 const {
@@ -42,7 +43,7 @@ export default function WordRelations({
   ];
 
   return hasContent ? (
-    <BlockElement className={`${wordRelationsContainerClasses} ${hasContent ? `${borderTop} pt-4` : ''}`}>
+    <BlockElement className={cn(wordRelationsContainerClasses, hasContent ? `${borderTop} pt-4` : '')}>
       {wordTypes.map(({ type, data }) =>
         data?.[0] && Array.isArray(data) && (
           <Typography key={type} variant="span" className="mr-1 last:mr-0">

@@ -86,5 +86,16 @@ export const dataLibC = [{
   etymology: '[< Eng. shilling]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'chanjmandè',
+  partOfSpeech: 'N',
+  definition: ['a change of air', 'atmosphere', 'setting', 'location'],
+  egSentenceKw: 'Si ou alé Anglitè anlè vakans, chanjmandè-a kay bon pou\'w.',
+  egSentenceEn: 'If you go to England on vacation, the change of setting will be good for you.',
+  synonym: [null],
+  antonym: [null],
+  etymology: '[< Eng. changement d\'air]',
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];

@@ -1,5 +1,12 @@
 import React from 'react';
 import { Pronounciation } from './Misc/PronounciationData';
+import { clsx } from 'clsx';
+import { twMerge } from 'tailwind-merge';
+
+type ClassNameInput = string | object | undefined | null | false;
+export const cn = (...inputs: ClassNameInput[]): string => {
+  return twMerge(clsx(inputs)) as string;
+};
 
 const globalPageContent = {
   mainHeading: 'Palé Kwéyòl',
@@ -12,7 +19,7 @@ const globalPageContent = {
     'word', 'definition', 'egSentenceKw', 'egSentenceEn', 'etymology', 'synonym', 'antonym', 'variant',
   ],
   excludedWordsArr: [
-    'li.', 'mwen.', 'nèf.', 'lenpo', 'nwè.', 'nou.', 'sala?', 'dòla.', 'gason-an', 'nonm-lan', 'tab-la.', 'sala.'
+    'li.', 'mwen.', 'nèf.', 'lenpo', 'nwè.', 'nou.', 'sala?', 'dòla.', 'gason-an', 'nonm-lan', 'tab-la.', 'sala.', 'genyen', 'manmay-la'
   ],
   daysOfTheWeekArr: [
     'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
@@ -33,8 +40,9 @@ const uiHelperClasses = {
   flexCol: 'flex flex-col',
   flexItemsCenter: 'flex items-center justify-center',
   footerColClasses: 'flex basis-full md:basis-1/4 flex-row text-xs',
+  footerLinkClasses: 'text-slate-300 hover:text-blue-600 visited:text-slate-400 text-xs hover:underline cursor-pointer',
   headerIconClasses: 'w-6 h-6 mr-2 mt-1',
-  linkClasses: 'text-slate-600 hover:text-blue-600 visited:text-amber-700 text-xs hover:underline cursor-pointer',
+  wordAttributesLinkClasses: 'text-slate-800 hover:text-blue-600 visited:text-blue-400 text-xs hover:underline cursor-pointer',
 };
 
 const {
@@ -43,7 +51,7 @@ const {
   footerColClasses,
   buttonHelperClasses,
   headerIconClasses,
-  linkClasses,
+  footerLinkClasses,
   backToTopTextColor,
   borderColor,
   borderBottom,
@@ -53,48 +61,48 @@ const {
 } = uiHelperClasses;
 
 const uiClasses = {
-  alphabetFilterClasses: `${alphaFilterHelperClasses} rounded-full bg-gray-300`,
-  alphabetFilterClassesAllButton: `${alphaFilterHelperClasses} underline`,
-  alphabetFilterHolderClasses: `${flexItemsCenter} flex-row flex-wrap mb-4`,
-  appAllHolderClasses: `${flexCol} h-screen max-w-6xl mx-auto text-slate-800`,
+  alphabetFilterClasses: cn(alphaFilterHelperClasses, 'rounded-full bg-gray-300'),
+  alphabetFilterClassesAllButton: cn(alphaFilterHelperClasses, 'underline'),
+  alphabetFilterHolderClasses: cn(flexItemsCenter, 'flex-row flex-wrap mb-4'),
+  appAllHolderClasses: cn(flexCol, 'h-screen max-w-6xl mx-auto text-slate-800'),
   backToTopButton: `${flexItemsCenter} ${borderColor} fixed bottom-8 right-8 rounded-full shadow-lg flex-row gap-x-2 p-4 bg-amber-500 hover:bg-amber-600 border-2 text-${backToTopTextColor}`,
   backToTopIconClasses: `h-5 w-5 fill-${backToTopTextColor}`,
-  bookIconClasses: `${headerIconClasses} mt-2`,
+  bookIconClasses: cn(headerIconClasses, 'mt-2'),
   calendarIconClasses: headerIconClasses,
   centeredBlurbCopyClasses: 'mb-6 max-w-screen-sm text-center',
   clearInputIconClasses: 'h-4 w-4 m-2 fill-gray-400',
-  copyRightContainerClasses: `${footerColClasses} p-2 md:pb-7 order-last md:order-first`,
+  copyRightContainerClasses: cn(footerColClasses, 'p-2 md:pb-7 order-last md:order-first'),
   copyRightIconClasses: 'h-3 w-3 fill-slate-50',
   dictionarySearchClasses: `${flexItemsCenter} ${borderColor} flex-row mb-8 border rounded-full bg-white`,
   dictionarySearchInputClasses: 'p-2 px-4 w-64 rounded-full border-r-0',
   flagHolderClasses: 'mr- sm:mr-1 lg:mr-3 last:mr-0 flex-wrap',
   footerContainerClasses: `${borderTop} ${flexCol} pb-7 basis-14 md:flex-row justify-between md:flex-wrap bg-slate-800 text-slate-50`,
-  footerFlagSectionClasses: `${footerColClasses} p-2 md:pb-7 md:mb-0 md:justify-end`,
-  footerResourcesContinerClasses: `${flexCol} p-2 md:pb-7 basis-full md:mb-0 md:px-4 md:basis-1/2`,
-  footerResourcesLinkClasses: linkClasses,
+  footerFlagSectionClasses: cn(footerColClasses, 'p-2 md:pb-7 md:mb-0 md:justify-end'),
+  footerResourcesContinerClasses: cn(flexCol, 'p-2 md:pb-7 basis-full md:mb-0 md:px-4 md:basis-1/2'),
+  footerResourcesLinkClasses: footerLinkClasses,
   footerResourcesTitleClasses: 'font-bold text-sm mb-1',
   headerContainerClasses: `${flexItemsCenter} ${borderBottom} py-3 p-2 basis-14 justify-between bg-blue-600 text-slate-50`,
   headerDateClasses: 'ml-2 text-xs md:text-sm lg:text-lg',
   headerH1Classes: 'text-2xl sm:text-2xl md:text-3xl lg:text-4xl mr-2',
-  listButtonClass: `${borderColor} border-2 p-3 px-6 rounded-full bg-gray-100`,
-  mainContainerClasses: `${flexItemsCenter} flex-1 flex-col bg-slate-50 text-slate-800`,
+  listButtonClass: cn(borderColor, 'border-2 p-3 px-6 rounded-full bg-gray-100'),
+  mainContainerClasses: cn(flexItemsCenter, 'flex-1 flex-col bg-slate-50 text-slate-800'),
   modalContainerClasses: `${flexItemsCenter} fixed inset-0 bg-black bg-opacity-50 z-50 w-screen h-screen`,
   modalContentClasses: 'bg-white p-6 rounded-lg shadow-xl mx-4 w-full sm:max-w-md sm:min-w-96',
   modalH2Classes: 'text-2xl font-bold mb-2 font-serif',
-  paginationBoardClasses: `${flexItemsCenter} flex-row`,
+  paginationBoardClasses: cn(flexItemsCenter, 'flex-row'),
   paginationButton: 'hover:bg-gray-200 p-2',
   paginationButtonDisabled: 'cursor-not-allowed disabled:opacity-50',
-  paginationContainerClasses: `${borderColor} mt-6 flex flex-row p-2 px-4 rounded-full border`,
+  paginationContainerClasses: cn(borderColor, 'mt-6 flex flex-row p-2 px-4 rounded-full border'),
   paginationNextJumpClasses: 'ml-2 sm:ml-3 md:ml-4',
   paginationNumberContainer: `${flexItemsCenter} ${borderColor} h-6 w-6 border-2 rounded p-4`,
   paginationPrevJumpClasses: 'mr-2 sm:mr-3 md:mr-4',
-  primaryButton: `${buttonHelperClasses} border-2 text-white py-2 px-5 rounded-full`,
+  primaryButton: cn(buttonHelperClasses, 'border-2 text-white py-2 px-5 rounded-full'),
   pronounciationContainerClasses: `${blockElementPadding} ${flexItemsCenter} mb-4 flex-col w-full order-first basis-full flex-auto bg-blue-100 text-slate-800`,
   pronounciationListClasses: 'grid grid-cols-4 md:grid-cols-8 gap-4 w-full',
-  pronounciationListItemClasses: `${flexItemsCenter} flex-col text-xs text-slate-600 hover:text-blue-600 visited:text-amber-700 hover:underline cursor-pointer`,
+  pronounciationListItemClasses: cn(flexItemsCenter, 'flex-col text-xs text-slate-600 hover:text-blue-600 visited:text-amber-700 hover:underline cursor-pointer'),
   resourcesLinkClass: 'mb-2 last:mb-0 text-xs flex',
   resourcesLinkIconClasses: 'h-3 w-3 fill-white',
-  skipLinkClasses: `${flexItemsCenter} sr-only focus:not-sr-only text-center underline py-2 bg-amber-500 text-slate-50`,
+  skipLinkClasses: cn(flexItemsCenter, 'sr-only focus:not-sr-only text-center underline py-2 bg-amber-500 text-slate-50'),
   twoColColumnClasses: 'even:basis-5/12 odd:basis-7/12 md:odd:pr-2 md:even:pl-2',
   twoColContainerClasses: 'max-w-screen-sm md:flex md:flex-row flex-col',
   wordAttributeBorder: 'pr-2 mr-2 border-r border-black',
@@ -220,6 +228,13 @@ const footerContent = {
         icon: 'pdf',
         type: 'application/pdf',
       }, {
+        label: 'Configure ChatGPT for Learning Kwéyòl',
+        href: 'https://palekweyol.com/chat-gpt/',
+        target: '_blank',
+        rel: 'noreferrer noopener',
+        icon: 'link',
+        type: 'text/html',
+      }, {
         label: 'Kwéyòl Dictionary - Webonary',
         href: 'https://www.webonary.org/kweyol/',
         target: '_blank',
@@ -240,7 +255,7 @@ const footerContent = {
         rel: 'noreferrer noopener',
         icon: 'link',
         type: 'text/html',
-      }
+      },
     ]
   },
 };
