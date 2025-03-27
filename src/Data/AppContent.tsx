@@ -98,8 +98,10 @@ const uiClasses = {
   paginationPrevJumpClasses: 'mr-2 sm:mr-3 md:mr-4',
   primaryButton: cn(buttonHelperClasses, 'border-2 text-white py-2 px-5 rounded-full'),
   pronounciationContainerClasses: `${blockElementPadding} ${flexItemsCenter} mb-4 flex-col w-full order-first basis-full flex-auto bg-blue-100 text-slate-800`,
+  pronounciationHeadingClasses: 'w-6 h-6 mr-2 mt-2',
   pronounciationListClasses: 'grid grid-cols-4 md:grid-cols-8 gap-4 w-full',
   pronounciationListItemClasses: cn(flexItemsCenter, 'flex-col text-xs text-slate-600 hover:text-blue-600 visited:text-amber-700 hover:underline cursor-pointer'),
+  pronounciationParagraphClasses: 'mb-6 max-w-screen-sm text-center',
   resourcesLinkClass: 'mb-2 last:mb-0 text-xs flex',
   resourcesLinkIconClasses: 'h-3 w-3 fill-white',
   skipLinkClasses: cn(flexItemsCenter, 'sr-only focus:not-sr-only text-center underline py-2 bg-amber-500 text-slate-50'),
@@ -170,6 +172,11 @@ const icons = {
   ) => (
     <svg xmlns="http://www.w3.org/2000/svg" className={iconClasses} viewBox="0 0 16 16"><path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" /><path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z" /></svg>
   ),
+
+  chatWithRDQuotIcon: (
+    iconClasses: string,
+  ) => (<svg xmlns="http://www.w3.org/2000/svg" className={iconClasses} viewBox="0 0 16 16"><path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z" /><path d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z" /></svg>
+  ),
 };
 
 const wordOfTheDayContent = {
@@ -209,15 +216,10 @@ const libraryContent = {
   collinsDictionaryLink: 'https://www.collinsdictionary.com/dictionary',
 };
 
-const pronounciationContent = {
-  pronounciationTitleH2: 'IPA Pronunciation',
-  phoneme: Pronounciation
-};
-
 const footerContent = {
   resources: {
     titleH2: 'Resources',
-    flags: ['🇱🇨', '🇻🇨', '🇩🇲', '🇬🇩', '🇹🇹', '🇭🇹', '🇬🇫', '🇻🇪', '🇲🇶'],
+    flags: ['🇱🇨', '🇲🇶', '🇻🇨', '🇩🇲', '🇬🇩', '🇹🇹', '🇭🇹', '🇬🇫', '🇻🇪'],
     links: [
       {
         label: 'Kwéyòl Dictionary - Ministry of Education, Government of Saint Lucia',
@@ -258,6 +260,15 @@ const footerContent = {
       },
     ]
   },
+  ipaPronounciation : {
+    pronounciationTitleH2: 'IPA Pronunciation',
+    phoneme: Pronounciation,
+    blurb: [
+      'The International Phonetic Alphabet (IPA) is a standardized system of phonetic notation.',
+      'It is used by linguists, speech-language pathologists, and others to accurately represent the sounds of spoken language.'
+    ]
+
+  }
 };
 
 const helperFunc = {
@@ -277,7 +288,6 @@ export const AppContentData = {
   globalPageContent,
   wordOfTheDayContent,
   libraryContent,
-  pronounciationContent,
   footerContent,
   icons,
   uiClasses,

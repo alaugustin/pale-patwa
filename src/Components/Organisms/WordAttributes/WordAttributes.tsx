@@ -6,10 +6,11 @@ import Link from '../../UI/Link/Link';
 import { cn } from '../../../Data/AppContent';
 import { IWordAttributesProps } from './WordAttributes.d';
 
-const { wordAttributesLinkClasses, borderTop } = AppContentData.uiHelperClasses;
 const { wordAttributeBorder } = AppContentData.uiClasses;
 const { collinsDictionaryLink } = AppContentData.libraryContent;
 const { normalizeText } = AppContentData.helperFunc;
+
+const { wordAttributesLinkClasses, borderTop } = AppContentData.uiHelperClasses;
 
 export default function WordAttributes({
   wordEtymology,
@@ -62,7 +63,7 @@ export default function WordAttributes({
       {wordPartOfSpeech && (
         <Typography
           variant="span"
-          className={`font-mono text-xs ${wordEtymology && wordAttributeBorder}`}
+          className={cn(wordEtymology && wordAttributeBorder, 'font-mono text-xs')}
         >{wordPartOfSpeech ?? ''}</Typography>
       )}
 

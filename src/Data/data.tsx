@@ -119,3 +119,5 @@ console.log('topWords: ', topEgSentenceKw);
 
 // https://en.wikipedia.org/wiki/Saint_Lucian_Creole#Zannimo_-_Animals
 // left off at `mèl`
+
+// TODO: add https://icons.getbootstrap.com/icons/chat-right-quote-fill/ to IPA Pronunciation table and add blurb

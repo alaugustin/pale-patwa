@@ -7,6 +7,7 @@ import { cn } from '../../../Data/AppContent';
 import { IDictionarySearchProps } from './DictionarySearch.d';
 
 const { clearInputIcon } = AppContentData.icons;
+
 const {
   dictionarySearchClasses,
   dictionarySearchInputClasses,

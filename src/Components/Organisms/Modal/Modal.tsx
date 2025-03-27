@@ -8,14 +8,15 @@ import Button from '../../UI/Form/Button/Button';
 import WordRelations from '../WordRelations/WordRelations';
 import { IModalProps } from './Modal.d';
 
+const { modalClose } = AppContentData.libraryContent;
+const { borderTop } = AppContentData.uiHelperClasses;
+
 const {
   primaryButton,
   modalContainerClasses,
   modalContentClasses,
   modalH2Classes,
 } = AppContentData.uiClasses;
-const { modalClose } = AppContentData.libraryContent;
-const { borderTop } = AppContentData.uiHelperClasses;
 
 export default function Modal({
   modalTitle,
