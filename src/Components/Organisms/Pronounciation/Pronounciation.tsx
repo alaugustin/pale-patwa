@@ -1,15 +1,19 @@
 import React from 'react';
 import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
-import { Typography } from '../../UI/Typography/Typography';
 import PronunciationList from './PronounciationList/PronounciationList';
+import RenderElementHead from '../RenderElementHead/RenderElementHead';
 import { IPronunciationsProps } from './Pronounciation.d';
 
-const { phoneme } = AppContentData.pronounciationContent;
+const { chatWithRDQuotIcon } = AppContentData.icons;
+
+const { phoneme, blurb } = AppContentData.footerContent.ipaPronounciation;
 
 const {
   pronounciationListItemClasses,
-  pronounciationListClasses
+  pronounciationListClasses,
+  pronounciationParagraphClasses,
+  pronounciationHeadingClasses
 } = AppContentData.uiClasses;
 
 export default function Pronunciations({
@@ -18,7 +22,14 @@ export default function Pronunciations({
 }: IPronunciationsProps) {
   return (
     <BlockElement id='wordPhonemes' variant='div' className={className}>
-      <Typography variant='h2' className='text-3xl mb-6'>{titleH2}</Typography>
+      <RenderElementHead
+        elementTitle={titleH2 || ''}
+        copyWrapperClassName={pronounciationParagraphClasses}
+        copyData={blurb}
+        headingIcon={
+          chatWithRDQuotIcon(pronounciationHeadingClasses)
+        }
+      />
 
       <PronunciationList
         dataArr={phoneme}

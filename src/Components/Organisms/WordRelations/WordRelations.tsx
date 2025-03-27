@@ -5,11 +5,12 @@ import { Typography } from '../../UI/Typography/Typography';
 import { cn } from '../../../Data/AppContent';
 import { IWordRelationsProps, IWordGroupProps } from './WordRelations.d';
 
+const { borderTop } = AppContentData.uiHelperClasses;
+
 const {
   wordRelationsContainerClasses,
   wordRelationsItemClasses
 } = AppContentData.uiClasses;
-const { borderTop } = AppContentData.uiHelperClasses;
 
 const WordGroup = ({
   label,

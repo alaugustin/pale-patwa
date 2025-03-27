@@ -7,9 +7,10 @@ import ResourcesLink from './ResourcesLink/ResourcesLink';
 import { IFooterProps } from './Footer.d';
 
 const footerResourcesLinks = AppContentData.footerContent.resources.links;
-const { titleH2, flags } = AppContentData.footerContent.resources;
-const { pronounciationTitleH2 } = AppContentData.pronounciationContent;
+const { pronounciationTitleH2 } = AppContentData.footerContent.ipaPronounciation;
 const { copyright } = AppContentData.icons;
+
+const { titleH2, flags } = AppContentData.footerContent.resources;
 
 const {
   pronounciationContainerClasses,
