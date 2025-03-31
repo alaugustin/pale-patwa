@@ -56,7 +56,9 @@ export default function Footer({
           <Typography
             key={index}
             variant='span'
-            className={flagHolderClasses}>{flag}</Typography>
+            className={flagHolderClasses}
+            role='img'
+            ariaLabel={flag.ariaLabel}>{flag.flag}</Typography>
         ))}
       </BlockElement>
     </BlockElement>

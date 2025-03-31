@@ -4,7 +4,9 @@ import { ITypographyProps } from './Typography.d';
 export const Typography = ({
   variant,
   className,
-  children
+  children,
+  role,
+  ariaLabel,
 }: ITypographyProps) => {
   const elements = {
     h1: 'h1',
@@ -22,5 +24,5 @@ export const Typography = ({
     elements[variant as keyof typeof elements] :
     'p';
 
-  return <Element className={className}>{children}</Element>;
+  return <Element className={className} role={role} aria-label={ariaLabel}>{children}</Element>;
 };

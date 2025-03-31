@@ -219,7 +219,21 @@ const libraryContent = {
 const footerContent = {
   resources: {
     titleH2: 'Resources',
-    flags: ['🇱🇨', '🇲🇶', '🇻🇨', '🇩🇲', '🇬🇩', '🇹🇹', '🇭🇹', '🇬🇫', '🇻🇪'],
+    flags: [
+      {
+        flag: '🇱🇨', ariaLabel: 'Saint Lucia	/ Sent Lisi'
+      },
+      { flag: '🇲🇶', ariaLabel: 'Martinique / Matinik' },
+      {
+        flag: '🇻🇨', ariaLabel: 'Saint Vincent & the Grenadines / Sen Vensan épi Grènadin'
+      },
+      { flag: '🇩🇲', ariaLabel: 'Dominica / Dominik' },
+      { flag: '🇬🇩', ariaLabel: 'Grenada / Gwènad' },
+      { flag: '🇹🇹', ariaLabel: 'Trinidad & Tobago	/ Trinité épi Tobago' },
+      { flag: '🇭🇹', ariaLabel: 'Haiti / Ayiti' },
+      { flag: '🇬🇫', ariaLabel: 'French Guiana	 / Gwiyann' },
+      { flag: '🇻🇪', ariaLabel: 'Venezuela / Vénézwèla' },
+      { flag: '🇬🇵', ariaLabel: 'Guadeloupe / Gwadloup' }],
     links: [
       {
         label: 'Kwéyòl Dictionary - Ministry of Education, Government of Saint Lucia',
@@ -260,7 +274,7 @@ const footerContent = {
       },
     ]
   },
-  ipaPronounciation : {
+  ipaPronounciation: {
     pronounciationTitleH2: 'IPA Pronunciation',
     phoneme: Pronounciation,
     blurb: [

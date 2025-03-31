@@ -11,4 +11,5 @@ export interface ITypographyProps {
   className?: string;
   children?: React.ReactNode;
   ariaLabel?: string;
+  role?: string;
 }
