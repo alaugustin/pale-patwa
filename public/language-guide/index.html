@@ -1,0 +1,4266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="keywords"
+      content="Kwéyòl, Saint Lucian Creole, language guide, Caribbean languages, Creole learning"
+    />
+    <meta
+      name="description"
+      content="A comprehensive guide to learning Saint Lucian Kwéyòl (Creole), including vocabulary, grammar, and cultural insights."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Saint Lucian Kwéyòl (Creole) Guide" />
+    <meta property="og:image" content="../assets/img/favicon.svg" />
+    <meta
+      property="og:description"
+      content="Explore the vibrant world of Saint Lucian Kwéyòl with this detailed language guide."
+    />
+    <meta property="og:url" content="https://palekweyol.com/chat-gpt/" />
+    <meta property="og:site_name" content="Kwéyòl Language Guide" />
+
+    <link rel="shortcut icon" href="../assets/img/favicon.svg" />
+
+    <title>Saint Lucian Kwéyòl (Creole) Guide</title>
+
+    <style>
+      code[class*="language-"],
+      pre[class*="language-"] {
+        color: #333;
+        background: 0 0;
+        font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        text-align: left;
+        white-space: pre;
+        word-spacing: normal;
+        word-break: normal;
+        word-wrap: normal;
+        line-height: 1.4;
+        -moz-tab-size: 8;
+        -o-tab-size: 8;
+        tab-size: 8;
+        -webkit-hyphens: none;
+        -moz-hyphens: none;
+        -ms-hyphens: none;
+        hyphens: none;
+      }
+
+      pre[class*="language-"] {
+        padding: 0.8em;
+        overflow: auto;
+        border-radius: 3px;
+        background: #f5f5f5;
+      }
+
+      :not(pre) > code[class*="language-"] {
+        padding: 0.1em;
+        border-radius: 0.3em;
+        white-space: normal;
+        background: #f5f5f5;
+      }
+
+      .token.blockquote,
+      .token.comment {
+        color: #969896;
+      }
+
+      .token.cdata {
+        color: #183691;
+      }
+
+      .token.doctype,
+      .token.macro.property,
+      .token.punctuation,
+      .token.variable {
+        color: #333;
+      }
+
+      .token.builtin,
+      .token.important,
+      .token.keyword,
+      .token.operator,
+      .token.rule {
+        color: #a71d5d;
+      }
+
+      .token.attr-value,
+      .token.regex,
+      .token.string,
+      .token.url {
+        color: #183691;
+      }
+
+      .token.atrule,
+      .token.boolean,
+      .token.code,
+      .token.command,
+      .token.constant,
+      .token.entity,
+      .token.number,
+      .token.property,
+      .token.symbol {
+        color: #0086b3;
+      }
+
+      .token.prolog,
+      .token.selector,
+      .token.tag {
+        color: #63a35c;
+      }
+
+      .token.attr-name,
+      .token.class,
+      .token.class-name,
+      .token.function,
+      .token.id,
+      .token.namespace,
+      .token.pseudo-class,
+      .token.pseudo-element,
+      .token.url-reference .token.variable {
+        color: #795da3;
+      }
+
+      .token.entity {
+        cursor: help;
+      }
+
+      .token.title,
+      .token.title .token.punctuation {
+        font-weight: 700;
+        color: #1d3e81;
+      }
+
+      .token.list {
+        color: #ed6a43;
+      }
+
+      .token.inserted {
+        background-color: #eaffea;
+        color: #55a532;
+      }
+
+      .token.deleted {
+        background-color: #ffecec;
+        color: #bd2c00;
+      }
+
+      .token.bold {
+        font-weight: 700;
+      }
+
+      .token.italic {
+        font-style: italic;
+      }
+
+      .language-json .token.property {
+        color: #183691;
+      }
+
+      .language-markup .token.tag .token.punctuation {
+        color: #333;
+      }
+
+      .language-css .token.function,
+      code.language-css {
+        color: #0086b3;
+      }
+
+      .language-yaml .token.atrule {
+        color: #63a35c;
+      }
+
+      code.language-yaml {
+        color: #183691;
+      }
+
+      .language-ruby .token.function {
+        color: #333;
+      }
+
+      .language-markdown .token.url {
+        color: #795da3;
+      }
+
+      .language-makefile .token.symbol {
+        color: #795da3;
+      }
+
+      .language-makefile .token.variable {
+        color: #183691;
+      }
+
+      .language-makefile .token.builtin {
+        color: #0086b3;
+      }
+
+      .language-bash .token.keyword {
+        color: #0086b3;
+      }
+
+      pre[data-line] {
+        position: relative;
+        padding: 1em 0 1em 3em;
+      }
+
+      pre[data-line] .line-highlight-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        display: block;
+        width: 100%;
+      }
+
+      pre[data-line] .line-highlight {
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding: inherit 0;
+        margin-top: 1em;
+        background: hsla(24, 20%, 50%, 0.08);
+        background: linear-gradient(
+          to right,
+          hsla(24, 20%, 50%, 0.1) 70%,
+          hsla(24, 20%, 50%, 0)
+        );
+        pointer-events: none;
+        line-height: inherit;
+        white-space: pre;
+      }
+
+      pre[data-line] .line-highlight:before,
+      pre[data-line] .line-highlight[data-end]:after {
+        content: attr(data-start);
+        position: absolute;
+        top: 0.4em;
+        left: 0.6em;
+        min-width: 1em;
+        padding: 0 0.5em;
+        background-color: hsla(24, 20%, 50%, 0.4);
+        color: #f4f1ef;
+        font: bold 65%/1.5 sans-serif;
+        text-align: center;
+        vertical-align: 0.3em;
+        border-radius: 999px;
+        text-shadow: none;
+        box-shadow: 0 1px #fff;
+      }
+
+      pre[data-line] .line-highlight[data-end]:after {
+        content: attr(data-end);
+        top: auto;
+        bottom: 0.4em;
+      }
+
+      html body {
+        font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans,
+          sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fff;
+        overflow: initial;
+        box-sizing: border-box;
+        word-wrap: break-word;
+      }
+
+      html body > :first-child {
+        margin-top: 0;
+      }
+
+      html body h1,
+      html body h2,
+      html body h3,
+      html body h4,
+      html body h5,
+      html body h6 {
+        line-height: 1.2;
+        margin-top: 1em;
+        margin-bottom: 16px;
+        color: #000;
+      }
+
+      html body h1 {
+        font-size: 2.25em;
+        font-weight: 300;
+        padding-bottom: 0.3em;
+      }
+
+      html body h2 {
+        font-size: 1.75em;
+        font-weight: 400;
+        padding-bottom: 0.3em;
+      }
+
+      html body h3 {
+        font-size: 1.5em;
+        font-weight: 500;
+      }
+
+      html body h4 {
+        font-size: 1.25em;
+        font-weight: 600;
+      }
+
+      html body h5 {
+        font-size: 1.1em;
+        font-weight: 600;
+      }
+
+      html body h6 {
+        font-size: 1em;
+        font-weight: 600;
+      }
+
+      html body h1,
+      html body h2,
+      html body h3,
+      html body h4,
+      html body h5 {
+        font-weight: 600;
+      }
+
+      html body h5 {
+        font-size: 1em;
+      }
+
+      html body h6 {
+        color: #5c5c5c;
+      }
+
+      html body strong {
+        color: #000;
+      }
+
+      html body del {
+        color: #5c5c5c;
+      }
+
+      html body a:not([href]) {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      html body a {
+        color: #08c;
+        text-decoration: none;
+      }
+
+      html body a:hover {
+        color: #00a3f5;
+        text-decoration: none;
+      }
+
+      html body img {
+        max-width: 100%;
+      }
+
+      html body > p {
+        margin-top: 0;
+        margin-bottom: 16px;
+        word-wrap: break-word;
+      }
+
+      html body > ol,
+      html body > ul {
+        margin-bottom: 16px;
+      }
+
+      html body ol,
+      html body ul {
+        padding-left: 2em;
+      }
+
+      html body ol.no-list,
+      html body ul.no-list {
+        padding: 0;
+        list-style-type: none;
+      }
+
+      html body ol ol,
+      html body ol ul,
+      html body ul ol,
+      html body ul ul {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      html body li {
+        margin-bottom: 0;
+      }
+
+      html body li.task-list-item {
+        list-style: none;
+      }
+
+      html body li > p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      html body .task-list-item-checkbox {
+        margin: 0 0.2em 0.25em -1.8em;
+        vertical-align: middle;
+      }
+
+      html body .task-list-item-checkbox:hover {
+        cursor: pointer;
+      }
+
+      html body blockquote {
+        margin: 16px 0;
+        font-size: inherit;
+        padding: 0 15px;
+        color: #5c5c5c;
+        background-color: #f0f0f0;
+        border-left: 4px solid #d6d6d6;
+      }
+
+      html body blockquote > :first-child {
+        margin-top: 0;
+      }
+
+      html body blockquote > :last-child {
+        margin-bottom: 0;
+      }
+
+      html body hr {
+        height: 4px;
+        margin: 32px 0;
+        background-color: #d6d6d6;
+        border: 0 none;
+      }
+
+      html body table {
+        margin: 10px 0 15px 0;
+        border-collapse: collapse;
+        border-spacing: 0;
+        display: block;
+        width: 100%;
+        overflow: auto;
+        word-break: normal;
+        word-break: keep-all;
+      }
+
+      html body table th {
+        font-weight: 700;
+        color: #000;
+      }
+
+      html body table td,
+      html body table th {
+        border: 1px solid #d6d6d6;
+        padding: 6px 13px;
+      }
+
+      html body dl {
+        padding: 0;
+      }
+
+      html body dl dt {
+        padding: 0;
+        margin-top: 16px;
+        font-size: 1em;
+        font-style: italic;
+        font-weight: 700;
+      }
+
+      html body dl dd {
+        padding: 0 16px;
+        margin-bottom: 16px;
+      }
+
+      html body code {
+        font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+        font-size: 0.85em;
+        color: #000;
+        background-color: #f0f0f0;
+        border-radius: 3px;
+        padding: 0.2em 0;
+      }
+
+      html body code::after,
+      html body code::before {
+        letter-spacing: -0.2em;
+        content: "\00a0";
+      }
+
+      html body pre > code {
+        padding: 0;
+        margin: 0;
+        word-break: normal;
+        white-space: pre;
+        background: 0 0;
+        border: 0;
+      }
+
+      html body .highlight {
+        margin-bottom: 16px;
+      }
+
+      html body .highlight pre,
+      html body pre {
+        padding: 1em;
+        overflow: auto;
+        line-height: 1.45;
+        border: #d6d6d6;
+        border-radius: 3px;
+      }
+
+      html body .highlight pre {
+        margin-bottom: 0;
+        word-break: normal;
+      }
+
+      html body pre code,
+      html body pre tt {
+        display: inline;
+        max-width: initial;
+        padding: 0;
+        margin: 0;
+        overflow: initial;
+        line-height: inherit;
+        word-wrap: normal;
+        background-color: transparent;
+        border: 0;
+      }
+
+      html body pre code:after,
+      html body pre code:before,
+      html body pre tt:after,
+      html body pre tt:before {
+        content: normal;
+      }
+
+      html body blockquote,
+      html body dl,
+      html body ol,
+      html body p,
+      html body pre,
+      html body ul {
+        margin-top: 0;
+        margin-bottom: 16px;
+      }
+
+      html body kbd {
+        color: #000;
+        border: 1px solid #d6d6d6;
+        border-bottom: 2px solid #c7c7c7;
+        padding: 2px 4px;
+        background-color: #f0f0f0;
+        border-radius: 3px;
+      }
+
+      @media print {
+        html body {
+          background-color: #fff;
+        }
+
+        html body h1,
+        html body h2,
+        html body h3,
+        html body h4,
+        html body h5,
+        html body h6 {
+          color: #000;
+          page-break-after: avoid;
+        }
+
+        html body blockquote {
+          color: #5c5c5c;
+        }
+
+        html body pre {
+          page-break-inside: avoid;
+        }
+
+        html body table {
+          display: table;
+        }
+
+        html body img {
+          display: block;
+          max-width: 100%;
+          max-height: 100%;
+        }
+
+        html body code,
+        html body pre {
+          word-wrap: break-word;
+          white-space: pre;
+        }
+      }
+
+      .markdown-preview {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+      }
+
+      .markdown-preview ul {
+        list-style: disc;
+      }
+
+      .markdown-preview ul ul {
+        list-style: circle;
+      }
+
+      .markdown-preview ul ul ul {
+        list-style: square;
+      }
+
+      .markdown-preview ol {
+        list-style: decimal;
+      }
+
+      .markdown-preview ol ol,
+      .markdown-preview ul ol {
+        list-style-type: lower-roman;
+      }
+
+      .markdown-preview ol ol ol,
+      .markdown-preview ol ul ol,
+      .markdown-preview ul ol ol,
+      .markdown-preview ul ul ol {
+        list-style-type: lower-alpha;
+      }
+
+      .markdown-preview .newpage,
+      .markdown-preview .pagebreak {
+        page-break-before: always;
+      }
+
+      .markdown-preview pre.line-numbers {
+        position: relative;
+        padding-left: 3.8em;
+        counter-reset: linenumber;
+      }
+
+      .markdown-preview pre.line-numbers > code {
+        position: relative;
+      }
+
+      .markdown-preview pre.line-numbers .line-numbers-rows {
+        position: absolute;
+        pointer-events: none;
+        top: 1em;
+        font-size: 100%;
+        left: 0;
+        width: 3em;
+        letter-spacing: -1px;
+        border-right: 1px solid #999;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      .markdown-preview pre.line-numbers .line-numbers-rows > span {
+        pointer-events: none;
+        display: block;
+        counter-increment: linenumber;
+      }
+
+      .markdown-preview pre.line-numbers .line-numbers-rows > span:before {
+        content: counter(linenumber);
+        color: #999;
+        display: block;
+        padding-right: 0.8em;
+        text-align: right;
+      }
+
+      .markdown-preview .mathjax-exps .MathJax_Display {
+        text-align: center !important;
+      }
+
+      .markdown-preview:not([data-for="preview"])
+        .code-chunk
+        .code-chunk-btn-group {
+        display: none;
+      }
+
+      .markdown-preview:not([data-for="preview"]) .code-chunk .status {
+        display: none;
+      }
+
+      .markdown-preview:not([data-for="preview"]) .code-chunk .output-div {
+        margin-bottom: 16px;
+      }
+
+      .markdown-preview .md-toc {
+        padding: 0;
+      }
+
+      .markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link {
+        display: inline;
+        padding: 0.25rem 0;
+      }
+
+      .markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,
+      .markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p {
+        display: inline;
+      }
+
+      .markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link {
+        font-weight: 800;
+      }
+
+      .scrollbar-style::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      .scrollbar-style::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: transparent;
+      }
+
+      .scrollbar-style::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: rgba(150, 150, 150, 0.66);
+        border: 4px solid rgba(150, 150, 150, 0.66);
+        background-clip: content-box;
+      }
+
+      html body[for="html-export"]:not([data-presentation-mode]) {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+      }
+
+      html
+        body[for="html-export"]:not([data-presentation-mode])
+        .markdown-preview {
+        position: relative;
+        top: 0;
+        min-height: 100vh;
+      }
+
+      @media screen and (min-width: 914px) {
+        html
+          body[for="html-export"]:not([data-presentation-mode])
+          .markdown-preview {
+          padding: 2em calc(50% - 457px + 2em);
+        }
+      }
+
+      @media screen and (max-width: 914px) {
+        html
+          body[for="html-export"]:not([data-presentation-mode])
+          .markdown-preview {
+          padding: 2em;
+        }
+      }
+
+      @media screen and (max-width: 450px) {
+        html
+          body[for="html-export"]:not([data-presentation-mode])
+          .markdown-preview {
+          font-size: 14px !important;
+          padding: 1em;
+        }
+      }
+
+      @media print {
+        html
+          body[for="html-export"]:not([data-presentation-mode])
+          #sidebar-toc-btn {
+          display: none;
+        }
+      }
+
+      html
+        body[for="html-export"]:not([data-presentation-mode])
+        #sidebar-toc-btn {
+        position: fixed;
+        bottom: 8px;
+        left: 8px;
+        font-size: 28px;
+        cursor: pointer;
+        color: inherit;
+        z-index: 99;
+        width: 32px;
+        text-align: center;
+        opacity: 0.4;
+      }
+
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        #sidebar-toc-btn {
+        opacity: 1;
+      }
+
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100%;
+        padding: 32px 0 48px 0;
+        font-size: 14px;
+        box-shadow: 0 0 4px rgba(150, 150, 150, 0.33);
+        box-sizing: border-box;
+        overflow: auto;
+        background-color: inherit;
+      }
+
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: transparent;
+      }
+
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: rgba(150, 150, 150, 0.66);
+        border: 4px solid rgba(150, 150, 150, 0.66);
+        background-clip: content-box;
+      }
+
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc
+        a {
+        text-decoration: none;
+      }
+
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc
+        .md-toc {
+        padding: 0 16px;
+      }
+
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc
+        .md-toc
+        .md-toc-link-wrapper
+        .md-toc-link {
+        display: inline;
+        padding: 0.25rem 0;
+      }
+
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc
+        .md-toc
+        .md-toc-link-wrapper
+        .md-toc-link
+        div,
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc
+        .md-toc
+        .md-toc-link-wrapper
+        .md-toc-link
+        p {
+        display: inline;
+      }
+
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc
+        .md-toc
+        .md-toc-link-wrapper.highlighted
+        .md-toc-link {
+        font-weight: 800;
+      }
+
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .markdown-preview {
+        left: 300px;
+        width: calc(100% - 300px);
+        padding: 2em calc(50% - 457px - 300px / 2);
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      @media screen and (max-width: 1274px) {
+        html
+          body[for="html-export"]:not(
+            [data-presentation-mode]
+          )[html-show-sidebar-toc]
+          .markdown-preview {
+          padding: 2em;
+        }
+      }
+
+      @media screen and (max-width: 450px) {
+        html
+          body[for="html-export"]:not(
+            [data-presentation-mode]
+          )[html-show-sidebar-toc]
+          .markdown-preview {
+          width: 100%;
+        }
+      }
+
+      html
+        body[for="html-export"]:not([data-presentation-mode]):not(
+          [html-show-sidebar-toc]
+        )
+        .markdown-preview {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      html
+        body[for="html-export"]:not([data-presentation-mode]):not(
+          [html-show-sidebar-toc]
+        )
+        .md-sidebar-toc {
+        display: none;
+      }
+
+      /* Please visit the URL below for more information: */
+      /*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+    </style>
+    <!-- The content below will be included at the end of the <head> element. -->
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        // your code here
+      });
+    </script>
+  </head>
+
+  <body for="html-export">
+    <div class="crossnote markdown-preview">
+      <h1 id="saint-lucian-kwéyòl-creole-guide-">
+        Saint Lucian Kwéyòl (Creole) Guide 🇱🇨
+      </h1>
+      <p>
+        Welcome to this comprehensive guide for Saint Lucian Kwéyòl - a vibrant
+        Caribbean language that blends French-based Creole with African,
+        Caribbean and English influences.
+      </p>
+      <ul>
+        <li><a href="#purpose-">Purpose</a> 🎯</li>
+        <li>
+          <a href="#fundamentals-">Fundamentals</a> 🎯
+          <ul>
+            <li><a href="#25-sight-words-">25 Sight Words</a> 🔠</li>
+            <li><a href="#essential-pronouns-">Essential Pronouns</a> 👥</li>
+            <li><a href="#numbers-1-10-">Numbers 1-10</a> 🔢</li>
+            <li><a href="#punctuation-%EF%B8%8F">Punctuation</a> ✍️</li>
+          </ul>
+        </li>
+        <li>
+          <a href="#grammatical-markers-">Grammatical Markers</a>
+          🔧
+          <ul>
+            <li>
+              <a href="#tense--aspect-markers-">Tense &amp; Aspect Markers</a>
+              ⏳
+            </li>
+            <li><a href="#negation-markers-">Negation Markers</a> 🚫</li>
+          </ul>
+        </li>
+        <li>
+          <a href="#essential-building-blocks-%EF%B8%8F"
+            >Essential Building Blocks</a
+          >
+          🏗️
+          <ul>
+            <li>
+              <a href="#basic-needsactivities-%EF%B8%8F"
+                >Basic Needs/Activities</a
+              >
+              🍽️
+            </li>
+            <li><a href="#movement-verbs-%EF%B8%8F">Movement Verbs</a> 🚶🏾‍♂️</li>
+            <li>
+              <a href="#actionmanipulation-verbs-">Action/Manipulation Verbs</a>
+              🎯
+            </li>
+            <li>
+              <a href="#sensoryperception-verbs-">Sensory/Perception Verbs</a>
+              👀
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#essential-phrases--expressions-%EF%B8%8F"
+            >Essential Phrases &amp; Expressions</a
+          >
+          🗣️
+          <ul>
+            <li><a href="#basic-courtesies-">Basic Courtesies</a> 🙏</li>
+            <li><a href="#simple-responses-">Simple Responses</a> ✅</li>
+            <li><a href="#common-questions-">Common Questions</a> ❓</li>
+            <li>
+              <a href="#standard-responses-%EF%B8%8F">Standard Responses</a> 🗨️
+            </li>
+            <li><a href="#proverbs--sayings-">Proverbs &amp; Sayings</a> 🌟</li>
+          </ul>
+        </li>
+        <li>
+          <a href="#communication-elements-%EF%B8%8F">Communication Elements</a>
+          🗣️
+          <ul>
+            <li>
+              <a href="#time-specific-greetings-">Time-Specific Greetings</a> ⏰
+            </li>
+            <li>
+              <a href="#conversation-starters-">Conversation Starters</a> 💭
+            </li>
+            <li>
+              <a href="#ability--possibility-markers-"
+                >Ability &amp; Possibility Markers</a
+              >
+              💪
+            </li>
+            <li>
+              <a href="#farewell-expressions-">Farewell Expressions</a> 👋
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#descriptive-words-">Descriptive Words</a> 🎨
+          <ul>
+            <li><a href="#physical-attributes-">Physical Attributes</a> 👤</li>
+            <li><a href="#abstract-qualities-">Abstract Qualities</a> 💫</li>
+            <li><a href="#dynamic-properties-">Dynamic Properties</a> ⚡</li>
+          </ul>
+        </li>
+        <li>
+          <a href="#connecting-words-">Connecting Words</a> 🔗
+          <ul>
+            <li><a href="#basic-joins-">Basic Joins</a> ⚡</li>
+            <li><a href="#relationships-">Relationships</a> 🤝</li>
+          </ul>
+        </li>
+        <li>
+          <a href="#time-related-expressions-">Time-Related Expressions</a> ⌛
+          <ul>
+            <li><a href="#time-units-%EF%B8%8F">Time Units</a> ⏱️</li>
+            <li><a href="#daily-periods-">Daily Periods</a> 🌅</li>
+            <li><a href="#calendar-references-">Calendar References</a> 📅</li>
+          </ul>
+        </li>
+        <li>
+          <a href="#environment--space-">Environment &amp; Space</a> 🌍
+          <ul>
+            <li><a href="#location-words-">Location Words</a> 📍</li>
+          </ul>
+        </li>
+        <li>
+          <a href="#forming-questions-">Forming Questions</a> ❓
+          <ul>
+            <li>
+              <a href="#basic-question-words-">Basic Question Words</a> ❔
+            </li>
+            <li>
+              <a href="#yesno-question-patterns-">Yes/No Question Patterns</a>
+              ✅
+            </li>
+            <li><a href="#question-patterns-">Question Patterns</a> 💭</li>
+          </ul>
+        </li>
+        <li>
+          <a href="#constructing-sentences-">Constructing Sentences</a> 📝
+          <ul>
+            <li>
+              <a href="#sentence-building-blocks-">Sentence Building Blocks</a>
+              🧱
+            </li>
+            <li><a href="#pattern-variations-">Pattern Variations</a> 🎯</li>
+          </ul>
+        </li>
+        <li>
+          <a href="#advanced-communication-">Advanced Communication</a> 🎯
+          <ul>
+            <li>
+              <a href="#core-language-patterns-">Core Language Patterns</a> 🌐
+            </li>
+            <li><a href="#modern-usage-">Modern Usage</a> 🌐</li>
+            <li>
+              <a href="#idiomatic-expressions--proverbs-%EF%B8%8F"
+                >Idiomatic Expressions &amp; Proverbs</a
+              >
+              🗣️
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#everyday-situations-">Everyday Situations</a>
+          🏠
+          <ul>
+            <li><a href="#status-phrases-%EF%B8%8F">Status Phrases</a> 🗣️</li>
+            <li>
+              <a href="#weather--environment-%EF%B8%8F"
+                >Weather &amp; Environment</a
+              >
+              🌤️
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2 id="purpose-">Purpose 🎯</h2>
+      <p>
+        This resource systematically organizes essential vocabulary and phrases
+        to help you:
+      </p>
+      <ul>
+        <li>Engage in everyday conversations with confidence.</li>
+        <li>Gain insights into cultural nuances and traditions.</li>
+        <li>Develop natural fluency through structured learning.</li>
+        <li>Build meaningful connections with Kwéyòl speakers.</li>
+      </ul>
+      <h2 id="how-to-use-this-guide-">How to Use This Guide 📖</h2>
+      <ul>
+        <li>Progress from basic to advanced concepts.</li>
+        <li>
+          Practice with real-world examples and dialogues to reinforce learning.
+        </li>
+        <li>
+          Explore etymology to uncover the origins and evolution of words.
+        </li>
+        <li>Follow structured semantic categories for systematic learning.</li>
+        <li>Use emoji markers as visual cues for quick navigation.</li>
+      </ul>
+      <p>
+        Embark on your journey into the vibrant world of Saint Lucian Kwéyòl!
+        Begin with the fundamentals and build your fluency step by step.
+      </p>
+      <h2 id="fundamentals-">Fundamentals 🎯</h2>
+      <p>
+        Master these core elements to build a solid foundation in Kwéyòl. This
+        section covers the essential building blocks - from personal pronouns to
+        numbers and key grammatical markers - that form the backbone of the
+        language. With these fundamentals, you'll be ready to construct basic
+        sentences and understand everyday conversations.
+      </p>
+      <h3 id="25-sight-words-">25 Sight Words 🔠</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>an</td>
+            <td>in, at</td>
+            <td>From French "en"</td>
+          </tr>
+          <tr>
+            <td>avè</td>
+            <td>with</td>
+            <td>From French "avec"</td>
+          </tr>
+          <tr>
+            <td>i</td>
+            <td>he, she, it</td>
+            <td>From French "il" and "elle"</td>
+          </tr>
+          <tr>
+            <td>jik</td>
+            <td>until</td>
+            <td>From French "jusqu’à"</td>
+          </tr>
+          <tr>
+            <td>ka</td>
+            <td>is (continuous)</td>
+            <td>Aspect marker, no direct French equivalent</td>
+          </tr>
+          <tr>
+            <td>kilès</td>
+            <td>which, who</td>
+            <td>From French "quel est"</td>
+          </tr>
+          <tr>
+            <td>kisa</td>
+            <td>what</td>
+            <td>From French "qu'est-ce que ça"</td>
+          </tr>
+          <tr>
+            <td>konmen</td>
+            <td>how much, how many</td>
+            <td>From French "combien"</td>
+          </tr>
+          <tr>
+            <td>koté</td>
+            <td>where</td>
+            <td>From French "côté" (side)</td>
+          </tr>
+          <tr>
+            <td>lè</td>
+            <td>when, time</td>
+            <td>From French "l'heure"</td>
+          </tr>
+          <tr>
+            <td>mé</td>
+            <td>but</td>
+            <td>From French "mais"</td>
+          </tr>
+          <tr>
+            <td>mwen</td>
+            <td>I, me</td>
+            <td>From French "moi"</td>
+          </tr>
+          <tr>
+            <td>ni</td>
+            <td>have, there is</td>
+            <td>From French "il y a"</td>
+          </tr>
+          <tr>
+            <td>nou</td>
+            <td>we, us</td>
+            <td>From French "nous"</td>
+          </tr>
+          <tr>
+            <td>ou</td>
+            <td>you</td>
+            <td>From French "vous" (informal in Creole)</td>
+          </tr>
+          <tr>
+            <td>pa</td>
+            <td>not, don’t</td>
+            <td>From French "pas"</td>
+          </tr>
+          <tr>
+            <td>paski</td>
+            <td>because</td>
+            <td>From French "parce que"</td>
+          </tr>
+          <tr>
+            <td>poukisa</td>
+            <td>why</td>
+            <td>From French "pourquoi ça"</td>
+          </tr>
+          <tr>
+            <td>sa</td>
+            <td>that, this</td>
+            <td>From French "ça"</td>
+          </tr>
+          <tr>
+            <td>sa ki</td>
+            <td>what is</td>
+            <td>From French "ça qui"</td>
+          </tr>
+          <tr>
+            <td>sé</td>
+            <td>is, are</td>
+            <td>From French "c'est"</td>
+          </tr>
+          <tr>
+            <td>si</td>
+            <td>if</td>
+            <td>From French "si"</td>
+          </tr>
+          <tr>
+            <td>té</td>
+            <td>was, were</td>
+            <td>Past marker, from French "était"</td>
+          </tr>
+          <tr>
+            <td>toujou</td>
+            <td>always</td>
+            <td>From French "toujours"</td>
+          </tr>
+          <tr>
+            <td>yo</td>
+            <td>they, them</td>
+            <td>From French "eux"</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="essential-pronouns-">Essential Pronouns 👥</h3>
+      <p>
+        These pronouns form the foundation of personal expression in Kwéyòl.
+        Notice how many derive from French but have been simplified in
+        structure.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Li / I</td>
+            <td>he / she / it</td>
+            <td>lui</td>
+          </tr>
+          <tr>
+            <td>Mwen</td>
+            <td>I / me / my / mine</td>
+            <td>moi</td>
+          </tr>
+          <tr>
+            <td>Nou</td>
+            <td>we / us / our</td>
+            <td>nous</td>
+          </tr>
+          <tr>
+            <td>Ou</td>
+            <td>you</td>
+            <td>vous</td>
+          </tr>
+          <tr>
+            <td>Yo</td>
+            <td>they / them / their</td>
+            <td>eux</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="numbers-1-10-">Numbers 1-10 🔢</h3>
+      <p>
+        The basic counting system in Kwéyòl, showing strong French influence
+        while maintaining unique Creole pronunciation.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Yon / En</td>
+            <td>one</td>
+            <td>un</td>
+          </tr>
+          <tr>
+            <td>Dé</td>
+            <td>two</td>
+            <td>deux</td>
+          </tr>
+          <tr>
+            <td>Twa</td>
+            <td>three</td>
+            <td>trois</td>
+          </tr>
+          <tr>
+            <td>Kat</td>
+            <td>four</td>
+            <td>quatre</td>
+          </tr>
+          <tr>
+            <td>Senk</td>
+            <td>five</td>
+            <td>cinq</td>
+          </tr>
+          <tr>
+            <td>Sis</td>
+            <td>six</td>
+            <td>six</td>
+          </tr>
+          <tr>
+            <td>Sèt</td>
+            <td>seven</td>
+            <td>sept</td>
+          </tr>
+          <tr>
+            <td>Wit</td>
+            <td>eight</td>
+            <td>huit</td>
+          </tr>
+          <tr>
+            <td>Nèf</td>
+            <td>nine</td>
+            <td>neuf</td>
+          </tr>
+          <tr>
+            <td>Dis</td>
+            <td>ten</td>
+            <td>dix</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <h3 id="punctuation-️">Punctuation ✍️</h3>
+      <p>
+        This section introduces how punctuation is used in Kwéyòl, particularly
+        the definite article suffixes that attach to nouns to indicate
+        specificity.
+      </p>
+      <h4 id="hyphen-">Hyphen ➖</h4>
+      <p>
+        Hyphens are used in Kwéyòl to join compound words or to clarify meaning.
+        They help maintain the flow of sentences and ensure proper understanding
+        of compound expressions.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bon-maten</td>
+            <td>good morning</td>
+            <td>bon (good) + matin</td>
+          </tr>
+          <tr>
+            <td>Lanp-lan</td>
+            <td>the lamp</td>
+            <td>la lampe + -lan</td>
+          </tr>
+          <tr>
+            <td>Latè-a</td>
+            <td>the earth</td>
+            <td>la terre + -a</td>
+          </tr>
+          <tr>
+            <td>Lè-a</td>
+            <td>the time</td>
+            <td>l'heure + article 'a'</td>
+          </tr>
+          <tr>
+            <td>Pyès-la</td>
+            <td>the room</td>
+            <td>pièce + article 'la'</td>
+          </tr>
+          <tr>
+            <td>Tab-la</td>
+            <td>the table</td>
+            <td>la table + -la</td>
+          </tr>
+          <tr>
+            <td>Tan-an</td>
+            <td>the time/weather</td>
+            <td>le temps + -an</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <h4 id="apostrophe-usage-️">Apostrophe Usage ✂️</h4>
+      <p>
+        Apostrophes in Kwéyòl are used to form contractions, simplifying phrases
+        by combining words. This table highlights common contractions and their
+        meanings.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mwen + pa</td>
+            <td>m'a</td>
+            <td>moi (I) + pas (not)</td>
+          </tr>
+          <tr>
+            <td>Mwen + ka</td>
+            <td>ng'a (n'a)</td>
+            <td>moi (I) + capable</td>
+          </tr>
+          <tr>
+            <td>Si + ou</td>
+            <td>s'ou</td>
+            <td>si (if) + vous (you)</td>
+          </tr>
+          <tr>
+            <td>Pa + anks</td>
+            <td>p'òkò</td>
+            <td>pas (not) + encore</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <h2 id="grammatical-markers-">Grammatical Markers 🔧</h2>
+      <p>
+        These essential markers form the core grammar system of Kwéyòl, allowing
+        speakers to modify verbs, express negation, ask questions, and indicate
+        plurality. Understanding these markers is key to constructing proper
+        sentences and expressing time, action, and quantity effectively.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>M ap pale</td>
+            <td>I am speaking</td>
+            <td>"M" (I); "ap" (present progressive); "pale" (speak).</td>
+          </tr>
+          <tr>
+            <td>M fèk pale</td>
+            <td>I just spoke</td>
+            <td>
+              "M" from French "je" (I); "fèk" indicating recent past; "pale"
+              from French "parler" (to speak).
+            </td>
+          </tr>
+          <tr>
+            <td>M konn pale sou sa</td>
+            <td>I usually speak about that</td>
+            <td>
+              "M" (I); "konn" indicating habitual action; "pale" (speak); "sou
+              sa" (about that).
+            </td>
+          </tr>
+          <tr>
+            <td>M pale</td>
+            <td>I speak</td>
+            <td>"M" (I); "pale" (speak).</td>
+          </tr>
+          <tr>
+            <td>M t ap pale</td>
+            <td>I was speaking</td>
+            <td>
+              "M" (I); "t ap" combining "te" (past) and "ap" (progressive);
+              "pale" (speak).
+            </td>
+          </tr>
+          <tr>
+            <td>M te pale</td>
+            <td>I had spoken</td>
+            <td>"M" (I); "te" (past); "pale" (speak).</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="tense--aspect-markers-">Tense &amp; Aspect Markers ⏳</h3>
+      <p>
+        These essential markers modify verbs to indicate when actions occur and
+        how they unfold over time. They help express past events, ongoing
+        actions, habitual activities, and future intentions in Kwéyòl
+        conversations.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ka</td>
+            <td>progressive marker</td>
+            <td>capable/qui va</td>
+          </tr>
+          <tr>
+            <td>M'ap</td>
+            <td>I'm (doing something)</td>
+            <td>moi + après</td>
+          </tr>
+          <tr>
+            <td>Té</td>
+            <td>past tense marker</td>
+            <td>était</td>
+          </tr>
+          <tr>
+            <td>Té ka</td>
+            <td>used to</td>
+            <td>eu de</td>
+          </tr>
+          <tr>
+            <td>Vlé</td>
+            <td>want to</td>
+            <td>vouloir</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="negation-markers-">Negation Markers 🚫</h3>
+      <p>
+        Essential words for expressing negation and denial in Kwéyòl. These
+        markers are placed before verbs or adjectives to negate actions, states,
+        or qualities - fundamental for expressing what is not happening or what
+        hasn't happened yet.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>P'òkò</td>
+            <td>not yet</td>
+            <td>pas encore</td>
+          </tr>
+          <tr>
+            <td>Pa</td>
+            <td>not / don't / doesn't</td>
+            <td>pas</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <h2 id="essential-building-blocks-️">Essential Building Blocks 🏗️</h2>
+      <p>
+        These building blocks form the active core of Kwéyòl communication. From
+        basic needs to movement and manipulation, these verbs and actions let
+        you express daily activities, physical motion, and interaction with the
+        world around you.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ki sa pli enpòtan?</td>
+            <td>what is more important?</td>
+            <td>qui + ça + plus + important</td>
+          </tr>
+          <tr>
+            <td>Mwen enmen'w</td>
+            <td>I love you</td>
+            <td>moi + aimer + "w" (you)</td>
+          </tr>
+          <tr>
+            <td>Mwen ka travay</td>
+            <td>I am working</td>
+            <td>moi + capable + travailler</td>
+          </tr>
+          <tr>
+            <td>Mwen vlé</td>
+            <td>I would like</td>
+            <td>moi + vouloir</td>
+          </tr>
+          <tr>
+            <td>Pli enmen</td>
+            <td>to like, to love</td>
+            <td>plus + aimer</td>
+          </tr>
+          <tr>
+            <td>Tout tan...pa</td>
+            <td>as long as...not</td>
+            <td>tout le temps...pas</td>
+          </tr>
+          <tr>
+            <td>Zanmi’w</td>
+            <td>your friend</td>
+            <td>ami + vous</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="basic-needsactivities-️">Basic Needs/Activities 🍽️</h3>
+      <p>
+        Essential verbs for daily routines and fundamental human activities.
+        These verbs cover core actions needed for survival and daily life, from
+        nourishment to rest and work.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Asiz</td>
+            <td>sit</td>
+            <td>asseoir</td>
+          </tr>
+          <tr>
+            <td>Bwè</td>
+            <td>drink</td>
+            <td>boire</td>
+          </tr>
+          <tr>
+            <td>Manjé</td>
+            <td>eat</td>
+            <td>manger</td>
+          </tr>
+          <tr>
+            <td>Twavay</td>
+            <td>work</td>
+            <td>travail</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="movement-verbs-️">Movement Verbs 🚶🏾‍♂️</h3>
+      <p>
+        Essential verbs for describing physical movement and travel. These
+        foundational verbs help express basic directions, intentions, and
+        physical transitions in space.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alé</td>
+            <td>to go</td>
+            <td>aller</td>
+          </tr>
+          <tr>
+            <td>Soukwé</td>
+            <td>to shake</td>
+            <td>secouer</td>
+          </tr>
+          <tr>
+            <td>Vini</td>
+            <td>to come</td>
+            <td>venir</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="actionmanipulation-verbs-">Action/Manipulation Verbs 🎯</h3>
+      <p>
+        These verbs describe physical actions where objects or things are
+        handled, moved, or changed. They form the foundation for expressing how
+        we interact with and manipulate our environment in Kwéyòl.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word/Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bay</td>
+            <td>to give</td>
+            <td>bailler (Old French)</td>
+          </tr>
+          <tr>
+            <td>Fè</td>
+            <td>to do / to make / to cause</td>
+            <td>faire</td>
+          </tr>
+          <tr>
+            <td>Mété</td>
+            <td>to put / to let off / to begin to</td>
+            <td>mettre</td>
+          </tr>
+          <tr>
+            <td>Ou sèvi</td>
+            <td>you use</td>
+            <td>vous + servir</td>
+          </tr>
+          <tr>
+            <td>Pwan</td>
+            <td>to take / to carry / to go / to start to</td>
+            <td>prendre</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="sensoryperception-verbs-">Sensory/Perception Verbs 👀</h3>
+      <p>
+        These verbs relate to how we experience and interact with the world
+        through our senses. They're fundamental for describing observations,
+        awareness, and sensory experiences in Kwéyòl.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Gadé</td>
+            <td>look / watch</td>
+            <td>regarder</td>
+          </tr>
+          <tr>
+            <td>Lòdè</td>
+            <td>smell / scent</td>
+            <td>odorier</td>
+          </tr>
+          <tr>
+            <td>Tann</td>
+            <td>hear / listen</td>
+            <td>entendre</td>
+          </tr>
+          <tr>
+            <td>Touché</td>
+            <td>touch</td>
+            <td>toucher</td>
+          </tr>
+          <tr>
+            <td>Wè</td>
+            <td>to witness</td>
+            <td>voir</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 id="essential-phrases--expressions-️">
+        Essential Phrases &amp; Expressions 🗣️
+      </h2>
+      <p>
+        This section provides key phrases and expressions for everyday
+        communication in Kwéyòl. From basic courtesies to proverbs, these
+        phrases will help you navigate common social interactions and understand
+        cultural nuances.
+      </p>
+      <h3 id="basic-courtesies-">Basic Courtesies 🙏</h3>
+      <p>
+        Polite expressions that form the foundation of respectful communication
+        in Kwéyòl. Use these to show gratitude, make requests, or apologize.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bouke c'est fatigué non?</td>
+            <td>Bouke means tired, right?</td>
+            <td>
+              bouquer (to tire out) from French "bouquer" (to exhaust) and
+              African influence.
+            </td>
+          </tr>
+          <tr>
+            <td>Eskize mwen</td>
+            <td>excuse me</td>
+            <td>excusez-moi (excuse me) from French.</td>
+          </tr>
+          <tr>
+            <td>Mèsi</td>
+            <td>thank you</td>
+            <td>merci (thank you) from French.</td>
+          </tr>
+          <tr>
+            <td>Mwen kontan édé’w épi Anglé</td>
+            <td>happy to help you with English</td>
+            <td>
+              moi (I) + content (happy) + aider (help) + vous (you) + et puis
+              (and) + anglais (English)
+            </td>
+          </tr>
+          <tr>
+            <td>Pa pwoblem</td>
+            <td>no problem</td>
+            <td>pas (no) + problème (problem) from French.</td>
+          </tr>
+          <tr>
+            <td>Souplé</td>
+            <td>please</td>
+            <td>s'il vous plaît (if you please) from French.</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="simple-responses-">Simple Responses ✅</h3>
+      <p>
+        Short and straightforward responses for everyday conversations. These
+        are essential for answering questions or confirming information.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word/Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A pa vré</td>
+            <td>It is not true</td>
+            <td>à (to) + pas (not) + vrai (true)</td>
+          </tr>
+          <tr>
+            <td>Atjwèlman</td>
+            <td>now</td>
+            <td>actuellement (currently)</td>
+          </tr>
+          <tr>
+            <td>Awa</td>
+            <td>No (strong denial)</td>
+            <td>Derived from African languages</td>
+          </tr>
+          <tr>
+            <td>Gen</td>
+            <td>To have</td>
+            <td>Haitian Creole equivalent of "avoir" (to have)</td>
+          </tr>
+          <tr>
+            <td>Mesi</td>
+            <td>thank you</td>
+            <td>merci (thank you)</td>
+          </tr>
+          <tr>
+            <td>Mwen pa konprann</td>
+            <td>I don't understand</td>
+            <td>moi (I) + pas (not) + comprendre (understand)</td>
+          </tr>
+          <tr>
+            <td>Ni</td>
+            <td>To have</td>
+            <td>il y a (there is/are)</td>
+          </tr>
+          <tr>
+            <td>Non</td>
+            <td>No</td>
+            <td>non (no)</td>
+          </tr>
+          <tr>
+            <td>Ou ka pa wrong</td>
+            <td>You are not wrong</td>
+            <td>
+              vous (you) + capable (can) + pas (not) + wrong (borrowed from
+              English)
+            </td>
+          </tr>
+          <tr>
+            <td>Si</td>
+            <td>if</td>
+            <td>si (if)</td>
+          </tr>
+          <tr>
+            <td>Trè byen</td>
+            <td>very well</td>
+            <td>très (very) + bien (well)</td>
+          </tr>
+          <tr>
+            <td>Wi</td>
+            <td>yes</td>
+            <td>oui (yes)</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="common-questions-">Common Questions ❓</h3>
+      <p>
+        Frequently used questions to help you navigate daily interactions, ask
+        for information, or clarify situations.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ès nou pé maché toulé dé?</td>
+            <td>Can we both walk?</td>
+            <td>
+              est-ce (is it) + nous (we) + pouvoir (can) + marcher (to walk) +
+              tous les deux (both)
+            </td>
+          </tr>
+          <tr>
+            <td>Es ou ka pale Anglé?</td>
+            <td>do you speak English?</td>
+            <td>
+              est-ce (is it) + vous (you) + parler (to speak) + anglais
+              (English)
+            </td>
+          </tr>
+          <tr>
+            <td>Ki sa ou ka fè isiya?</td>
+            <td>What are you doing here?</td>
+            <td>
+              "Ki sa" (what) + "ou ka fè" (you are doing) + "isiya" (here).
+            </td>
+          </tr>
+          <tr>
+            <td>Kijan ou yé?</td>
+            <td>how are you?</td>
+            <td>comment (how) + vous (you) + êtes (are)</td>
+          </tr>
+          <tr>
+            <td>Konmen pou sa?</td>
+            <td>how much is this?</td>
+            <td>combien (how much) + pour (for) + ça (this)</td>
+          </tr>
+          <tr>
+            <td>Kote pwevit-la ya?</td>
+            <td>where is the bathroom?</td>
+            <td>côté (side) + privé (private) + là (there)</td>
+          </tr>
+          <tr>
+            <td>Kouman i ka maché?</td>
+            <td>How does it work?</td>
+            <td>comment (how) + il (it) + marcher (to work/function)</td>
+          </tr>
+          <tr>
+            <td>Kouman ou yé apwé midi-a</td>
+            <td>how are you this afternoon</td>
+            <td>
+              comment (how) + vous (you) + êtes (are) + après-midi (afternoon)
+            </td>
+          </tr>
+          <tr>
+            <td>Kouman zòt tout ka sèrvi alaso?</td>
+            <td>How are you all using Alaso?</td>
+            <td>
+              comment (how) + vous (you) + tous (all) + servir (to use) + Alaso
+            </td>
+          </tr>
+          <tr>
+            <td>Koumon ou ye?</td>
+            <td>how are you?</td>
+            <td>comment (how) + vous (you) + êtes (are)</td>
+          </tr>
+          <tr>
+            <td>Poutji?</td>
+            <td>why</td>
+            <td>pour (for) + quoi (what)</td>
+          </tr>
+          <tr>
+            <td>Sa ki sa?</td>
+            <td>what is this?</td>
+            <td>ça (this) + qui (what) + ça (this)</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="standard-responses-️">Standard Responses 🗨️</h3>
+      <p>
+        Common responses to questions or statements, helping you express your
+        state or confirm information.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word/Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mwen ap pale.</td>
+            <td>I am speaking.</td>
+            <td>moi (I) + après (after) + parler (to speak)</td>
+          </tr>
+          <tr>
+            <td>Mwen byen</td>
+            <td>I am fine</td>
+            <td>moi (I) + bien (well)</td>
+          </tr>
+          <tr>
+            <td>Mwen fèk pale.</td>
+            <td>I just spoke.</td>
+            <td>moi (I) + fait (done) + parler (to speak)</td>
+          </tr>
+          <tr>
+            <td>Mwen konn pale sou sa.</td>
+            <td>I usually speak about that.</td>
+            <td>
+              moi (I) + connaître (to know) + parler (to speak) + sur ça (about
+              that)
+            </td>
+          </tr>
+          <tr>
+            <td>Mwen pale.</td>
+            <td>I speak.</td>
+            <td>moi (I) + parler (to speak)</td>
+          </tr>
+          <tr>
+            <td>Mwen t ap pale.</td>
+            <td>I was speaking.</td>
+            <td>moi (I) + était (was) + après (after) + parler (to speak)</td>
+          </tr>
+          <tr>
+            <td>Mwen te pale.</td>
+            <td>I had spoken.</td>
+            <td>moi (I) + était (was) + parler (to speak)</td>
+          </tr>
+          <tr>
+            <td>Nou ni sa isi osi.</td>
+            <td>We have that here too.</td>
+            <td>
+              nous (we) + avoir (to have) + ça (that) + ici (here) + aussi
+              (also)
+            </td>
+          </tr>
+          <tr>
+            <td>Paski / Pas</td>
+            <td>because</td>
+            <td>parce que (because) / pas (not)</td>
+          </tr>
+          <tr>
+            <td>Talè</td>
+            <td>later</td>
+            <td>tout à l'heure (a little while later)</td>
+          </tr>
+          <tr>
+            <td>Touswit</td>
+            <td>right away</td>
+            <td>tout de suite (immediately)</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="proverbs--sayings-">Proverbs &amp; Sayings 🌟</h3>
+      <p>
+        Traditional expressions that convey cultural wisdom, values, and humor.
+        These sayings often carry deeper meanings beyond their literal
+        translations.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ayin pa chanjé</td>
+            <td>Nothing has changed</td>
+            <td>
+              Ayin (nothing) from African languages + pas (not) + changer (to
+              change) from French.
+            </td>
+          </tr>
+          <tr>
+            <td>Chat pas ca fait chien</td>
+            <td>A person will behave according to their "type"</td>
+            <td>
+              chat (cat) + pas (not) + ça (that) + fait (makes) + chien (dog),
+              from French.
+            </td>
+          </tr>
+          <tr>
+            <td>Gwan lanmè</td>
+            <td>Great sea</td>
+            <td>
+              Gwan (great/big), from French grand + lanmè (sea), from French la
+              mer.
+            </td>
+          </tr>
+          <tr>
+            <td>Gwo dlo</td>
+            <td>Big water (flood)</td>
+            <td>
+              Gwo (big), from French gros + dlo (water), from French de l'eau.
+            </td>
+          </tr>
+          <tr>
+            <td>Lanmè movè</td>
+            <td>Rough sea</td>
+            <td>
+              Lanmè (sea), from French la mer + movè (bad/rough), from French
+              mauvais.
+            </td>
+          </tr>
+          <tr>
+            <td>Mad cho</td>
+            <td>Very hot</td>
+            <td>
+              Mad (very/extreme), from African languages + cho (hot), from
+              French chaud.
+            </td>
+          </tr>
+          <tr>
+            <td>Mechop</td>
+            <td>Bad luck/misfortune</td>
+            <td>
+              Mechop (misfortune), from French méchant (wicked) + chop (slang
+              for misfortune).
+            </td>
+          </tr>
+          <tr>
+            <td>Meme bête meme pwel</td>
+            <td>We are the same</td>
+            <td>
+              même (same) + bête (beast) + même (same) + poil (fur), all from
+              French.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <h2 id="communication-elements-️">Communication Elements 🗣️</h2>
+      <p>
+        These elements are the dynamic tools that bring Kwéyòl conversations to
+        life. From expressing abilities and possibilities to exchanging
+        greetings and farewells, these patterns help you navigate social
+        interactions naturally.
+      </p>
+      <h3 id="time-specific-greetings-">Time-Specific Greetings ⏰</h3>
+      <p>
+        These traditional greetings change based on the time of day, reflecting
+        the French-influenced courtesy system in Kwéyòl culture. They form the
+        foundation of polite social interactions throughout the day and evening.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bonjou</td>
+            <td>good morning / good day</td>
+            <td>bonjour</td>
+          </tr>
+          <tr>
+            <td>Bonswè</td>
+            <td>good evening / good night</td>
+            <td>bonsoir</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="conversation-starters-">Conversation Starters 💭</h3>
+      <p>
+        These friendly phrases help initiate casual conversations and make plans
+        in Kwéyòl. They're perfect for breaking the ice and engaging with others
+        in everyday social situations.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Es i palé asou lilèt ou</td>
+            <td>is it talked about on your island</td>
+            <td>
+              est-ce (is it) + il (it) + parler (to talk) + sur (on) + île
+              (island) + vous (your)
+            </td>
+          </tr>
+          <tr>
+            <td>Es ni moun ka jwé vidéo jwé?</td>
+            <td>does anybody play video games?</td>
+            <td>
+              est-ce (is it) + quelqu'un (someone) + jouer (to play) + vidéo
+              (video) + jeu (game)
+            </td>
+          </tr>
+          <tr>
+            <td>Mandé mwen anko</td>
+            <td>ask me again</td>
+            <td>demander moi encore</td>
+          </tr>
+          <tr>
+            <td>Sa ka fèt?</td>
+            <td>how's it going?</td>
+            <td>ça faire</td>
+          </tr>
+          <tr>
+            <td>Vini demen</td>
+            <td>come tomorrow</td>
+            <td>venir demain</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="ability--possibility-markers-">
+        Ability &amp; Possibility Markers 💪
+      </h3>
+      <p>
+        These essential markers express capability, permission, and potential in
+        Kwéyòl. While both 'Pé' and 'Sa' translate to ability, they have subtle
+        usage differences inherited from their French origins - 'pouvoir'
+        indicating physical ability or permission, and 'savoir' suggesting
+        learned capability or knowledge.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pé</td>
+            <td>can / able to</td>
+            <td>pouvoir</td>
+          </tr>
+          <tr>
+            <td>Sa</td>
+            <td>can / able to</td>
+            <td>savoir</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="farewell-expressions-">Farewell Expressions 👋</h3>
+      <p>
+        These phrases offer different ways to end conversations gracefully in
+        Kwéyòl, ranging from casual "see you later" to more formal goodbyes.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word/Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A pli ta</td>
+            <td>see you later</td>
+            <td>à plus tard</td>
+          </tr>
+          <tr>
+            <td>Dédé</td>
+            <td>goodbye</td>
+            <td>adieu</td>
+          </tr>
+          <tr>
+            <td>Mwen ka alé</td>
+            <td>I'm leaving</td>
+            <td>moi aller</td>
+          </tr>
+          <tr>
+            <td>Pwan ka</td>
+            <td>take care</td>
+            <td>prendre cas</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <h2 id="descriptive-words-">Descriptive Words 🎨</h2>
+      <p>
+        Essential vocabulary for painting vivid pictures with words in Kwéyòl.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word/Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bèl ti vidéo</td>
+            <td>Nice short videos</td>
+            <td>belle (beautiful) + petit (small) + vidéo (video)</td>
+          </tr>
+          <tr>
+            <td>Gwan tifi mwen</td>
+            <td>my older daughter</td>
+            <td>grand (big) + fille (girl/daughter) + moi (my)</td>
+          </tr>
+          <tr>
+            <td>Kanadyen</td>
+            <td>Canadian</td>
+            <td>canadien (Canadian)</td>
+          </tr>
+          <tr>
+            <td>Nwè Amériken an lanné 80</td>
+            <td>African Americans in the '80s</td>
+            <td>
+              noir (black) + américain (American) + en (in) + année (year) + 80
+              (eighty)
+            </td>
+          </tr>
+          <tr>
+            <td>Ti tifi mwen</td>
+            <td>my youngest daughter</td>
+            <td>petit (small) + fille (girl/daughter) + moi (my)</td>
+          </tr>
+          <tr>
+            <td>Yon potcake</td>
+            <td>a mixed-breed dog (Caribbean)</td>
+            <td>
+              Derived from the term "potcake," referring to leftover food scraps
+              fed to stray dogs
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="physical-attributes-">Physical Attributes 👤</h3>
+      <p>
+        Words that describe tangible, observable characteristics of people and
+        objects.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bèl ti vidéo</td>
+            <td>nice short videos</td>
+            <td>belle (beautiful) + petit (small) + vidéo (video)</td>
+          </tr>
+          <tr>
+            <td>Menm madanm nan</td>
+            <td>same lady</td>
+            <td>même (same) + madame (lady) + là (there)</td>
+          </tr>
+          <tr>
+            <td>Mwen chen sé Jamayik</td>
+            <td>my dog is Jamaican</td>
+            <td>mon (my) + chien (dog) + c'est (is) + Jamaïque (Jamaican)</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4 id="appearance--size-">Appearance &amp; Size 👀</h4>
+      <p>
+        Words that describe the visual qualities and dimensions of people,
+        objects, and places.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bèl</td>
+            <td>beautiful</td>
+            <td>belle</td>
+          </tr>
+          <tr>
+            <td>Gwo</td>
+            <td>big</td>
+            <td>gros</td>
+          </tr>
+          <tr>
+            <td>Piti</td>
+            <td>small</td>
+            <td>petit</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="abstract-qualities-">Abstract Qualities 💫</h3>
+      <p>
+        Terms that express intangible characteristics and conceptual properties.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word/Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kilti Karayib la</td>
+            <td>Caribbean culture</td>
+            <td>culture + caraïbe + la</td>
+          </tr>
+          <tr>
+            <td>Péyi Griselda</td>
+            <td>land of Griselda</td>
+            <td>pays (country) + Griselda</td>
+          </tr>
+          <tr>
+            <td>Vèti</td>
+            <td>virtue, moral quality</td>
+            <td>vertu</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4 id="quality--character-">Quality &amp; Character ⭐</h4>
+      <p>Terms that express value judgments and personality traits.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bon</td>
+            <td>good</td>
+            <td>bon</td>
+          </tr>
+          <tr>
+            <td>Mové</td>
+            <td>bad</td>
+            <td>mauvais</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="dynamic-properties-">Dynamic Properties ⚡</h3>
+      <p>Words that describe movement, change, and active characteristics.</p>
+      <h4 id="speed--motion-">Speed &amp; Motion 🏃🏽</h4>
+      <p>Vocabulary for describing pace and movement in various contexts.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dousman</td>
+            <td>slow</td>
+            <td>doucement</td>
+          </tr>
+          <tr>
+            <td>Vit</td>
+            <td>fast</td>
+            <td>vite</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <h2 id="connecting-words-">Connecting Words 🔗</h2>
+      <p>
+        These words help link ideas and create more complex sentences. They're
+        vital for moving beyond basic phrases to more sophisticated expression.
+      </p>
+      <h3 id="basic-joins-">Basic Joins ⚡</h3>
+      <p>Simple connectors that combine ideas and actions.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Épi</td>
+            <td>and / with</td>
+            <td>et puis</td>
+          </tr>
+          <tr>
+            <td>Mé</td>
+            <td>but</td>
+            <td>mais</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="relationships-">Relationships 🤝</h3>
+      <p>Terms that show comparisons and connections between concepts.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kon</td>
+            <td>like / as</td>
+            <td>comme</td>
+          </tr>
+          <tr>
+            <td>Pou</td>
+            <td>for</td>
+            <td>pour</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <h2 id="time-related-expressions-">Time-Related Expressions ⌛</h2>
+      <p>
+        Master these essential time markers to discuss when things happen in
+        Kwéyòl. From specific times of day to calendar references, these
+        expressions help you navigate temporal concepts in natural conversation.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bonmaten lanné 2000, té ni osi NFAC</td>
+            <td>in the early 2000s, there was also the NFAC</td>
+            <td>
+              bon matin (early morning) + année (year) + 2000 + il y avait
+              (there was) + aussi (also)
+            </td>
+          </tr>
+          <tr>
+            <td>Siz lanné pasé</td>
+            <td>6 years ago</td>
+            <td>six (six) + année (year) + passé (past)</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="time-units-️">Time Units ⏱️</h3>
+      <p>
+        Essential measurements for tracking and discussing time intervals in
+        Kwéyòl, from brief moments to longer durations.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kadè</td>
+            <td>second</td>
+            <td>seconde</td>
+          </tr>
+          <tr>
+            <td>Minit</td>
+            <td>minute</td>
+            <td>minute</td>
+          </tr>
+          <tr>
+            <td>Nèditan</td>
+            <td>hour</td>
+            <td>heure</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="daily-periods-">Daily Periods 🌅</h3>
+      <p>
+        Vocabulary for different parts of the day, allowing you to precisely
+        reference when activities occur throughout your daily routine.
+      </p>
+      <p>
+        Terms for different periods throughout the day. These fundamental time
+        expressions help structure daily conversations and activities in Kwéyòl.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bonmaten</td>
+            <td>morning</td>
+            <td>bon matin</td>
+          </tr>
+          <tr>
+            <td>Swè</td>
+            <td>evening</td>
+            <td>soir</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="calendar-references-">Calendar References 📅</h3>
+      <p>
+        These fundamental time expressions help you reference days in relation
+        to the present moment. They're essential for discussing events, plans,
+        and past occurrences in Kwéyòl.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Avan ou ni 50 lanné</td>
+            <td>By 50 years old</td>
+            <td>
+              avant (before) + vous (you) + avoir (have) + cinquante (fifty) +
+              années (years)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h4 id="relative-time-">Relative Time 📍</h4>
+      <p>
+        Terms that position events in relation to the present moment, essential
+        for discussing the immediate past and future.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dimen</td>
+            <td>tomorrow</td>
+            <td>demain</td>
+          </tr>
+          <tr>
+            <td>Jodi</td>
+            <td>today</td>
+            <td>aujourd'hui</td>
+          </tr>
+          <tr>
+            <td>Yè</td>
+            <td>yesterday</td>
+            <td>hier</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4 id="calendar-units-">Calendar Units 📆</h4>
+      <p>
+        Fundamental units for measuring and discussing longer periods, from days
+        to years.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jou</td>
+            <td>day</td>
+            <td>jour</td>
+          </tr>
+          <tr>
+            <td>Lanné / An</td>
+            <td>year</td>
+            <td>année</td>
+          </tr>
+          <tr>
+            <td>Mwa</td>
+            <td>month</td>
+            <td>mois</td>
+          </tr>
+          <tr>
+            <td>Simenn</td>
+            <td>week</td>
+            <td>semaine</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <h2 id="environment--space-">Environment &amp; Space 🌍</h2>
+      <p>
+        Understanding your surroundings and describing the world around you is
+        essential. These terms help you navigate spaces and discuss
+        environmental conditions with confidence.
+      </p>
+      <h3 id="location-words-">Location Words 📍</h3>
+      <p>
+        Vocabulary for discussing place and position, crucial for giving and
+        receiving directions.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>An</td>
+            <td>in / at</td>
+            <td>en / à</td>
+          </tr>
+          <tr>
+            <td>Chutes Niagara, bò Kanada</td>
+            <td>Niagara Falls Canadian side</td>
+            <td>chutes (falls) + Niagara + côté (side) + Canada</td>
+          </tr>
+          <tr>
+            <td>I sé an faktè an Kanada osi</td>
+            <td>it's a factor in Canada as well</td>
+            <td>
+              il/elle (it) + c'est (is) + un (a) + facteur (factor) + en (in) +
+              Canada + aussi (also)
+            </td>
+          </tr>
+          <tr>
+            <td>I sorti Kastwi, alò pa té ni anpil Kwéyòl lakay</td>
+            <td>he is from Castries so not much Kwéyòl was spoken at home</td>
+            <td>
+              il/elle (he/she) + sortir (to come from) + Castries + alors (so) +
+              pas (not) + avoir (have) + beaucoup (much) + Kwéyòl + à la maison
+              (at home)
+            </td>
+          </tr>
+          <tr>
+            <td>Lokasyon</td>
+            <td>location</td>
+            <td>localisation</td>
+          </tr>
+          <tr>
+            <td>Otou katye-a</td>
+            <td>around the neighborhood</td>
+            <td>autour (around) + quartier (neighborhood) + là (the)</td>
+          </tr>
+          <tr>
+            <td>Pyès</td>
+            <td>room</td>
+            <td>pièce (room)</td>
+          </tr>
+          <tr>
+            <td>Sa sé an chimen long pou ou</td>
+            <td>that's quite a drive for you</td>
+            <td>
+              ça (that) + c'est (is) + un (a) + chemin (road) + long (long) +
+              pour (for) + vous (you)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Essential vocabulary for discussing climate, temperature, and
+        atmospheric conditions in Kwéyòl. These terms are vital for both casual
+        conversations and practical situations, from checking weather forecasts
+        to planning outdoor activities.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cho</td>
+            <td>hot</td>
+            <td>chaud</td>
+          </tr>
+          <tr>
+            <td>Fwèt</td>
+            <td>cold</td>
+            <td>froid</td>
+          </tr>
+          <tr>
+            <td>Mové tan</td>
+            <td>bad weather</td>
+            <td>mauvais + temps</td>
+          </tr>
+          <tr>
+            <td>Syèl-la</td>
+            <td>the sky / the heavens</td>
+            <td>ciel</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <h2 id="forming-questions-">Forming Questions ❓</h2>
+      <p>
+        Master the art of asking questions in Kwéyòl, from simple inquiries to
+        complex conversations.
+      </p>
+      <h3 id="basic-question-words-">Basic Question Words ❔</h3>
+      <p>
+        The fundamental building blocks for forming questions, enabling you to
+        seek essential information in any situation.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ki</td>
+            <td>what</td>
+            <td>qui / que</td>
+          </tr>
+          <tr>
+            <td>Ki moun</td>
+            <td>who</td>
+            <td>qui + monde (which person)</td>
+          </tr>
+          <tr>
+            <td>Ki sa</td>
+            <td>what</td>
+            <td>qui/que + ça (what's that)</td>
+          </tr>
+          <tr>
+            <td>Kijan</td>
+            <td>how</td>
+            <td>qui + genre</td>
+          </tr>
+          <tr>
+            <td>Kilè</td>
+            <td>when</td>
+            <td>quelle heure</td>
+          </tr>
+          <tr>
+            <td>Kimoun</td>
+            <td>who</td>
+            <td>qui + monde</td>
+          </tr>
+          <tr>
+            <td>Koté</td>
+            <td>where</td>
+            <td>quel côté</td>
+          </tr>
+          <tr>
+            <td>Pouki</td>
+            <td>why</td>
+            <td>pourquoi</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="yesno-question-patterns-">Yes/No Question Patterns ✅</h3>
+      <p>
+        Questions using "Eske" (from French "est-ce que") create simple yes/no
+        questions answered with "Wi" or "Non". This fundamental pattern is
+        essential for basic Kwéyòl conversations and perfect for beginners.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Eske ou konprann?</td>
+            <td>do you understand?</td>
+            <td>
+              est-ce que (question marker) + ou (you) + comprendre (understand)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="question-patterns-">Question Patterns 💭</h3>
+      <p>
+        Advanced patterns for forming more sophisticated questions, allowing you
+        to express complex thoughts and gather detailed information.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Antifa? Ki sa ou té kay di, Paul?</td>
+            <td>Antifa? What would you say, Paul?</td>
+            <td>
+              Antifa (same in French) + qui (what) + ça (this/that) + vous (you)
+              + dire (to say) + Paul (name)
+            </td>
+          </tr>
+          <tr>
+            <td>Ki kalité twavay ou ka fè?</td>
+            <td>what type of work do you do?</td>
+            <td>
+              qui (what) + qualité (quality/type) + travail (work) + vous (you)
+              + faire (to do)
+            </td>
+          </tr>
+          <tr>
+            <td>Ki sa ki Kweyol "sight-words"</td>
+            <td>what are Kwéyòl "sight-words"</td>
+            <td>
+              qui (what) + ça (that) + qui (is) + Kwéyòl (Saint Lucian Creole) +
+              "sight-words" (borrowed English term)
+            </td>
+          </tr>
+          <tr>
+            <td>Ki sa ou ka étidyé?</td>
+            <td>what are you studying?</td>
+            <td>
+              qui (what) + ça (this/that) + vous (you) + étudier (to study)
+            </td>
+          </tr>
+          <tr>
+            <td>Ou pa té tann li, non?</td>
+            <td>didn't you hear him/her?</td>
+            <td>
+              Ou pa té ("Didn't you") + tann li ("hear him/her") + non?
+              (question tag)
+            </td>
+          </tr>
+          <tr>
+            <td>Ou sa Katolik?</td>
+            <td>are you Catholic?</td>
+            <td>vous (you) + savoir (can) + catholique (Catholic)</td>
+          </tr>
+          <tr>
+            <td>Sa sa</td>
+            <td>this thing / that thing</td>
+            <td>ça (this/that) + ça (this/that)</td>
+          </tr>
+          <tr>
+            <td>Sa té pou twavay?</td>
+            <td>was this for work?</td>
+            <td>ça (this/that) + était (was) + pour (for) + travail (work)</td>
+          </tr>
+          <tr>
+            <td>Sa yé</td>
+            <td>what is it?</td>
+            <td>ça (this/that) + être (to be)</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4 id="feeling-and-condition-questions-">
+        Feeling and Condition Questions 🤔
+      </h4>
+      <p>
+        These questions help you inquire about someone's feelings and condition,
+        essential for showing care and concern in conversations.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ki jan ou santi'w?</td>
+            <td>how do you feel?</td>
+            <td>qui (what) + genre (type) + ou (you) + sentir (to feel)</td>
+          </tr>
+          <tr>
+            <td>Koman ou ka fè?</td>
+            <td>how are you doing?</td>
+            <td>comment (how) + ou (you) + faire (to do)</td>
+          </tr>
+          <tr>
+            <td>Kouman ou yé?</td>
+            <td>how are you?</td>
+            <td>comment (how) + ou (you) + être (to be)</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4 id="location-questions-">Location Questions 📍</h4>
+      <p>
+        These questions are essential for asking about the location of people or
+        objects, helping you navigate and understand your surroundings.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Koté liv-la yé?</td>
+            <td>where is the book?</td>
+            <td>
+              quel côté (which side) + livre (book) + là (there) + être (to be)
+            </td>
+          </tr>
+          <tr>
+            <td>Koté ou yé?</td>
+            <td>where are you?</td>
+            <td>quel côté (which side) + ou (you) + être (to be)</td>
+          </tr>
+          <tr>
+            <td>Ou soti kote?</td>
+            <td>where are you from?</td>
+            <td>ou (you) + sortir (to come from) + côté (side)</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4 id="needs-and-actions-questions-️">Needs and Actions Questions 🛠️</h4>
+      <p>
+        These questions help you inquire about someone's needs and actions,
+        crucial for understanding and assisting in various situations.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sa ou bezwen?</td>
+            <td>what do you need?</td>
+            <td>ça (that) + ou (you) + besoin (need)</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4 id="activity-questions-️">Activity Questions 🛠️</h4>
+      <p>
+        These questions help you inquire about someone's current actions,
+        essential for understanding and engaging in conversations about ongoing
+        activities.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mwen pa sa espéré pou alé an maché</td>
+            <td>I can't wait to go for a walk</td>
+            <td>
+              moi (I) + pas (not) + savoir (can) + espérer (to wait) + pour (to)
+              + aller (to go) + marcher (to walk)
+            </td>
+          </tr>
+          <tr>
+            <td>Sa ou ka fè?</td>
+            <td>what are you doing?</td>
+            <td>ça (that) + ou (you) + faire (to do)</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4 id="problem-inquiry-questions-">Problem Inquiry Questions ❓</h4>
+      <p>
+        These questions are essential for identifying and discussing issues or
+        problems, helping you understand and address concerns effectively.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ki sa ki pwoblèm lan?</td>
+            <td>what are the problems?</td>
+            <td>
+              qui/que (what) + ce (this) + problème (problem) + là (there)
+            </td>
+          </tr>
+          <tr>
+            <td>Ki sa pli enpòtan?</td>
+            <td>what is more important?</td>
+            <td>qui + ça + plus + important</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4 id="rhetorical-questions-">Rhetorical Questions 🤨</h4>
+      <p>
+        Culturally-specific questions used to express emotion, maintain
+        conversation flow, or show politeness in social situations.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sa sa yé?</td>
+            <td>what is this?</td>
+            <td>ça + c'est (that / this is)</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="conversation-examples-️">Conversation Examples 🗣️</h3>
+      <p>
+        Real-world dialogue patterns demonstrating how questions and answers
+        flow naturally in everyday Kwéyòl conversations.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Question</th>
+            <th>English</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Q: Ki mannyè ou yé?</td>
+            <td>How are you?</td>
+          </tr>
+          <tr>
+            <td>R: Mwen byen, mèsi</td>
+            <td>I'm good, thanks</td>
+          </tr>
+          <tr>
+            <td>Q: Koté ou ka alé?</td>
+            <td>Where are you going?</td>
+          </tr>
+          <tr>
+            <td>R: Mwen ka alé lakay</td>
+            <td>I'm going home</td>
+          </tr>
+          <tr>
+            <td>Q: Kilè ou ka vini?</td>
+            <td>When are you coming?</td>
+          </tr>
+          <tr>
+            <td>R: Mwen ka vini talè</td>
+            <td>I'm coming later</td>
+          </tr>
+          <tr>
+            <td>Q: Ki sa ou ka fè?</td>
+            <td>What are you doing?</td>
+          </tr>
+          <tr>
+            <td>R: Mwen ka manjé</td>
+            <td>I am eating</td>
+          </tr>
+          <tr>
+            <td>Q: Ki sa ou vlé bwè?</td>
+            <td>What do you want to drink?</td>
+          </tr>
+          <tr>
+            <td>R: Mwen vlé bwè dlo</td>
+            <td>I want to drink water</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <h2 id="constructing-sentences-">Constructing Sentences 📝</h2>
+      <p>
+        Learn to combine words and phrases into meaningful Kwéyòl expressions.
+      </p>
+      <p>
+        This section shows you how to build both simple and compound sentences
+        using the vocabulary you've learned.
+      </p>
+      <p>
+        You'll discover how to express actions in different time frames, connect
+        ideas, and create natural-sounding dialogue. Master these patterns to
+        communicate effectively in everyday situations.
+      </p>
+      <h3 id="sentence-building-blocks-">Sentence Building Blocks 🧱</h3>
+      <p>
+        Core components and patterns for creating basic Kwéyòl sentences, from
+        simple statements to questions.
+      </p>
+      <h4 id="basic-sentence-structures-">Basic Sentence Structures 🔨</h4>
+      <p>
+        Essential patterns that form the foundation of Kwéyòl communication,
+        showing how to combine subjects, verbs, and objects.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Structure</th>
+            <th>Pattern</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Compound</td>
+            <td>phrase1 + épi + phrase2</td>
+            <td>Mwen ka manjé épi bwè (I eat and drink)</td>
+          </tr>
+          <tr>
+            <td>Conditional</td>
+            <td>si + condition + result</td>
+            <td>Si ou vini, mwen ka alé (If you come, I will go)</td>
+          </tr>
+          <tr>
+            <td>Demonstrative</td>
+            <td>demonstrative + sé + subject</td>
+            <td>Sa sé ou</td>
+          </tr>
+          <tr>
+            <td>Future</td>
+            <td>dimen + subject + ka + verb</td>
+            <td>Dimen mwen ka alé (Tomorrow I will go)</td>
+          </tr>
+          <tr>
+            <td>Present Continuous</td>
+            <td>subject + ka + verb</td>
+            <td>Mwen ka manjé (I am eating)</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="pattern-variations-">Pattern Variations 🎯</h3>
+      <p>
+        Different ways to modify basic sentences for tense, aspect, and mood.
+      </p>
+      <h4 id="common-expressions-️">Common Expressions 🗣️</h4>
+      <p>
+        Frequently used phrases that will help you sound more natural in
+        everyday conversations.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bon lide</td>
+            <td>good idea</td>
+            <td>bonne idée</td>
+          </tr>
+          <tr>
+            <td>Gwo mèsi</td>
+            <td>big thank you</td>
+            <td>gros (big) + merci (thank you)</td>
+          </tr>
+          <tr>
+            <td>Mèsi pou koreksyon an</td>
+            <td>thanks for the correction</td>
+            <td>merci + correction + article 'la'</td>
+          </tr>
+          <tr>
+            <td>Mèsi pou tradiksyon-an</td>
+            <td>thanks for the translation</td>
+            <td>merci + traduction + article 'la'</td>
+          </tr>
+          <tr>
+            <td>Mwen la</td>
+            <td>I'm here / I'm present</td>
+            <td>moi + article 'la'</td>
+          </tr>
+          <tr>
+            <td>Mwen poko mò</td>
+            <td>I'm not dead yet</td>
+            <td>moi + Kwéyòl: poko (not yet) + mort</td>
+          </tr>
+          <tr>
+            <td>Pou èd ou</td>
+            <td>for your help</td>
+            <td>pour (for) + aide (help)</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <h2 id="advanced-communication-">Advanced Communication 🎯</h2>
+      <p>
+        This section elevates your Kwéyòl fluency to handle sophisticated
+        real-world situations.
+      </p>
+      <p>
+        You'll learn to express complex thoughts, discuss current events, and
+        engage in natural conversations across various contexts - from
+        traditional topics like weather to modern subjects like gaming.
+      </p>
+      <p>
+        The patterns and expressions here will help you sound more like a native
+        speaker while navigating both formal and casual social situations.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>An vyé doudou di i té sa fè sa</td>
+            <td>an old girlfriend said she could do that</td>
+            <td>
+              un (an) + vieux (old) + doudou (sweetheart) + dire (say) + il
+              (he/she) + était (was) + savoir (could) + faire (do) + ça (that)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Dézè kondwi hòt mwen an London, Ontario, té ni an kay KKK an lanné
+              1970
+            </td>
+            <td>
+              2 hours drive from me in London Ontario there was a KKK clubhouse
+              in the 1970s
+            </td>
+            <td>
+              deux (two) + heures (hours) + conduire (drive) + haut (high/far) +
+              moi (me) + en (in) + London, Ontario + il y avait (there was) + un
+              (a) + maison (house) + KKK + en (in) + année (year) + 1970
+            </td>
+          </tr>
+          <tr>
+            <td>Front-end development se aplon</td>
+            <td>front-end development is my focus</td>
+            <td>
+              English: front-end development + c'est (is) + aplomb
+              (focus/confidence)
+            </td>
+          </tr>
+          <tr>
+            <td>I sé vwa White Supremacy</td>
+            <td>she is the mouthpiece of white supremacy</td>
+            <td>
+              il/elle (he/she) + c'est (is) + voix (voice) + suprématie blanche
+              (white supremacy)
+            </td>
+          </tr>
+          <tr>
+            <td>Mwen fèt an Kanada épi an papa San Lisyen</td>
+            <td>Born in Canada to a Saint Lucian father</td>
+            <td>
+              moi (I) + être (to be) + en (in) + Canada + et puis (and then) +
+              un (a) + père (father) + Saint Lucien (Saint Lucian)
+            </td>
+          </tr>
+          <tr>
+            <td>Mwen ka sèvi React épi Tailwind</td>
+            <td>I use React and Tailwind</td>
+            <td>
+              moi (I) + capable (can) + servir (use) + React + et puis (and
+              then) + Tailwind
+            </td>
+          </tr>
+          <tr>
+            <td>Mwen vlé konvèsasyonèl a 50 lanné</td>
+            <td>I want to be conversational at 50 years old</td>
+            <td>
+              Mwen vlé ("I want") + konvèsasyonèl ("conversational") + a 50
+              lanné ("at 50 years")
+            </td>
+          </tr>
+          <tr>
+            <td>Ou ni pou travay wèd apwé 30 pou wèsté mèg</td>
+            <td>You have to work hard after 30 to stay slim</td>
+            <td>
+              Ou ("You") + ni pou ("have to") + travay wèd ("work hard") + apwé
+              30 ("after 30") + pou ("to") + wèsté ("stay") + mèg ("slim")
+            </td>
+          </tr>
+          <tr>
+            <td>Sistèm ledikasyon an adan shambles</td>
+            <td>the education system is in shambles</td>
+            <td>
+              système (system) + éducation (education) + en (in) + désordre
+              (disorder/shambles)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="core-language-patterns-">Core Language Patterns 🌐</h3>
+      <p>
+        Essential advanced structures that form the foundation of sophisticated
+        Kwéyòl expression.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alé isit</td>
+            <td>go here</td>
+            <td>aller (to go) + ici (here)</td>
+          </tr>
+          <tr>
+            <td>Bòn fèt madanm mwen</td>
+            <td>happy birthday my wife</td>
+            <td>bonne + fête + madame + moi</td>
+          </tr>
+          <tr>
+            <td>Diktatè ki sòti premyé jou</td>
+            <td>dictator from day one</td>
+            <td>
+              dictateur (dictator) + qui (who) + sortir (to come out) + premier
+              (first) + jour (day)
+            </td>
+          </tr>
+          <tr>
+            <td>Èspliké tibwen ban nou</td>
+            <td>explain a little for us</td>
+            <td>expliquer (explain) + un peu (a little) + nous (us)</td>
+          </tr>
+          <tr>
+            <td>Imaj ikonik</td>
+            <td>iconic pic</td>
+            <td>image (image) + iconique (iconic)</td>
+          </tr>
+          <tr>
+            <td>Lamerik sé ka metté presyon</td>
+            <td>US is applying pressure</td>
+            <td>
+              l'Amérique (America) + c'est (is) + mettre (to put) + pression
+              (pressure)
+            </td>
+          </tr>
+          <tr>
+            <td>Lòd isit</td>
+            <td>instructions here</td>
+            <td>l'ordre (the order) + ici (here)</td>
+          </tr>
+          <tr>
+            <td>Lòd ka vini</td>
+            <td>instructions on the way</td>
+            <td>l'ordre (the order) + venir (to come)</td>
+          </tr>
+          <tr>
+            <td>Mwen alé</td>
+            <td>I'm going</td>
+            <td>moi (I) + aller (to go)</td>
+          </tr>
+          <tr>
+            <td>Mwen la</td>
+            <td>I'm here</td>
+            <td>moi (I) + là (there)</td>
+          </tr>
+          <tr>
+            <td>Mwen obliyé</td>
+            <td>I forgot</td>
+            <td>moi (I) + oublier (forget)</td>
+          </tr>
+          <tr>
+            <td>Ou sa kwiyé mwen</td>
+            <td>you can call me</td>
+            <td>vous (you) + savoir (can) + crier/appeler (call) + moi (me)</td>
+          </tr>
+          <tr>
+            <td>Pa dapwé sa mwen li</td>
+            <td>not according to what I've read</td>
+            <td>pas + d'après + ça + moi + lire</td>
+          </tr>
+          <tr>
+            <td>Pa ka swiv</td>
+            <td>not following</td>
+            <td>pas (not) + suivre (follow)</td>
+          </tr>
+          <tr>
+            <td>Piti chant sala</td>
+            <td>the child of that song</td>
+            <td>petit (small) + chant (song) + cela (that)</td>
+          </tr>
+          <tr>
+            <td>Pli gwan tifi mwen ni 20 lanné</td>
+            <td>my oldest daughter is 20</td>
+            <td>
+              plus (more) + grand (big) + petite fille (daughter) + moi (my) +
+              avoir (have) + année (year)
+            </td>
+          </tr>
+          <tr>
+            <td>Sa té ké</td>
+            <td>it would be</td>
+            <td>ça (that) + serait (would be)</td>
+          </tr>
+          <tr>
+            <td>Sa té ké on bel rankont</td>
+            <td>it would be a cool link up</td>
+            <td>
+              ça (that) + serait (would be) + une (a) + belle (beautiful) +
+              rencontre (meeting)
+            </td>
+          </tr>
+          <tr>
+            <td>Sé u/Childishdee an pyès la ?</td>
+            <td>is u/Childishdee in the room?</td>
+            <td>
+              est-ce (is it) + vous (you) + Childishdee + en (in) + pièce (room)
+            </td>
+          </tr>
+          <tr>
+            <td>Si LaRisi apwésé Cuba, Lamerik ké viwé fou ak bal</td>
+            <td>if Russia comes close to Cuba, US will get trigger happy</td>
+            <td>
+              si (if) + la Russie (Russia) + approcher (to approach) + Cuba +
+              l'Amérique (America) + devenir (to become) + fou (crazy) + avec
+              (with) + balle (bullet)
+            </td>
+          </tr>
+          <tr>
+            <td>Vwèman wi, mwen sé yon egzanp.</td>
+            <td>so true, I'm an example</td>
+            <td>vraiment + oui + moi + c'est + un + exemple</td>
+          </tr>
+          <tr>
+            <td>Zanmi'w soti an travay</td>
+            <td>your friends from work</td>
+            <td>ami + vous + sortir + en + travail</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4 id="complex-sentence-patterns-">Complex Sentence Patterns 🧩</h4>
+      <p>
+        Advanced structures that allow you to express more sophisticated ideas
+        and relationships between concepts.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Pattern</th>
+            <th>Kwéyòl Example</th>
+            <th>English Translation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Background Information</td>
+            <td>Mwen fèt an Kanada épi papa mwen sé San Lisi</td>
+            <td>Born in Canada to a St. Lucian father</td>
+          </tr>
+          <tr>
+            <td>Cause / Effect (Paski)</td>
+            <td>Mwen ka bwè dlo paski mwen cho</td>
+            <td>I'm drinking water because I'm hot</td>
+          </tr>
+          <tr>
+            <td>Compound (Épi)</td>
+            <td>Mwen ka manjé épi bwè</td>
+            <td>I am eating and drinking</td>
+          </tr>
+          <tr>
+            <td>Conditional (Si)</td>
+            <td>Si ou vini bonmaten, nou ka alé ansanm</td>
+            <td>If you come in the morning, we will go together</td>
+          </tr>
+          <tr>
+            <td>Future Plans</td>
+            <td>Dimen nou ka alé laplaj épi zanmi nou</td>
+            <td>Tomorrow we're going to the beach with our friends</td>
+          </tr>
+          <tr>
+            <td>Negation</td>
+            <td>Mwen pa konprann</td>
+            <td>I don't understand</td>
+          </tr>
+          <tr>
+            <td>Obligation Pattern</td>
+            <td>Ou ni pou twavay wèd apwé 30 pou wèsté mèg</td>
+            <td>You have to work hard after 30 to stay slim</td>
+          </tr>
+          <tr>
+            <td>Origin/Location Statement</td>
+            <td>I sòti Kastwi, alò yo pa té ka palé twòp Kwéyòl an kay.</td>
+            <td>He is from Kastwi so not much Kweyol was spoken at home</td>
+          </tr>
+          <tr>
+            <td>Predictive Expression</td>
+            <td>Sa kay bon an chay</td>
+            <td>That will be a lot of fun</td>
+          </tr>
+          <tr>
+            <td>Progressive Action</td>
+            <td>Ou ka eseye</td>
+            <td>You are trying / attempting</td>
+          </tr>
+          <tr>
+            <td>Quantity Pattern</td>
+            <td>Pa té ni twòp adan tan sala</td>
+            <td>Not too many at the time</td>
+          </tr>
+          <tr>
+            <td>Repetition</td>
+            <td>Mandé mwen anko</td>
+            <td>Ask me again</td>
+          </tr>
+          <tr>
+            <td>Time-Based</td>
+            <td>Atjwèlman mwen ka gadé télé, mé talè mwen ka alé dòmi</td>
+            <td>Right now I'm watching TV, but later I'm going to sleep</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4 id="future-intentions-">Future Intentions 🎯</h4>
+      <p>Expressions used to discuss plans, intentions, and future actions.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>E m'ap</td>
+            <td>and I will / I am going to</td>
+            <td>et + m'en + après</td>
+          </tr>
+          <tr>
+            <td>
+              Epi apré sa, mwen kay touné netwayé lanèj—round 1 apré mwen jwé
+              Battlefield, épi round 2 pli ta aswè-a
+            </td>
+            <td>
+              then after that, I will go back to shoveling snow—round 1 after
+              playing Battlefield, and round 2 later tonight
+            </td>
+            <td>
+              et puis (and then) + après ça (after that) + tourner (to
+              turn/return) + neige (snow) + après (after) + plus tard (later) +
+              soir (evening)
+            </td>
+          </tr>
+          <tr>
+            <td>Mwen ka aprann</td>
+            <td>I'm learning</td>
+            <td>moi + ka (progressive) + apprendre</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="modern-usage-">Modern Usage 🌐</h3>
+      <p>
+        Explore contemporary Kwéyòl expressions that bridge traditional language
+        with modern life, technology, and culture.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Word/Phrase</th>
+            <th>English Translation</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>I ka "re-branding" pou vini nwè ankò</td>
+            <td>she is rebranding to be black again</td>
+            <td>
+              il/elle (he/she) + capable (can) + "re-branding" (English term) +
+              pour (to) + devenir (become) + noir (black) + encore (again)
+            </td>
+          </tr>
+          <tr>
+            <td>Konvèsasyonèl</td>
+            <td>conversational</td>
+            <td>conversationnel (conversational)</td>
+          </tr>
+          <tr>
+            <td>Sijesyon</td>
+            <td>suggestions</td>
+            <td>suggestion (suggestion)</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4 id="technology-vocabulary-️">Technology Vocabulary 🖥️</h4>
+      <p>
+        These terms showcase how the language bridges traditional Kwéyòl
+        structures with modern technological terminology, making it relevant for
+        today's digital conversations.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English Translation</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jòdi-a, mwen kay jwé Battlefield 2024 pou anviron 1 hè</td>
+            <td>today, I will play Battlefield 2024 for around 1 hour</td>
+            <td>
+              jour + de (today) + jouer (play) + pour (for) + environ (around) +
+              heure (hour)
+            </td>
+          </tr>
+          <tr>
+            <td>Mwen ka alé kòdé</td>
+            <td>I can code</td>
+            <td>moi (me) + capable (can) + aller (go) + coder (to code)</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4 id="cultural--modern-references-">
+        Cultural &amp; Modern References 🎵
+      </h4>
+      <p>
+        These expressions showcase how Kwéyòl handles discussions about weather
+        conditions and daily environmental tasks.
+      </p>
+      <p>
+        The examples demonstrate practical vocabulary for describing winter
+        activities, weather forecasts, and their effects on daily life. Notice
+        how the language naturally incorporates modern measurements (cm) while
+        maintaining traditional Kwéyòl sentence structures.
+      </p>
+      <p>
+        This blend makes it easy to discuss both immediate and upcoming weather
+        situations in authentic, everyday conversations.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English Translation</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>An chay bagay ka pasé!</td>
+            <td>a lot is happening!</td>
+            <td>un (a) + tas (heap) + chose (thing) + passer (happen)</td>
+          </tr>
+          <tr>
+            <td>An kè mwen</td>
+            <td>in my heart</td>
+            <td>en (in) + cœur (heart) + moi (me/my)</td>
+          </tr>
+          <tr>
+            <td>Atik sou lwa</td>
+            <td>article about law</td>
+            <td>article (article) + sur (about) + loi (law)</td>
+          </tr>
+          <tr>
+            <td>Byenvini an lanné 1950</td>
+            <td>welcome to the 1950s</td>
+            <td>bienvenue (welcome) + en (in) + année (year)</td>
+          </tr>
+          <tr>
+            <td>Entèpretasyon pa Snoop Dogg</td>
+            <td>rendition by Snoop Dogg</td>
+            <td>interprétation (interpretation) + par (by)</td>
+          </tr>
+          <tr>
+            <td>Gwo mizik sòti tan jenès mwen</td>
+            <td>big songs from my young days</td>
+            <td>
+              gros (big) + musique (music) + sortir (come from) + temps (time) +
+              jeunesse (youth) + moi (me/my)
+            </td>
+          </tr>
+          <tr>
+            <td>Mwen wè sa an zyé mwen!</td>
+            <td>I saw it with my own eyes!</td>
+            <td>
+              moi (I) + voir (see) + ça (that) + en (in) + œil (eye) + moi (my)
+            </td>
+          </tr>
+          <tr>
+            <td>Ou ni bon tjè.</td>
+            <td>you have a good heart.</td>
+            <td>vous (you) + avoir (have) + bon (good) + cœur (heart)</td>
+          </tr>
+          <tr>
+            <td>Sa pa té ni doubout.</td>
+            <td>that didn’t make sense.</td>
+            <td>ça (that) + pas (not) + tenir (hold) + debout (standing)</td>
+          </tr>
+          <tr>
+            <td>Sa sé tan mwen</td>
+            <td>that's my era</td>
+            <td>ça (that) + c'est (is) + temps (time) + moi (me/my)</td>
+          </tr>
+          <tr>
+            <td>Sé konsa lafwa ka woulé.</td>
+            <td>that’s just how life goes.</td>
+            <td>
+              c'est (it is) + comme ça (like that) + la foi (faith) + rouler
+              (roll)
+            </td>
+          </tr>
+          <tr>
+            <td>Soukwé pied</td>
+            <td>to shake a leg</td>
+            <td>secouer + pied</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="idiomatic-expressions--proverbs-️">
+        Idiomatic Expressions &amp; Proverbs 🗣️
+      </h3>
+      <p>
+        This section covers common idiomatic expressions and proverbs in Kwéyòl.
+        These phrases often carry meanings that go beyond their literal
+        translations, offering insights into cultural wisdom and everyday life.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English Translation</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2 bous pa rale</td>
+            <td>two greedy people never get enough</td>
+            <td>
+              deux (two) + bouches (mouths) + pas (not) + râler (complain)
+            </td>
+          </tr>
+          <tr>
+            <td>Mouton ka mélé, mé i sav ki koté i ka mélé.</td>
+            <td>
+              someone pretending to be confused but actually knows what's
+              happening.
+            </td>
+            <td>
+              mouton (sheep) + mélanger (mix) + mais (but) + il (he) + savoir
+              (know) + quel (which) + côté (side) + il (he) + mélanger (mix)
+            </td>
+          </tr>
+          <tr>
+            <td>Pa mété kabwit gadyen chou.</td>
+            <td>don’t put someone untrustworthy in charge.</td>
+            <td>
+              ne pas (do not) + mettre (put) + cabri (goat) + gardien (guardian)
+              + chou (cabbage)
+            </td>
+          </tr>
+          <tr>
+            <td>Sé an bonda chòdyè épi an chapo kannari.</td>
+            <td>someone acting higher than they are.</td>
+            <td>
+              sé (it is) + un (a) + bonde (plug) + chaudron (cauldron) + et
+              (and) + un (a) + chapeau (hat) + canari (earthenware pot)
+            </td>
+          </tr>
+          <tr>
+            <td>Sé pa jounen an chat ka fè ich.</td>
+            <td>good things take time.</td>
+            <td>
+              ce n'est pas (it is not) + journée (day) + un (a) + chat (cat) +
+              faire (make) + ich (kittens)
+            </td>
+          </tr>
+          <tr>
+            <td>Si ou vlé manjé fig, ou ni pou soukwé pied fig.</td>
+            <td>if you want something, you must work for it.</td>
+            <td>
+              si (if) + vous (you) + voulez (want) + manger (eat) + figue (fig)
+              + vous (you) + devez (must) + secouer (shake) + pied (foot) +
+              figue (fig)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <h2 id="everyday-situations-">Everyday Situations 🏠</h2>
+      <p>Essential phrases and vocabulary for navigating daily life.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mwen ale maché otou katye-a épi mwen chen</td>
+            <td>I went for a walk around the neighborhood with my dog</td>
+            <td>
+              Mwen ale ("I went") + maché ("walk") + otou katye-a ("around the
+              neighborhood") + épi mwen chen ("with my dog")
+            </td>
+          </tr>
+          <tr>
+            <td>Mwen alez mwen kouch. Pli ta</td>
+            <td>I'm going to bed. Later</td>
+            <td>
+              Mwen alez ("I'm going") + mwen kouch ("to bed") + Pli ta ("Later")
+            </td>
+          </tr>
+          <tr>
+            <td>Mwen chen sé Jamayik</td>
+            <td>my dog is Jamaican</td>
+            <td>Mwen chen ("My dog") + sé ("is") + Jamayik ("Jamaican")</td>
+          </tr>
+          <tr>
+            <td>Mwen obliyé gadé éklips-la</td>
+            <td>I forgot to watch the eclipse</td>
+            <td>
+              moi (I) + oublier (to forget) + regarder (to watch) + l'éclipse
+              (the eclipse)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="status-phrases-️">Status Phrases 🗣️</h3>
+      <p>
+        Common expressions used to describe one's current state or condition,
+        ranging from casual responses to emphatic declarations. These phrases
+        are perfect for responding to inquiries about wellbeing or making
+        light-hearted statements about one's situation.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mwen jwenn post-la ki menné mwen isit-la</td>
+            <td>I found the post which brought me here</td>
+            <td>
+              moi (I) + trouver (to find) + le post (the post) + qui (which) +
+              mener (to lead) + moi (me) + ici (here)
+            </td>
+          </tr>
+          <tr>
+            <td>Mwen pa konprann</td>
+            <td>I don't understand</td>
+            <td>moi (I) + pas (not) + comprendre (understand)</td>
+          </tr>
+          <tr>
+            <td>Mwen pa ni relijion</td>
+            <td>I don't have a religion</td>
+            <td>moi (I) + pas (not) + avoir (to have) + religion (religion)</td>
+          </tr>
+          <tr>
+            <td>Mwen poko mò</td>
+            <td>I'm not dead yet</td>
+            <td>moi + Kwéyòl: poko (not yet) + mort</td>
+          </tr>
+          <tr>
+            <td>Mwen sa édé ou si ou vlé diskité sa</td>
+            <td>I can help you if you want to discuss that</td>
+            <td>
+              moi (I) + savoir (can) + aider (help) + vous (you) + si (if) +
+              vous (you) + voulez (want) + discuter (discuss) + ça (that)
+            </td>
+          </tr>
+          <tr>
+            <td>Mwen té vlé wè'y</td>
+            <td>I wanted to see it</td>
+            <td>moi (I) + était (was) + vouloir (to want) + voir (to see)</td>
+          </tr>
+          <tr>
+            <td>Mwen vlé konvèsasyonèl a 50 lanné</td>
+            <td>I want to be conversational at 50 years</td>
+            <td>
+              moi (I) + vouloir (to want) + conversationnel (conversational) + à
+              (at) + cinquante (50) + années (years)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="weather--environment-️">Weather &amp; Environment 🌤️</h3>
+      <p>
+        Vocabulary and phrases specific to discussing weather conditions and
+        environmental situations.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Kwéyòl Phrase</th>
+            <th>English</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>50 cm lanèj ant jòdi-a épi Jedi</td>
+            <td>50 cm of snow between today and Thursday</td>
+            <td>la neige + entre + aujourd'hui + et puis + jeudi</td>
+          </tr>
+          <tr>
+            <td>Apre mwen netwayé lanèj yè, mwen té fatige</td>
+            <td>after shoveling snow yesterday, I was tired</td>
+            <td>après + moi + nettoyer + la neige + hier + moi + fatigué</td>
+          </tr>
+          <tr>
+            <td>Mwen kay alé netwayé lanèj pli ta</td>
+            <td>I will go shovel snow later</td>
+            <td>moi + aller + nettoyer + la neige + plus tard</td>
+          </tr>
+          <tr>
+            <td>Soley-la ka kléwé</td>
+            <td>The sun is shining</td>
+            <td>le soleil (the sun) + clairer (to shine)</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <table>
+        <thead>
+          <tr>
+            <th>English</th>
+            <th>Saint Lucian Kwéyòl</th>
+            <th>Etymology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Donk la man konprann i té fè an blag galantri, misyé konprann man
+              kouyonnen an fanm.
+            </td>
+            <td>
+              So I thought he was making a chivalrous joke, but he thought I was
+              fooling a woman.
+            </td>
+            <td>"Blag" (joke) + "galantri" (chivalry).</td>
+          </tr>
+          <tr>
+            <td>Mesi. Mwen gade sa dance style but pa know sa nom.</td>
+            <td>
+              Thanks. I've seen this dance style but didn't know the name.
+            </td>
+            <td>Mixed with English. "Gade" (to see) from French "regarder".</td>
+          </tr>
+          <tr>
+            <td>Mi aprezan Burna Boy ka palé Kréyòl!</td>
+            <td>Look, now Burna Boy is speaking Creole!</td>
+            <td>"Mi" (look/here) + "aprezan" (now).</td>
+          </tr>
+          <tr>
+            <td>Mo sa roun gwiyannè.</td>
+            <td>I am a Guianese person.</td>
+            <td>"Gwiyannè" (person from Guiana).</td>
+          </tr>
+          <tr>
+            <td>Mwen ale mache otou katye-a avek mwen chen.</td>
+            <td>I went walking around the neighborhood with my dog.</td>
+            <td>"Otou" (around) + "katye-a" (the neighborhood).</td>
+          </tr>
+          <tr>
+            <td>Mwen fèt an Kanada épi an papa San Lisyen</td>
+            <td>Born in Canada to a Saint Lucian father</td>
+            <td>
+              moi (I) + être (to be) + en (in) + Canada + et puis (and then) +
+              un (a) + père (father) + Saint Lucien (Saint Lucian)
+            </td>
+          </tr>
+          <tr>
+            <td>Mwen pa sa wait sa alez for a marché.</td>
+            <td>I can't wait to go for a walk.</td>
+            <td>English mixed with Creole. "Marché" (walk) from French.</td>
+          </tr>
+          <tr>
+            <td>Mwen vlé konvèsasyonèl a 50 lanné</td>
+            <td>I want to be conversational at 50 years old</td>
+            <td>
+              Mwen vlé ("I want") + konvèsasyonèl ("conversational") + a 50
+              lanné ("at 50 years")
+            </td>
+          </tr>
+          <tr>
+            <td>Nou gen sa la tou.</td>
+            <td>We have that here too.</td>
+            <td>Haitian Creole equivalent. "Gen" is short for "genyen".</td>
+          </tr>
+          <tr>
+            <td>Ou ni pou travay wèd apwé 30 pou wèsté mèg</td>
+            <td>You have to work hard after 30 to stay slim</td>
+            <td>
+              Ou ("You") + ni pou ("have to") + travay wèd ("work hard") + apwé
+              30 ("after 30") + pou ("to") + wèsté ("stay") + mèg ("slim")
+            </td>
+          </tr>
+          <tr>
+            <td>Pouki nou pa ni on fèstival komik ka bay yenki an Kréyòl?</td>
+            <td>Why don’t we have a comedy festival only in Creole?</td>
+            <td>"Pouki" (why) + "yenki" (only).</td>
+          </tr>
+          <tr>
+            <td>Sa fasil</td>
+            <td>That’s easy</td>
+            <td>"Fasil" comes from French "facile" (easy).</td>
+          </tr>
+          <tr>
+            <td>Sa man pa té kè sa di'w.</td>
+            <td>That’s not what I wanted to tell you.</td>
+            <td>"Pa té kè" (did not want to).</td>
+          </tr>
+          <tr>
+            <td>Si mwen</td>
+            <td>If I</td>
+            <td>"Si" (if) from French "si".</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
