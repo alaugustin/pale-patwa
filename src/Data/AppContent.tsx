@@ -75,7 +75,7 @@ const uiClasses = {
   copyRightIconClasses: 'h-3 w-3 fill-slate-50',
   dictionarySearchClasses: `${flexItemsCenter} ${borderColor} flex-row mb-8 border rounded-full bg-white`,
   dictionarySearchInputClasses: 'p-2 px-4 w-64 rounded-full border-r-0',
-  flagHolderClasses: 'mr- sm:mr-1 lg:mr-3 last:mr-0 flex-wrap',
+  flagHolderClasses: 'mr-4 md:mr-1 lg:mr-3 last:mr-0 flex-wrap',
   footerContainerClasses: `${borderTop} ${flexCol} pb-7 basis-14 md:flex-row justify-between md:flex-wrap bg-slate-800 text-slate-50`,
   footerFlagSectionClasses: cn(footerColClasses, 'p-2 md:pb-7 md:mb-0 md:justify-end'),
   footerResourcesContinerClasses: cn(flexCol, 'p-2 md:pb-7 basis-full md:mb-0 md:px-4 md:basis-1/2'),
@@ -221,19 +221,56 @@ const footerContent = {
     titleH2: 'Resources',
     flags: [
       {
-        flag: '🇱🇨', ariaLabel: 'Saint Lucia	/ Sent Lisi'
+        emoji: '🇱🇨',
+        ariaLabelEn: 'Saint Lucia',
+        ariaLabelKw: 'Sent Lisi'
       },
-      { flag: '🇲🇶', ariaLabel: 'Martinique / Matinik' },
       {
-        flag: '🇻🇨', ariaLabel: 'Saint Vincent & the Grenadines / Sen Vensan épi Grènadin'
+        emoji: '🇲🇶',
+        ariaLabelEn: 'Martinique',
+        ariaLabelKw: 'Matinik'
       },
-      { flag: '🇩🇲', ariaLabel: 'Dominica / Dominik' },
-      { flag: '🇬🇩', ariaLabel: 'Grenada / Gwènad' },
-      { flag: '🇹🇹', ariaLabel: 'Trinidad & Tobago	/ Trinité épi Tobago' },
-      { flag: '🇭🇹', ariaLabel: 'Haiti / Ayiti' },
-      { flag: '🇬🇫', ariaLabel: 'French Guiana	 / Gwiyann' },
-      { flag: '🇻🇪', ariaLabel: 'Venezuela / Vénézwèla' },
-      { flag: '🇬🇵', ariaLabel: 'Guadeloupe / Gwadloup' }],
+      {
+        emoji: '🇻🇨',
+        ariaLabelEn: 'Saint Vincent & the Grenadines',
+        ariaLabelKw: 'Sen Vensan épi Grènadin'
+      },
+      {
+        emoji: '🇩🇲',
+        ariaLabelEn: 'Dominica',
+        ariaLabelKw: 'Dominik'
+      },
+      {
+        emoji: '🇬🇩',
+        ariaLabelEn: 'Grenada',
+        ariaLabelKw: 'Gwènad'
+      },
+      {
+        emoji: '🇹🇹',
+        ariaLabelEn: 'Trinidad & Tobago',
+        ariaLabelKw: 'Trinité épi Tobago'
+      },
+      {
+        emoji: '🇭🇹',
+        ariaLabelEn: 'Haiti',
+        ariaLabelKw: 'Ayiti'
+      },
+      {
+        emoji: '🇬🇫',
+        ariaLabelEn: 'French Guiana',
+        ariaLabelKw: 'Gwiyann'
+      },
+      {
+        emoji: '🇻🇪',
+        ariaLabelEn: 'Venezuela',
+        ariaLabelKw: ' Vénézwèla'
+      },
+      {
+        emoji: '🇬🇵',
+        ariaLabelEn: 'Guadeloupe',
+        ariaLabelKw: 'Gwadloup'
+      }
+    ],
     links: [
       {
         label: 'Kwéyòl Dictionary - Ministry of Education, Government of Saint Lucia',

@@ -4,6 +4,7 @@ import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import Button from '../../UI/Form/Button/Button';
 import { Typography } from '../../UI/Typography/Typography';
 import { PaginationJumpButton } from './PaginationJumpButton/PaginationJumpButton';
+import { cn } from '../../../Data/AppContent';
 import { IPaginationProps } from './Pagination.d';
 
 const {
@@ -75,7 +76,7 @@ export const Pagination = ({
         buttonLabel={prevButtonLabel}
         onClickFunc={prevOnClickFunc}
         buttonDisabled={prevButtonDisabled}
-        buttonClass={`${shouldShowButton(currentPage, 1, totalPages)} mr-3`}
+        buttonClass={cn(shouldShowButton(currentPage, 1, totalPages), ' mr-3')}
       />
 
       <BlockElement variant='div' className={paginationBoardClasses}>
@@ -88,7 +89,7 @@ export const Pagination = ({
         buttonLabel={nextButtonLabel}
         onClickFunc={nextOnClickFunc}
         buttonDisabled={totalPages === 0 ? true : nextButtonDisabled}
-        buttonClass={`${shouldShowButton(currentPage, totalPages, totalPages)} ml-3`}
+        buttonClass={cn(shouldShowButton(currentPage, totalPages, totalPages), ' ml-3')}
       />
 
       {nextButtons.map((button) => (

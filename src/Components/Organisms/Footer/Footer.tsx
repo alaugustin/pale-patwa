@@ -58,7 +58,7 @@ export default function Footer({
             variant='span'
             className={flagHolderClasses}
             role='img'
-            ariaLabel={flag.ariaLabel}>{flag.flag}</Typography>
+            ariaLabel={`${flag.ariaLabelKw} / ${flag.ariaLabelEn}`}>{flag.emoji}</Typography>
         ))}
       </BlockElement>
     </BlockElement>

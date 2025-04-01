@@ -6,6 +6,7 @@ import { Typography } from '../../UI/Typography/Typography';
 import WordAttributes from '../WordAttributes/WordAttributes';
 import Button from '../../UI/Form/Button/Button';
 import WordRelations from '../WordRelations/WordRelations';
+import { cn } from '../../../Data/AppContent';
 import { IModalProps } from './Modal.d';
 
 const { modalClose } = AppContentData.libraryContent;
@@ -58,7 +59,7 @@ export default function Modal({
             </Typography>
 
             {modalSentenceKw && (
-              <Typography variant='p' className={`${borderTop} pt-4 mb-1`}>
+              <Typography variant='p' className={cn(borderTop, 'pt-4 mb-1')}>
                 <Typography variant='strong'>{modalSentenceKw}</Typography>
               </Typography>
             )}

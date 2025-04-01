@@ -6,11 +6,11 @@ import Link from '../../UI/Link/Link';
 import { cn } from '../../../Data/AppContent';
 import { IWordAttributesProps } from './WordAttributes.d';
 
+const { wordAttributesLinkClasses, borderTop } = AppContentData.uiHelperClasses;
+
 const { wordAttributeBorder } = AppContentData.uiClasses;
 const { collinsDictionaryLink } = AppContentData.libraryContent;
 const { normalizeText } = AppContentData.helperFunc;
-
-const { wordAttributesLinkClasses, borderTop } = AppContentData.uiHelperClasses;
 
 export default function WordAttributes({
   wordEtymology,
