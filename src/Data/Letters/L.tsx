@@ -204,7 +204,7 @@ export const dataLibL = [{
   egSentenceEn: 'There\'s no other way to do that.',
   synonym: ['ka vini', 'pwochen'],
   antonym: ['pasé'],
-  etymology: '[< Fr. .l\'autre]',
+  etymology: '[< Fr. l\'autre]',
   dialect: '🇱🇨',
   variant: [null],
 }, {
@@ -215,8 +215,21 @@ export const dataLibL = [{
   egSentenceEn: 'Next week we will go to Castries.',
   synonym: ['ka vini', 'pwochen'],
   antonym: ['pasé'],
-  etymology: '[< Fr. .l\'autre]',
+  etymology: '[< Fr. l\'autre]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'lapenn',
+  partOfSpeech: 'N',
+  definition: ['sorrow', 'grief'],
+  egSentenceKw: 'Madanm-lan té an lapenn paski ich li té mò.',
+  egSentenceEn: 'The woman was in sorrow because her child had died.',
+  synonym: ['sonm', 'twis'],
+  antonym: ['djé', 'kontan'],
+  etymology: '[< Fr. la peine]',
+  dialect: '🇱🇨',
+  variant: ['an penn'],
 },
 ];
+
+// lapenn
