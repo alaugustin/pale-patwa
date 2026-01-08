@@ -86,7 +86,7 @@ const { excludedWordsArr } = AppContentData.globalPageContent;
 const dictionaryWords = SortedDictionary.map(entry => entry.word.toLowerCase());
 const allExcludedWords = [...excludedWordsArr, ...dictionaryWords];
 
-const calculateWordFrequency = (field: keyof typeof SortedDictionary[0]) =>{
+const calculateWordFrequency = (field: keyof typeof SortedDictionary[0]) => {
   const wordFrequency: { [key: string]: number } = {};
 
   SortedDictionary.forEach(entry => {
@@ -97,7 +97,8 @@ const calculateWordFrequency = (field: keyof typeof SortedDictionary[0]) =>{
           wordFrequency[word] = (wordFrequency[word] || 0) + 1;
         }
       });
-    }});
+    }
+  });
 
   return Object.entries(wordFrequency)
     .sort(([, a], [, b]) => b - a)
