@@ -350,5 +350,16 @@ export const dataLibP = [{
   etymology: null,
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'paski',
+  partOfSpeech: 'CONJ',
+  definition: ['because'],
+  egSentenceKw: 'I té faché paski i pa té ni pyès lajan.',
+  egSentenceEn: 'He was angry because he didn\'t have any money.',
+  synonym: ['davwa', 'pas pouki'],
+  antonym: [null],
+  etymology: null,
+  dialect: '🇱🇨',
+  variant: ['paspas', 'pouki', 'paskè', 'pis', 'piski'],
 },
 ];
