@@ -350,6 +350,27 @@ export const dataLibT = [{
   etymology: null,
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'té',
+  partOfSpeech: 'ADV',
+  definition: ['anterior verb marker'],
+  egSentenceKw: 'I té vini plas sala an chay tan ki pasé.',
+  egSentenceEn: 'He had come to that place a long time ago.',
+  synonym: [null],
+  antonym: [null],
+  etymology: null,
+  dialect: '🇱🇨',
+  variant: ['sété'],
+}, {
+  word: 'toujou',
+  partOfSpeech: 'ADV',
+  definition: ['still', 'yet'],
+  egSentenceKw: 'I ka palé toujou.',
+  egSentenceEn: 'He is speaking still.',
+  synonym: ['konstanman', 'tout lè', 'tout tan'],
+  antonym: ['janmen'],
+  etymology: null,
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];
-

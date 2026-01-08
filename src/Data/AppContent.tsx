@@ -274,7 +274,7 @@ const footerContent = {
     links: [
       {
         label: 'Kwéyòl Dictionary - Ministry of Education, Government of Saint Lucia',
-        href: 'http://www.saintluciancreole.dbfrank.net/dictionary/KweyolDictionary.pdf',
+        href: 'https://www.saintluciancreole.org/dictionary/KweyolDictionary.pdf',
         target: '_blank',
         rel: 'noreferrer noopener',
         download: 'Kwéyòl Dictionary - Ministry of Education, Government of Saint Lucia',
