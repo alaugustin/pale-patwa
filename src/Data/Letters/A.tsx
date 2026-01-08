@@ -372,5 +372,16 @@ export const dataLibA = [{
   etymology: '[< Fr. sur]',
   dialect: '🇱🇨',
   variant: [null],
+}, {
+  word: 'a',
+  partOfSpeech: 'PREP',
+  definition: ['at', 'on', 'to', '(usage limited only to a few specific phrases)'],
+  egSentenceKw: [null],
+  egSentenceEn: [null],
+  synonym: [null],
+  antonym: [null],
+  etymology: '[< Fr. à]',
+  dialect: '🇱🇨',
+  variant: [null],
 },
 ];
