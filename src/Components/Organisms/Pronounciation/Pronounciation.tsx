@@ -3,7 +3,7 @@ import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import PronunciationList from './PronounciationList/PronounciationList';
 import RenderElementHead from '../RenderElementHead/RenderElementHead';
-import { IPronunciationsProps } from './Pronounciation.d';
+import { IPronunciationsProps } from './Pronounciation.types';
 
 const { chatWithRDQuotIcon } = AppContentData.icons;
 

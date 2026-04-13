@@ -2,7 +2,7 @@ import React from 'react';
 import { Typography } from '../../../UI/Typography/Typography';
 import Link from '../../../UI/Link/Link';
 import { BlockElement } from '../../../UI/BlockLevel/BlockElement';
-import { IPronunciationListProps, IPronunciationListDataItemProps } from './PronounciationList.d';
+import { IPronunciationListProps, IPronunciationListDataItemProps } from './PronounciationList.types';
 
 export default function PronunciationList({
   dataArr,

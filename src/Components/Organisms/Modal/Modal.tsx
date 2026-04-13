@@ -7,7 +7,7 @@ import WordAttributes from '../WordAttributes/WordAttributes';
 import Button from '../../UI/Form/Button/Button';
 import WordRelations from '../WordRelations/WordRelations';
 import { cn } from '../../../Data/AppContent';
-import { IModalProps } from './Modal.d';
+import { IModalProps } from './Modal.types';
 
 const { modalClose } = AppContentData.libraryContent;
 const { borderTop } = AppContentData.uiHelperClasses;

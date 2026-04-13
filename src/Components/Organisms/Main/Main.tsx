@@ -2,7 +2,7 @@ import React from 'react';
 import WordOfTheDay from '../WordOfTheDay/WordOfTheDay';
 import WordList from '../Wordlist/Wordlist';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
-import { IMainProps } from './Main.d';
+import { IMainProps } from './Main.types';
 
 export const Main = ({
   mainContainerClass,

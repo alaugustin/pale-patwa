@@ -1,6 +1,6 @@
 import React from 'react';
 import { ListItem } from './ListItem/ListItem';
-import { IListProps } from './List.d';
+import { IListProps } from './List.types';
 
 export default function List({
   data,

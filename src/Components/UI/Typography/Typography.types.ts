@@ -5,6 +5,7 @@
  * @param className - An optional CSS class name to apply to the component.
  * @param children - The content to be rendered within the Typography component.
  * @param ariaLabel - An optional ARIA label to apply to the component.
+ * @param role - An optional ARIA role to apply to the component.
  */
 export interface ITypographyProps {
   variant?: 'h1' | 'h2' | 'h3' | 'span' | 'p' | 'strong' | 'sub' | undefined;

@@ -1,4 +1,4 @@
-import { IWordListDataProps } from '../Wordlist/Wordlist.d';
+import { IWordListDataProps } from '../Wordlist/Wordlist.types';
 
 /**
  * Defines the props interface for the Main component.

@@ -1,5 +1,5 @@
 import React from 'react';
-import { IBlockElementProps } from './BlockElement.d';
+import { IBlockElementProps } from './BlockElement.types';
 
 export const BlockElement = ({
   variant,

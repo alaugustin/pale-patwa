@@ -5,7 +5,7 @@ import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import WordAttributes from '../WordAttributes/WordAttributes';
 import TwoCol from '../TwoCol/TwoCol';
 import RenderElementHead from '../RenderElementHead/RenderElementHead';
-import { IWordOfTheDayProps } from './WordOfTheDay.d';
+import { IWordOfTheDayProps } from './WordOfTheDay.types';
 
 const { date } = AppContentData.globalPageContent;
 const { calendarIcon } = AppContentData.icons;

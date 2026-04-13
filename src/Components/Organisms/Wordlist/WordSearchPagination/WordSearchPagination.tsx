@@ -6,7 +6,7 @@ import { Pagination } from '../../Pagination/Pagination';
 import { DictionarySearch } from '../../DictionarySearch/DictionarySearch';
 import { BlockElement } from '../../../UI/BlockLevel/BlockElement';
 import Button from '../../../UI/Form/Button/Button';
-import { IWordSearchPaginationProps } from './WordSearchPagination.d';
+import { IWordSearchPaginationProps } from './WordSearchPagination.types';
 
 const { alphabet } = AppContentData.libraryContent.filter;
 const { searchFields } = AppContentData.globalPageContent;

@@ -2,7 +2,7 @@ import React from 'react';
 import { AppContentData } from '../../../../Data/AppContent';
 import { Typography } from '../../../UI/Typography/Typography';
 import Link from '../../../UI/Link/Link';
-import { IResourceLinkProps, IResourceLinkDataProps } from './ResourcesLink.d';
+import { IResourceLinkProps, IResourceLinkDataProps } from './ResourcesLink.types';
 
 const {
   pdfIcon,

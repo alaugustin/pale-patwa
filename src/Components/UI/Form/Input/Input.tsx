@@ -1,5 +1,5 @@
 import React from 'react';
-import { IInputProps } from './Input.d';
+import { IInputProps } from './Input.types';
 
 export const Input = ({
   type,

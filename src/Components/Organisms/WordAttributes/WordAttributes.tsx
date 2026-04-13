@@ -4,7 +4,7 @@ import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Typography } from '../../UI/Typography/Typography';
 import Link from '../../UI/Link/Link';
 import { cn } from '../../../Data/AppContent';
-import { IWordAttributesProps } from './WordAttributes.d';
+import { IWordAttributesProps } from './WordAttributes.types';
 
 const { wordAttributesLinkClasses, borderTop } = AppContentData.uiHelperClasses;
 

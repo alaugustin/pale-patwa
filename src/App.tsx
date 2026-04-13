@@ -7,7 +7,7 @@ import Footer from './Components/Organisms/Footer/Footer';
 import { BlockElement } from './Components/UI/BlockLevel/BlockElement';
 import Button from './Components/UI/Form/Button/Button';
 import Link from './Components/UI/Link/Link';
-import { IWordListDataProps } from './Components/Organisms/Wordlist/Wordlist.d';
+import { IWordListDataProps } from './Components/Organisms/Wordlist/Wordlist.types';
 import './styles.css';
 
 const { backToTopIcon } = AppContentData.icons;
