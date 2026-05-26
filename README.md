@@ -1,6 +1,6 @@
-# Palé Patwa | Kwéyòl Dictionary App
+# Palé Kwéyòl | Kwéyòl Dictionary App
 
-> A dynamic React application that displays random dictionary entries with a clean, responsive layout.
+> An interactive online dictionary for Saint Lucian Kwéyòl (French Creole), with a daily featured word and a fully searchable, paginated vocabulary library.
 
 <!-- [Add a screenshot/demo gif here] -->
 
@@ -15,139 +15,156 @@
 
 ## Overview
 
-The Kwéyòl Dictionary App is an interactive digital reference tool that makes the Saint Lucian Creole language accessible through daily featured words and a comprehensive searchable dictionary. It combines educational value with modern functionality by offering etymology details, parts of speech, and dialect information, making it an invaluable resource for both language learners and native speakers.\
+Palé Kwéyòl is a free, open-access digital dictionary for Saint Lucian Kwéyòl. It surfaces a new word each day and provides a searchable library of ~531 entries with definitions, etymology, example sentences in both Kwéyòl and English, parts of speech, synonyms, antonyms, and variant forms. The goal is to make the language accessible to learners, diaspora, teachers, and researchers.
+
+Live at: [palekweyol.com](https://palekweyol.com)
 
 ## 📖 Usage
 
 ### 💻 System Requirements
 
-- Node.js 16.x or higher
-- npm 8.x or higher
+- Node.js 18.x or higher
+- npm 9.x or higher
 - Modern web browser with JavaScript enabled
 
 ### ✨Core Features
 
 - **Search System**
-  - Real-time filtering with diacritic support
-  - Normalized search terms for improved matches
-  - Part of speech and etymology filters
-  - Alphabetical letter filtering for quick navigation
+  - Real-time full-text filtering across word, definition, example sentences, etymology, synonyms, antonyms, and variants
+  - Diacritic-insensitive (accent-normalized) matching
+  - Alphabetical letter filter for quick navigation
 - **Interface**
-  - Responsive three-panel layout
+  - Responsive layout adapting to viewport height
   - Modal views for detailed word information
-  - Optimized typography for Kwéyòl characters
-  - Touch/swipe gesture support
+  - Touch/swipe gesture support for paginated browsing
+  - Viewport-height-responsive pagination (8–33 items per page)
 - **Comprehensive Vocabulary**
-  - Bird vocabulary
-  - Family relationship terms
-  - Personal pronoun system
+  - ~531 entries across letters A–Z, plus Numbers, Calendar, Time, and Saint Lucia place names
   - Cross-referencing between related terms
   - Etymology tracking
 
 #### Language Features
 
-- Complete family relationship vocabulary
-- Personal pronoun system
-- Cross-referencing between related terms
-- Synonym and antonym relationships
-- Variant forms documentation
-- Etymology information for words
 - Example sentences in both Kwéyòl and English
+- Synonym and antonym relationships
+- Variant forms
+- Parts of speech (ART, PREP, V, N, ADJ, PRO, etc.)
+- Etymology with source language (e.g. `[< Fr. aller]`)
 - Dialect indicators (🇱🇨)
-- Variant forms documentation
-- Synonyms and antonyms
 
 #### Daily Word Feature
 
-- Automatic refresh at midnight
-- Random selection from curated dictionary
-- Full etymology and usage examples
+- Random word selected once per calendar day
+- Persisted in `localStorage` with hourly freshness check
+- Displays definition, etymology, part of speech, and dialect
 
 ## 🏗️ Architecture
 
 ### Project Organization
 
-```markdown:README.md
+```
 src/
-├── components/         # React components
-│   ├── Organisms/      # Complex components
-│   │   ├── Wordlist/   # Dictionary display logic
-│   │   └── Search/     # Search functionality
-│   └── UI/             # Reusable UI elements
-├── data/               # Dictionary entries & content
-├── types/              # TypeScript definitions
-└── utils/              # Helper functions
+├── Components/
+│   ├── Organisms/          # Feature-level components
+│   │   ├── WordOfTheDay/
+│   │   ├── Wordlist/
+│   │   │   └── WordSearchPagination/
+│   │   ├── DictionarySearch/
+│   │   ├── Modal/
+│   │   ├── Pagination/
+│   │   ├── Header/
+│   │   └── Footer/
+│   └── UI/                 # Primitive components
+│       ├── BlockLevel/
+│       ├── Form/
+│       ├── List/
+│       ├── Link/
+│       └── Typography/
+├── Data/
+│   ├── Letters/            # Per-letter dictionary files (A–Z)
+│   ├── Numbers/
+│   ├── Calendar/
+│   ├── Time/
+│   ├── Misc/
+│   ├── data.tsx            # Aggregates and sorts all entries
+│   └── AppContent.tsx      # UI classes, copy, icons, helpers
+└── hooks/
+    └── useWindowDimensions.ts
 ```
 
 ### Core Components
 
-- **WordList**: Container managing dictionary layout
-  - WordlistObjects: Handles pagination, search, and display logic
-  - DictionarySearch: Real-time filtering interface
-  - ListItem: Individual word entry display
+- **WordOfTheDay** — Daily word display with two-column layout
+- **WordList / WordSearchPagination** — Alphabet filter, search input, paginated list, swipe navigation
+- **ListItem → Modal** — Word button that opens a full detail view with relations and attributes
+- **Pagination / PaginationJumpButton** — Page controls with ±5 / ±10 jump buttons
 
 ### Data Flow
 
-1. Dictionary entries loaded from data/
-2. WordlistObjects processes entries with:
-   - Dynamic pagination based on screen height
-   - Normalized search filtering
-   - Duplicate word handling with subscripts
-3. UI updates through React state management
+1. All ~531 entries are imported from per-letter TSX files into `src/Data/data.tsx`
+2. `dataLib` is assembled and sorted alphabetically into `SortedDictionary`
+3. `App.tsx` selects the Word of the Day from `SortedDictionary` (random, persisted daily via localStorage)
+4. `WordSearchPagination` applies alphabet filter, text search, and viewport-height pagination
+5. Clicking a word opens a `Modal` with the full entry from `SortedDictionary`
+
+### Dictionary Entry Schema
+
+```ts
+{
+  word: string
+  partOfSpeech: string            // 'ART' | 'PREP' | 'V' | 'N' | 'ADJ' | etc.
+  definition: (string | number)[] // arrays; Numbers use mixed e.g. [1, '(one)']
+  egSentenceKw: string | null
+  egSentenceEn: string | null
+  synonym: (string | null)[]
+  antonym: (string | null)[]
+  etymology: string | null        // e.g. '[< Fr. aller]'
+  dialect: string                 // flag emoji e.g. '🇱🇨'
+  variant: (string | null)[]
+}
+```
 
 ### 🛠️ Tech Stack
 
-```markdown:README.md
-React 18.x
-TypeScript 4.x
-Tailwind CSS 3.x
-React Swipeable
-Node.js 16.x+
+```
+React 18.2
+TypeScript 5.3
+Tailwind CSS 3.4 (clsx + tailwind-merge)
+react-swipeable
+Create React App (react-scripts 5)
 ```
 
 ### Technical Implementation Details
 
-- Dynamic pagination with responsive items per page
-- Normalized search with diacritic handling
-- Touch/mouse swipe gesture support
-- Duplicate word handling with subscript notation
-- Responsive window dimension calculations
+- All UI classes centralised in `AppContent.tsx` via `cn()` utility (clsx + tailwind-merge)
+- Viewport-height-responsive pagination with breakpoints (667px, 896px, 1024px, 1280px)
+- Diacritic normalization via `String.normalize('NFD')`
+- Subscript notation for disambiguation of same-spelling entries
 
 ## 💅 Styling & UI
 
 ### Typography System
 
-- Supports h1, h2, h3, p, span, and strong variants
-
-Uses Tailwind CSS classes for:
-
-- Flex layout
-- Responsive design
+- `Typography` component supports `h1`, `h2`, `h3`, `p`, `span`, `strong`, `sub` variants
+- All Tailwind class strings defined in `AppContent.uiClasses` — components import from there rather than inlining styles
 
 ### Browser Support
 
-```markdown:README.md
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+```
+Chrome (latest)
+Firefox (latest)
+Safari (latest)
+Edge (latest)
 ```
 
 ## 🚧 Development Scripts
 
 ```bash
-npm run dev      # Start development server
+npm run dev      # Start development server (localhost:3000)
 npm run build    # Create production build
+npm run lint     # Run ESLint
 npm run test     # Run test suite
-npm run lint     # Run code linting
 ```
-
-### Development Tools
-
-- ESLint for code quality
-- React Swipeable for touch interactions
-- TypeScript for type safety
-- Component-driven architecture
 
 ### 🤝 Contributing Guidelines
 
@@ -161,16 +178,21 @@ npm run lint     # Run code linting
 
 1. Clone the repository
 2. Install dependencies: `npm install`
-3. Configure environment variables
-4. Start development server: `npm run dev`
-5. Run tests: `npm test`
-6. Access app at `http://localhost:3000`
+3. Start development server: `npm run dev`
+4. Access app at `http://localhost:3000`
+
+### Adding Dictionary Entries
+
+1. Open the relevant letter file: `src/Data/Letters/[X].tsx`
+2. Add an entry following the schema above
+3. `definition`, `synonym`, `antonym`, `variant` must be arrays — use `[null]` for synonym/antonym/variant if none; use `[]` for definition if unknown
+4. Run `npm start` and verify the entry appears
 
 ### 🚀 Deployment
 
 1. Build production bundle: `npm run build`
-2. Static file hosting compatible
-3. Supports containerized deployment
+2. Deploy `/build` directory to static file hosting
+3. Production site: [palekweyol.com](https://palekweyol.com) (branch: `main`)
 
 ## 📚 Additional Information
 
