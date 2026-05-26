@@ -20,7 +20,7 @@ export interface IMainProps {
   wordOfTheDayData: {
     word: string;
     dialect: string;
-    definition: string | number;
+    definition: (string | number)[];
     partOfSpeech?: string | null;
     etymology?: string | null;
     egSentenceKw?: string | null;

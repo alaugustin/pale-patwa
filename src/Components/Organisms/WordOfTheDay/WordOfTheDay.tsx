@@ -38,7 +38,7 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
     definition
   } = props;
 
-  const definitionToArray = typeof definition === 'string' ? definition.split(',').map(item => item.trim()) : [];
+  const definitionToArray = definition;
 
   const elementHeadLHS = <>
     <RenderElementHead
@@ -72,13 +72,13 @@ export default function WordOfTheDay(props: IWordOfTheDayProps) {
       <Typography
         variant="p"
         className={wordOfTheDayDefinitionClasses}
-      >{Array.isArray(definitionToArray) ? definitionToArray.map((def: string, index: number) => (
+      >{definitionToArray.map((def, index) => (
           <Typography
             variant='span'
             className='mr-1 lg:mr-2 last:mr-0'
             key={index}>
             {def}{index !== definitionToArray.length - 1 ? ',' : ''}</Typography>
-        )) : definitionToArray}</Typography>
+        ))}</Typography>
     </>;
 
   const wodTwoColData = [elementHeadLHS, elementHeadRHS];

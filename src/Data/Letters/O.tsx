@@ -1,7 +1,7 @@
 export const dataLibO = [{
   word: 'on',
   partOfSpeech: null,
-  definition: [null],
+  definition: [],
   egSentenceKw: 'I ni on gwo motoka.',
   egSentenceEn: 'He has a large car.',
   synonym: [null],

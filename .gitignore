@@ -2,4 +2,6 @@ src/Components/List/ListOld.tsx
 src/Components/List/ListItem/ListItemOld.tsx
 node_modules
 build/
+build.zip
 src/docs/chatgpt-instruction.html
+.claude/**/**

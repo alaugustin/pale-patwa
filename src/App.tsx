@@ -112,15 +112,17 @@ export default function App() {
     const nextHour = new Date(now.getFullYear(), now.getMonth(), now.getDate(), now.getHours() + 1, 0, 0);
     const timeUntilNextHour = nextHour.getTime() - now.getTime();
 
-    const initialTimeout = setTimeout(() => {
+    let intervalId: ReturnType<typeof setInterval> | undefined;
+
+    const timeoutId = setTimeout(() => {
       checkAndUpdateDailyWord();
-
-      const intervalId = setInterval(checkAndUpdateDailyWord, 3600000);
-
-      return () => clearInterval(intervalId);
+      intervalId = setInterval(checkAndUpdateDailyWord, 3600000);
     }, timeUntilNextHour);
 
-    return () => clearTimeout(initialTimeout);
+    return () => {
+      clearTimeout(timeoutId);
+      clearInterval(intervalId);
+    };
   }, []);
 
   return (
@@ -140,7 +142,7 @@ export default function App() {
             dialect: currentWord?.dialect || '',
             etymology: currentWord?.etymology || '',
             partOfSpeech: currentWord?.partOfSpeech || '',
-            definition: currentWord?.definition ? currentWord.definition.toString() : ''
+            definition: currentWord?.definition ?? []
           }}
           wordListData={dataLib as unknown as IWordListDataProps[]}
         />

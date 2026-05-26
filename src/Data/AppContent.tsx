@@ -325,13 +325,6 @@ const footerContent = {
 const helperFunc = {
   normalizeText: (text: string): string => {
     return text.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-  },
-  getWindowDimensions: () => {
-    const { innerWidth: width, innerHeight: height } = window;
-    return {
-      width,
-      height
-    };
   }
 };
 

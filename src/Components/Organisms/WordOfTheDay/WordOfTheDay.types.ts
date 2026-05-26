@@ -13,5 +13,5 @@ export interface IWordOfTheDayProps {
   dialect?: string;
   etymology?: string | null;
   partOfSpeech?: string | null;
-  definition: string | number;
+  definition: (string | number)[];
 }
