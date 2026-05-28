@@ -1,12 +1,12 @@
 /**
  * Defines the props for the Pagination component.
  *
- * @property {string} prevButtonLabel - The label for the previous button.
- * @property {number} prev5ButtonLabel - The label for the previous 5 button.
- * @property {number} prev10ButtonLabel - The label for the previous 10 button.
- * @property {string} nextButtonLabel - The label for the next button.
- * @property {number} next5ButtonLabel - The label for the next 5 button.
- * @property {number} next10ButtonLabel - The label for the next 10 button.
+ * @property {string} prevButtonLabel - The label for the previous page button.
+ * @property {number} prev5ButtonLabel - The number of pages to jump back by 5.
+ * @property {number} prev10ButtonLabel - The number of pages to jump back by 10.
+ * @property {string} nextButtonLabel - The label for the next page button.
+ * @property {number} next5ButtonLabel - The number of pages to jump forward by 5.
+ * @property {number} next10ButtonLabel - The number of pages to jump forward by 10.
  * @property {boolean} prevButtonDisabled - Indicates whether the previous button should be disabled.
  * @property {boolean} nextButtonDisabled - Indicates whether the next button should be disabled.
  * @property {number} currentPage - The current page number.

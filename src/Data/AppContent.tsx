@@ -183,7 +183,7 @@ const wordOfTheDayContent = {
   wodTitleH2: 'Word of the Day',
   wodContent: [
     'Discover a new Kwéyòl word daily!',
-    'Expand your Creole vocabulary with detailed etymology, usage examples, and cultural context - one word at a time.'
+    'Expand your St. Lucian Creole vocabulary with detailed Kwéyòl-to-English translations, etymology, usage examples, and cultural context — one word at a time.'
   ]
 };
 
@@ -207,8 +207,8 @@ const libraryContent = {
     1280: 33
   },
   wordListContent: [
-    'Search through our comprehensive Kwéyòl dictionary with real-time filtering.',
-    'Find words, definitions, example sentences, and etymology in both Kwéyòl and English.'
+    'Search our comprehensive St. Lucian Creole dictionary with real-time filtering.',
+    'Find Kwéyòl to English translations, definitions, example sentences, and etymology for Saint Lucia Kwéyòl words and phrases.'
   ],
   filter: {
     alphabet: '-ABCDEFGHIJKLMNOPRSTVWYZ'
@@ -325,13 +325,6 @@ const footerContent = {
 const helperFunc = {
   normalizeText: (text: string): string => {
     return text.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-  },
-  getWindowDimensions: () => {
-    const { innerWidth: width, innerHeight: height } = window;
-    return {
-      width,
-      height
-    };
   }
 };
 

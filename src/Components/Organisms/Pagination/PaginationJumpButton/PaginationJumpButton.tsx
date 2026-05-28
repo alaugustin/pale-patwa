@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppContentData } from '../../../../Data/AppContent';
 import Button from '../../../UI/Form/Button/Button';
-import { IPaginationJumpButtonProps } from './PaginationJumpButton.d';
+import { IPaginationJumpButtonProps } from './PaginationJumpButton.types';
 
 const {
   paginationButtonDisabled,

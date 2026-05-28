@@ -1,5 +1,5 @@
 import React from 'react';
-import { ITypographyProps } from './Typography.d';
+import { ITypographyProps } from './Typography.types';
 
 export const Typography = ({
   variant,

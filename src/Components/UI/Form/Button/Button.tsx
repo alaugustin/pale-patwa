@@ -1,5 +1,5 @@
 import React from 'react';
-import { IButtonProps } from './Button.d';
+import { IButtonProps } from './Button.types';
 
 export default function Button({
   buttonLabel,

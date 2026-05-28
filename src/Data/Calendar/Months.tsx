@@ -1,7 +1,7 @@
 export const dataMonths = [{
   word: 'Janvyé',
   partOfSpeech: 'N',
-  definition: 'January',
+  definition: ['January'],
   egSentenceKw: 'Sé manmay-la pa té vlé viwé lékòl an Janvyé.',
   egSentenceEn: 'The children didn\'t want to return to school in January.',
   synonym: [null],
@@ -12,7 +12,7 @@ export const dataMonths = [{
 }, {
   word: 'Févwiyé',
   partOfSpeech: 'N',
-  definition: 'February',
+  definition: ['February'],
   egSentenceKw: 'Sé an mwa Févwiyé nou ka sélébwé andépandans nou.',
   egSentenceEn: 'It is in the month of February we celebrate our independence.',
   synonym: [null],
@@ -23,7 +23,7 @@ export const dataMonths = [{
 }, {
   word: 'Mas',
   partOfSpeech: 'N',
-  definition: 'March',
+  definition: ['March'],
   egSentenceKw: null,
   egSentenceEn: null,
   synonym: [null],
@@ -34,7 +34,7 @@ export const dataMonths = [{
 }, {
   word: 'Avwi',
   partOfSpeech: 'N',
-  definition: 'April',
+  definition: ['April'],
   egSentenceKw: null,
   egSentenceEn: null,
   synonym: [null],
@@ -45,7 +45,7 @@ export const dataMonths = [{
 }, {
   word: 'Mé',
   partOfSpeech: 'N',
-  definition: 'May',
+  definition: ['May'],
   egSentenceKw: null,
   egSentenceEn: null,
   synonym: [null],
@@ -56,7 +56,7 @@ export const dataMonths = [{
 }, {
   word: 'Jen',
   partOfSpeech: 'N',
-  definition: 'June',
+  definition: ['June'],
   egSentenceKw: 'Sézon mové tan ka koumansé an mwa Jen.',
   egSentenceEn: 'The hurricane season begins in June.',
   synonym: [null],
@@ -67,7 +67,7 @@ export const dataMonths = [{
 }, {
   word: 'Jwiyèt',
   partOfSpeech: 'N',
-  definition: 'July',
+  definition: ['July'],
   egSentenceKw: 'Péyi Sent Lisi ka sélébwé kannaval an Jwiyèt atjwèlman.',
   egSentenceEn: 'St. Lucia celebrates carnival in July now.',
   synonym: [null],
@@ -78,7 +78,7 @@ export const dataMonths = [{
 }, {
   word: 'Awou',
   partOfSpeech: 'N',
-  definition: 'August',
+  definition: ['August'],
   egSentenceKw: 'Mwa Awou sé mwa manmay lékòl asou vakans.',
   egSentenceEn: 'The month of August is the month when the school children are on vacation.',
   synonym: [null],
@@ -89,7 +89,7 @@ export const dataMonths = [{
 }, {
   word: 'Sèptanm',
   partOfSpeech: 'N',
-  definition: 'September',
+  definition: ['September'],
   egSentenceKw: null,
   egSentenceEn: null,
   synonym: [null],
@@ -100,7 +100,7 @@ export const dataMonths = [{
 }, {
   word: 'Òktòb',
   partOfSpeech: 'N',
-  definition: 'October',
+  definition: ['October'],
   egSentenceKw: null,
   egSentenceEn: null,
   synonym: [null],
@@ -111,7 +111,7 @@ export const dataMonths = [{
 }, {
   word: 'Novanm',
   partOfSpeech: 'N',
-  definition: 'November',
+  definition: ['November'],
   egSentenceKw: null,
   egSentenceEn: null,
   synonym: [null],
@@ -122,7 +122,7 @@ export const dataMonths = [{
 }, {
   word: 'Désanm',
   partOfSpeech: 'N',
-  definition: 'December',
+  definition: ['December'],
   egSentenceKw: 'Sé an mwa Désanm Nwèl ka tonbé.',
   egSentenceEn: 'It is in the month of December Christmas falls.',
   synonym: [null],

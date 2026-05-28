@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography } from '../../UI/Typography/Typography';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
-import { IRenderElementHeadProps } from './RenderElementHead.d';
+import { IRenderElementHeadProps } from './RenderElementHead.types';
 
 export default function RenderElementHead({
   elementTitle,

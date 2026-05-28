@@ -1,4 +1,3 @@
-import { AppContentData } from '../Data/AppContent';
 import { dataLibStLucia } from './Misc/dataLibStLucia';
 import { dataLibA } from './Letters/A';
 import { dataLibB } from './Letters/B';
@@ -75,48 +74,6 @@ export const SortedDictionary = dataLib.sort((a, b) => {
   }
   return wordComparison;
 });
-
-/**
- * Calculates the frequency of words in the `SortedDictionary` array, excluding a list of words.
- *
- * @param field - The field in the `SortedDictionary` array to analyze for word frequency.
- * @returns An array of the top 5 most frequent words and their counts.
- */
-const { excludedWordsArr } = AppContentData.globalPageContent;
-const dictionaryWords = SortedDictionary.map(entry => entry.word.toLowerCase());
-const allExcludedWords = [...excludedWordsArr, ...dictionaryWords];
-
-const calculateWordFrequency = (field: keyof typeof SortedDictionary[0]) => {
-  const wordFrequency: { [key: string]: number } = {};
-
-  SortedDictionary.forEach(entry => {
-    if (typeof entry[field] === 'string' && entry[field]) {
-      const words = (entry[field] as string).toLowerCase().split(' ');
-      words.forEach(word => {
-        if (!allExcludedWords.includes(word)) {
-          wordFrequency[word] = (wordFrequency[word] || 0) + 1;
-        }
-      });
-    }
-  });
-
-  return Object.entries(wordFrequency)
-    .sort(([, a], [, b]) => b - a)
-    .slice(0, 5)
-    .map(([word, count]) => ({ word, count }));
-};
-
-const topEgSentenceKw = calculateWordFrequency('egSentenceKw');
-console.log('topWords: ', topEgSentenceKw);
-
-// const topWordsSyn = calculateWordFrequency('synonym');
-// console.log('topWordsSyn: ', topWordsSyn);
-
-// const topWordsAnt = calculateWordFrequency('antonym');
-// console.log('topWordsAnt: ', topWordsAnt);
-
-// console.log('SortedNumbers: ', SortedNumbers);
-// console.log('SortedDictionary: ', SortedDictionary);
 
 // https://en.wikipedia.org/wiki/Saint_Lucian_Creole#Zannimo_-_Animals
 // left off at `mèl`

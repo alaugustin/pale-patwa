@@ -3,7 +3,7 @@ import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import RenderElementHead from '../RenderElementHead/RenderElementHead';
 import WordlistObjects from './WordSearchPagination/WordSearchPagination';
-import { IWordlistProps } from './Wordlist.d';
+import { IWordlistProps } from './Wordlist.types';
 
 const {
   libraryTitleH2,

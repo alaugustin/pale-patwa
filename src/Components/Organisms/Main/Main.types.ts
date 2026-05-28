@@ -1,4 +1,4 @@
-import { IWordListDataProps } from '../Wordlist/Wordlist.d';
+import { IWordListDataProps } from '../Wordlist/Wordlist.types';
 
 /**
  * Defines the props interface for the Main component.
@@ -20,7 +20,7 @@ export interface IMainProps {
   wordOfTheDayData: {
     word: string;
     dialect: string;
-    definition: string | number;
+    definition: (string | number)[];
     partOfSpeech?: string | null;
     etymology?: string | null;
     egSentenceKw?: string | null;

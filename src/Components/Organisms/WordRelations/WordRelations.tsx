@@ -1,9 +1,10 @@
 import React from 'react';
 import { AppContentData } from '../../../Data/AppContent';
+import { SortedDictionary } from '../../../Data/data';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Typography } from '../../UI/Typography/Typography';
 import { cn } from '../../../Data/AppContent';
-import { IWordRelationsProps, IWordGroupProps } from './WordRelations.d';
+import { IWordRelationsProps, IWordGroupProps } from './WordRelations.types';
 
 const { borderTop } = AppContentData.uiHelperClasses;
 
@@ -12,6 +13,13 @@ const {
   wordRelationsItemClasses
 } = AppContentData.uiClasses;
 
+// Helper function to check if a word exists in the dictionary
+const isWordInDictionary = (word: string): boolean => {
+  return SortedDictionary.some(entry =>
+    entry.word.toLowerCase() === word.toLowerCase()
+  );
+};
+
 const WordGroup = ({
   label,
   data
@@ -19,12 +27,22 @@ const WordGroup = ({
   return data?.[0] && Array.isArray(data) ? (
     <>
       {`(${label}: `}
-      {data.map((item, index) => (
-        <Typography key={item} variant="span" className={wordRelationsItemClasses}>
-          {item}
-          {index !== data.length - 1 ? ',' : ''}
-        </Typography>
-      ))}
+      {data.filter((item): item is string => item !== null).map((item, index, arr) => {
+        const isInDictionary = isWordInDictionary(item);
+        return (
+          <Typography
+            key={item}
+            variant="span"
+            className={cn(
+              wordRelationsItemClasses,
+              isInDictionary ? 'underline' : ''
+            )}
+          >
+            {item}
+            {index !== arr.length - 1 ? ',' : ''}
+          </Typography>
+        );
+      })}
       {')'}
     </>
   ) : null;

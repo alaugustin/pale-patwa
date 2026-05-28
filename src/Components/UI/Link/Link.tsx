@@ -1,5 +1,5 @@
 import React from 'react';
-import { ILinkProps } from './Link.d';
+import { ILinkProps } from './Link.types';
 
 export default function Link({
   linkHref,

@@ -6,6 +6,7 @@
  * @param children - The React nodes to render as the content of the block-level element.
  * @param id - An optional unique identifier for the block-level element.
  * @param role - An optional ARIA role to apply to the block-level element.
+ * @param onClick - An optional click handler for the block-level element.
  */
 export interface IBlockElementProps {
   variant?: 'footer' | 'section' | 'article' | 'ol' | 'div' | 'main' | 'header' | 'ul' | 'aside' | 'nav' | 'dialog' | undefined;

@@ -4,7 +4,7 @@ import { Typography } from '../../UI/Typography/Typography';
 import { dataDays } from '../../../Data/Calendar/Days';
 import { dataMonths } from '../../../Data/Calendar/Months';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
-import { IHeaderProps } from './Header.d';
+import { IHeaderProps } from './Header.types';
 
 const {
   date,

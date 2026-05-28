@@ -4,7 +4,7 @@ import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Input } from '../../UI/Form/Input/Input';
 import Button from '../../UI/Form/Button/Button';
 import { cn } from '../../../Data/AppContent';
-import { IDictionarySearchProps } from './DictionarySearch.d';
+import { IDictionarySearchProps } from './DictionarySearch.types';
 
 const { clearInputIcon } = AppContentData.icons;
 

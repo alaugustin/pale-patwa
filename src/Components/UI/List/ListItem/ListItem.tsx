@@ -3,7 +3,7 @@ import { AppContentData } from '../../../../Data/AppContent';
 import Modal from '../../../Organisms/Modal/Modal';
 import { Typography } from '../../Typography/Typography';
 import Button from '../../Form/Button/Button';
-import { IListItemProps } from './ListItem.d';
+import { IListItemProps } from './ListItem.types';
 
 const { listButtonClass } = AppContentData.uiClasses;
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppContentData } from '../../../Data/AppContent';
 import { BlockElement } from '../../UI/BlockLevel/BlockElement';
-import { ITwoColProps } from './TwoCol.d';
+import { ITwoColProps } from './TwoCol.types';
 
 const { twoColContainerClasses, twoColColumnClasses } = AppContentData.uiClasses;
 

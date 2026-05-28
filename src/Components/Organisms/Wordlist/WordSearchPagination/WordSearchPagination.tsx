@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useWindowDimensions } from '../../../../hooks/useWindowDimensions';
 import { useSwipeable } from 'react-swipeable';
 import { ListItem } from '../../../UI/List/ListItem/ListItem';
 import { AppContentData } from '../../../../Data/AppContent';
@@ -6,7 +7,7 @@ import { Pagination } from '../../Pagination/Pagination';
 import { DictionarySearch } from '../../DictionarySearch/DictionarySearch';
 import { BlockElement } from '../../../UI/BlockLevel/BlockElement';
 import Button from '../../../UI/Form/Button/Button';
-import { IWordSearchPaginationProps } from './WordSearchPagination.d';
+import { IWordSearchPaginationProps } from './WordSearchPagination.types';
 
 const { alphabet } = AppContentData.libraryContent.filter;
 const { searchFields } = AppContentData.globalPageContent;
@@ -32,27 +33,9 @@ const {
   fwd10Label
 } = AppContentData.libraryContent.pagination;
 
-const {
-  normalizeText,
-  getWindowDimensions
-} = AppContentData.helperFunc;
+const { normalizeText } = AppContentData.helperFunc;
 
 export default function WordlistObjects({ data }: IWordSearchPaginationProps) {
-  function useWindowDimensions() {
-    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-
-    useEffect(() => {
-      function handleResize() {
-        setWindowDimensions(getWindowDimensions());
-      }
-
-      window.addEventListener('resize', handleResize);
-      return () => window.removeEventListener('resize', handleResize);
-    }, []);
-
-    return windowDimensions;
-  }
-
   const { height } = useWindowDimensions();
   const ITEMS_PER_HEIGHT = paginationItemsPerHeight;
 

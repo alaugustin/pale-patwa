@@ -5,7 +5,7 @@ import Button from '../../UI/Form/Button/Button';
 import { Typography } from '../../UI/Typography/Typography';
 import { PaginationJumpButton } from './PaginationJumpButton/PaginationJumpButton';
 import { cn } from '../../../Data/AppContent';
-import { IPaginationProps } from './Pagination.d';
+import { IPaginationProps } from './Pagination.types';
 
 const {
   paginationNumberContainer,

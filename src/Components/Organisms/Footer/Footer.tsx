@@ -4,7 +4,7 @@ import { BlockElement } from '../../UI/BlockLevel/BlockElement';
 import { Typography } from '../../UI/Typography/Typography';
 import Pronunciations from '../Pronounciation/Pronounciation';
 import ResourcesLink from './ResourcesLink/ResourcesLink';
-import { IFooterProps } from './Footer.d';
+import { IFooterProps } from './Footer.types';
 
 const footerResourcesLinks = AppContentData.footerContent.resources.links;
 const { pronounciationTitleH2 } = AppContentData.footerContent.ipaPronounciation;

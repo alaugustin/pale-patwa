@@ -320,7 +320,7 @@ export const dataLibNum = [{
 }, {
   word: 'pwèmyé',
   partOfSpeech: 'ADJ',
-  definition: 'first',
+  definition: ['first'],
   egSentenceKw: 'Ou ki pwèmyé moun mwen wè jòdi-a.',
   egSentenceEn: 'You are the first person I have seen today.',
   synonym: [null],
@@ -331,7 +331,7 @@ export const dataLibNum = [{
 }, {
   word: 'dézyenm',
   partOfSpeech: 'ADJ',
-  definition: 'second',
+  definition: ['second'],
   egSentenceKw: 'Nou ka fè dézyenm lison.',
   egSentenceEn: 'We\'re doing the second lesson.',
   synonym: [null],
@@ -342,7 +342,7 @@ export const dataLibNum = [{
 }, {
   word: 'twazyenm',
   partOfSpeech: 'ADJ',
-  definition: 'third',
+  definition: ['third'],
   egSentenceKw: 'I ka wété adan twazyenm kay-la.',
   egSentenceEn: 'He lives in the third house.',
   synonym: [null],
@@ -353,7 +353,7 @@ export const dataLibNum = [{
 }, {
   word: 'katyenm',
   partOfSpeech: 'ADJ',
-  definition: 'fourth',
+  definition: ['fourth'],
   egSentenceKw: 'Sa sé katyenm fwa-a mwen ka alé lòt péyi.',
   egSentenceEn: 'This is the fourth time I\'m going overseas.',
   synonym: [null],
@@ -364,7 +364,7 @@ export const dataLibNum = [{
 }, {
   word: 'senkyenm',
   partOfSpeech: 'ADJ',
-  definition: 'fifth',
+  definition: ['fifth'],
   egSentenceKw: 'Yo viwé asou senkyenm jou-a.',
   egSentenceEn: 'They returned on the fifth day.',
   synonym: [null],

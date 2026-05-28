@@ -1,7 +1,7 @@
 export const dataLibW = [{
   word: 'wat',
   partOfSpeech: 'N',
-  definition: 'rat',
+  definition: ['rat'],
   egSentenceKw: 'Wat épi Souwi té vlé kwennen Chat.',
   egSentenceEn: 'Rat and Mouse wanted to fool Cat.',
   synonym: [null],
@@ -12,7 +12,7 @@ export const dataLibW = [{
 }, {
   word: 'wouj',
   partOfSpeech: 'ADJ',
-  definition: 'red',
+  definition: ['red'],
   egSentenceKw: 'Nonm-lan ka pòté on chimiz wouj',
   egSentenceEn: 'The man\'s wearing a red shirt.',
   synonym: [null],
@@ -34,7 +34,7 @@ export const dataLibW = [{
 }, {
   word: 'wété',
   partOfSpeech: 'V',
-  definition: [null],
+  definition: [],
   egSentenceKw: null,
   egSentenceEn: null,
   synonym: [null],

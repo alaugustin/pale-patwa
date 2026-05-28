@@ -11,7 +11,7 @@
 
 export interface IModalProps {
   modalTitle: string | null;
-  modalDefinition: string | number;
+  modalDefinition: (string | number)[];
   modalSentenceKw: string | null;
   modalSentenceEn: string | null;
   modalVariant: string | null;

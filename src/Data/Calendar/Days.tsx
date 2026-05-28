@@ -1,7 +1,7 @@
 export const dataDays = [{
   word: 'Dimanch',
   partOfSpeech: 'N',
-  definition: 'Sunday',
+  definition: ['Sunday'],
   egSentenceKw: 'Lé Dimanch nou ka alé légliz.',
   egSentenceEn: 'Sundays we go to church.',
   synonym: [null],
@@ -12,7 +12,7 @@ export const dataDays = [{
 }, {
   word: 'Lendi',
   partOfSpeech: 'N',
-  definition: 'Monday',
+  definition: ['Monday'],
   egSentenceKw: null,
   egSentenceEn: null,
   synonym: [null],
@@ -23,7 +23,7 @@ export const dataDays = [{
 }, {
   word: 'Madi',
   partOfSpeech: 'N',
-  definition: 'Tuesday',
+  definition: ['Tuesday'],
   egSentenceKw: null,
   egSentenceEn: null,
   synonym: [null],
@@ -34,7 +34,7 @@ export const dataDays = [{
 }, {
   word: 'Mékwédi',
   partOfSpeech: 'N',
-  definition: 'Wednesday',
+  definition: ['Wednesday'],
   egSentenceKw: null,
   egSentenceEn: null,
   synonym: [null],
@@ -45,7 +45,7 @@ export const dataDays = [{
 }, {
   word: 'Jédi',
   partOfSpeech: 'N',
-  definition: 'Thursday',
+  definition: ['Thursday'],
   egSentenceKw: 'Nou ka fè konmisyon toulé Jédi.',
   egSentenceEn: 'We do errands every Thursday.',
   synonym: [null],
@@ -56,7 +56,7 @@ export const dataDays = [{
 }, {
   word: 'Vandwédi',
   partOfSpeech: 'N',
-  definition: 'Friday',
+  definition: ['Friday'],
   egSentenceKw: 'Nou ka lavé had-la chak Vandwédi.',
   egSentenceEn: 'We wash clothes every Friday.',
   synonym: [null],
@@ -67,7 +67,7 @@ export const dataDays = [{
 }, {
   word: 'Sanmdi',
   partOfSpeech: 'N',
-  definition: 'Saturday',
+  definition: ['Saturday'],
   egSentenceKw: 'Toulé Sanmdi yo ka alé laplas.',
   egSentenceEn: 'Every Saturday they go to the market.',
   synonym: [null],

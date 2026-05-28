@@ -4,7 +4,7 @@
 
 export interface IWordListDataProps {
   word: string;
-  definition: string | number;
+  definition: (string | number)[];
   egSentenceKw: string;
   egSentenceEn: string;
   etymology: string;

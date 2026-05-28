@@ -24,7 +24,7 @@ export const dataLibE = [{
 }, {
   word: 'èk',
   partOfSpeech: null,
-  definition: [null],
+  definition: [],
   egSentenceKw: null,
   egSentenceEn: null,
   synonym: [null],

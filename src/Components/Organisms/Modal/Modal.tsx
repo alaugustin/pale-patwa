@@ -7,7 +7,7 @@ import WordAttributes from '../WordAttributes/WordAttributes';
 import Button from '../../UI/Form/Button/Button';
 import WordRelations from '../WordRelations/WordRelations';
 import { cn } from '../../../Data/AppContent';
-import { IModalProps } from './Modal.d';
+import { IModalProps } from './Modal.types';
 
 const { modalClose } = AppContentData.libraryContent;
 const { borderTop } = AppContentData.uiHelperClasses;
@@ -53,9 +53,9 @@ export default function Modal({
         <BlockElement className='mb-4'>
           <BlockElement variant='div' className='mb-4'>
             <Typography variant='p' className={'mb-2 pb-2'}>
-              {Array.isArray(modalDefinition) ? modalDefinition.map((def: string, index: number) => (
+              {modalDefinition.map((def, index) => (
                 <Typography variant='span' className='mr-1 last:mr-0' key={index}>{def}{index !== modalDefinition.length - 1 ? ',' : ''}</Typography>
-              )) : modalDefinition}
+              ))}
             </Typography>
 
             {modalSentenceKw && (
