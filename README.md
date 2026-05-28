@@ -51,6 +51,7 @@ Live at: [palekweyol.com](https://palekweyol.com)
 - Parts of speech (ART, PREP, V, N, ADJ, PRO, etc.)
 - Etymology with source language (e.g. `[< Fr. aller]`)
 - Dialect indicators (🇱🇨)
+- AI platform setup guide for Kwéyòl learning workflows (`/chat-gpt`)
 
 #### Daily Word Feature
 
