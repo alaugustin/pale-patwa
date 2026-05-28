@@ -226,6 +226,16 @@ const footerContent = {
         ariaLabelKw: 'Sent Lisi'
       },
       {
+        emoji: '🇬🇫',
+        ariaLabelEn: 'French Guiana',
+        ariaLabelKw: 'Gwiyann'
+      },
+      {
+        emoji: '🇬🇵',
+        ariaLabelEn: 'Guadeloupe',
+        ariaLabelKw: 'Gwadloup'
+      },
+      {
         emoji: '🇲🇶',
         ariaLabelEn: 'Martinique',
         ariaLabelKw: 'Matinik'
@@ -256,19 +266,9 @@ const footerContent = {
         ariaLabelKw: 'Ayiti'
       },
       {
-        emoji: '🇬🇫',
-        ariaLabelEn: 'French Guiana',
-        ariaLabelKw: 'Gwiyann'
-      },
-      {
         emoji: '🇻🇪',
         ariaLabelEn: 'Venezuela',
         ariaLabelKw: ' Vénézwèla'
-      },
-      {
-        emoji: '🇬🇵',
-        ariaLabelEn: 'Guadeloupe',
-        ariaLabelKw: 'Gwadloup'
       }
     ],
     links: [
