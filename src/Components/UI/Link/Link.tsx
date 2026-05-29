@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import { ILinkProps } from './Link.types';
 
 export default function Link({
@@ -10,6 +11,19 @@ export default function Link({
   linkRel,
   children
 }: ILinkProps) {
+  const isInternalRoute =
+    linkHref.startsWith('/')
+    && !linkHref.startsWith('//')
+    && !/^https?:\/\//i.test(linkHref)
+    && linkTarget !== '_blank';
+
+  if (isInternalRoute) {
+    return (
+      <RouterLink to={linkHref} className={linkClasses}>
+        {children}
+      </RouterLink>
+    );
+  }
 
   return (
     <a

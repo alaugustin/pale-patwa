@@ -226,6 +226,16 @@ const footerContent = {
         ariaLabelKw: 'Sent Lisi'
       },
       {
+        emoji: '🇬🇫',
+        ariaLabelEn: 'French Guiana',
+        ariaLabelKw: 'Gwiyann'
+      },
+      {
+        emoji: '🇬🇵',
+        ariaLabelEn: 'Guadeloupe',
+        ariaLabelKw: 'Gwadloup'
+      },
+      {
         emoji: '🇲🇶',
         ariaLabelEn: 'Martinique',
         ariaLabelKw: 'Matinik'
@@ -256,19 +266,9 @@ const footerContent = {
         ariaLabelKw: 'Ayiti'
       },
       {
-        emoji: '🇬🇫',
-        ariaLabelEn: 'French Guiana',
-        ariaLabelKw: 'Gwiyann'
-      },
-      {
         emoji: '🇻🇪',
         ariaLabelEn: 'Venezuela',
         ariaLabelKw: ' Vénézwèla'
-      },
-      {
-        emoji: '🇬🇵',
-        ariaLabelEn: 'Guadeloupe',
-        ariaLabelKw: 'Gwadloup'
       }
     ],
     links: [
@@ -281,10 +281,10 @@ const footerContent = {
         icon: 'pdf',
         type: 'application/pdf',
       }, {
-        label: 'Configure ChatGPT for Learning Kwéyòl',
-        href: 'https://palekweyol.com/chat-gpt/',
-        target: '_blank',
-        rel: 'noreferrer noopener',
+        label: 'Configure AI Chat for Learning Kwéyòl',
+        href: '/ai-chat/configure',
+        target: '_self',
+        rel: '',
         icon: 'link',
         type: 'text/html',
       }, {

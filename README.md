@@ -51,7 +51,7 @@ Live at: [palekweyol.com](https://palekweyol.com)
 - Parts of speech (ART, PREP, V, N, ADJ, PRO, etc.)
 - Etymology with source language (e.g. `[< Fr. aller]`)
 - Dialect indicators (🇱🇨)
-- AI platform setup guide for Kwéyòl learning workflows (`/chat-gpt`)
+- AI platform setup guide for Kwéyòl learning workflows (`/ai-chat/configure`)
 
 #### Daily Word Feature
 
@@ -131,6 +131,7 @@ src/
 React 18.2
 TypeScript 5.3
 Tailwind CSS 3.4 (clsx + tailwind-merge)
+react-router-dom 6.30
 react-swipeable
 Create React App (react-scripts 5)
 ```
