@@ -31,8 +31,6 @@ const {
   mainContainerClasses
 } = AppContentData.uiClasses;
 
-document.title = `${mainHeading}  | Online Dictionary`;
-
 export default function App() {
   /**
    * Initializes the `year` state with the current year from the `date` object, and updates the `year` state with the current year on component mount.
@@ -42,6 +40,7 @@ export default function App() {
 
   useEffect(() => {
     setYear(date.getFullYear());
+    document.title = `${mainHeading} | Online Dictionary`;
   }, []);
 
   /**
