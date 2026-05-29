@@ -281,10 +281,10 @@ const footerContent = {
         icon: 'pdf',
         type: 'application/pdf',
       }, {
-        label: 'Configure ChatGPT for Learning Kwéyòl',
-        href: 'https://palekweyol.com/chat-gpt/',
-        target: '_blank',
-        rel: 'noreferrer noopener',
+        label: 'Configure AI Chat for Learning Kwéyòl',
+        href: '/ai-chat/configure',
+        target: '_self',
+        rel: '',
         icon: 'link',
         type: 'text/html',
       }, {
