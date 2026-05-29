@@ -10,18 +10,14 @@ import Button from '../../Components/UI/Form/Button/Button';
 
 const { backToTopIcon } = AppContentData.icons;
 
-const {
-  mainHeading,
-  date,
-  skipLinkLabel,
-  skipLinkHref
-} = AppContentData.globalPageContent;
+const { mainHeading, date, skipLinkLabel, skipLinkHref } =
+  AppContentData.globalPageContent;
 
 const {
   appAllHolderClasses,
   headerContainerClasses,
   footerContainerClasses,
-  skipLinkClasses
+  skipLinkClasses,
 } = AppContentData.uiClasses;
 
 const aiTutorSkillPrompt = `Saint Lucian Kweyol Tutor Skill
@@ -70,7 +66,9 @@ Lucia.
 
 export default function ConfigureAiChat() {
   const year = date.getFullYear();
-  const [copyState, setCopyState] = useState<'idle' | 'copied' | 'error'>('idle');
+  const [copyState, setCopyState] = useState<'idle' | 'copied' | 'error'>(
+    'idle',
+  );
 
   useEffect(() => {
     document.title = 'Configure AI Chat for Learning Kweyol | Pale Kweyol';
@@ -88,63 +86,107 @@ export default function ConfigureAiChat() {
 
   return (
     <>
-      <Link
-        linkHref={skipLinkHref}
-        linkClasses={skipLinkClasses}
-      >{skipLinkLabel}</Link>
+      <Link linkHref={skipLinkHref} linkClasses={skipLinkClasses}>
+        {skipLinkLabel}
+      </Link>
 
-      <BlockElement id='allHolder' variant='main' role="main" className={appAllHolderClasses}>
-        <Header headerContainerClass={headerContainerClasses} mainHeading={mainHeading} />
+      <BlockElement
+        id="allHolder"
+        variant="main"
+        role="main"
+        className={appAllHolderClasses}
+      >
+        <Header
+          headerContainerClass={headerContainerClasses}
+          mainHeading={mainHeading}
+        />
 
-        <RouterLink
-          to='/'
-          className='inline-block rounded-full border border-slate-300 bg-white px-4 py-2 text-sm hover:bg-slate-100'
+        <BlockElement
+          variant="section"
+          className="items-center justify-center flex-1 flex-col bg-slate-50 text-slate-800 pt-6 p-2 pb-7"
         >
-          Back to Dictionary
-        </RouterLink>
+          <Typography variant="h1" className="mt-6 text-3xl font-bold">
+            Set Up a Kweyol Learning Chat on an AI platform
+          </Typography>
 
-        <Typography variant='h1' className='mt-6 text-3xl font-bold text-center'>
-          Set Up a Kweyol Learning Chat on an AI platform
-        </Typography>
+          <Typography variant="h2" className="mt-6 text-2xl font-bold">
+            Steps to Configure an AI Platform for Learning Saint Lucian Kwéyòl
+          </Typography>
 
-        <Typography variant='h2' className='mt-6 text-3xl font-bold text-center'>
-          Steps to Configure an AI Platform for Learning Saint Lucian Kwéyòl
-        </Typography>
+          <ol className="mt-6 mb-3 ml-6 list-decimal">
+            <li>
+              Log into your AI platform and open a new chat or add the following
+              configuration in the settings or slash commands:
+            </li>
+          </ol>
 
-        <ol className='mt-6 mb-3 ml-6 list-decimal'>
-          <li>Log into your AI platform and open a new chat or add the following configuration in the settings or slash commands:</li>
-        </ol>
+          <BlockElement
+            variant="div"
+            className="mx-auto mt-4 w-full rounded-lg border border-slate-200 bg-white p-3 mb-4 flex flex-col items-end"
+          >
+            <BlockElement variant="div">
+              <RouterLink
+                to="/"
+                className="inline-block rounded-full border border-slate-300 bg-white mb-3 px-3 py-1 text-xs font-semibold hover:bg-slate-200 align-self-end mr-2"
+              >
+                Back to Dictionary
+              </RouterLink>
 
-        <BlockElement variant='div' className='mx-auto mt-4 w-full max-w-4xl rounded-lg border border-slate-200 bg-white p-3 mb-4 flex flex-col items-end'>
-          <Button
-            buttonLabel={copyState === 'copied' ? 'Copied' : copyState === 'error' ? 'Copy failed' : 'Copy prompt'}
-            onClickFunc={onCopyPrompt}
-            buttonClass='mb-3 rounded-full border border-slate-300 bg-slate-100 px-3 py-1 text-xs font-semibold hover:bg-slate-200 align-self-end'
-            ariaLabel='Copy AI tutor skill prompt'
-          ></Button>
+              <Button
+                buttonLabel={
+                  copyState === 'copied'
+                    ? 'Copied'
+                    : copyState === 'error'
+                      ? 'Copy failed'
+                      : 'Copy prompt'
+                }
+                onClickFunc={onCopyPrompt}
+                buttonClass="mb-3 rounded-full border border-slate-300 bg-slate-100 px-3 py-1 text-xs font-semibold hover:bg-slate-200 align-self-end"
+                ariaLabel="Copy AI tutor skill prompt"
+              ></Button>
+            </BlockElement>
 
-          <pre data-role='codeBlock' data-info='text' className='overflow-x-auto whitespace-pre-wrap break-words rounded-md bg-slate-900 p-4 text-sm text-slate-100'>
-            <code>{aiTutorSkillPrompt}</code>
-          </pre>
+            <pre
+              data-role="codeBlock"
+              data-info="text"
+              className="overflow-x-auto whitespace-pre-wrap break-words rounded-md bg-slate-900 p-4 text-sm text-slate-100"
+            >
+              <code>{aiTutorSkillPrompt}</code>
+            </pre>
+          </BlockElement>
+
+          <ol start={2} className="mb-6 ml-6 list-decimal">
+            <li>
+              Once the parameters are set, your AI platform should confirm.
+            </li>
+            <li>
+              Usage within this chat session:
+              <ul className="ml-6 list-disc">
+                <li>
+                  Chat in Kwéyòl (parameters can be edited to fit your needs).
+                </li>
+                <li>
+                  Translate words/phrases when typing:
+                  <br />
+                  <code className="font-bold">
+                    /translate [sample word or phrase]
+                  </code>
+                </li>
+                <li>
+                  Build a table for recently translated words when entering:
+                  <br />
+                  <code className="font-bold">/translations-table</code>
+                </li>
+                <li>
+                  Get an approximate vocabulary count based on the conversation
+                  history when typing:
+                  <br />
+                  <code className="font-bold">/vocabulary-count</code>
+                </li>
+              </ul>
+            </li>
+          </ol>
         </BlockElement>
-
-        <ol start={2} className='mb-6 ml-6 list-decimal'>
-          <li>Once the parameters are set, your AI platform should confirm.</li>
-          <li>Usage within this chat session:
-            <ul className='ml-6 list-disc'>
-              <li>Chat in Kwéyòl (parameters can be edited to fit your needs).</li>
-              <li>Translate words/phrases when typing:<br />
-                <code>/translate [sample word or phrase]</code>
-              </li>
-              <li>Build a table for recently translated words when entering:<br />
-                <code>/translations-table</code>
-              </li>
-              <li>Get an approximate vocabulary count based on the conversation history when typing:<br />
-                <code>/vocabulary-count</code>
-              </li>
-            </ul>
-          </li>
-        </ol>
 
         <Footer
           footerContainerClass={footerContainerClasses}
